@@ -23,8 +23,8 @@ const Header = () => {
           label: 'Corrugators',
           path: '/portfolio/corrugators',
           content: [
-            { 
-              label: 'Overview', 
+            {
+              label: 'Overview',
               path: '/portfolio/corrugators/overview',
               description: 'The most productive path from individual machines to complete corrugator lines and OEE optimization.'
             },
