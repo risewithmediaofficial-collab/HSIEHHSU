@@ -16,44 +16,28 @@ import pioneerlogo from '../assets/pioneer.webp';
 const Home = () => {
   const features = [
     {
-      icon: <Shield className="w-10 h-10" />,
+      icon: <Shield className="w-8 h-8" />,
       title: "Quality Assured",
-      description: "ISO 9001:2015 certified manufacturing with zero-tolerance quality standards",
-      stat: "ISO Certified",
-      iconBg: "bg-blue-50",
-      iconColor: "text-blue-600",
-      statBg: "bg-blue-600",
-      hoverGradient: "group-hover:from-blue-500 group-hover:to-blue-600"
+      description: "ISO 9001:2015 certified manufacturing with zero-tolerance quality standards.",
+      stat: "ISO Certified"
     },
     {
-      icon: <Zap className="w-10 h-10" />,
+      icon: <Zap className="w-8 h-8" />,
       title: "Lightning Fast",
-      description: "48-72 hour turnaround without compromising precision or durability",
-      stat: "48-72 Hours",
-      iconBg: "bg-amber-50",
-      iconColor: "text-amber-600",
-      statBg: "bg-amber-600",
-      hoverGradient: "group-hover:from-amber-500 group-hover:to-amber-600"
+      description: "48-72 hour turnaround without compromising precision or durability.",
+      stat: "48-72 Hours"
     },
     {
-      icon: <Clock className="w-10 h-10" />,
+      icon: <Clock className="w-8 h-8" />,
       title: "Always Available",
-      description: "Round-the-clock monitoring and dedicated technical support team",
-      stat: "24/7 Available",
-      iconBg: "bg-purple-50",
-      iconColor: "text-purple-600",
-      statBg: "bg-purple-600",
-      hoverGradient: "group-hover:from-purple-500 group-hover:to-purple-600"
+      description: "Round-the-clock monitoring and dedicated technical support team.",
+      stat: "24/7 Available"
     },
     {
-      icon: <Users className="w-10 h-10" />,
+      icon: <Users className="w-8 h-8" />,
       title: "Expert Engineers",
-      description: "Veterans with 20+ years average experience in corrugation industry",
-      stat: "20+ Years Avg",
-      iconBg: "bg-emerald-50",
-      iconColor: "text-emerald-600",
-      statBg: "bg-emerald-600",
-      hoverGradient: "group-hover:from-emerald-500 group-hover:to-emerald-600"
+      description: "Veterans with 20+ years average experience in corrugation industry.",
+      stat: "20+ Years Avg"
     },
   ];
 
@@ -234,39 +218,33 @@ const Home = () => {
   const advantages = [
     { 
       title: "Technical Excellence", 
-      description: "State-of-the-art equipment and methodologies for superior results", 
-      icon: <Zap className="w-8 h-8" />,
-      gradient: "from-blue-500 to-indigo-600"
+      description: "State-of-the-art equipment and methodologies for superior results.", 
+      icon: <Zap className="w-6 h-6" />
     },
     { 
       title: "Cost Efficiency", 
-      description: "Optimized processes reducing operational costs significantly", 
-      icon: <TrendingUp className="w-8 h-8" />,
-      gradient: "from-emerald-500 to-teal-600"
+      description: "Optimized processes reducing operational costs significantly.", 
+      icon: <TrendingUp className="w-6 h-6" />
     },
     { 
       title: "Time Savings", 
-      description: "Rapid turnaround without quality compromise", 
-      icon: <Clock className="w-8 h-8" />,
-      gradient: "from-amber-500 to-orange-600"
+      description: "Rapid turnaround without quality compromise.", 
+      icon: <Clock className="w-6 h-6" />
     },
     { 
       title: "Reliability", 
-      description: "Proven track record with 99.2% equipment uptime achievement", 
-      icon: <Shield className="w-8 h-8" />,
-      gradient: "from-purple-500 to-pink-600"
+      description: "Proven track record with 99.2% equipment uptime achievement.", 
+      icon: <Shield className="w-6 h-6" />
     },
     { 
       title: "Support System", 
-      description: "Dedicated team available around the clock for immediate assistance", 
-      icon: <Headphones className="w-8 h-8" />,
-      gradient: "from-red-500 to-rose-600"
+      description: "Dedicated team available around the clock for immediate assistance.", 
+      icon: <Headphones className="w-6 h-6" />
     },
     { 
       title: "Innovation", 
-      description: "Continuous improvement through latest industry technologies", 
-      icon: <Lightbulb className="w-8 h-8" />,
-      gradient: "from-cyan-500 to-blue-600"
+      description: "Continuous improvement through latest industry technologies.", 
+      icon: <Lightbulb className="w-6 h-6" />
     },
   ];
 
@@ -348,17 +326,17 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
                 <a
                   href="tel:+919894235419"
-                  className="group inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 text-base shadow-lg shadow-red-600/25 hover:shadow-xl hover:shadow-red-600/40 hover:-translate-y-0.5 active:translate-y-0"
+                  className="btn-primary group"
                 >
-                  <Phone className="w-4.5 h-4.5 mr-2.5 group-hover:rotate-12 transition-transform duration-300" />
+                  <Phone className="w-4 h-4 mr-2.5 group-hover:rotate-12 transition-transform duration-300" />
                   Call: +91 98942 35419
                 </a>
                 <Link
                   to="/contact"
-                  className="group inline-flex items-center justify-center bg-white hover:bg-gray-50 text-gray-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300 text-base border-2 border-gray-200 hover:border-red-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
+                  className="btn-secondary group"
                 >
                   Schedule Consultation
-                  <ArrowRight className="w-4.5 h-4.5 ml-2.5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="w-4 h-4 ml-2.5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
               </div>
             </div>
@@ -548,23 +526,29 @@ const Home = () => {
           </div>
 
           {/* Features Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group relative bg-white rounded-2xl p-7 lg:p-8 border-2 border-gray-100 hover:border-red-200 transition-all duration-500 hover:shadow-xl hover:shadow-red-50 hover:-translate-y-1"
+                className="fancy-card h-full"
               >
-                {/* Icon */}
-                <div className={`${feature.iconBg} ${feature.iconColor} w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-500 bg-gradient-to-br group-hover:${feature.hoverGradient} group-hover:text-white group-hover:scale-110 group-hover:shadow-lg`}>
+                <div className="go-corner">
+                  <div className="go-arrow">→</div>
+                </div>
+                
+                <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center">
                   {feature.icon}
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-900 mb-3.5 tracking-tight">{feature.title}</h3>
-                <p className="text-gray-600 mb-7 leading-relaxed text-sm">{feature.description}</p>
+                <h3 className="text-xl font-bold fancy-card-title mb-3">{feature.title}</h3>
+                <p className="fancy-card-desc mb-8 text-sm leading-relaxed flex-grow">{feature.description}</p>
                 
-                <div className={`${feature.statBg} text-white text-center font-bold text-sm py-3.5 px-4 rounded-xl shadow-md group-hover:shadow-lg transition-all duration-300`}>
-                  {feature.stat}
-                </div>
+                {feature.stat && (
+                  <div className="pt-5 border-t border-gray-100/20 flex items-center justify-between mt-auto">
+                      <span className="text-xs font-bold fancy-card-stat-label uppercase tracking-wider">Key Metric</span>
+                      <span className="text-sm font-bold fancy-card-stat">{feature.stat}</span>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -572,33 +556,30 @@ const Home = () => {
       </section>
 
       {/* ===== ADVANTAGES GRID ===== */}
-      <section className="py-20 md:py-28 lg:py-32 bg-gradient-to-br from-gray-50 via-white to-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <section className="py-20 md:py-28 lg:py-32 bg-gray-50 relative overflow-hidden">
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           {/* Section Header */}
-          <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight">
-              Our Key{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
-                Advantages
-              </span>
+          <div className="mb-16 lg:mb-20 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight text-gray-900">
+              Our Key <span className="text-red-600">Advantages</span>
             </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">Delivering industrial-grade performance through precision and expertise.</p>
           </div>
 
           {/* Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {advantages.map((adv, idx) => (
-              <div
-                key={idx}
-                className="group relative bg-white rounded-2xl p-7 lg:p-8 border-2 border-gray-100 hover:border-red-200 hover:shadow-xl hover:shadow-red-50 transition-all duration-500 hover:-translate-y-1 overflow-hidden"
-              >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div key={idx} className="fancy-card h-full">
+                <div className="go-corner">
+                  <div className="go-arrow">→</div>
+                </div>
                 
-                <div className={`relative inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${adv.gradient} text-white mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg`}>
+                <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500">
                   {adv.icon}
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-900 mb-3.5 tracking-tight relative z-10">{adv.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed relative z-10">{adv.description}</p>
+                <h3 className="text-xl font-bold fancy-card-title mb-3">{adv.title}</h3>
+                <p className="fancy-card-desc text-sm leading-relaxed">{adv.description}</p>
               </div>
             ))}
           </div>
@@ -622,62 +603,53 @@ const Home = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="grid md:grid-cols-2 gap-7 lg:gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-12 mb-12 relative z-10 pt-4">
             {services.map((service) => (
-              <div
-                key={service.id}
-                className="group bg-white rounded-3xl overflow-hidden border-2 border-gray-100 hover:border-red-200 hover:shadow-2xl hover:shadow-red-50 transition-all duration-500 hover:-translate-y-1"
-              >
-                {/* Visual Header */}
-                <div className={`relative bg-gradient-to-br ${service.bgGradient} h-52 flex items-center justify-center overflow-hidden`}>
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-red-500/10 via-transparent to-transparent"></div>
-                  <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-60"></div>
+              <div key={service.id} className="glass-3d-parent cursor-pointer">
+                <div className="glass-3d-card">
                   
-                  <div className="text-center relative z-10">
-                    <div className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${service.gradient} text-white mb-3 group-hover:scale-110 transition-transform duration-500 shadow-xl`}>
+                  {/* Decorative Logo / Icon Area */}
+                  <div className="glass-3d-logo">
+                    <span className="glass-3d-circle glass-3d-circle1"></span>
+                    <span className="glass-3d-circle glass-3d-circle2"></span>
+                    <span className="glass-3d-circle glass-3d-circle3"></span>
+                    <span className="glass-3d-circle glass-3d-circle4"></span>
+                    <span className="glass-3d-circle glass-3d-circle5 drop-shadow-md">
                       {service.icon}
-                    </div>
-                    <p className="text-gray-500 font-semibold text-sm">Service Visual</p>
+                    </span>
                   </div>
-                </div>
 
-                {/* Content Section */}
-                <div className="p-7 lg:p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3.5 tracking-tight">{service.title}</h3>
-                  <p className="text-gray-600 leading-relaxed mb-6 text-sm">{service.description}</p>
+                  <div className="glass-3d-glass"></div>
                   
-                  {/* Features List */}
-                  <div className="space-y-3 mb-7">
-                    {service.features.map((feature, i) => (
-                      <div key={i} className="flex items-center text-gray-700 text-sm group/item">
-                        <span className="w-1.5 h-1.5 bg-gradient-to-r from-red-600 to-red-700 rounded-full mr-3.5 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-300"></span>
-                        <span className="font-medium">{feature}</span>
-                      </div>
-                    ))}
+                  {/* Content */}
+                  <div className="glass-3d-content">
+                    <span className="glass-3d-subtitle">Premium Service</span>
+                    <span className="glass-3d-title">{service.title}</span>
+                    <span className="glass-3d-text">{service.description}</span>
+                    
+                    <div className="glass-3d-features">
+                      {service.features.map((feature, i) => (
+                        <div key={i} className="glass-3d-feature-item">
+                           <CheckCircle /> <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
 
-                  <Link
-                    to={service.link}
-                    className="inline-flex items-center text-red-600 font-bold hover:text-red-700 transition-all duration-300 group/link text-sm"
-                  >
-                    <span>Explore Service</span>
-                    <ArrowUpRight className="w-4.5 h-4.5 ml-2 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform duration-300" />
-                  </Link>
+                  {/* Bottom Action Area */}
+                  <div className="glass-3d-bottom">
+                    <Link to={service.link} className="glass-3d-view-more hover:scale-105 z-20 relative">
+                      Explore Service
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                    </Link>
+                  </div>
+                  
                 </div>
               </div>
             ))}
           </div>
 
-          {/* View All Button */}
-          <div className="text-center pt-4">
-            <Link
-              to="/services"
-              className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-10 py-4 rounded-xl font-bold transition-all duration-300 shadow-lg shadow-red-600/25 hover:shadow-xl hover:shadow-red-600/40 hover:-translate-y-0.5 active:translate-y-0"
-            >
-              View All Services
-              <ArrowRight className="w-5 h-5 ml-2.5" />
-            </Link>
-          </div>
+          {/* Removed View All Button as requested */}
         </div>
       </section>
 
@@ -755,31 +727,18 @@ const Home = () => {
           </div>
 
           {/* Case Studies Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 pt-4">
             {caseStudies.map((study) => (
-              <div
-                key={study.id}
-                className="group bg-white rounded-3xl overflow-hidden border-2 border-gray-100 hover:border-red-200 hover:shadow-2xl hover:shadow-red-50 transition-all duration-500 hover:-translate-y-1 flex flex-col"
-              >
-                {/* Visual Header */}
-                <div className="relative h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-red-500/10 via-transparent to-transparent"></div>
-                  <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-60"></div>
-                  <div className="text-center relative z-10">
-                    <TrendingUp className="w-16 h-16 mx-auto text-gray-400 mb-2 group-hover:text-gray-500 transition-colors duration-500" />
-                    <p className="text-gray-500 font-semibold text-sm">Case Study Visual</p>
-                  </div>
+              <div key={study.id} className="notification-card h-full cursor-default">
+                <div className="notiglow" />
+                <div className="notiborderglow" />
+                <div className="notititle">
+                  <div className="noti-metric">{study.metric}</div>
+                  {study.title}
                 </div>
-
-                {/* Content */}
-                <div className="p-7 lg:p-8 flex flex-col flex-1">
-                  <div className="flex items-center justify-between mb-5">
-                    <span className="text-xs font-bold text-red-600 uppercase tracking-widest bg-red-50 px-3 py-1.5 rounded-lg">{study.industry}</span>
-                    <span className={`text-3xl lg:text-4xl font-extrabold bg-gradient-to-r ${study.color} bg-clip-text text-transparent font-mono`}>{study.metric}</span>
-                  </div>
-                  <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2.5 tracking-tight">{study.title}</h3>
-                  <p className="text-xs text-gray-500 mb-4 font-semibold">{study.company}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed flex-1">{study.description}</p>
+                <div className="notibody">
+                  <div className="noti-company">{study.company} • {study.industry}</div>
+                  <div className="noti-desc">{study.description}</div>
                 </div>
               </div>
             ))}
@@ -865,14 +824,14 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 lg:mb-20">
               <a
                 href="tel:+919894235419"
-                className="group inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-10 py-4 rounded-xl font-bold transition-all duration-300 shadow-lg shadow-red-600/25 hover:shadow-xl hover:shadow-red-600/40 hover:-translate-y-0.5 active:translate-y-0"
+                className="btn-primary group !px-10 !py-4"
               >
                 <Phone className="w-5 h-5 mr-2.5 group-hover:rotate-12 transition-transform duration-300" />
                 Call Now
               </a>
               <Link
                 to="/contact"
-                className="group inline-flex items-center justify-center bg-white hover:bg-gray-50 text-gray-900 px-10 py-4 rounded-xl font-bold transition-all duration-300 border-2 border-gray-200 hover:border-red-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
+                className="btn-secondary group !px-10 !py-4"
               >
                 Schedule Meeting
                 <ArrowRight className="w-5 h-5 ml-2.5 group-hover:translate-x-1 transition-transform duration-300" />

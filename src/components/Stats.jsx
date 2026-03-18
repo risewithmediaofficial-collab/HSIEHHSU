@@ -39,19 +39,22 @@ const Stats = () => {
         <h2 className="text-3xl font-bold text-center mb-12" data-aos="fade-up">
           Our Achievements in Numbers
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center"
+              className="fancy-card text-center flex flex-col items-center justify-center p-6 min-h-[200px]"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <div className={`${stat.bgColor} ${stat.color} p-6 rounded-2xl inline-block mb-4`}>
+              <div className="go-corner">
+                <div className="go-arrow">→</div>
+              </div>
+              <div className="fancy-card-icon mb-4 w-12 h-12 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500 text-red-600">
                 {stat.icon}
               </div>
-              <h3 className="text-4xl font-bold text-gray-900 mb-2">{stat.value}</h3>
-              <p className="text-gray-600">{stat.label}</p>
+              <h3 className="text-3xl font-extrabold fancy-card-title mb-2">{stat.value}</h3>
+              <p className="fancy-card-desc font-medium text-sm">{stat.label}</p>
             </div>
           ))}
         </div>

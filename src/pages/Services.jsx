@@ -321,18 +321,17 @@ const rollerServices = [
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {whyChoose.map((item, idx) => (
-              <div
-                key={idx}
-                className="group relative bg-white p-7 lg:p-8 rounded-2xl border-2 border-gray-100 hover:border-red-200 hover:shadow-xl hover:shadow-red-50 hover:-translate-y-1 transition-all duration-500 overflow-hidden"
-              >
-                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-red-50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div key={idx} className="fancy-card h-full">
+                <div className="go-corner">
+                  <div className="go-arrow">→</div>
+                </div>
                 
-                <div className={`relative inline-flex items-center justify-center w-3 h-3 rounded-full bg-gradient-to-br ${item.gradient} mb-5 group-hover:scale-150 transition-transform duration-500 shadow-lg`}></div>
+                <div className="mb-6 w-3 h-3 bg-red-600 rounded-full group-hover:scale-150 transition-transform duration-500 shadow-md"></div>
                 
-                <h4 className="text-lg font-bold text-gray-900 mb-2.5 tracking-tight relative z-10">{item.title}</h4>
-                <p className="text-gray-600 text-sm relative z-10">{item.description}</p>
+                <h4 className="text-lg font-bold fancy-card-title mb-2.5">{item.title}</h4>
+                <p className="fancy-card-desc text-sm">{item.description}</p>
               </div>
             ))}
           </div>
@@ -354,17 +353,17 @@ const rollerServices = [
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-8 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {supportServices.map((service, index) => (
-              <div 
-                key={index}
-                className="group bg-gradient-to-br from-gray-50 to-white border-2 border-gray-100 hover:border-red-200 p-7 lg:p-8 rounded-2xl shadow-lg hover:shadow-xl hover:shadow-red-50 hover:-translate-y-1 transition-all duration-500"
-              >
-                <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} text-white mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg`}>
+              <div key={index} className="fancy-card h-full">
+                <div className="go-corner">
+                  <div className="go-arrow">→</div>
+                </div>
+                <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500">
                   {service.icon}
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3.5 tracking-tight">{service.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+                <h3 className="text-lg font-bold fancy-card-title mb-3">{service.title}</h3>
+                <p className="fancy-card-desc text-sm leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
@@ -475,14 +474,14 @@ const rollerServices = [
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <a
               href="tel:+919894235419"
-              className="group inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-10 py-4 rounded-xl font-bold transition-all duration-300 text-base shadow-lg shadow-red-600/25 hover:shadow-xl hover:shadow-red-600/40 hover:-translate-y-0.5 active:translate-y-0"
+              className="btn-primary group !px-10 !py-4"
             >
               <Phone className="w-5 h-5 mr-2.5 group-hover:rotate-12 transition-transform duration-300" />
               Call for Assessment
             </a>
             <a
               href="mailto:hsiehhsu.india@gmail.com"
-              className="group inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-10 py-4 rounded-xl font-bold transition-all duration-300 text-base border-2 border-white/30 hover:border-white/50 hover:-translate-y-0.5 active:translate-y-0"
+              className="btn-outline group !px-10 !py-4"
             >
               <Mail className="w-5 h-5 mr-2.5" />
               Email Requirements
@@ -491,7 +490,7 @@ const rollerServices = [
               href="https://wa.me/919894235419"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-xl font-bold transition-all duration-300 text-base shadow-lg shadow-green-600/25 hover:shadow-xl hover:shadow-green-600/40 hover:-translate-y-0.5 active:translate-y-0"
+              className="group inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-xl font-semibold transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-95"
             >
               <svg className="w-5 h-5 mr-2.5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.935 1.353 9.879 9.879 0 006.474 13.104 9.865 9.865 0 004.935-1.352 9.879 9.879 0 00-6.474-13.105zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0z"/>

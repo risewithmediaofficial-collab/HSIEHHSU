@@ -223,33 +223,30 @@ const Products = () => {
                     </div>
 
                     {/* Spares Grid */}
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16 pt-3">
                         {spares.map((category, index) => (
-                            <div
-                                key={index}
-                                className="group bg-white rounded-2xl border border-slate-200 hover:border-red-300 shadow-sm hover:shadow-xl transition-all duration-500 p-6 lg:p-7"
-                            >
-                                {/* Icon Container */}
-                                <div className="bg-red-50 group-hover:bg-red-600 w-14 h-14 rounded-xl flex items-center justify-center mb-5 text-red-600 group-hover:text-white transition-all duration-500">
+                            <div key={index} className="fancy-card h-full">
+                                <div className="go-corner">
+                                    <div className="go-arrow">→</div>
+                                </div>
+                                <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500 text-red-600">
                                     {category.icon}
                                 </div>
                                 
-                                {/* Category Info */}
-                                <div className="space-y-3 mb-5">
-                                    <h3 className="text-xl font-bold text-slate-900">
+                                <div className="space-y-2 mb-5">
+                                    <h3 className="text-xl font-bold fancy-card-title">
                                         {category.category}
                                     </h3>
-                                    <p className="text-sm text-slate-600 leading-relaxed">
+                                    <p className="text-sm fancy-card-desc leading-relaxed font-semibold">
                                         {category.description}
                                     </p>
                                 </div>
                                 
-                                {/* Items List */}
                                 <ul className="space-y-2.5">
                                     {category.items.map((item, idx) => (
                                         <li key={idx} className="flex items-center gap-3 text-sm">
-                                            <div className="w-1 h-1 bg-red-600 rounded-full flex-shrink-0"></div>
-                                            <span className="text-slate-700 font-medium">{item}</span>
+                                            <div className="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0"></div>
+                                            <span className="fancy-card-desc font-medium">{item}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -273,17 +270,20 @@ const Products = () => {
                             </p>
                         </div>
 
-                        <div className="grid sm:grid-cols-3 gap-8 lg:gap-10">
+                        <div className="grid sm:grid-cols-3 gap-6 lg:gap-8 pt-3">
                             {qualityPoints.map((point, idx) => (
-                                <div key={idx} className="group text-center space-y-5">
-                                    <div className="bg-gradient-to-br from-red-50 to-red-100/50 group-hover:bg-red-600 border border-red-200 group-hover:border-red-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto text-red-600 group-hover:text-white transition-all duration-500">
+                                <div key={idx} className="fancy-card text-center flex flex-col items-center h-full">
+                                    <div className="go-corner">
+                                        <div className="go-arrow">→</div>
+                                    </div>
+                                    <div className="fancy-card-icon mb-6 w-16 h-16 flex items-center justify-center bg-red-50 rounded-2xl group-hover:bg-red-600 transition-colors duration-500 text-red-600 mx-auto">
                                         {point.icon}
                                     </div>
                                     <div className="space-y-2">
-                                        <h4 className="text-xl font-bold text-slate-900">
+                                        <h4 className="text-xl font-bold fancy-card-title">
                                             {point.title}
                                         </h4>
-                                        <p className="text-slate-600 leading-relaxed">
+                                        <p className="text-sm fancy-card-desc leading-relaxed font-semibold">
                                             {point.description}
                                         </p>
                                     </div>
@@ -297,39 +297,48 @@ const Products = () => {
             {/* Inventory & Support - Clean three-column layout */}
             <section className="py-16 sm:py-20 lg:py-28 bg-slate-50">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-                    <div className="grid sm:grid-cols-3 gap-6 lg:gap-8">
-                        <div className="group bg-white border border-slate-200 hover:border-red-300 rounded-2xl p-8 hover:shadow-xl transition-all duration-500 space-y-5">
-                            <div className="bg-red-50 group-hover:bg-red-600 w-14 h-14 rounded-xl flex items-center justify-center text-red-600 group-hover:text-white transition-all duration-500">
+                    <div className="grid sm:grid-cols-3 gap-6 lg:gap-8 pt-3">
+                        <div className="fancy-card h-full text-center flex flex-col items-center">
+                            <div className="go-corner">
+                                <div className="go-arrow">→</div>
+                            </div>
+                            <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500 text-red-600 mx-auto">
                                 <Package size={28} />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900">
+                            <h3 className="text-xl font-bold fancy-card-title mb-3">
                                 Large Inventory
                             </h3>
-                            <p className="text-slate-600 leading-relaxed">
+                            <p className="text-sm fancy-card-desc leading-relaxed font-semibold">
                                 Extensive stock of commonly used spare parts for quick delivery
                             </p>
                         </div>
 
-                        <div className="group bg-white border border-slate-200 hover:border-red-300 rounded-2xl p-8 hover:shadow-xl transition-all duration-500 space-y-5">
-                            <div className="bg-red-50 group-hover:bg-red-600 w-14 h-14 rounded-xl flex items-center justify-center text-red-600 group-hover:text-white transition-all duration-500">
+                        <div className="fancy-card h-full text-center flex flex-col items-center">
+                            <div className="go-corner">
+                                <div className="go-arrow">→</div>
+                            </div>
+                            <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500 text-red-600 mx-auto">
                                 <TrendingUp size={28} />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900">
+                            <h3 className="text-xl font-bold fancy-card-title mb-3">
                                 Fast Delivery
                             </h3>
-                            <p className="text-slate-600 leading-relaxed">
+                            <p className="text-sm fancy-card-desc leading-relaxed font-semibold">
                                 Express shipping for urgent requirements across India
                             </p>
                         </div>
 
-                        <div className="group bg-white border border-slate-200 hover:border-red-300 rounded-2xl p-8 hover:shadow-xl transition-all duration-500 space-y-5">
-                            <div className="bg-red-50 group-hover:bg-red-600 w-14 h-14 rounded-xl flex items-center justify-center text-red-600 group-hover:text-white transition-all duration-500">
+                        <div className="fancy-card h-full text-center flex flex-col items-center">
+                            <div className="go-corner">
+                                <div className="go-arrow">→</div>
+                            </div>
+                            <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500 text-red-600 mx-auto">
                                 <Phone size={28} />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900">
+                            <h3 className="text-xl font-bold fancy-card-title mb-3">
                                 Expert Support
                             </h3>
-                            <p className="text-slate-600 leading-relaxed">
+                            <p className="text-sm fancy-card-desc leading-relaxed font-semibold">
                                 Technical guidance on spare part selection and installation
                             </p>
                         </div>

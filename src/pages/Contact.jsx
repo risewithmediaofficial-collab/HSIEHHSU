@@ -357,7 +357,7 @@ const Contact = () => {
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl text-base sm:text-lg"
+                      className="btn-primary w-full !py-4 text-base sm:text-lg"
                       data-testid="submit-btn"
                     >
                       <Send size={20} />

@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { Globe, Target, Award, Users, Factory, Clock, ArrowRight, CheckCircle, Zap, TrendingUp, Shield, Phone } from 'lucide-react';
 
 const About = () => {
@@ -371,17 +372,17 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {teamAreas.map((area, idx) => (
-              <div
-                key={idx}
-                className="group bg-white p-7 lg:p-8 rounded-2xl shadow-lg border-2 border-gray-100 hover:border-red-200 hover:shadow-2xl hover:shadow-red-50 hover:-translate-y-1 transition-all duration-500"
-              >
-                <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${area.gradient} text-white mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg`}>
+              <div key={idx} className="fancy-card h-full">
+                <div className="go-corner">
+                  <div className="go-arrow">→</div>
+                </div>
+                <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500">
                   {area.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3.5 tracking-tight">{area.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-sm">{area.description}</p>
+                <h3 className="text-xl font-bold fancy-card-title mb-3">{area.title}</h3>
+                <p className="fancy-card-desc text-sm leading-relaxed">{area.description}</p>
               </div>
             ))}
           </div>
@@ -403,17 +404,17 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <div 
-                key={index}
-                className="group bg-white p-7 lg:p-8 rounded-2xl border-2 border-gray-100 hover:border-red-200 hover:shadow-xl hover:shadow-red-50 hover:-translate-y-1 transition-all duration-500"
-              >
-                <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl ${value.bgColor} text-gray-700 mb-6 transition-all duration-500 bg-gradient-to-br group-hover:${value.gradient} group-hover:text-white group-hover:scale-110 group-hover:shadow-lg`}>
+              <div key={index} className="fancy-card h-full">
+                <div className="go-corner">
+                  <div className="go-arrow">→</div>
+                </div>
+                <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3.5 tracking-tight">{value.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-sm">{value.description}</p>
+                <h3 className="text-xl font-bold fancy-card-title mb-3">{value.title}</h3>
+                <p className="fancy-card-desc text-sm leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
@@ -469,18 +470,17 @@ const About = () => {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-8 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
             {whyChooseUs.map((item, idx) => (
-              <div
-                key={idx}
-                className="group relative bg-gradient-to-br from-white to-gray-50 border-2 border-gray-100 hover:border-red-200 p-7 lg:p-8 rounded-2xl hover:shadow-xl hover:shadow-red-50 hover:-translate-y-1 transition-all duration-500 overflow-hidden"
-              >
-                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-red-50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div key={idx} className="fancy-card h-full">
+                <div className="go-corner">
+                  <div className="go-arrow">→</div>
+                </div>
                 
-                <div className={`relative inline-flex items-center justify-center w-3 h-3 rounded-full bg-gradient-to-br ${item.gradient} mb-5 group-hover:scale-150 transition-transform duration-500 shadow-lg`}></div>
+                <div className="mb-6 w-3 h-3 bg-red-600 rounded-full group-hover:scale-150 transition-transform duration-500 shadow-md"></div>
                 
-                <h4 className="font-bold text-gray-900 mb-3.5 text-lg tracking-tight relative z-10">{item.title}</h4>
-                <p className="text-gray-600 text-sm leading-relaxed relative z-10">{item.description}</p>
+                <h4 className="text-xl font-bold fancy-card-title mb-3">{item.title}</h4>
+                <p className="fancy-card-desc text-sm leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -507,20 +507,18 @@ const About = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+919894235419"
-              className="group inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-10 py-4 rounded-xl font-bold transition-all duration-300 text-base shadow-lg shadow-red-600/25 hover:shadow-xl hover:shadow-red-600/40 hover:-translate-y-0.5 active:translate-y-0"
+              className="btn-primary group !px-10 !py-4"
             >
               <Phone className="w-5 h-5 mr-2.5 group-hover:rotate-12 transition-transform duration-300" />
-              Call Us Now
+              Call Now
             </a>
-            <a
-              href="https://wa.me/919894235419"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-10 py-4 rounded-xl font-bold transition-all duration-300 text-base border-2 border-white/30 hover:border-white/50 hover:-translate-y-0.5 active:translate-y-0"
+            <Link
+              to="/contact"
+              className="btn-outline group !px-10 !py-4"
             >
-              WhatsApp Chat
+              Schedule Meeting
               <ArrowRight className="w-5 h-5 ml-2.5 group-hover:translate-x-1 transition-transform duration-300" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

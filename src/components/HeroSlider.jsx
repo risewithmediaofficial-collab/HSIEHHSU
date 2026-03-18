@@ -59,13 +59,13 @@ const HeroSlider = () => {
                   <div className="flex flex-wrap gap-4">
                     <a 
                       href="/contact"
-                      className="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg"
+                      className="btn-secondary !text-blue-700 border-none"
                     >
                       Get Free Consultation
                     </a>
                     <a 
                       href="/services"
-                      className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition"
+                      className="btn-outline"
                     >
                       View Our Services
                     </a>
