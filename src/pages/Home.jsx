@@ -12,7 +12,9 @@ import horizonlogo from '../assets/horizon.jpg';
 import meghdootlogo from '../assets/meghdoot.webp';
 import worthlogo from '../assets/worth.png';
 import pioneerlogo from '../assets/pioneer.webp';
-
+import ravilogo from '../assets/ravi.png';
+import sriharilogo from '../assets/srihari.jpg';
+import vandhanalogo from '../assets/vandhana.jpg';
 const Home = () => {
   const features = [
     {
@@ -239,12 +241,12 @@ const Home = () => {
     { name: "Horizon Packs", location: "Hosur", logo: horizonlogo },
     { name: "Meghdoot Packaging", location: "Rudrapur", logo: meghdootlogo },
     { name: "Worthpheriphril", location: "Indore", logo: worthlogo },
-    { name: "Pioneer Packaging", location: "Kolkata", logo: pioneerlogo, icon: <Factory className="w-6 h-6" /> },
-    { name: "Vandana Packaging", location: "Meerut", initials: "VP", icon: <Package className="w-6 h-6" /> },
-    { name: "Rubykon Packaging", location: "Faridabad", initials: "RP", icon: <TrendingUp className="w-6 h-6" /> },
-    { name: "Ravi Packages", location: "Hosur", initials: "RP", icon: <Target className="w-6 h-6" /> },
-    { name: "Sri Hari Packaging", location: "Karur", initials: "SH", icon: <Shield className="w-6 h-6" /> },
-    { name: "Ramana Carton", location: "Villupuram", initials: "RC", icon: <Settings className="w-6 h-6" /> },
+    { name: "Pioneer Packaging", location: "Kolkata", logo: pioneerlogo },
+    { name: "Vandana Packaging", location: "Meerut", logo: vandhanalogo },
+    { name: "Rubykon Packaging", location: "Faridabad", initials: "RP" },
+    { name: "Ravi Packages", location: "Hosur", logo: ravilogo },
+    { name: "Sri Hari Packaging", location: "Karur", logo: sriharilogo },
+    { name: "Ramana Carton", location: "Villupuram", initials: "RC" },
   ];
 
   return (
