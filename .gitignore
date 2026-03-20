@@ -33,3 +33,4 @@ build/
 .env.production.local
 
 .vercel
+.env*.local

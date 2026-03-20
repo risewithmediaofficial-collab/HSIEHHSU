@@ -99,9 +99,6 @@ const Footer = () => {
       role="contentinfo"
       data-testid="footer"
     >
-      {/* Simple Red Accent */}
-      <div className="absolute top-0 right-0 w-1/4 h-full bg-[#fafafa] -z-0"></div>
-
       {/* Main Content */}
       <div className="relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-12 sm:py-16 lg:py-20">
