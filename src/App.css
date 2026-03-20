@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -10,11 +11,24 @@
   --text-gray-dark: #333333;
   --text-gray-light: #555555;
   --border-light: #eeeeee;
+  --font-heading: 'Syne', Inter, -apple-system, sans-serif;
+  --font-body: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 /* Global Font Application */
 * {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: var(--font-body);
+}
+
+/* Heading Font — Syne for all titles */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  text-transform: none !important;
+}
+
+.heading-font {
+  font-family: var(--font-heading);
+  text-transform: none;
 }
 
 /* Smooth Scrolling */
@@ -148,11 +162,11 @@ body {
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   border: 2px solid #f44336;
   transition: all 0.3s ease;
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 .btn-primary:hover {
   background-color: #d32f2f;
@@ -173,7 +187,6 @@ body {
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   border: 2px solid #f44336;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -198,7 +211,6 @@ body {
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   border: 2px solid #1a1a1a;
   transition: all 0.3s ease;
   text-decoration: none;

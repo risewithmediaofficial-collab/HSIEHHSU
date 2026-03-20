@@ -268,7 +268,7 @@ const Home = () => {
                 <span className="tracking-wide">Industry Trusted Solutions</span>
               </div>
               
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black leading-[1.1] text-[#1a1a1a] tracking-tight uppercase">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black leading-[1.1] text-[#1a1a1a] tracking-tight">
                 Premium <span className="text-[#f44336]">Corrugation</span> Engineering Excellence
               </h1>
               
@@ -280,9 +280,9 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <a
                   href="tel:+919894235419"
-                  className="btn-primary"
+                  className="btn-primary whitespace-nowrap"
                 >
-                  <Phone className="w-4 h-4 mr-2.5" />
+                  <Phone className="w-4 h-4 mr-2.5 flex-shrink-0" />
                   Call: +91 98942 35419
                 </a>
                 <Link
@@ -317,7 +317,7 @@ const Home = () => {
                 {/* Top content */}
                 <div className="p-12 pt-16 pl-14">
                   <p className="text-[#f44336] text-[10px] font-black uppercase tracking-[0.3em] mb-6">HSIEHHSU Machinery India</p>
-                  <h2 className="text-white font-black text-3xl xl:text-4xl uppercase tracking-tighter leading-tight mb-8">
+                  <h2 className="text-white font-black text-3xl xl:text-4xl tracking-tight leading-tight mb-8">
                     Engineering<br />Corrugation<br /><span className="text-[#f44336]">Excellence</span>
                   </h2>
                   <div className="space-y-4">
@@ -435,8 +435,8 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-3xl mb-16 text-center mx-auto">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] mb-4 uppercase tracking-tight">
-              Why HSIEHHSU?
+            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] mb-4 tracking-tight">
+              Why Hsiehhsu?
             </h2>
             <div className="w-24 h-1 bg-[#f44336] mx-auto mb-6"></div>
             <p className="text-base text-[#4a4a4a] leading-relaxed font-medium">
