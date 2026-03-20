@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { 
+import {
   CheckCircle, ArrowRight, Shield, Zap, Clock, Users,
   TrendingUp, Hammer, Cog, Award, Briefcase, Headphones,
   Play, MapPin, Phone, Mail, Lightbulb,
@@ -15,6 +15,7 @@ import pioneerlogo from '../assets/pioneer.webp';
 import ravilogo from '../assets/ravi.png';
 import sriharilogo from '../assets/srihari.jpg';
 import vandhanalogo from '../assets/vandhana.jpg';
+import Rubykonlogo from '../assets/Rubykon.jpg';
 const Home = () => {
   const features = [
     {
@@ -203,34 +204,34 @@ const Home = () => {
   ];
 
   const advantages = [
-    { 
-      title: "Technical Excellence", 
-      description: "State-of-the-art equipment and methodologies for superior results.", 
+    {
+      title: "Technical Excellence",
+      description: "State-of-the-art equipment and methodologies for superior results.",
       icon: <Zap className="w-6 h-6" />
     },
-    { 
-      title: "Cost Efficiency", 
-      description: "Optimized processes reducing operational costs significantly.", 
+    {
+      title: "Cost Efficiency",
+      description: "Optimized processes reducing operational costs significantly.",
       icon: <TrendingUp className="w-6 h-6" />
     },
-    { 
-      title: "Time Savings", 
-      description: "Rapid turnaround without quality compromise.", 
+    {
+      title: "Time Savings",
+      description: "Rapid turnaround without quality compromise.",
       icon: <Clock className="w-6 h-6" />
     },
-    { 
-      title: "Reliability", 
-      description: "Proven track record with 99.2% equipment uptime achievement.", 
+    {
+      title: "Reliability",
+      description: "Proven track record with 99.2% equipment uptime achievement.",
       icon: <Shield className="w-6 h-6" />
     },
-    { 
-      title: "Support System", 
-      description: "Dedicated team available around the clock for immediate assistance.", 
+    {
+      title: "Support System",
+      description: "Dedicated team available around the clock for immediate assistance.",
       icon: <Headphones className="w-6 h-6" />
     },
-    { 
-      title: "Innovation", 
-      description: "Continuous improvement through latest industry technologies.", 
+    {
+      title: "Innovation",
+      description: "Continuous improvement through latest industry technologies.",
       icon: <Lightbulb className="w-6 h-6" />
     },
   ];
@@ -243,7 +244,7 @@ const Home = () => {
     { name: "Worthpheriphril", location: "Indore", logo: worthlogo },
     { name: "Pioneer Packaging", location: "Kolkata", logo: pioneerlogo },
     { name: "Vandana Packaging", location: "Meerut", logo: vandhanalogo },
-    { name: "Rubykon Packaging", location: "Faridabad", initials: "RP" },
+    { name: "Rubykon Packaging", location: "Faridabad", logo: Rubykonlogo },
     { name: "Ravi Packages", location: "Hosur", logo: ravilogo },
     { name: "Sri Hari Packaging", location: "Karur", logo: sriharilogo },
     { name: "Ramana Carton", location: "Villupuram", initials: "RC" },
@@ -261,7 +262,7 @@ const Home = () => {
         {/* Background accent */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fdfdfd] -z-10"></div>
         <div className="absolute top-20 right-20 w-64 h-64 bg-red-500/5 rounded-full blur-3xl animate-pulse"></div>
-        
+
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center">
             {/* Content */}
@@ -269,11 +270,11 @@ const Home = () => {
               <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#f44336] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest">
                 <span className="tracking-wide">Industry Trusted Solutions</span>
               </div>
-              
+
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black leading-[1.1] text-[#1a1a1a] tracking-tight">
                 Premium <span className="text-[#f44336]">Corrugation</span> Engineering Excellence
               </h1>
-              
+
               <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed max-w-xl font-medium">
                 ISO-certified specialists delivering world-class roller refabrication, restoration, and comprehensive maintenance solutions.
               </p>
@@ -312,7 +313,7 @@ const Home = () => {
             </div>
 
             {/* Hero Visual — polished info panel */}
-            <div className="relative hidden lg:block animate-fade-in" style={{animationDelay: '0.3s'}}>
+            <div className="relative hidden lg:block animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <div className="relative bg-[#1a1a1a] h-[480px] xl:h-[540px] flex flex-col justify-between overflow-hidden">
                 {/* Red accent bar */}
                 <div className="absolute top-0 left-0 w-1 h-full bg-[#f44336]"></div>
@@ -389,9 +390,9 @@ const Home = () => {
         {/* Carousel with edge fade masks */}
         <div className="relative">
           {/* Left fade */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, #fafafa, transparent)'}}></div>
+          <div className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{ background: 'linear-gradient(to right, #fafafa, transparent)' }}></div>
           {/* Right fade */}
-          <div className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, #fafafa, transparent)'}}></div>
+          <div className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{ background: 'linear-gradient(to left, #fafafa, transparent)' }}></div>
 
           <div className="overflow-hidden">
             <style>{`
@@ -407,7 +408,7 @@ const Home = () => {
                 animation-play-state: paused;
               }
             `}</style>
-            
+
             <div className="scroll-left flex gap-6 py-2">
               {[...clientsData, ...clientsData].map((client, idx) => (
                 <div
@@ -415,9 +416,9 @@ const Home = () => {
                   className="flex-shrink-0 p-6 bg-white border border-[#eee] w-[180px] flex flex-col items-center justify-center gap-3 hover:border-[#f44336] transition-all duration-300"
                 >
                   {client.logo ? (
-                    <img 
-                      src={client.logo} 
-                      alt={client.name} 
+                    <img
+                      src={client.logo}
+                      alt={client.name}
                       className="h-10 w-auto object-contain max-w-[120px]"
                     />
                   ) : (
@@ -467,7 +468,7 @@ const Home = () => {
       <section className="py-16 bg-[#fafafa]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="mb-20">
-             <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tight">
+            <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tight">
               Our Key Advantages
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mt-4"></div>
@@ -503,7 +504,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-2xl font-black text-[#1a1a1a] mb-4 uppercase tracking-tighter">{service.title}</h3>
                 <p className="text-[#4a4a4a] mb-8 leading-relaxed font-medium">{service.description}</p>
-                
+
                 <ul className="space-y-3 mb-10">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-center text-[#1a1a1a] font-bold text-sm uppercase tracking-widest">
@@ -608,7 +609,7 @@ const Home = () => {
       {/* ===== FINAL CTA ===== */}
       <section className="relative py-16 bg-[#1a1a1a] overflow-hidden">
         <div className="absolute top-1/3 -right-48 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
-        
+
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">
@@ -617,7 +618,7 @@ const Home = () => {
             <p className="text-base text-[#aaa] leading-relaxed mb-10 max-w-2xl mx-auto font-medium">
               Get expert guidance with a comprehensive technical consultation. Our team delivers customized solutions optimized for maximum efficiency and ROI.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <a href="tel:+919894235419" className="btn-primary">
                 <Phone className="w-5 h-5 mr-3" />
