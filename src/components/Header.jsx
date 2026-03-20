@@ -78,25 +78,25 @@ const Header = () => {
       {/* Top Bar - Minimalist */}
       <div className="bg-[#fafafa] border-b border-[#eee] text-[#4a4a4a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 py-2">
-            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
+          <div className="flex justify-between items-center py-2">
+            <div className="flex items-center gap-4 sm:gap-8">
               <a
                 href="tel:+919894235419"
-                className="group flex items-center gap-2 hover:text-[#f44336] transition-colors duration-300"
+                className="group flex items-center gap-1.5 hover:text-[#f44336] transition-colors duration-300"
               >
-                <Phone size={12} className="text-[#f44336]" />
+                <Phone size={11} className="text-[#f44336]" />
                 <span className="font-bold text-[10px] uppercase tracking-widest">+91 98942 35419</span>
               </a>
               <a
                 href="mailto:hsiehhsu.india@gmail.com"
-                className="group flex items-center gap-2 hover:text-[#f44336] transition-colors duration-300"
+                className="hidden sm:flex items-center gap-1.5 hover:text-[#f44336] transition-colors duration-300"
               >
-                <Mail size={12} className="text-[#f44336]" />
-                <span className="font-bold text-[10px] uppercase tracking-widest truncate max-w-[200px] sm:max-w-none">hsiehhsu.india@gmail.com</span>
+                <Mail size={11} className="text-[#f44336]" />
+                <span className="font-bold text-[10px] uppercase tracking-widest">hsiehhsu.india@gmail.com</span>
               </a>
             </div>
             <div className="hidden lg:flex items-center gap-2">
-              <Factory size={12} className="text-[#f44336]" />
+              <Factory size={11} className="text-[#f44336]" />
               <span className="font-bold text-[10px] uppercase tracking-widest text-[#7a7a7a]">SIPCOT Industrial Park, Krishnagiri, TN</span>
             </div>
           </div>

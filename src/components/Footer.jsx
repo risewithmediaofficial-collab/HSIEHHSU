@@ -201,7 +201,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="border-t border-[#eee] my-12"></div>          {/* Contact Info Grid */}
+          <div className="border-t border-[#eee] my-12"></div>
+
+          {/* Contact Info Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12" data-testid="contact-info-grid">
             {contactInfo.map((info, idx) => (
               <div key={idx} className="space-y-4" data-testid={info.testId}>

@@ -179,8 +179,8 @@ const Contact = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
             {/* Contact Form */}
-            <div className="order-2 lg:order-1">
-              <div className="space-y-12">
+            <div>
+              <div className="space-y-10">
                 <div className="space-y-4">
                   <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tighter">Send a Message</h2>
                   <div className="w-20 h-1 bg-[#f44336]"></div>
@@ -294,9 +294,9 @@ const Contact = () => {
 
                     <button
                       type="submit"
-                      className="w-full py-5 bg-[#1a1a1a] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#f44336] transition-colors flex items-center justify-center gap-3"
+                      className="btn-primary w-full sm:w-auto px-12"
                     >
-                      <Send size={18} />
+                      <Send size={16} className="mr-3" />
                       Send Message
                     </button>
                   </form>
@@ -305,7 +305,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="order-1 lg:order-2 space-y-12">
+            <div className="space-y-10">
                <div className="space-y-4">
                   <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tighter">Contact Info</h2>
                   <div className="w-20 h-1 bg-[#f44336]"></div>

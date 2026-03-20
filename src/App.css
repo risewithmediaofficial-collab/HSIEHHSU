@@ -138,19 +138,83 @@ body {
 
 /* Professional Buttons - Red & White Theme */
 .btn-primary {
-  @apply inline-flex items-center justify-center bg-[#f44336] text-white px-8 py-3 rounded-none font-bold transition-all duration-300 hover:bg-[#d32f2f] active:scale-95 uppercase tracking-wider text-sm;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f44336;
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #f44336;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+}
+.btn-primary:active {
+  transform: scale(0.95);
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center bg-white text-[#f44336] px-8 py-3 rounded-none font-bold border-2 border-[#f44336] transition-all duration-300 hover:bg-[#f44336] hover:text-white active:scale-95 uppercase tracking-wider text-sm;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #f44336;
+  padding: 0.75rem 2rem;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #f44336;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background-color: #f44336;
+  color: #ffffff;
+}
+.btn-secondary:active {
+  transform: scale(0.95);
 }
 
 .btn-outline {
-  @apply inline-flex items-center justify-center bg-transparent text-[#1a1a1a] px-8 py-3 rounded-none font-bold border-2 border-[#1a1a1a] transition-all duration-300 hover:bg-[#1a1a1a] hover:text-white active:scale-95 uppercase tracking-wider text-sm;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #1a1a1a;
+  padding: 0.75rem 2rem;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #1a1a1a;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-outline:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+.btn-outline:active {
+  transform: scale(0.95);
 }
 
 .btn-sm {
-  @apply px-5 py-2 text-xs;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.75rem;
 }
 
 /* Custom Scrollbar - Red theme */
@@ -258,15 +322,14 @@ img {
   background-color: var(--bg-white);
   padding: 2.5rem;
   border: 1px solid var(--border-light);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   overflow: hidden;
 }
 
 .fancy-card:hover {
   border-color: var(--primary-red);
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .fancy-card::after {
@@ -287,22 +350,22 @@ img {
 .fancy-card-title {
   color: var(--text-black);
   font-weight: 800;
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
 }
 
 .fancy-card-desc {
   color: var(--text-gray-dark);
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 
 .fancy-card-icon {
   color: var(--primary-red);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
-/* ===== SERVICE CARDS (Replacement for 3D Glass) ===== */
+/* ===== SERVICE CARDS ===== */
 .service-card {
   background: var(--bg-white);
   border: 1px solid var(--border-light);
@@ -317,18 +380,21 @@ img {
   border-color: var(--primary-red);
 }
 
-/* ===== CASE STUDY CARDS (Minimalist Success Stories) ===== */
+/* ===== NOTIFICATION / INFO CARDS ===== */
 .notification-card {
   background: var(--bg-white);
   border: 1px solid var(--border-light);
+  border-left: 4px solid transparent;
   padding: 2.5rem;
-  transition: all 0.3s ease;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .notification-card:hover {
-  border-left: 4px solid var(--primary-red);
+  border-left-color: var(--primary-red);
   background: var(--bg-off-white);
-  padding-left: 2.75rem;
 }
 
 .noti-metric {
@@ -336,6 +402,7 @@ img {
   font-size: 3rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
+  line-height: 1;
 }
 
 .noti-company {

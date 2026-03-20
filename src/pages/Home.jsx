@@ -255,54 +255,97 @@ const Home = () => {
       </Helmet>
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative pt-20 pb-16 md:pt-32 md:pb-24 lg:pt-36 lg:pb-28 bg-white overflow-hidden flex items-center">
-        {/* Simple Red Accent */}
+      <section className="relative pt-20 pb-16 md:pt-28 md:pb-20 lg:pt-32 lg:pb-24 bg-white overflow-hidden flex items-center">
+        {/* Background accent */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fdfdfd] -z-10"></div>
         <div className="absolute top-20 right-20 w-64 h-64 bg-red-500/5 rounded-full blur-3xl animate-pulse"></div>
         
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center">
             {/* Content */}
-            <div className="space-y-7 lg:space-y-8 animate-slide-up">
+            <div className="space-y-6 lg:space-y-7 animate-slide-up">
               <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#f44336] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest">
                 <span className="tracking-wide">Industry Trusted Solutions</span>
               </div>
               
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] text-[#1a1a1a] tracking-tight uppercase">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black leading-[1.1] text-[#1a1a1a] tracking-tight uppercase">
                 Premium <span className="text-[#f44336]">Corrugation</span> Engineering Excellence
               </h1>
               
-              <p className="text-lg md:text-xl text-[#4a4a4a] leading-relaxed max-w-xl font-medium">
+              <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed max-w-xl font-medium">
                 ISO-certified specialists delivering world-class roller refabrication, restoration, and comprehensive maintenance solutions.
               </p>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-6">
+              {/* CTA Buttons — left-aligned to match heading */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <a
                   href="tel:+919894235419"
-                  className="btn-primary group"
+                  className="btn-primary"
                 >
                   <Phone className="w-4 h-4 mr-2.5" />
                   Call: +91 98942 35419
                 </a>
                 <Link
                   to="/contact"
-                  className="btn-secondary group"
+                  className="btn-secondary"
                 >
                   Schedule Consultation
                   <ArrowRight className="w-4 h-4 ml-2.5" />
                 </Link>
               </div>
+
+              {/* Quick Trust Signals */}
+              <div className="flex flex-wrap gap-6 pt-4 border-t border-[#eee]">
+                {[
+                  { label: "ISO 9001:2015", desc: "Certified" },
+                  { label: "40+ Years", desc: "Industry Experience" },
+                  { label: "99.2%", desc: "Uptime Rate" },
+                ].map((stat, i) => (
+                  <div key={i} className="flex flex-col">
+                    <span className="text-[#f44336] font-black text-base tracking-tighter">{stat.label}</span>
+                    <span className="text-[#7a7a7a] text-[10px] font-bold uppercase tracking-widest">{stat.desc}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Hero Visual - Minimalist */}
+            {/* Hero Visual — polished info panel */}
             <div className="relative hidden lg:block animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <div className="relative bg-[#f8f8f8] h-[500px] xl:h-[560px] flex items-center justify-center overflow-hidden border border-[#eee]">
-                <div className="absolute top-0 left-0 w-full h-1 bg-[#f44336]"></div>
-                <div className="text-center relative z-10 p-10">
-                  <Play className="w-20 h-20 mx-auto text-[#f44336] mb-8 opacity-20" />
-                  <p className="text-[#1a1a1a] font-black text-2xl uppercase tracking-tighter mb-2">High Precision Machinery</p>
-                  <p className="text-[#7a7a7a] text-sm uppercase tracking-widest">Facility Insight Video</p>
+              <div className="relative bg-[#1a1a1a] h-[480px] xl:h-[540px] flex flex-col justify-between overflow-hidden">
+                {/* Red accent bar */}
+                <div className="absolute top-0 left-0 w-1 h-full bg-[#f44336]"></div>
+                {/* Top content */}
+                <div className="p-12 pt-16 pl-14">
+                  <p className="text-[#f44336] text-[10px] font-black uppercase tracking-[0.3em] mb-6">HSIEHHSU Machinery India</p>
+                  <h2 className="text-white font-black text-3xl xl:text-4xl uppercase tracking-tighter leading-tight mb-8">
+                    Engineering<br />Corrugation<br /><span className="text-[#f44336]">Excellence</span>
+                  </h2>
+                  <div className="space-y-4">
+                    {[
+                      "Roller Refabrication & Repair",
+                      "Machine Installation & Commissioning",
+                      "Preventive Maintenance Programs",
+                      "HHC Corrugated Line Supply",
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-center gap-3">
+                        <div className="w-1.5 h-1.5 bg-[#f44336] flex-shrink-0"></div>
+                        <span className="text-[#ccc] text-xs font-bold uppercase tracking-widest">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                {/* Bottom stat strip */}
+                <div className="grid grid-cols-3 border-t border-white/10">
+                  {[
+                    { v: "500+", l: "Projects" },
+                    { v: "40+", l: "Years" },
+                    { v: "24/7", l: "Support" },
+                  ].map((s, i) => (
+                    <div key={i} className={`py-6 flex flex-col items-center ${i < 2 ? "border-r border-white/10" : ""}`}>
+                      <span className="text-[#f44336] font-black text-xl tracking-tighter">{s.v}</span>
+                      <span className="text-[#aaa] text-[9px] font-bold uppercase tracking-widest mt-1">{s.l}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -333,55 +376,56 @@ const Home = () => {
 
       {/* ===== CLIENT LOGOS SECTION ===== */}
       <section className="relative py-16 bg-[#fafafa] overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-black text-[#1a1a1a] mb-2 uppercase tracking-tight">
-              Trusted by Packaging Industry Leaders
-            </h2>
-            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
-          </div>
+        {/* Section Header — full width */}
+        <div className="text-center mb-12 px-4">
+          <h2 className="text-3xl font-black text-[#1a1a1a] mb-3 uppercase tracking-tight">
+            Trusted by Packaging Industry Leaders
+          </h2>
+          <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+        </div>
 
-          <div className="relative">
-            <div className="overflow-hidden">
-              <style>{`
-                @keyframes scroll-left {
-                  0% { transform: translateX(0); }
-                  100% { transform: translateX(-50%); }
-                }
-                .scroll-left {
-                  animation: scroll-left 40s linear infinite;
-                  width: max-content;
-                }
-                .scroll-left:hover {
-                  animation-play-state: paused;
-                }
-              `}</style>
-              
-              <div className="scroll-left flex gap-12">
-                {[...clientsData, ...clientsData].map((client, idx) => (
-                  <div
-                    key={idx}
-                    className="flex-shrink-0 transition-all duration-500 p-8 bg-white border border-[#eee] min-w-[200px] flex flex-col items-center justify-center gap-4 hover:border-[#f44336] hover:shadow-xl hover:shadow-red-500/5 group"
-                  >
-                        {client.logo ? (
-                          <img 
-                            src={client.logo} 
-                            alt={client.name} 
-                            className="h-12 object-contain"
-                          />
-                        ) : (
-                          <div className="flex flex-col items-center gap-2">
-                            <div className="w-16 h-16 bg-[#f44336] text-white flex items-center justify-center font-black text-sm">
-                              {client.icon || client.initials}
-                            </div>
-                            <span className="text-[10px] font-black text-[#f44336] tracking-tighter">{client.initials}</span>
-                          </div>
-                        )}
-                        <p className="text-[#1a1a1a] font-bold text-[10px] uppercase tracking-widest text-center">{client.name}</p>
-                  </div>
-                ))}
-              </div>
+        {/* Carousel with edge fade masks */}
+        <div className="relative">
+          {/* Left fade */}
+          <div className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, #fafafa, transparent)'}}></div>
+          {/* Right fade */}
+          <div className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, #fafafa, transparent)'}}></div>
+
+          <div className="overflow-hidden">
+            <style>{`
+              @keyframes scroll-left {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+              }
+              .scroll-left {
+                animation: scroll-left 40s linear infinite;
+                width: max-content;
+              }
+              .scroll-left:hover {
+                animation-play-state: paused;
+              }
+            `}</style>
+            
+            <div className="scroll-left flex gap-6 py-2">
+              {[...clientsData, ...clientsData].map((client, idx) => (
+                <div
+                  key={idx}
+                  className="flex-shrink-0 p-6 bg-white border border-[#eee] w-[180px] flex flex-col items-center justify-center gap-3 hover:border-[#f44336] transition-all duration-300"
+                >
+                  {client.logo ? (
+                    <img 
+                      src={client.logo} 
+                      alt={client.name} 
+                      className="h-10 w-auto object-contain max-w-[120px]"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 bg-[#f44336] text-white flex items-center justify-center font-black text-xs">
+                      {client.initials}
+                    </div>
+                  )}
+                  <p className="text-[#1a1a1a] font-bold text-[9px] uppercase tracking-widest text-center leading-tight">{client.name}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -390,24 +434,27 @@ const Home = () => {
       {/* ===== FEATURES / WHY CHOOSE ===== */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-4xl mb-20 text-center mx-auto">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] mb-6 uppercase tracking-tight">
+          <div className="max-w-3xl mb-16 text-center mx-auto">
+            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] mb-4 uppercase tracking-tight">
               Why HSIEHHSU?
             </h2>
-            <div className="w-24 h-1 bg-[#f44336] mx-auto mb-8"></div>
-            <p className="text-lg text-[#4a4a4a] leading-relaxed font-medium">
+            <div className="w-24 h-1 bg-[#f44336] mx-auto mb-6"></div>
+            <p className="text-base text-[#4a4a4a] leading-relaxed font-medium">
               We combine technical precision with unparalleled customer-centric service delivery.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-0 border-collapse">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 border border-[#eee]">
             {features.map((feature, index) => (
-              <div key={index} className="fancy-card">
+              <div key={index} className="fancy-card border-r border-b border-[#eee] last:border-r-0 sm:[&:nth-child(2)]:border-r-0 lg:[&:nth-child(2)]:border-r">
                 <div className="fancy-card-icon">
                   {feature.icon}
                 </div>
                 <h3 className="fancy-card-title">{feature.title}</h3>
                 <p className="fancy-card-desc">{feature.description}</p>
+                <div className="mt-auto pt-6">
+                  <span className="text-[#f44336] text-xs font-black uppercase tracking-widest">{feature.stat}</span>
+                </div>
               </div>
             ))}
           </div>
@@ -557,19 +604,19 @@ const Home = () => {
       </section>
 
       {/* ===== FINAL CTA ===== */}
-      <section className="relative py-16 bg-white overflow-hidden">
-        <div className="absolute top-1/3 -right-48 w-96 h-96 bg-red-500/5 rounded-full blur-3xl"></div>
+      <section className="relative py-16 bg-[#1a1a1a] overflow-hidden">
+        <div className="absolute top-1/3 -right-48 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
         
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] mb-8 uppercase tracking-tight">
-              Ready to Transform Your Operations?
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">
+              Ready to Transform <span className="text-[#f44336]">Your Operations?</span>
             </h2>
-            <p className="text-lg text-[#4a4a4a] leading-relaxed mb-12 max-w-3xl mx-auto font-medium">
-              Get expert guidance with a comprehensive technical consultation. Our team analyzes your equipment, production requirements, and delivers customized solutions optimized for maximum efficiency and ROI.
+            <p className="text-base text-[#aaa] leading-relaxed mb-10 max-w-2xl mx-auto font-medium">
+              Get expert guidance with a comprehensive technical consultation. Our team delivers customized solutions optimized for maximum efficiency and ROI.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-24">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <a href="tel:+919894235419" className="btn-primary">
                 <Phone className="w-5 h-5 mr-3" />
                 Call Now
@@ -580,28 +627,20 @@ const Home = () => {
               </Link>
             </div>
 
-            <div className="grid sm:grid-cols-3 gap-12 pt-16 border-t border-[#eee]">
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-[#fafafa] flex items-center justify-center text-[#f44336] mb-4">
-                  <MapPin className="w-6 h-6" />
+            <div className="grid sm:grid-cols-3 gap-0 border border-white/10">
+              {[
+                { icon: <MapPin className="w-6 h-6" />, label: 'Location', desc: 'India-based Operations' },
+                { icon: <Briefcase className="w-6 h-6" />, label: 'Experience', desc: '40+ Years Expertise' },
+                { icon: <Headphones className="w-6 h-6" />, label: 'Support', desc: '24/7 Available' },
+              ].map((item, i) => (
+                <div key={i} className={`flex flex-col items-center py-10 px-6 ${i < 2 ? 'border-b sm:border-b-0 sm:border-r border-white/10' : ''}`}>
+                  <div className="w-12 h-12 border border-white/20 flex items-center justify-center text-[#f44336] mb-4">
+                    {item.icon}
+                  </div>
+                  <p className="font-black text-white uppercase tracking-tighter mb-1 text-sm">{item.label}</p>
+                  <p className="text-[#7a7a7a] text-[10px] uppercase tracking-widest">{item.desc}</p>
                 </div>
-                <p className="font-black text-[#1a1a1a] uppercase tracking-tighter mb-1">Location</p>
-                <p className="text-[#7a7a7a] text-xs uppercase tracking-widest">India-based Operations</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-[#fafafa] flex items-center justify-center text-[#f44336] mb-4">
-                  <Briefcase className="w-6 h-6" />
-                </div>
-                <p className="font-black text-[#1a1a1a] uppercase tracking-tighter mb-1">Experience</p>
-                <p className="text-[#7a7a7a] text-xs uppercase tracking-widest">40+ Years Expertise</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-[#fafafa] flex items-center justify-center text-[#f44336] mb-4">
-                  <Headphones className="w-6 h-6" />
-                </div>
-                <p className="font-black text-[#1a1a1a] uppercase tracking-tighter mb-1">Support</p>
-                <p className="text-[#7a7a7a] text-xs uppercase tracking-widest">24/7 Available</p>
-              </div>
+              ))}
             </div>
           </div>
         </div>
