@@ -88,7 +88,6 @@ const Contact = () => {
         'Bargur Industrial Park',
         'Krishnagiri – 635206, Tamil Nadu',
       ],
-      color: 'blue',
       testId: 'contact-address',
     },
     {
@@ -114,7 +113,6 @@ const Contact = () => {
           testId: 'phone-office',
         },
       ],
-      color: 'green',
       testId: 'contact-phone',
     },
     {
@@ -122,10 +120,7 @@ const Contact = () => {
       title: 'Email Address',
       details: [
         { label: 'General', email: 'hsiehhsu.india@gmail.com', testId: 'email-general' },
-        // { label: 'Sales', email: 'sales@hsiehhsu.in', testId: 'email-sales' },
-        // { label: 'Service', email: 'service@hsiehhsu.in', testId: 'email-service' },
       ],
-      color: 'purple',
       testId: 'contact-email',
     },
     {
@@ -136,7 +131,6 @@ const Contact = () => {
         'Sunday: Emergency Service Only',
         '24/7 Technical Support Available',
       ],
-      color: 'amber',
       testId: 'contact-hours',
     },
   ];
@@ -158,96 +152,61 @@ const Contact = () => {
         <meta name="description" content="Contact HSIEHHSU MACHINERY INDIA for corrugation machine roller services, machinery, and spare parts. Get in touch with our experts today." />
       </Helmet>
 
-      {/* Hero Section - Modern gradient design */}
-      <section 
-        className="relative py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden"
-        data-testid="hero-section"
-      >
-        {/* Animated background elements */}
-        <div className="absolute inset-0 opacity-20" aria-hidden="true">
-          <div className="absolute top-20 right-10 w-72 h-72 bg-red-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-red-600 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-        </div>
-
+      {/* ===== HERO SECTION ===== */}
+      <section className="relative pt-20 pb-16 md:pt-28 md:pb-24 lg:pt-32 lg:pb-24 bg-white overflow-hidden flex items-center">
+        {/* Simple Red Accent */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fafafa] -z-10"></div>
+        
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div 
-              className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 text-red-400 px-5 py-2.5 rounded-full text-sm font-semibold backdrop-blur-sm"
-              data-testid="hero-badge"
-            >
-              <CheckCircle size={16} className="text-red-400" />
-              <span>24/7 Expert Support Available</span>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#f44336] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest mb-10">
+               <span className="tracking-wide">Global Lifecycle Partnership</span>
             </div>
-
-            <h1 
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight tracking-tight"
-              data-testid="hero-title"
-            >
-              Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">Touch</span>
+            
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#f44336] uppercase">
+               Get In Touch
             </h1>
-
-            <p 
-              className="text-lg sm:text-xl lg:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed"
-              data-testid="hero-subtitle"
-            >
-              Contact our experts for corrugation solutions, machinery inquiries, and technical support
+            
+            <p className="text-lg md:text-xl lg:text-2xl text-[#4a4a4a] leading-relaxed max-w-3xl mx-auto font-medium">
+               Contact our experts for corrugation solutions, machinery inquiries, and technical support. We are here to power your production.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Form & Info Section */}
-      <section className="py-16 sm:py-20 lg:py-28 bg-slate-50" data-testid="contact-section">
+      {/* ===== CONTACT FORM & INFO ===== */}
+      <section className="py-16 bg-white" data-testid="contact-section">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
             {/* Contact Form */}
             <div className="order-2 lg:order-1">
-              <div 
-                className="bg-white rounded-2xl lg:rounded-3xl shadow-lg border border-slate-200 p-6 sm:p-8 lg:p-10"
-                data-testid="contact-form-container"
-              >
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="bg-red-50 p-3 rounded-xl">
-                    <MessageSquare size={24} className="text-red-600" />
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-slate-900" data-testid="form-title">
-                    Send Us a Message
-                  </h2>
+              <div className="space-y-12">
+                <div className="space-y-4">
+                  <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tighter">Send a Message</h2>
+                  <div className="w-20 h-1 bg-[#f44336]"></div>
                 </div>
 
                 {submitted ? (
-                  <div 
-                    className="bg-gradient-to-br from-emerald-50 to-white border-2 border-emerald-300 rounded-2xl p-8 text-center space-y-6"
-                    data-testid="success-message"
-                  >
-                    <div className="bg-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
-                      <CheckCircle size={32} className="text-emerald-600" />
+                   <div className="p-16 bg-[#fafafa] border border-[#eee] text-center space-y-6">
+                    <div className="w-16 h-16 bg-[#f44336] flex items-center justify-center mx-auto">
+                      <CheckCircle size={32} className="text-white" />
                     </div>
-                    <div className="space-y-3">
-                      <h3 className="text-2xl font-bold text-slate-900">Thank You!</h3>
-                      <p className="text-slate-600 text-lg leading-relaxed">
-                        Your message has been sent successfully. Our team will get back to you within 24 hours.
-                      </p>
+                    <div className="space-y-2">
+                       <h3 className="text-2xl font-black text-[#1a1a1a] uppercase tracking-tighter">Message Sent</h3>
+                       <p className="text-[#7a7a7a] text-sm font-medium">Our team will contact you shortly.</p>
                     </div>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6" data-testid="contact-form">
-                    {/* Error Message */}
+                  <form onSubmit={handleSubmit} className="space-y-6">
                     {error && (
-                      <div 
-                        className="bg-red-50 border-2 border-red-300 text-red-700 px-4 py-3 rounded-lg"
-                        data-testid="error-message"
-                      >
+                      <div className="bg-red-50 text-[#f44336] px-6 py-4 border-l-4 border-[#f44336] text-sm font-bold uppercase tracking-widest">
                         {error}
                       </div>
                     )}
 
-                    {/* Name & Company Row */}
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="block text-slate-700 font-semibold text-sm" htmlFor="name">
-                          Full Name <span className="text-red-600">*</span>
-                        </label>
+                        <label className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest" htmlFor="name">Full Name *</label>
                         <input
                           type="text"
                           id="name"
@@ -255,34 +214,27 @@ const Contact = () => {
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-red-500 focus:ring-4 focus:ring-red-100 outline-none transition-all duration-300 bg-white text-slate-900 placeholder-slate-400"
-                          placeholder="Your Name"
-                          data-testid="input-name"
+                          className="w-full px-6 py-4 bg-[#fafafa] border border-[#eee] focus:border-[#f44336] outline-none transition-colors text-sm font-medium"
+                          placeholder="EX: JOHN DOE"
                         />
                       </div>
                       <div className="space-y-2">
-                        <label className="block text-slate-700 font-semibold text-sm" htmlFor="company">
-                          Company Name
-                        </label>
+                         <label className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest" htmlFor="company">Company Name</label>
                         <input
                           type="text"
                           id="company"
                           name="company"
                           value={formData.company}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-red-500 focus:ring-4 focus:ring-red-100 outline-none transition-all duration-300 bg-white text-slate-900 placeholder-slate-400"
-                          placeholder="Your Company"
-                          data-testid="input-company"
+                          className="w-full px-6 py-4 bg-[#fafafa] border border-[#eee] focus:border-[#f44336] outline-none transition-colors text-sm font-medium"
+                          placeholder="EX: COMPANY LTD"
                         />
                       </div>
                     </div>
 
-                    {/* Email & Phone Row */}
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="block text-slate-700 font-semibold text-sm" htmlFor="email">
-                          Email Address <span className="text-red-600">*</span>
-                        </label>
+                        <label className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest" htmlFor="email">Email Address *</label>
                         <input
                           type="email"
                           id="email"
@@ -290,15 +242,12 @@ const Contact = () => {
                           value={formData.email}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-red-500 focus:ring-4 focus:ring-red-100 outline-none transition-all duration-300 bg-white text-slate-900 placeholder-slate-400"
-                          placeholder="your@email.com"
-                          data-testid="input-email"
+                          className="w-full px-6 py-4 bg-[#fafafa] border border-[#eee] focus:border-[#f44336] outline-none transition-colors text-sm font-medium"
+                          placeholder="EMAIL@EXAMPLE.COM"
                         />
                       </div>
                       <div className="space-y-2">
-                        <label className="block text-slate-700 font-semibold text-sm" htmlFor="phone">
-                          Phone Number <span className="text-red-600">*</span>
-                        </label>
+                         <label className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest" htmlFor="phone">Phone Number *</label>
                         <input
                           type="tel"
                           id="phone"
@@ -306,62 +255,49 @@ const Contact = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-red-500 focus:ring-4 focus:ring-red-100 outline-none transition-all duration-300 bg-white text-slate-900 placeholder-slate-400"
-                          placeholder="+91 98765 43210"
-                          data-testid="input-phone"
+                          className="w-full px-6 py-4 bg-[#fafafa] border border-[#eee] focus:border-[#f44336] outline-none transition-colors text-sm font-medium"
+                          placeholder="+91 00000 00000"
                         />
                       </div>
                     </div>
 
-                    {/* Service Selection */}
                     <div className="space-y-2">
-                      <label className="block text-slate-700 font-semibold text-sm" htmlFor="service">
-                        Service Required <span className="text-red-600">*</span>
-                      </label>
+                       <label className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest" htmlFor="service">Service Required *</label>
                       <select
                         id="service"
                         name="service"
                         value={formData.service}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-red-500 focus:ring-4 focus:ring-red-100 outline-none transition-all duration-300 bg-white text-slate-900"
-                        data-testid="select-service"
+                        className="w-full px-6 py-4 bg-[#fafafa] border border-[#eee] focus:border-[#f44336] outline-none transition-colors text-sm font-medium appearance-none"
                       >
-                        <option value="">Select a service</option>
+                        <option value="">SELECT A SERVICE</option>
                         {services.map((service, index) => (
-                          <option key={index} value={service} data-testid={`service-option-${service.toLowerCase().replace(/\s+/g, '-')}`}>
-                            {service}
-                          </option>
+                          <option key={index} value={service}>{service.toUpperCase()}</option>
                         ))}
                       </select>
                     </div>
 
-                    {/* Message */}
                     <div className="space-y-2">
-                      <label className="block text-slate-700 font-semibold text-sm" htmlFor="message">
-                        Message <span className="text-red-600">*</span>
-                      </label>
+                       <label className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest" htmlFor="message">Message *</label>
                       <textarea
                         id="message"
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        rows="5"
-                        className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-red-500 focus:ring-4 focus:ring-red-100 outline-none transition-all duration-300 bg-white text-slate-900 placeholder-slate-400 resize-none"
-                        placeholder="Please describe your requirements in detail..."
-                        data-testid="textarea-message"
+                        rows="6"
+                        className="w-full px-6 py-4 bg-[#fafafa] border border-[#eee] focus:border-[#f44336] outline-none transition-colors text-sm font-medium resize-none"
+                        placeholder="TELL US ABOUT YOUR REQUIREMENTS..."
                       ></textarea>
                     </div>
 
-                    {/* Submit Button */}
                     <button
                       type="submit"
-                      className="btn-primary w-full !py-4 text-base sm:text-lg"
-                      data-testid="submit-btn"
+                      className="w-full py-5 bg-[#1a1a1a] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#f44336] transition-colors flex items-center justify-center gap-3"
                     >
-                      <Send size={20} />
-                      <span>Send Message</span>
+                      <Send size={18} />
+                      Send Message
                     </button>
                   </form>
                 )}
@@ -369,141 +305,111 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="order-1 lg:order-2 space-y-6" data-testid="contact-info-section">
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Contact Information</h2>
+            <div className="order-1 lg:order-2 space-y-12">
+               <div className="space-y-4">
+                  <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tighter">Contact Info</h2>
+                  <div className="w-20 h-1 bg-[#f44336]"></div>
+                </div>
 
-              {/* Contact Info Cards */}
-              <div className="space-y-4" data-testid="contact-cards">
+              <div className="grid gap-4">
                 {contactInfo.map((info, index) => (
-                  <div
-                    key={index}
-                    className="group bg-white border-2 border-slate-200 hover:border-red-300 rounded-2xl p-6 hover:shadow-lg transition-all duration-500"
-                    data-testid={info.testId}
-                  >
-                    <div className="flex items-start gap-4">
-                      <div className="bg-red-50 group-hover:bg-red-600 text-red-600 group-hover:text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-500">
-                        {info.icon}
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-bold text-slate-900 mb-3 text-lg">{info.title}</h3>
-                        <div className="space-y-2">
-                          {info.details.map((detail, idx) => {
-                            // Handle phone numbers with names
-                            if (detail.label && detail.number && detail.name) {
-                              return (
-                                <div key={idx} data-testid={detail.testId}>
-                                  <p className="text-slate-600 text-sm font-medium">{detail.label}</p>
-                                  <p className="text-slate-500 text-xs mb-1">{detail.name}</p>
-                                  <a
-                                    href={`tel:${detail.number.replace(/\s/g, '')}`}
-                                    className="text-slate-600 hover:text-red-600 transition-colors duration-300 text-sm font-semibold"
-                                    data-testid={`${detail.testId}-link`}
-                                  >
-                                    {detail.number}
-                                  </a>
-                                </div>
-                              );
-                            }
-                            // Handle emails with labels
-                            if (detail.label && detail.email) {
-                              return (
-                                <div key={idx} data-testid={detail.testId}>
-                                  <p className="text-slate-600 text-sm font-medium">{detail.label}</p>
-                                  <a
-                                    href={`mailto:${detail.email}`}
-                                    className="text-slate-600 hover:text-red-600 transition-colors duration-300 text-sm font-semibold"
-                                    data-testid={`${detail.testId}-link`}
-                                  >
-                                    {detail.email}
-                                  </a>
-                                </div>
-                              );
-                            }
-                            // Handle plain text details
+                  <div key={index} className="notification-card p-8 flex gap-6 group">
+                    <div className="w-12 h-12 bg-[#fafafa] border border-[#eee] flex items-center justify-center flex-shrink-0 group-hover:border-[#f44336] transition-colors">
+                      <div className="text-[#1a1a1a]">{info.icon}</div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest mb-4 tracking-tight">{info.title}</h3>
+                      <div className="space-y-3">
+                        {info.details.map((detail, idx) => {
+                          if (detail.label && detail.number && detail.name) {
                             return (
-                              <p key={idx} className="text-slate-600 text-sm leading-relaxed">
-                                {detail}
-                              </p>
+                              <div key={idx} className="space-y-1">
+                                <p className="text-[10px] font-black text-[#f44336] uppercase tracking-widest leading-none">{detail.label}</p>
+                                <p className="text-[#7a7a7a] text-[10px] font-medium leading-none">{detail.name.toUpperCase()}</p>
+                                <a href={`tel:${detail.number.replace(/\s/g, '')}`} className="text-[#1a1a1a] text-sm font-black hover:text-[#f44336] transition-colors">
+                                  {detail.number}
+                                </a>
+                              </div>
                             );
-                          })}
-                        </div>
+                          }
+                          if (detail.label && detail.email) {
+                            return (
+                              <div key={idx} className="space-y-1">
+                                <p className="text-[10px] font-black text-[#f44336] uppercase tracking-widest leading-none">{detail.label}</p>
+                                <a href={`mailto:${detail.email}`} className="text-[#1a1a1a] text-sm font-black hover:text-[#f44336] transition-colors">
+                                  {detail.email.toUpperCase()}
+                                </a>
+                              </div>
+                            );
+                          }
+                          return (
+                            <p key={idx} className="text-[#7a7a7a] text-xs font-medium leading-relaxed uppercase">
+                              {detail}
+                            </p>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
 
-              {/* Business Information */}
-              <div 
-                className="bg-gradient-to-br from-slate-50 to-white border-2 border-slate-200 rounded-2xl p-6 space-y-5"
-                data-testid="business-info"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="bg-red-50 p-2.5 rounded-lg">
-                    <Building2 size={20} className="text-red-600" />
-                  </div>
-                  <h3 className="font-bold text-slate-900 text-lg">Business Information</h3>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <span className="font-semibold text-red-600 text-sm min-w-fit">Company:</span>
-                    <span className="text-slate-700 text-sm" data-testid="company-legal-name">HSIEHHSU MACHINERY INDIA PRIVATE LIMITED</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="font-semibold text-red-600 text-sm min-w-fit">GST No:</span>
-                    <span className="text-slate-700 font-mono text-sm" data-testid="gst-number">33AAHCH9753M1Z0</span>
-                  </div>
-                </div>
-              </div>
+              {/* Business Info and WhatsApp */}
+              <div className="space-y-4">
+                 <div className="bg-[#1a1a1a] p-10 text-white border border-[#1a1a1a] relative group overflow-hidden">
+                    <h3 className="text-sm font-black uppercase tracking-widest mb-6 text-[#f44336]">Business Info</h3>
+                    <div className="space-y-4">
+                       <div className="space-y-1">
+                          <p className="text-[10px] text-[#aaa] font-bold uppercase tracking-widest">Company</p>
+                          <p className="text-xs font-black uppercase">HSIEHHSU MACHINERY INDIA PRIVATE LIMITED</p>
+                       </div>
+                       <div className="space-y-1">
+                          <p className="text-[10px] text-[#aaa] font-bold uppercase tracking-widest">GST No</p>
+                          <p className="text-xs font-black uppercase">33AAHCH9753M1Z0</p>
+                       </div>
+                    </div>
+                 </div>
 
-              {/* WhatsApp Quick Contact */}
-              <div 
-                className="bg-gradient-to-br from-emerald-600 to-emerald-700 text-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-500 space-y-6"
-                data-testid="whatsapp-section"
-              >
-                <div className="flex items-center gap-3">
-                  <MessageCircle size={18} strokeWidth={2} />
-                  <h3 className="font-bold text-xl">Quick WhatsApp Contact</h3>
-                </div>
-                <p className="text-emerald-100 leading-relaxed">
-                  For immediate assistance and quick replies, chat with us on WhatsApp
-                </p>
-                <a
-                  href="https://wa.me/919894235419"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-3.5 rounded-xl font-semibold hover:bg-emerald-50 transition-all duration-300 shadow-lg hover:shadow-xl"
-                  data-testid="whatsapp-link"
-                >
-                  <MessageCircle size={18} strokeWidth={2} />
-                  <span>Start WhatsApp Chat</span>
-                </a>
+                 <a 
+                    href="https://wa.me/919894235419"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-10 border border-[#eee] hover:border-[#f44336] transition-colors bg-[#fafafa] group"
+                 >
+                    <div className="space-y-2">
+                       <h3 className="text-sm font-black uppercase tracking-widest">WhatsApp Chat</h3>
+                       <p className="text-[#7a7a7a] text-[10px] font-medium leading-relaxed uppercase">Immediate Response for Urgent Support</p>
+                    </div>
+                    <div className="w-12 h-12 bg-white border border-[#eee] flex items-center justify-center group-hover:bg-[#f44336] group-hover:text-white transition-colors">
+                       <MessageCircle size={24} />
+                    </div>
+                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Global Presence Section */}
-      <section className="py-20 lg:py-28 bg-white border-t border-slate-100">
+      {/* ===== GLOBAL PRESENCE ===== */}
+      <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
-              Global <span className="text-red-600">Presence</span>
+          <div className="text-center mb-16 lg:mb-20 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+              Global Presence
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto font-medium">
-              Supporting the global corrugated board industry through our strategic manufacturing hubs and regional centers.
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+            <p className="text-[#7a7a7a] text-lg max-w-2xl mx-auto font-medium">
+               Supporting the global corrugated board industry through strategic manufacturing hubs.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-px bg-[#eee] border border-[#eee]">
             {[
               {
                 country: "Taiwan Headquarters",
                 name: "HS EH HSU MACHINERY CO., LTD",
                 address: "No 141, Lu Chu St., Lu Chu Dist., Taoyuan City, Taiwan",
                 tel: "886-3-3221314",
-                fax: "886-3-3226206",
                 email: "hsiehhsu@ms16.hinet.net",
                 web: "www.hsiehhsu.com.tw"
               },
@@ -512,7 +418,6 @@ const Contact = () => {
                 name: "JIANGXI HSIEH HSU MACHINERY",
                 address: "No.23 Gongxin Ave Gongye Area, Yi Fong County, Jiang Xi, China",
                 tel: "0795-2990106",
-                fax: "0759-2990109",
                 email: "jxhsiehhsu@163.com",
                 web: "www.jxxiexu.cn"
               },
@@ -520,56 +425,45 @@ const Contact = () => {
                 country: "Vietnam",
                 name: "VIETNAM HSIEH HSU MACHINERY",
                 address: "No. 18,street 26, Vsip 2A, Vinh Tan ward, Tan Uyen Town, Binh Duong Province-Vietnam",
-                tel: "+86 0274 222622 / +84 0909965070",
-                fax: "0759-2990109",
+                tel: "+86 0274 222622",
                 email: "Cokhi.hsiehhsu@gmail.com"
               },
               {
                 country: "Chongqing, China",
                 name: "CHONGQING HSIEH HSU MACHINERY",
-                address: "Ranglang Town, Shuanglong Avenue on the 22nd, RongChang District, Chongqing, China",
+                address: "Shuanglong Avenue, RongChang District, Chongqing, China",
                 tel: "023-46558399",
-                fax: "023-46558311",
                 email: "cghsieh@126.com",
                 web: "www.cqxiexu.com"
               },
               {
                 country: "Dongguan, China",
                 name: "DONGGUAN HSIEH HSU MACHINERY",
-                address: "No. 186, Lianma Road, Dalingshan, Dongguan City, Guangdong Province",
+                address: "No. 186, Lianma Road, Dalingshan, Dongguan City, China",
                 tel: "0769-83359868",
-                fax: "0769-83359867",
                 email: "dghsiehhsu@163.com"
               }
             ].map((loc, idx) => (
-              <div key={idx} className="bg-slate-50 border border-slate-200 rounded-3xl p-8 hover:shadow-2xl hover:border-red-200 hover:-translate-y-2 transition-all duration-500 group">
-                <div className="flex flex-col h-full">
-                  <div className="mb-6">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-red-600 bg-red-50 px-3 py-1 rounded-full">{loc.country}</span>
-                    <h3 className="text-xl font-bold text-slate-900 mt-4 leading-tight group-hover:text-red-700 transition-colors">{loc.name}</h3>
+              <div key={idx} className="bg-white p-12 space-y-8 group hover:bg-[#fafafa] transition-colors">
+                <div className="space-y-4">
+                   <div className="text-[10px] font-black text-[#f44336] uppercase tracking-widest leading-none">{loc.country}</div>
+                   <h3 className="text-lg font-black text-[#1a1a1a] uppercase tracking-tighter leading-tight">{loc.name}</h3>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <MapPin size={16} className="text-[#aaa] mt-1 flex-shrink-0" />
+                    <p className="text-[#7a7a7a] text-[10px] font-medium leading-relaxed uppercase">{loc.address}</p>
                   </div>
                   
-                  <div className="space-y-4 flex-1">
-                    <div className="flex items-start gap-3">
-                      <MapPin size={18} className="text-slate-400 mt-1 flex-shrink-0" />
-                      <p className="text-slate-600 text-sm leading-relaxed">{loc.address}</p>
+                  <div className="space-y-3 pt-2">
+                    <div className="flex items-center gap-4">
+                      <Phone size={14} className="text-[#f44336]" />
+                      <span className="text-[#1a1a1a] font-black text-[10px] uppercase tracking-widest">{loc.tel}</span>
                     </div>
-                    
-                    <div className="space-y-3 pt-2">
-                      <div className="flex items-center gap-3">
-                        <Phone size={16} className="text-red-500" />
-                        <span className="text-slate-700 font-bold text-sm tracking-tight">{loc.tel}</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Mail size={16} className="text-red-500" />
-                        <a href={`mailto:${loc.email}`} className="text-slate-600 hover:text-red-600 transition-colors text-sm font-medium truncate">{loc.email}</a>
-                      </div>
-                      {loc.web && (
-                        <div className="flex items-center gap-3">
-                          <Building2 size={16} className="text-red-500" />
-                          <a href={`http://${loc.web}`} target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-red-600 transition-colors text-sm font-medium">{loc.web}</a>
-                        </div>
-                      )}
+                    <div className="flex items-center gap-4">
+                      <Mail size={14} className="text-[#f44336]" />
+                      <a href={`mailto:${loc.email}`} className="text-[#1a1a1a] font-black text-[10px] uppercase tracking-widest hover:text-[#f44336] transition-colors truncate">{loc.email}</a>
                     </div>
                   </div>
                 </div>
@@ -579,103 +473,72 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-16 sm:py-20 lg:py-28 bg-white" data-testid="map-section">
+      {/* ===== FACTORY LOCATION ===== */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-center mb-12 lg:mb-16 space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight" data-testid="map-title">
-              Find Our Factory
-            </h2>
-            <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto" data-testid="map-subtitle">
-              Visit our state-of-the-art facility in Krishnagiri, Tamil Nadu
-            </p>
-          </div>
-
-          <div 
-            className="bg-white rounded-2xl lg:rounded-3xl shadow-lg overflow-hidden border border-slate-200"
-            data-testid="map-container"
-          >
-            {/* Map Placeholder */}
-            <div className="h-80 sm:h-96 bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center relative overflow-hidden" data-testid="map-placeholder">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <MapPin size={64} className="text-slate-300 mx-auto" />
-                  <div className="space-y-2">
-                    <p className="text-slate-600 font-semibold text-lg">Interactive Map Integration</p>
-                    <p className="text-slate-500 text-sm">
-                      Plot No. B-19/2, SIPCOT Industrial Park, Krishnagiri
-                    </p>
-                  </div>
+          <div className="grid lg:grid-cols-2 gap-px bg-[#eee] border border-[#eee]">
+            <div className="bg-white p-16 lg:p-20 space-y-12">
+               <div className="space-y-4">
+                  <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tighter">Find Our Factory</h2>
+                  <div className="w-20 h-1 bg-[#f44336]"></div>
                 </div>
-              </div>
-            </div>
+                
+                <p className="text-[#4a4a4a] text-lg font-medium leading-relaxed">
+                   Visit our state-of-the-art facility in Krishnagiri, Tamil Nadu. A hub of engineering excellence.
+                </p>
 
-            {/* Location Details */}
-            <div className="p-6 sm:p-8 lg:p-10">
-              <div className="grid sm:grid-cols-2 gap-8 lg:gap-10">
-                <div className="space-y-6">
-                  <h3 className="text-xl font-bold text-slate-900 flex items-center gap-3">
-                    <MapPin size={24} className="text-red-600" />
-                    <span>How to Reach Us</span>
-                  </h3>
-                  <ul className="space-y-3">
+                <ul className="space-y-4">
                     {[
-                      'Located in SIPCOT Industrial Park, Krishnagiri District',
+                      'Plot No. B-19/2, SIPCOT Industrial Park, Krishnagiri District',
                       '120 km from Bangalore International Airport',
                       '80 km from Hosur Industrial Area',
                       'Well-connected by NH44 highway',
                       '10 km from Krishnagiri city center',
                     ].map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-slate-700" data-testid={`reach-item-${idx}`}>
-                        <div className="mt-1.5">
-                          <div className="w-1.5 h-1.5 bg-red-600 rounded-full"></div>
-                        </div>
-                        <span className="leading-relaxed">{item}</span>
+                      <li key={idx} className="flex items-start gap-4 text-[#1a1a1a]">
+                        <div className="w-2 h-2 bg-[#f44336] mt-1.5 flex-shrink-0"></div>
+                        <span className="text-xs font-black uppercase tracking-widest leading-relaxed">{item}</span>
                       </li>
                     ))}
                   </ul>
-                </div>
+            </div>
 
-                <div className="space-y-6">
-                  <h3 className="text-xl font-bold text-slate-900 flex items-center gap-3">
-                    <Phone size={24} className="text-red-600" />
-                    <span>For Directions</span>
-                  </h3>
-                  <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-6 space-y-4">
-                    <p className="text-slate-700 leading-relaxed">
-                      Need detailed directions or have questions about reaching our factory?
-                    </p>
-                    <a
-                      href="tel:+919894235419"
-                      className="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-700 transition-colors duration-300"
-                      data-testid="directions-call-link"
+            <div className="bg-[#fafafa] p-12 lg:p-16 flex items-center justify-center relative overflow-hidden group">
+                 <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#eee]"></div>
+                 <div className="text-center space-y-6 relative z-10">
+                    <MapPin size={64} className="text-[#eee] group-hover:text-[#f44336] transition-colors duration-700 mx-auto" />
+                    <div className="space-y-2">
+                       <h3 className="text-sm font-black uppercase tracking-widest text-[#1a1a1a]">Krishnagiri Facility</h3>
+                       <p className="text-[10px] text-[#7a7a7a] font-medium uppercase tracking-widest leading-relaxed">Premium Roller Refabrication & restoration</p>
+                    </div>
+                    <a 
+                       href="https://maps.google.com" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       className="inline-flex items-center gap-2 text-[10px] font-black text-[#f44336] uppercase tracking-widest hover:text-[#1a1a1a] transition-colors"
                     >
-                      <span>Call us for directions</span>
-                      <ArrowRight size={18} />
+                       Get Directions <ArrowRight size={14} />
                     </a>
-                  </div>
-                </div>
-              </div>
+                 </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quick Contact Bar */}
-      <section className="py-6 sm:py-8 bg-gradient-to-r from-red-600 to-red-700" data-testid="quick-contact-bar">
+      {/* ===== URGENT CTA BAR ===== */}
+      <section className="py-12 bg-[#1a1a1a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div className="text-center sm:text-left">
-              <h3 className="text-xl font-bold text-white mb-2">Need urgent assistance?</h3>
-              <p className="text-red-100">Our 24/7 support team is ready to help</p>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="text-center md:text-left space-y-2">
+               <h3 className="text-xl font-black text-white uppercase tracking-tighter">Need Urgent Assistance?</h3>
+               <p className="text-[#aaa] text-[10px] font-bold uppercase tracking-widest">Our technical support team is available 24/7</p>
             </div>
             <a
               href="tel:+919894235419"
-              className="inline-flex items-center gap-2 bg-white text-red-600 px-8 py-3.5 rounded-xl font-semibold hover:bg-red-50 transition-all duration-300 shadow-lg hover:shadow-xl"
-              data-testid="urgent-call-btn"
+              className="px-12 py-5 bg-[#f44336] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-white hover:text-[#f44336] transition-colors flex items-center gap-3"
             >
-              <Phone size={20} />
-              <span>Call Now</span>
+              <Phone size={18} />
+              Call Now
             </a>
           </div>
         </div>

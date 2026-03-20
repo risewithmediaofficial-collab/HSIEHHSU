@@ -7,23 +7,23 @@ const CorrugatorsOverview = () => {
     {
       title: "Individual Machines",
       desc: "Precision-engineered single components to upgrade your existing corrugator performance.",
-      icon: <Settings className="w-8 h-8 text-red-600" />
+      icon: <Settings className="w-8 h-8 text-[#f44336]" />
     },
     {
       title: "Corrugator Lines",
       desc: "Complete, high-performance corrugator solutions tailored to your production requirements.",
-      icon: <Factory className="w-8 h-8 text-red-600" />,
+      icon: <Factory className="w-8 h-8 text-[#f44336]" />,
       subLinks: [
-        { label: 'HHC-200 (ECO)', path: '/portfolio/corrugated-lines/hhc-200' },
-        { label: 'HHC-250 (STEADY)', path: '/portfolio/corrugated-lines/hhc-250' },
-        { label: 'HHC-300 (CLASSIC)', path: '/portfolio/corrugated-lines/hhc-300' },
-        { label: 'HHC-350 (SPEED)', path: '/portfolio/corrugated-lines/hhc-350' }
+        { label: 'HHC-200', path: '/portfolio/corrugated-lines/hhc-200' },
+        { label: 'HHC-250', path: '/portfolio/corrugated-lines/hhc-250' },
+        { label: 'HHC-300', path: '/portfolio/corrugated-lines/hhc-300' },
+        { label: 'HHC-350', path: '/portfolio/corrugated-lines/hhc-350' }
       ]
     },
     {
       title: "Digital Intelligence",
       desc: "Smart process- and control systems under our Industry 4.0 connectivity initiative.",
-      icon: <Cpu className="w-8 h-8 text-red-600" />
+      icon: <Cpu className="w-8 h-8 text-[#f44336]" />
     }
   ];
 
@@ -73,99 +73,103 @@ const CorrugatorsOverview = () => {
         <meta name="description" content="From individual machines to complete corrugators: Hsieh Hsu India optimizes your Overall Equipment Effectiveness (OEE) and reduces manufacturing costs." />
       </Helmet>
 
-      {/* Hero Section */}
-      <section className="relative pt-28 pb-20 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
+      {/* ===== HERO SECTION ===== */}
+      <section className="relative pt-20 pb-16 md:pt-28 md:pb-24 lg:pt-32 lg:pb-24 bg-white overflow-hidden flex items-center">
+        {/* Simple Red Accent */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fafafa] -z-10"></div>
         
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-7 leading-tight tracking-tight">
-              Leading the Way to <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Optimal Productivity</span>
+            <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#f44336] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest mb-10">
+              <span className="tracking-wide">Productivity & OEE Optimization</span>
+            </div>
+            
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#f44336] uppercase">
+              Optimal Productivity Systems & OEE
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto font-medium">
+            
+            <p className="text-lg md:text-xl lg:text-2xl text-[#4a4a4a] leading-relaxed max-w-3xl mx-auto font-medium">
               From individual machines to complete corrugator lines: the most productive path to finished corrugated board.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Intro Section */}
-      <section className="py-20 bg-white">
+      {/* INTRO SECTION */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-50 text-red-600 rounded-full text-xs font-bold uppercase tracking-widest">
-                <Shield className="w-4 h-4" />
-                Lifecycle Partnership
+            <div className="space-y-10">
+              <div className="space-y-4">
+                <div className="inline-flex items-center gap-2 px-0 text-[#f44336] text-xs font-black uppercase tracking-widest">
+                  <Shield className="w-4 h-4" />
+                  Lifecycle Partnership
+                </div>
+                <h2 className="text-4xl md:text-6xl font-black text-[#f44336] uppercase tracking-tighter leading-none">
+                  Strategic Partner in the Digital Age
+                </h2>
+                <div className="w-20 h-1 bg-[#f44336]"></div>
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
-                Your Strategic Partner in the <span className="text-red-600">Digital Age</span>
-              </h2>
-              <p className="text-slate-600 leading-relaxed text-lg">
-                From individual machines to complete corrugators and all the way to intelligent corrugating box plants: **Hsieh Hsu India** puts decades of experience to work for you. We are here for you when your corrugator is delivered, and we remain your Lifecycle partner for technologically leading, sustainably competitive production.
+
+              <p className="text-[#4a4a4a] leading-relaxed text-lg font-medium">
+                From individual machines to complete corrugators and all the way to intelligent corrugating box plants: **Hsieh Hsu India** puts decades of experience to work for you.
               </p>
-              <div className="p-8 bg-slate-900 text-white rounded-[2rem] shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/10 rounded-full blur-2xl"></div>
-                <h3 className="text-2xl font-bold mb-4">Driving OEE Excellence</h3>
-                <p className="text-slate-400 mb-6">
-                  Our focus is the productivity of your manufacturing operations. We consider the overall effectiveness of your corrugator system as a whole to maximize results.
-                </p>
-                <div className="flex items-center gap-4 text-red-500 font-bold">
-                  <TrendingUp className="w-6 h-6" />
-                  <span>Optimizing Overall Equipment Effectiveness (OEE)</span>
+              
+              <div className="p-10 bg-[#fafafa] border border-[#eee] relative group">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-black text-[#1a1a1a] uppercase tracking-tighter">Driving OEE Excellence</h3>
+                  <p className="text-[#7a7a7a] text-sm leading-relaxed font-medium">
+                    Our focus is the productivity of your manufacturing operations. We consider the overall effectiveness of your corrugator system as a whole to maximize results.
+                  </p>
                 </div>
               </div>
             </div>
             
-            <div className="relative group">
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-red-600/10 to-transparent rounded-3xl"></div>
-              <div className="relative h-[600px] bg-slate-100 rounded-3xl border-2 border-slate-200 overflow-hidden shadow-2xl flex items-center justify-center">
-                <Factory className="w-48 h-48 text-slate-200" />
-                <div className="absolute inset-0 bg-slate-900/5 group-hover:bg-transparent transition-colors duration-500"></div>
-                <div className="absolute bottom-10 left-10 right-10 p-8 bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200 shadow-xl">
-                  <h4 className="text-slate-900 font-bold text-xl mb-2">Sustainable Competitiveness</h4>
-                  <p className="text-slate-600 text-sm">Reducing manufacturing costs per square meter of corrugated board through precision engineering.</p>
-                </div>
-              </div>
+            <div className="relative aspect-square bg-[#fafafa] border border-[#eee] flex items-center justify-center group overflow-hidden">
+               <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#eee]"></div>
+               <Factory className="w-48 h-48 text-[#eee] group-hover:text-[#f44336] transition-colors duration-700" />
+               <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-[#fafafa] to-transparent">
+                  <p className="text-[#1a1a1a] text-2xl font-black uppercase tracking-tighter opacity-10">Manufacturing Excellence</p>
+               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Solutions Grid */}
-      <section className="py-20 bg-slate-50">
+      {/* SOLUTIONS GRID */}
+      <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Our Corrugator <span className="text-red-600">Solutions</span></h2>
-            <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-              Our portfolio includes single machines, complete lines, and connected process-control systems under the theme Intelligence 4.0.
-            </p>
+          <div className="text-center mb-16 lg:mb-20 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+              Corrugator Solutions & Systems
+            </h2>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4">
             {solutions.map((item, idx) => (
-              <div key={idx} className="group bg-white p-10 rounded-3xl border border-slate-200 hover:border-red-200 hover:shadow-2xl transition-all duration-500">
-                <div className="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-sm">
+              <div key={idx} className="service-card p-10 flex flex-col items-center text-center">
+                <div className="text-[#f44336] mb-8">
                   {item.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">{item.title}</h3>
-                <p className="text-slate-600 leading-relaxed mb-6">{item.desc}</p>
+                <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4">{item.title}</h3>
+                <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium mb-8">{item.desc}</p>
                 {item.subLinks ? (
-                  <div className="space-y-2 mb-6">
+                  <div className="w-full space-y-2 mt-auto">
                     {item.subLinks.map((sub, i) => (
                       <Link 
                         key={i} 
                         to={sub.path}
-                        className="flex items-center justify-between p-3 bg-slate-50 rounded-xl hover:bg-red-50 hover:text-red-600 transition-all group/link border border-slate-100 font-bold text-sm"
+                        className="flex items-center justify-between p-3 bg-white border border-[#eee] hover:border-[#f44336] text-[#1a1a1a] font-black text-[9px] uppercase tracking-widest transition-all"
                       >
                         {sub.label}
-                        <ArrowRight className="w-4 h-4 text-red-500 opacity-0 group-hover/link:opacity-100 -translate-x-2 group-hover/link:translate-x-0 transition-all" />
+                        <ArrowRight className="w-3 h-3 text-[#f44336]" />
                       </Link>
                     ))}
                   </div>
                 ) : (
-                  <div className="mt-auto">
-                    <Link to="/products" className="inline-flex items-center text-red-600 font-bold gap-2 group-hover:gap-3 transition-all">
+                  <div className="mt-auto w-full">
+                    <Link to="/products" className="inline-flex items-center gap-3 text-[#f44336] font-black uppercase tracking-widest text-[10px] border-b-2 border-[#f44336] pb-1 hover:text-[#1a1a1a] hover:border-[#1a1a1a] transition-colors">
                       Learn More <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
@@ -176,29 +180,34 @@ const CorrugatorsOverview = () => {
         </div>
       </section>
 
-      {/* Training Section */}
-      <section className="py-20 bg-white">
+      {/* TRAINING SECTION */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-1 space-y-6">
-              <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center">
-                <BookOpen className="w-8 h-8 text-slate-900" />
+          <div className="grid lg:grid-cols-3 gap-16">
+            <div className="lg:col-span-1 space-y-10">
+              <div className="space-y-4">
+                <div className="w-16 h-16 bg-[#fafafa] flex items-center justify-center border border-[#eee]">
+                  <BookOpen className="w-8 h-8 text-[#1a1a1a]" />
+                </div>
+                <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">Technical Mastery & Training</h2>
+                <div className="w-20 h-1 bg-[#f44336]"></div>
               </div>
-              <h2 className="text-4xl font-bold text-slate-900 tracking-tight">Technical <span className="text-red-600">Mastery</span></h2>
-              <p className="text-slate-600 text-lg">
+              
+              <p className="text-[#4a4a4a] text-lg font-medium leading-relaxed">
                 Process technology in corrugated board production is a highly complex issue. Constant board quality is essential for your success.
               </p>
-              <button className="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-colors flex items-center gap-3 shadow-lg shadow-slate-200">
-                Show All Seminars <Calendar className="w-5 h-5" />
+              
+              <button className="px-10 py-4 bg-[#1a1a1a] text-white text-[10px] font-black uppercase tracking-widest hover:bg-[#f44336] transition-colors flex items-center gap-3">
+                Show All Seminars <Calendar className="w-4 h-4" />
               </button>
             </div>
             
-            <div className="lg:col-span-2 grid sm:grid-cols-3 gap-6">
+            <div className="lg:col-span-2 grid sm:grid-cols-3 gap-4">
               {seminars.map((item, idx) => (
-                <div key={idx} className="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300">
-                  <div className="text-red-500 font-bold text-xs uppercase mb-4 tracking-tighter">{item.type}</div>
-                  <h4 className="text-lg font-bold text-slate-900 mb-4 leading-tight">{item.title}</h4>
-                  <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                <div key={idx} className="notification-card p-10 flex flex-col items-center text-center">
+                  <div className="text-[#f44336] font-black text-[9px] uppercase tracking-widest mb-6">{item.type}</div>
+                  <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4 leading-tight">{item.title}</h4>
+                  <p className="text-[#7a7a7a] text-[10px] leading-relaxed font-medium">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -206,31 +215,33 @@ const CorrugatorsOverview = () => {
         </div>
       </section>
 
-      {/* News / Highlights Section */}
-      <section className="py-20 bg-slate-900 text-white overflow-hidden relative">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-red-600/5 rounded-full blur-3xl"></div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-            <div className="max-w-xl">
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">Latest <span className="text-red-500">Corrugator News</span></h2>
-              <p className="text-slate-400">Stay updated with the latest innovations, camera systems, and remote service solutions from Hsieh Hsu India.</p>
+      {/* NEWS SECTION */}
+      <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div className="space-y-4">
+              <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+                Latest Corrugator News & Insights
+              </h2>
+              <div className="w-20 h-1 bg-[#f44336]"></div>
+              <p className="text-[#7a7a7a] font-medium">Stay updated with the latest innovations and remote service solutions.</p>
             </div>
-            <Link to="/news" className="text-white font-bold pb-2 border-b-2 border-red-600 hover:text-red-500 transition-all">
+            <Link to="/news" className="text-[#1a1a1a] font-black uppercase tracking-widest text-[10px] border-b-2 border-[#f44336] pb-2 hover:text-[#f44336] transition-colors">
               Read All Stories
             </Link>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4">
             {news.map((item, idx) => (
-              <div key={idx} className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all duration-500 group">
-                <div className="flex gap-2 mb-6">
-                   <span className="px-3 py-1 bg-red-600 text-[10px] font-black uppercase rounded-full tracking-widest">{item.tag}</span>
-                   <span className="text-[10px] font-bold text-slate-500 uppercase flex items-center gap-1"><Calendar className="w-3 h-3" /> {item.date}</span>
+              <div key={idx} className="bg-white p-10 border border-[#eee] hover:border-[#f44336] transition-all group">
+                <div className="flex justify-between items-center mb-10">
+                   <span className="text-[#f44336] font-black text-[9px] uppercase tracking-widest px-3 py-1 bg-red-50">{item.tag}</span>
+                   <span className="text-[9px] font-bold text-[#aaa] uppercase flex items-center gap-1"><Calendar className="w-3 h-3" /> {item.date}</span>
                 </div>
-                <h3 className="text-xl font-bold mb-4 group-hover:text-red-400 transition-colors leading-tight">{item.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-8">{item.desc}</p>
-                <div className="flex items-center gap-2 text-white font-bold text-sm">
-                  Read More <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
+                <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4 leading-tight group-hover:text-[#f44336] transition-colors">{item.title}</h3>
+                <p className="text-[#7a7a7a] text-[10px] leading-relaxed mb-10 font-medium">{item.desc}</p>
+                <div className="flex items-center gap-2 text-[#1a1a1a] font-black text-[10px] uppercase tracking-widest">
+                  Read More <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             ))}
@@ -238,47 +249,49 @@ const CorrugatorsOverview = () => {
         </div>
       </section>
 
-      {/* CTA / Contact Section */}
-      <section className="py-20 bg-red-600 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white opacity-5 rounded-full blur-3xl"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-10">
-            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tight uppercase">Ready to optimize your production?</h2>
-            <div className="grid md:grid-cols-2 gap-8 text-left">
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-[2rem] border border-white/20">
-                <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                  <Factory className="w-5 h-5" /> Visit Our Factory
-                </h3>
-                <p className="text-red-100 text-sm leading-relaxed">
-                  Plot No. B-19/2, Olaipatti Village,<br />
-                  SIPCOT Industrial Park, Pochampalli,<br />
-                  Krishnagiri – 635206, Tamil Nadu
-                </p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-[2rem] border border-white/20">
-                <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                  <Phone className="w-5 h-5 text-emerald-400" /> Hotlines
-                </h3>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-red-200 text-xs font-bold uppercase tracking-widest">24-hour Emergency</p>
-                    <p className="text-white font-bold text-lg">+91 98942 35419</p>
-                  </div>
-                  <div>
-                    <p className="text-red-200 text-xs font-bold uppercase tracking-widest">Sales & Spare Parts</p>
-                    <p className="text-white font-bold text-lg">+91 63699 12595</p>
-                  </div>
+      {/* CTA SECTION */}
+      <section className="py-16 bg-white border-t border-[#eee]">
+        <div className="container mx-auto px-4 max-w-7xl text-center space-y-16">
+          <div className="space-y-4">
+            <h2 className="text-4xl md:text-6xl font-black text-[#f44336] uppercase tracking-tighter">Ready to Optimize Production?</h2>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4 text-left">
+            <div className="bg-[#fafafa] p-12 border border-[#eee]">
+              <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-8 flex items-center gap-3">
+                <Factory className="w-5 h-5 text-[#f44336]" /> Visit Our Factory
+              </h3>
+              <p className="text-[#4a4a4a] text-xs font-bold leading-relaxed uppercase tracking-widest">
+                Plot No. B-19/2, Olaipatti Village,<br />
+                SIPCOT Industrial Park, Pochampalli,<br />
+                Krishnagiri – 635206, Tamil Nadu
+              </p>
+            </div>
+            <div className="bg-[#1a1a1a] p-12 text-white">
+              <h3 className="text-sm font-black uppercase tracking-widest mb-8 flex items-center gap-3 text-white">
+                <Phone className="w-5 h-5 text-[#f44336]" /> 24/7 Hotlines
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <p className="text-[#aaa] text-[9px] font-black uppercase tracking-widest mb-1">Emergency</p>
+                  <p className="text-white text-xl font-black">+91 98942 35419</p>
+                </div>
+                <div>
+                  <p className="text-[#aaa] text-[9px] font-black uppercase tracking-widest mb-1">Sales</p>
+                  <p className="text-white text-xl font-black">+91 63699 12595</p>
                 </div>
               </div>
             </div>
-            <div className="pt-6 text-center">
-              <Link 
-                to="/contact" 
-                className="inline-flex items-center gap-4 px-12 py-5 bg-white text-red-600 rounded-2xl font-black text-lg hover:scale-105 transition-all shadow-2xl active:scale-100"
-              >
-                Contact Our Experts <ArrowRight className="w-6 h-6" />
-              </Link>
-            </div>
+          </div>
+
+          <div className="pt-8">
+            <Link 
+              to="/contact" 
+              className="px-16 py-5 bg-[#f44336] text-white text-[10px] font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] transition-colors inline-flex items-center gap-3"
+            >
+              Contact Our Experts <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Factory, Phone, Mail, MapPin, Clock, Facebook, Linkedin, Instagram, ArrowRight, Download, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Linkedin, Instagram, ArrowRight, Download, MessageCircle } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -94,15 +95,12 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 text-white relative overflow-hidden"
+      className="bg-white border-t border-[#eee] text-[#1a1a1a] relative overflow-hidden"
       role="contentinfo"
       data-testid="footer"
     >
-      {/* Decorative Elements */}
-      <div className="absolute inset-0 opacity-10" aria-hidden="true">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-red-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
-      </div>
+      {/* Simple Red Accent */}
+      <div className="absolute top-0 right-0 w-1/4 h-full bg-[#fafafa] -z-0"></div>
 
       {/* Main Content */}
       <div className="relative z-10">
@@ -112,44 +110,40 @@ const Footer = () => {
 
             {/* Company Info */}
             <div className="lg:col-span-2 sm:col-span-2 space-y-6" data-testid="company-info">
-              <div className="flex items-center gap-3">
-                <div className="bg-gradient-to-br from-red-600 to-red-700 p-2.5 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <Factory size={24} className="text-white" />
-                </div>
+              <div className="flex items-center gap-4">
+                <Link to="/" className="group hover:opacity-90 transition-opacity">
+                  <img src={logo} alt="HSIEHHSU Logo" className="w-12 h-12" />
+                </Link>
                 <div className="flex flex-col">
-                  <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-tight" data-testid="company-name">
+                  <h3 className="text-xl sm:text-2xl font-black text-[#1a1a1a] tracking-tighter leading-none uppercase" data-testid="company-name">
                     HSIEHHSU
                   </h3>
-                  <p className="text-[10px] sm:text-xs text-red-400 font-semibold tracking-wider uppercase" data-testid="company-subtitle">
+                  <p className="text-[10px] sm:text-xs text-[#f44336] font-black tracking-widest uppercase mt-0.5" data-testid="company-subtitle">
                     Machinery India Pvt Ltd
                   </p>
                 </div>
               </div>
 
-              <p className="text-slate-300 leading-relaxed text-sm max-w-md" data-testid="company-description">
+              <p className="text-[#4a4a4a] leading-relaxed text-sm max-w-md font-medium" data-testid="company-description">
                 World-class corrugation solutions, built on 18+ years of industry experience. Specialists in precision roller refabrication, restoration, and comprehensive maintenance services.
               </p>
 
               {/* Social Links */}
-              <div className="space-y-3">
-                <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
+              <div className="space-y-4">
+                <span className="text-[10px] font-black text-[#7a7a7a] uppercase tracking-[0.2em]">
                   Follow Us
                 </span>
-                <div className="flex gap-3" data-testid="social-links">
+                <div className="flex gap-4" data-testid="social-links">
                   {socialLinks.map((social, idx) => {
                     const Icon = social.icon;
                     return (
                       <a
                         key={idx}
                         href={social.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group bg-slate-800 hover:bg-red-600 text-slate-400 hover:text-white p-3 rounded-lg transition-all duration-300 hover:scale-110"
+                        className="text-[#1a1a1a] hover:text-[#f44336] transition-colors duration-300"
                         title={social.label}
-                        aria-label={social.label}
-                        data-testid={social.testId}
                       >
-                        <Icon size={18} className="transition-transform duration-300 group-hover:rotate-6" />
+                        <Icon size={18} />
                       </a>
                     );
                   })}
@@ -160,37 +154,28 @@ const Footer = () => {
               <div className="pt-2">
                 <button
                   onClick={handleBrochureDownload}
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-sm group"
-                  data-testid="brochure-download-btn"
-                  aria-label="Download HSIEHHSU machinery brochure"
+                  className="bg-[#f44336] text-white px-8 py-3 text-[11px] font-black uppercase tracking-widest hover:bg-[#1a1a1a] transition-colors duration-300"
                 >
-                  <Download size={16} className="group-hover:-translate-y-1 transition-transform duration-300" />
-                  <span>Download Brochure</span>
+                  <Download size={14} className="inline mr-2" />
+                  Download Brochure
                 </button>
               </div>
             </div>
 
             {/* Quick Links */}
-            <div className="space-y-5" data-testid="quick-links">
-              <h4 className="text-base sm:text-lg font-bold text-white flex items-center">
-                <span className="w-1 h-5 bg-red-600 rounded-full mr-3"></span>
+            <div className="space-y-8" data-testid="quick-links">
+              <h4 className="text-xs font-black text-[#1a1a1a] uppercase tracking-[0.2em] relative">
                 Quick Links
+                <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#f44336]"></span>
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {quickLinks.map((link) => (
                   <li key={link.path}>
                     <Link
                       to={link.path}
-                      className="group text-slate-300 hover:text-red-400 transition-all duration-300 flex items-center text-sm"
-                      data-testid={`quick-link-${link.label.toLowerCase().replace(/\s+/g, '-')}`}
+                      className="text-[#4a4a4a] hover:text-[#f44336] transition-colors duration-300 text-[11px] font-bold uppercase tracking-widest"
                     >
-                      <ArrowRight
-                        size={14}
-                        className="mr-2 opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-2 group-hover:translate-x-0"
-                      />
-                      <span className="group-hover:translate-x-1 transition-transform duration-300">
-                        {link.label}
-                      </span>
+                      {link.label}
                     </Link>
                   </li>
                 ))}
@@ -198,116 +183,81 @@ const Footer = () => {
             </div>
 
             {/* Services */}
-            <div className="space-y-5" data-testid="services">
-              <h4 className="text-base sm:text-lg font-bold text-white flex items-center">
-                <span className="w-1 h-5 bg-red-600 rounded-full mr-3"></span>
+            <div className="space-y-8" data-testid="services">
+              <h4 className="text-xs font-black text-[#1a1a1a] uppercase tracking-[0.2em] relative">
                 Our Services
+                <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#f44336]"></span>
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {services.map((service, idx) => (
                   <li
                     key={idx}
-                    className="group text-slate-300 hover:text-red-400 transition-colors duration-300 flex items-center text-sm cursor-pointer"
-                    data-testid={`service-${service.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="text-[#4a4a4a] hover:text-[#f44336] transition-colors duration-300 text-[11px] font-bold uppercase tracking-widest cursor-pointer"
                   >
-                    <span className="w-1.5 h-1.5 bg-red-600 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300 flex-shrink-0"></span>
-                    <span>{service}</span>
+                    {service}
                   </li>
                 ))}
               </ul>
             </div>
           </div>
 
-          {/* Divider */}
-          <div className="border-t border-slate-800 my-8 lg:my-12"></div>
-
-          {/* Contact Info Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-8 lg:mb-12" data-testid="contact-info-grid">
+          <div className="border-t border-[#eee] my-12"></div>          {/* Contact Info Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12" data-testid="contact-info-grid">
             {contactInfo.map((info, idx) => (
-              <div key={idx} className="group" data-testid={info.testId}>
-                <div className="flex items-start gap-3">
-                  <div className="bg-red-600/10 group-hover:bg-red-600 p-2.5 rounded-lg text-red-400 group-hover:text-white transition-all duration-300 flex-shrink-0">
-                    {info.icon}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-xs font-semibold text-slate-500 mb-1.5 uppercase tracking-wide">
-                      {info.title}
-                    </p>
-
-                    {/* Phone Numbers with Details */}
-                    {info.details ? (
-                      <div className="space-y-3">
-                        {info.details.map((phone, phoneIdx) => (
-                          <div key={phoneIdx} className="flex flex-col" data-testid={phone.testId}>
-                            <span className="text-slate-400 text-[10px] font-medium uppercase tracking-wider mb-0.5">
-                              {phone.label}
-                            </span>
-                            <span className="text-slate-500 text-[9px] font-semibold mb-1">
-                              {phone.subLabel}
-                            </span>
-                            <a
-                              href={`tel:${phone.number.replace(/\s/g, '')}`}
-                              className="text-slate-300 hover:text-red-400 transition-colors duration-300 text-sm leading-relaxed block font-medium"
-                              data-testid={`${phone.testId}-link`}
-                            >
-                              {phone.number}
-                            </a>
-                          </div>
-                        ))}
-                      </div>
-                    ) : info.link ? (
-                      <a
-                        href={info.link}
-                        className="text-slate-300 hover:text-red-400 transition-colors duration-300 text-sm leading-relaxed block"
-                        data-testid={`${info.testId}-link`}
-                      >
-                        {info.content}
-                      </a>
-                    ) : (
-                      <p className="text-slate-300 text-sm leading-relaxed" data-testid={`${info.testId}-content`}>
-                        {info.content}
-                      </p>
-                    )}
-                  </div>
+              <div key={idx} className="space-y-4" data-testid={info.testId}>
+                <div className="flex items-center gap-3 text-[#f44336]">
+                  {info.icon}
+                  <span className="text-[10px] font-black uppercase tracking-widest text-[#1a1a1a]">{info.title}</span>
                 </div>
+                
+                {info.details ? (
+                  <div className="space-y-4">
+                    {info.details.map((phone, pIdx) => (
+                      <div key={pIdx} data-testid={phone.testId}>
+                        <p className="text-[9px] text-[#7a7a7a] font-bold uppercase tracking-widest">{phone.subLabel}</p>
+                        <a href={`tel:${phone.number.replace(/\s/g, '')}`} className="text-[#1a1a1a] font-black text-sm hover:text-[#f44336]" data-testid={`${phone.testId}-link`}>{phone.number}</a>
+                      </div>
+                    ))}
+                  </div>
+                ) : info.link ? (
+                  <a
+                    href={info.link}
+                    className="text-[#4a4a4a] text-sm font-medium leading-relaxed hover:text-[#f44336]"
+                    data-testid={`${info.testId}-link`}
+                  >
+                    {info.content}
+                  </a>
+                ) : (
+                   <p className="text-[#4a4a4a] text-sm font-medium leading-relaxed" data-testid={`${info.testId}-content`}>{info.content}</p>
+                )}
               </div>
             ))}
           </div>
 
-          {/* Divider */}
-          <div className="border-t border-slate-800 my-8"></div>
+          <div className="border-t border-[#eee] py-8"></div>
 
           {/* Bottom Section */}
-          <div className="grid sm:grid-cols-3 gap-6 items-center" data-testid="footer-bottom">
-            {/* Copyright */}
-            <div className="sm:col-span-2 space-y-2" data-testid="copyright">
-              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                © {currentYear} <span className="font-bold text-red-500" data-testid="company-name-copyright">HSIEHHSU MACHINERY INDIA</span> PRIVATE LIMITED. All Rights Reserved.
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6" data-testid="footer-bottom">
+            <div data-testid="copyright">
+              <p className="text-[#7a7a7a] text-[10px] font-bold uppercase tracking-widest">
+                © {currentYear} <span className="text-[#f44336]">HSIEHHSU MACHINERY INDIA</span> PRIVATE LIMITED.
               </p>
-              <p className="text-slate-500 text-[10px] sm:text-xs font-medium" data-testid="compliance-info">
+              <p className="text-[#aaa] text-[9px] uppercase tracking-widest mt-1">
                 GST No: 33AAHCH9753M1Z0 | ISO Certified
               </p>
             </div>
 
-            {/* CTA Button */}
-            <div className="flex justify-start sm:justify-end">
-              <a
-                href="https://wa.me/919894235419"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-sm"
-                data-testid="whatsapp-cta"
-                aria-label="Contact us on WhatsApp"
-              >
-                <MessageCircle size={18} strokeWidth={2} />
-                <span>Quick Chat</span>
-              </a>
-            </div>
+            <a
+              href="https://wa.me/919894235419"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#1a1a1a] text-white px-8 py-3 text-[11px] font-black uppercase tracking-widest hover:bg-[#f44336] transition-colors duration-300 flex items-center gap-2"
+            >
+              <MessageCircle size={14} />
+              Quick Chat
+            </a>
           </div>
         </div>
-
-        {/* Bottom Border Accent */}
-        <div className="h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent"></div>
       </div>
     </footer>
   );

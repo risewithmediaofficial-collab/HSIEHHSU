@@ -85,318 +85,188 @@ const Products = () => {
                 <meta name="description" content="Complete corrugation machinery lines, genuine spare parts, and wear components. Quality equipment for corrugated packaging industry." />
             </Helmet>
 
-            {/* Hero Section - Optimized spacing and modern design */}
-            <section className="relative py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
-                {/* Background decorative elements */}
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-20 right-10 w-72 h-72 bg-red-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-                    <div className="absolute bottom-10 left-10 w-96 h-96 bg-red-600 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-700"></div>
+      {/* ===== HERO SECTION ===== */}
+      <section className="relative pt-20 pb-16 md:pt-28 md:pb-24 lg:pt-32 lg:pb-24 bg-white overflow-hidden flex items-center">
+        {/* Simple Red Accent */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fafafa] -z-10"></div>
+        
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#f44336] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest mb-10">
+              <span className="tracking-wide">Complete Machinery & Spares Supply</span>
+            </div>
+            
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#f44336] uppercase">
+              Premium Machinery & Spares
+            </h1>
+            
+            <p className="text-lg md:text-xl lg:text-2xl text-[#4a4a4a] leading-relaxed max-w-3xl mx-auto font-medium">
+              Complete corrugation machinery solutions and genuine spare parts for maximum uptime
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== MACHINERY SECTION ===== */}
+      <section className="py-16 bg-[#fafafa] border-y border-[#eee]" id="machinery">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="text-center mb-16 lg:mb-20 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+              Advanced Corrugation Machinery Systems
+            </h2>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-7 lg:gap-8">
+            {machinery.map((machine, index) => (
+              <div 
+                key={index}
+                className="bg-white border border-[#eee] hover:border-[#f44336] transition-colors p-10 lg:p-12 group"
+              >
+                <div className="space-y-8">
+                  <h3 className="text-2xl font-black text-[#1a1a1a] uppercase tracking-tighter group-hover:text-[#f44336] transition-colors">
+                    {machine.title}
+                  </h3>
+                  <p className="text-[#4a4a4a] text-sm font-medium leading-relaxed">{machine.description}</p>
+                  
+                  {/* Features */}
+                  <div className="space-y-4">
+                    <h4 className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-[0.2em] opacity-40">Key Features</h4>
+                    <div className="grid gap-3">
+                      {machine.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-center gap-3">
+                          <div className="w-1.5 h-1.5 bg-[#f44336]"></div>
+                          <span className="text-[#1a1a1a] font-bold text-xs uppercase tracking-widest">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Specifications */}
+                  <div className="space-y-4">
+                    <h4 className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-[0.2em] opacity-40">Technical Specs</h4>
+                    <div className="flex flex-wrap gap-2">
+                       {machine.specs.map((spec, idx) => (
+                         <span key={idx} className="px-4 py-2 bg-[#fafafa] border border-[#eee] text-[#1a1a1a] text-[10px] font-black uppercase tracking-widest">
+                           {spec}
+                         </span>
+                       ))}
+                    </div>
+                  </div>
+                  
+                  {/* Footer */}
+                  <div className="pt-8 border-t border-[#eee] flex items-center gap-3">
+                    <Shield className="w-4 h-4 text-[#f44336]" />
+                    <span className="text-[#aaa] text-[10px] font-black uppercase tracking-widest">{machine.warranty} Warranty</span>
+                  </div>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-                    <div className="max-w-4xl mx-auto text-center space-y-8">
-                        <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 text-red-400 px-5 py-2.5 rounded-full text-sm font-semibold backdrop-blur-sm">
-                            <CheckCircle size={16} className="text-red-400" />
-                            <span>Complete Machinery & Spares Supply</span>
-                        </div>
-                        
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight tracking-tight">
-                            Products & <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">Spare Parts</span>
-                        </h1>
-                        
-                        <p className="text-lg sm:text-xl lg:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-                            Complete corrugation machinery solutions and genuine spare parts for maximum uptime
-                        </p>
-                    </div>
-                </div>
-            </section>
+      {/* ===== SPARE PARTS SECTION ===== */}
+      <section className="py-16 bg-white" id="spares">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="text-center mb-16 lg:mb-20 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter text-center">
+              Genuine Spare Parts & Components
+            </h2>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+          </div>
 
-            {/* Machinery Section - Better spacing and card design */}
-            <section className="py-16 sm:py-20 lg:py-28 bg-slate-50">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-                    {/* Section Header */}
-                    <div className="text-center mb-12 lg:mb-16 space-y-5">
-                        <div className="inline-flex items-center justify-center gap-3 mb-4">
-                            <div className="p-3 bg-red-100 rounded-xl">
-                                <Settings size={32} className="text-red-600" />
-                            </div>
-                        </div>
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
-                            Corrugation Machinery
-                        </h2>
-                        <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-                            High-performance machinery engineered for corrugated board production excellence
-                        </p>
-                    </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+            {spares.map((category, index) => (
+              <div key={index} className="service-card p-10 flex flex-col items-center text-center">
+                 <div className="text-[#f44336] mb-8">{category.icon}</div>
+                 <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4">{category.category}</h3>
+                 <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium mb-6">{category.description}</p>
+                 <ul className="space-y-2 text-left w-full">
+                    {category.items.map((item, idx) => (
+                      <li key={idx} className="flex items-center gap-2">
+                        <div className="w-1 h-1 bg-[#f44336]"></div>
+                        <span className="text-[#1a1a1a] font-bold text-[10px] uppercase tracking-widest">{item}</span>
+                      </li>
+                    ))}
+                 </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                    {/* Machinery Grid */}
-                    <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
-                        {machinery.map((machine, index) => (
-                            <div
-                                key={index}
-                                className="group bg-white rounded-2xl lg:rounded-3xl border border-slate-200 hover:border-red-300 shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden"
-                            >
-                                {/* Accent Bar */}
-                                <div className="h-1.5 bg-gradient-to-r from-red-500 via-red-600 to-red-700"></div>
+      {/* ===== QUALITY ASSURANCE SECTION ===== */}
+      <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="text-center mb-16 lg:mb-20 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+              Precision Quality Assurance Protocol
+            </h2>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+          </div>
 
-                                {/* Card Content */}
-                                <div className="p-6 lg:p-8 space-y-6">
-                                    {/* Title & Description */}
-                                    <div className="space-y-3">
-                                        <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 group-hover:text-red-600 transition-colors duration-300">
-                                            {machine.title}
-                                        </h3>
-                                        <p className="text-slate-600 leading-relaxed">
-                                            {machine.description}
-                                        </p>
-                                    </div>
+          <div className="grid sm:grid-cols-3 gap-8">
+            {qualityPoints.map((point, idx) => (
+              <div key={idx} className="bg-white p-12 border border-[#eee] text-center group">
+                <div className="text-[#f44336] mb-8 mx-auto flex justify-center">{point.icon}</div>
+                <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4 tracking-tight">{point.title}</h3>
+                <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium">{point.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                                    {/* Features */}
-                                    <div className="space-y-4">
-                                        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wide">
-                                            Key Features
-                                        </h4>
-                                        <ul className="space-y-3">
-                                            {machine.features.map((feature, idx) => (
-                                                <li key={idx} className="flex items-start gap-3">
-                                                    <div className="mt-1.5">
-                                                        <div className="w-1.5 h-1.5 bg-red-600 rounded-full"></div>
-                                                    </div>
-                                                    <span className="text-slate-700 font-medium leading-relaxed">
-                                                        {feature}
-                                                    </span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
+      {/* ===== INVENTORY & SUPPORT ===== */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              { icon: <Package size={24} />, title: "Large Inventory", desc: "Extensive stock of parts for quick delivery" },
+              { icon: <TrendingUp size={24} />, title: "Fast Delivery", desc: "Express shipping for urgent needs across India" },
+              { icon: <Phone size={24} />, title: "Expert Support", desc: "Technical guidance on selection and installation" }
+            ].map((item, idx) => (
+              <div key={idx} className="notification-card p-10 flex flex-col items-center text-center">
+                 <div className="text-[#f44336] mb-6">{item.icon}</div>
+                 <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4">{item.title}</h4>
+                 <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                                    {/* Specifications */}
-                                    <div className="space-y-4">
-                                        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wide">
-                                            Technical Specifications
-                                        </h4>
-                                        <div className="flex flex-wrap gap-2.5">
-                                            {machine.specs.map((spec, idx) => (
-                                                <span 
-                                                    key={idx} 
-                                                    className="inline-flex items-center bg-red-50 border border-red-200 text-red-700 px-4 py-2 rounded-lg text-sm font-semibold"
-                                                >
-                                                    {spec}
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Card Footer */}
-                                <div className="bg-slate-50 border-t border-slate-100 px-6 lg:px-8 py-5 flex items-center justify-between">
-                                    <div className="flex items-center gap-2">
-                                        <Shield size={18} className="text-emerald-600" />
-                                        <span className="text-slate-700 font-semibold text-sm">
-                                            {machine.warranty} warranty
-                                        </span>
-                                    </div>
-                                  
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Spare Parts Section - Modern card layout */}
-            <section className="py-16 sm:py-20 lg:py-28 bg-white">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-                    {/* Section Header */}
-                    <div className="text-center mb-12 lg:mb-16 space-y-5">
-                        <div className="inline-flex items-center justify-center gap-3 mb-4">
-                            <div className="p-3 bg-red-100 rounded-xl">
-                                <Package size={32} className="text-red-600" />
-                            </div>
-                        </div>
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
-                            Genuine Spare Parts
-                        </h2>
-                        <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-                            Original spare parts and wear components for all major machinery brands
-                        </p>
-                    </div>
-
-                    {/* Spares Grid */}
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16 pt-3">
-                        {spares.map((category, index) => (
-                            <div key={index} className="fancy-card h-full">
-                                <div className="go-corner">
-                                    <div className="go-arrow">→</div>
-                                </div>
-                                <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500 text-red-600">
-                                    {category.icon}
-                                </div>
-                                
-                                <div className="space-y-2 mb-5">
-                                    <h3 className="text-xl font-bold fancy-card-title">
-                                        {category.category}
-                                    </h3>
-                                    <p className="text-sm fancy-card-desc leading-relaxed font-semibold">
-                                        {category.description}
-                                    </p>
-                                </div>
-                                
-                                <ul className="space-y-2.5">
-                                    {category.items.map((item, idx) => (
-                                        <li key={idx} className="flex items-center gap-3 text-sm">
-                                            <div className="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0"></div>
-                                            <span className="fancy-card-desc font-medium">{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* Quality Assurance Box */}
-                    <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl p-8 lg:p-12 shadow-lg border border-slate-200">
-                        <div className="text-center mb-10 lg:mb-12 space-y-4">
-                            <div className="inline-flex items-center justify-center gap-3">
-                                <div className="p-3 bg-red-100 rounded-xl">
-                                    <Shield size={32} className="text-red-600" />
-                                </div>
-                            </div>
-                            <h3 className="text-3xl lg:text-4xl font-bold text-slate-900">
-                                Quality Assurance
-                            </h3>
-                            <p className="text-slate-600 text-lg">
-                                Our commitment to excellence and reliability
-                            </p>
-                        </div>
-
-                        <div className="grid sm:grid-cols-3 gap-6 lg:gap-8 pt-3">
-                            {qualityPoints.map((point, idx) => (
-                                <div key={idx} className="fancy-card text-center flex flex-col items-center h-full">
-                                    <div className="go-corner">
-                                        <div className="go-arrow">→</div>
-                                    </div>
-                                    <div className="fancy-card-icon mb-6 w-16 h-16 flex items-center justify-center bg-red-50 rounded-2xl group-hover:bg-red-600 transition-colors duration-500 text-red-600 mx-auto">
-                                        {point.icon}
-                                    </div>
-                                    <div className="space-y-2">
-                                        <h4 className="text-xl font-bold fancy-card-title">
-                                            {point.title}
-                                        </h4>
-                                        <p className="text-sm fancy-card-desc leading-relaxed font-semibold">
-                                            {point.description}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Inventory & Support - Clean three-column layout */}
-            <section className="py-16 sm:py-20 lg:py-28 bg-slate-50">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-                    <div className="grid sm:grid-cols-3 gap-6 lg:gap-8 pt-3">
-                        <div className="fancy-card h-full text-center flex flex-col items-center">
-                            <div className="go-corner">
-                                <div className="go-arrow">→</div>
-                            </div>
-                            <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500 text-red-600 mx-auto">
-                                <Package size={28} />
-                            </div>
-                            <h3 className="text-xl font-bold fancy-card-title mb-3">
-                                Large Inventory
-                            </h3>
-                            <p className="text-sm fancy-card-desc leading-relaxed font-semibold">
-                                Extensive stock of commonly used spare parts for quick delivery
-                            </p>
-                        </div>
-
-                        <div className="fancy-card h-full text-center flex flex-col items-center">
-                            <div className="go-corner">
-                                <div className="go-arrow">→</div>
-                            </div>
-                            <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500 text-red-600 mx-auto">
-                                <TrendingUp size={28} />
-                            </div>
-                            <h3 className="text-xl font-bold fancy-card-title mb-3">
-                                Fast Delivery
-                            </h3>
-                            <p className="text-sm fancy-card-desc leading-relaxed font-semibold">
-                                Express shipping for urgent requirements across India
-                            </p>
-                        </div>
-
-                        <div className="fancy-card h-full text-center flex flex-col items-center">
-                            <div className="go-corner">
-                                <div className="go-arrow">→</div>
-                            </div>
-                            <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500 text-red-600 mx-auto">
-                                <Phone size={28} />
-                            </div>
-                            <h3 className="text-xl font-bold fancy-card-title mb-3">
-                                Expert Support
-                            </h3>
-                            <p className="text-sm fancy-card-desc leading-relaxed font-semibold">
-                                Technical guidance on spare part selection and installation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA Section - Modern and clean */}
-            <section className="py-16 sm:py-20 lg:py-28 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
-                {/* Background Effects */}
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-red-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
-                    <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
-                </div>
-
-                <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-                    <div className="max-w-4xl mx-auto text-center space-y-10">
-                        <div className="space-y-6">
-                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
-                                Need Machinery or <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">Spare Parts?</span>
-                            </h2>
-                            <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-                                Contact us for detailed specifications, pricing, availability, and delivery information
-                            </p>
-                        </div>
-                        
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <a
-                                href="mailto:hsiehhsu.india@gmail.com?subject=Machinery or Spares Inquiry"
-                                className="group inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl w-full sm:w-auto"
-                            >
-                                <Mail size={20} />
-                                <span>Request Catalog</span>
-                            </a>
-                            
-                            <a
-                                href="tel:+919894235419"
-                                className="group inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 border-2 border-white/20 hover:border-white/30 w-full sm:w-auto"
-                            >
-                                <Phone size={20} />
-                                <span>Call for Quote</span>
-                            </a>
-                            
-                            <a
-                                href="https://wa.me/919894235419"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl w-full sm:w-auto"
-                            >
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.935 1.353 9.879 9.879 0 006.474 13.104 9.865 9.865 0 004.935-1.352 9.879 9.879 0 00-6.474-13.105zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0z"/>
-                                </svg>
-                                <span>WhatsApp</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      {/* ===== CTA SECTION ===== */}
+      <section className="py-16 bg-white border-t border-[#eee]">
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
+          <div className="space-y-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#f44336] uppercase tracking-tighter">
+              Need Machine Parts or Upgrades?
+            </h2>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+          </div>
+          
+          <p className="text-lg md:text-xl text-[#4a4a4a] max-w-2xl mx-auto leading-relaxed font-medium">
+            Contact us for detailed specifications, pricing, availability, and delivery information
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:+919894235419"
+              className="px-12 py-4 bg-[#f44336] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] transition-colors"
+            >
+              Contact Us
+            </a>
+            <a
+              href="mailto:hsiehhsu.india@gmail.com"
+              className="px-12 py-4 border-2 border-[#1a1a1a] text-[#1a1a1a] text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] hover:text-white transition-all"
+            >
+              Email Catalog
+            </a>
+          </div>
+        </div>
+      </section>
         </>
     );
 };

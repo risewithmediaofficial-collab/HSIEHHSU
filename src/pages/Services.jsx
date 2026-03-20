@@ -11,8 +11,6 @@ const rollerServices = [
     badge: "PREMIUM",
     turnaround: "45-60 days",
     warranty: "12 months",
-    gradient: "from-blue-500 to-indigo-600",
-    bgGradient: "from-blue-50 to-indigo-50",
   },
   {
     icon: <RefreshCw className="w-10 h-10" />,
@@ -22,8 +20,6 @@ const rollerServices = [
     badge: "QUICK",
     turnaround: "45-60 days",
     warranty: "12 months",
-    gradient: "from-emerald-500 to-teal-600",
-    bgGradient: "from-emerald-50 to-teal-50",
   },
   {
     icon: <Settings className="w-10 h-10" />,
@@ -33,8 +29,6 @@ const rollerServices = [
     badge: "ADVANCED",
     turnaround: "45-60 days",
     warranty: "12 months",
-    gradient: "from-purple-500 to-pink-600",
-    bgGradient: "from-purple-50 to-pink-50",
   },
   {
     icon: <TrendingUp className="w-10 h-10" />,
@@ -44,8 +38,6 @@ const rollerServices = [
     badge: "PREMIUM+",
     turnaround: "45-60 days",
     warranty: "12 months",
-    gradient: "from-amber-500 to-orange-600",
-    bgGradient: "from-amber-50 to-orange-50",
   },
   {
     icon: <Zap className="w-10 h-10" />,
@@ -55,8 +47,6 @@ const rollerServices = [
     badge: "ULTRA-DURABLE",
     turnaround: "45-60 days",
     warranty: "12 months",
-    gradient: "from-slate-600 to-gray-700",
-    bgGradient: "from-slate-50 to-gray-50",
   },
   {
     icon: <Shield className="w-10 h-10" />,
@@ -66,8 +56,6 @@ const rollerServices = [
     badge: "PROVEN",
     turnaround: "45-60 days",
     warranty: "12 months",
-    gradient: "from-cyan-500 to-blue-600",
-    bgGradient: "from-cyan-50 to-blue-50",
   },
 ];
 
@@ -76,25 +64,21 @@ const rollerServices = [
       icon: <Zap className="w-8 h-8" />,
       title: "Installation & Commissioning",
       description: "Complete setup, alignment, and commissioning of new corrugation machine lines with staff training",
-      gradient: "from-blue-500 to-indigo-600",
     },
     {
       icon: <Clock className="w-8 h-8" />,
       title: "Technical Support 24/7",
       description: "Round-the-clock technical assistance, troubleshooting, and expert guidance for all queries",
-      gradient: "from-emerald-500 to-teal-600",
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Preventive Maintenance",
       description: "Scheduled maintenance programs designed to prevent breakdowns and maximize uptime",
-      gradient: "from-purple-500 to-pink-600",
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
       title: "Emergency Breakdown Support",
       description: "Rapid response service for unexpected machine failures with immediate on-site assistance",
-      gradient: "from-amber-500 to-orange-600",
     },
   ];
 
@@ -103,25 +87,21 @@ const rollerServices = [
       step: "01", 
       title: "Assessment", 
       desc: "Detailed inspection, analysis, and quotation",
-      gradient: "from-blue-500 to-indigo-600"
     },
     { 
       step: "02", 
       title: "Approval", 
       desc: "Client approval and detailed project planning",
-      gradient: "from-emerald-500 to-teal-600"
     },
     { 
       step: "03", 
       title: "Execution", 
       desc: "Precision work with continuous quality checks",
-      gradient: "from-purple-500 to-pink-600"
     },
     { 
       step: "04", 
       title: "Delivery", 
       desc: "Final testing, certification, and support",
-      gradient: "from-amber-500 to-orange-600"
     },
   ];
 
@@ -129,32 +109,26 @@ const rollerServices = [
     { 
       title: "ISO Certified Process", 
       description: "Quality assurance at every step",
-      gradient: "from-blue-500 to-indigo-600"
     },
     { 
       title: "Reliable Timeline", 
       description: "45-60 days for precision completion",
-      gradient: "from-emerald-500 to-teal-600"
     },
     { 
       title: "Expert Team", 
       description: "18+ years of combined expertise",
-      gradient: "from-purple-500 to-pink-600"
     },
     { 
       title: "Standard Warranty", 
       description: "Comprehensive 12-month warranty",
-      gradient: "from-amber-500 to-orange-600"
     },
     { 
       title: "24/7 Support", 
       description: "Always available for assistance",
-      gradient: "from-red-500 to-rose-600"
     },
     { 
       title: "Cost Effective", 
       description: "Optimized pricing without compromise",
-      gradient: "from-cyan-500 to-blue-600"
     },
   ];
 
@@ -166,28 +140,21 @@ const rollerServices = [
       </Helmet>
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative pt-28 pb-20 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-
+      <section className="relative pt-20 pb-16 md:pt-28 md:pb-24 lg:pt-32 lg:pb-24 bg-white overflow-hidden flex items-center">
+        {/* Simple Red Accent */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fafafa] -z-10"></div>
+        
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-md text-red-400 px-5 py-2.5 rounded-full text-sm font-semibold mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <CheckCircle className="w-4 h-4" />
+            <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#f44336] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest mb-10">
               <span className="tracking-wide">Comprehensive Service Solutions</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-7 leading-tight tracking-tight">
-              Our Core{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-                  Services
-                </span>
-              </span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#f44336] uppercase">
+              Our Professional Services & Support
             </h1>
             
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl lg:text-2xl text-[#4a4a4a] leading-relaxed max-w-3xl mx-auto font-medium">
               Specialized solutions for corrugation machine rollers and complete machinery support designed for maximum performance
             </p>
           </div>
@@ -195,69 +162,42 @@ const rollerServices = [
       </section>
 
       {/* ===== ROLLER SERVICES ===== */}
-      <section className="py-20 md:py-28 lg:py-32 bg-white" id="refabrication">
+      <section className="py-16 bg-white overflow-hidden" id="refabrication">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight">
-              Roller Refabrication{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
-                Services
-              </span>
+          <div className="text-center mb-16 lg:mb-20 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+              Roller Refabrication
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Precision engineering to restore and enhance your corrugation rollers
-            </p>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-7 lg:gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {rollerServices.map((service, index) => (
               <div 
                 key={index}
-                className="group bg-white rounded-3xl overflow-hidden border-2 border-gray-100 hover:border-red-200 shadow-lg hover:shadow-2xl hover:shadow-red-50 hover:-translate-y-1 transition-all duration-500"
+                className="service-card p-10 flex flex-col items-center text-center"
               >
-                {/* Badge Bar */}
-                <div className={`h-1.5 bg-gradient-to-r ${service.gradient}`}></div>
+                <div className="text-[#f44336] mb-8">
+                  {service.icon}
+                </div>
 
-                {/* Content */}
-                <div className="p-7 lg:p-8">
-                  <div className="flex items-start justify-between mb-7">
-                    <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${service.bgGradient} text-gray-700 transition-all duration-500 group-hover:${service.gradient} group-hover:text-white group-hover:scale-110 group-hover:shadow-lg`}>
-                      {service.icon}
+                <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4 tracking-tight">{service.title}</h3>
+                <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed mb-8">{service.description}</p>
+                
+                {/* Features */}
+                <div className="w-full text-left space-y-3 mb-8">
+                  {service.features.map((feature, idx) => (
+                    <div key={idx} className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 bg-[#f44336]"></div>
+                      <span className="text-[#4a4a4a] text-[10px] font-bold uppercase tracking-widest">{feature}</span>
                     </div>
-                    <span className={`bg-gradient-to-r ${service.gradient} text-white px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md`}>
-                      {service.badge}
-                    </span>
-                  </div>
+                  ))}
+                </div>
 
-                  <h3 className="text-2xl font-bold mb-3.5 text-gray-900 tracking-tight">{service.title}</h3>
-                  <p className="text-gray-600 mb-7 leading-relaxed text-sm">{service.description}</p>
-                  
-                  {/* Features */}
-                  <div className="mb-7">
-                    <h4 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-wide">Key Features:</h4>
-                    <ul className="space-y-3">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-gray-700 group/item">
-                          <span className={`w-1.5 h-1.5 bg-gradient-to-r ${service.gradient} rounded-full mr-3.5 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-300`}></span>
-                          <span className="font-medium text-sm">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Footer Info */}
-                  <div className="border-t-2 border-gray-100 pt-6 flex items-center justify-between">
-                    <div className="flex items-center gap-5">
-                      <div className="flex items-center text-gray-600">
-                        <Clock className="w-4.5 h-4.5 text-red-600 mr-2" />
-                        <span className="text-sm font-semibold">{service.turnaround}</span>
-                      </div>
-                      <div className="flex items-center text-gray-600">
-                        <Shield className="w-4.5 h-4.5 text-red-600 mr-2" />
-                        <span className="text-sm font-semibold">{service.warranty}</span>
-                      </div>
-                    </div>
-                  </div>
+                {/* Turnaround Info */}
+                <div className="mt-auto pt-6 border-t border-[#eee] w-full flex justify-between items-center text-[9px] font-black uppercase tracking-widest text-[#aaa]">
+                  <span>Turnaround: {service.turnaround}</span>
+                  <span className="text-[#f44336]">Warranty: {service.warranty}</span>
                 </div>
               </div>
             ))}
@@ -266,43 +206,36 @@ const rollerServices = [
       </section>
       
       {/* ===== SERVICE GUARANTEES ===== */}
-      <section className="py-20 bg-slate-50 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-500/20 to-transparent"></div>
+      <section className="py-16 bg-[#fafafa] relative overflow-hidden border-y border-[#eee]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-8 items-stretch">
             {/* Warranty Card */}
-            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-200 shadow-xl relative group overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-bl-[5rem] transition-all duration-500 group-hover:scale-110"></div>
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-red-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-red-200">
-                  <Shield className="w-7 h-7" />
-                </div>
-                <h3 className="text-3xl font-bold text-slate-900 mb-6">Standardized 12-Month <span className="text-red-600">Warranty</span></h3>
-                <p className="text-slate-600 leading-relaxed text-lg mb-8">
-                  Every roller refabrication and repair service is backed by our comprehensive 12-month professional warranty. We cover metallurgical integrity, surface bonding, and dimensional stability, ensuring your production line operates with absolute confidence.
-                </p>
-                <div className="flex items-center gap-3 text-red-600 font-bold uppercase tracking-widest text-xs">
-                  <Target className="w-4 h-4" />
-                  <span>Quality Guaranteed</span>
-                </div>
+            <div className="bg-white p-12 border border-[#eee] group">
+              <div className="text-[#f44336] mb-8">
+                <Shield className="w-10 h-10" />
+              </div>
+              <h3 className="text-3xl font-black text-[#f44336] mb-6 uppercase tracking-tighter">12-Month Comprehensive Warranty Promise</h3>
+              <p className="text-[#4a4a4a] leading-relaxed text-lg mb-8 font-medium">
+                Every roller refabrication and repair service is backed by our comprehensive 12-month professional warranty. We cover metallurgical integrity, surface bonding, and dimensional stability.
+              </p>
+              <div className="flex items-center gap-3 text-[#f44336] font-black uppercase tracking-[0.2em] text-[10px]">
+                <Target className="w-4 h-4" />
+                <span>Quality Guaranteed</span>
               </div>
             </div>
 
             {/* Turnaround Card */}
-            <div className="bg-slate-900 p-10 rounded-[2.5rem] text-white shadow-2xl relative group overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-bl-[5rem] transition-all duration-500 group-hover:scale-110"></div>
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-white text-slate-900 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-white/10">
-                  <Clock className="w-7 h-7" />
-                </div>
-                <h3 className="text-3xl font-bold mb-6">Optimized 45-60 Day <span className="text-red-500">Completion</span></h3>
-                <p className="text-slate-300 leading-relaxed text-lg mb-8">
-                  Our 45-60 day turnaround plan is engineered for precision. This window allows for deep-stage material tempering, multi-layer chrome/tungsten plating, and rigorous dynamic balancing, guaranteeing that every restored roller meets or exceeds OEM specifications.
-                </p>
-                <div className="flex items-center gap-3 text-red-400 font-bold uppercase tracking-widest text-xs">
-                  <TrendingUp className="w-4 h-4" />
-                  <span>Precision Turnaround</span>
-                </div>
+            <div className="bg-[#1a1a1a] p-12 text-white group">
+              <div className="text-[#f44336] mb-8">
+                <Clock className="w-10 h-10" />
+              </div>
+              <h3 className="text-3xl font-black text-[#f44336] mb-6 uppercase tracking-tighter">45-60 Day Precision Turnaround Plan</h3>
+              <p className="text-[#aaa] leading-relaxed text-lg mb-8 font-medium">
+                Our 45-60 day turnaround plan is engineered for precision. This window allows for deep-stage material tempering and multi-layer plating, guaranteeing OEM specifications.
+              </p>
+              <div className="flex items-center gap-3 text-[#f44336] font-black uppercase tracking-[0.2em] text-[10px]">
+                <TrendingUp className="w-4 h-4" />
+                <span>Precision Engineering</span>
               </div>
             </div>
           </div>
@@ -310,90 +243,62 @@ const rollerServices = [
       </section>
 
       {/* ===== WHY CHOOSE US ===== */}
-      <section className="py-20 md:py-28 lg:py-32 bg-gradient-to-br from-gray-50 via-white to-gray-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight">
-              Why Choose{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
-                Our Services?
-              </span>
+          <div className="text-center mb-16 lg:mb-20 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter text-center">
+              Why Choose Our Services?
             </h2>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {whyChoose.map((item, idx) => (
-              <div key={idx} className="fancy-card h-full">
-                <div className="go-corner">
-                  <div className="go-arrow">→</div>
-                </div>
-                
-                <div className="mb-6 w-3 h-3 bg-red-600 rounded-full group-hover:scale-150 transition-transform duration-500 shadow-md"></div>
-                
-                <h4 className="text-lg font-bold fancy-card-title mb-2.5">{item.title}</h4>
-                <p className="fancy-card-desc text-sm">{item.description}</p>
+              <div key={idx} className="notification-card p-10">
+                <div className="w-2 h-2 bg-[#f44336] mb-6"></div>
+                <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4">{item.title}</h4>
+                <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* ===== SUPPORT SERVICES ===== */}
-      <section className="py-20 md:py-28 lg:py-32 bg-white" id="maintenance">
+      <section className="py-16 bg-[#fafafa] border-y border-[#eee]" id="maintenance">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight">
-              Technical Support &{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
-                Maintenance
-              </span>
+          <div className="text-center mb-16 lg:mb-20 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+              Technical Support & Maintenance
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive support services to keep your production running smoothly
-            </p>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
             {supportServices.map((service, index) => (
-              <div key={index} className="fancy-card h-full">
-                <div className="go-corner">
-                  <div className="go-arrow">→</div>
-                </div>
-                <div className="fancy-card-icon mb-6 w-14 h-14 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500">
-                  {service.icon}
-                </div>
-                <h3 className="text-lg font-bold fancy-card-title mb-3">{service.title}</h3>
-                <p className="fancy-card-desc text-sm leading-relaxed">{service.description}</p>
+              <div key={index} className="service-card p-10 flex flex-col items-center text-center">
+                 <div className="text-[#f44336] mb-8">{service.icon}</div>
+                 <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4">{service.title}</h3>
+                 <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium">{service.description}</p>
               </div>
             ))}
           </div>
-
           {/* Service Process */}
-          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl p-8 md:p-10 lg:p-12 text-white shadow-2xl border border-gray-700/50 relative overflow-hidden">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
-            
-            <div className="relative flex items-center gap-5 mb-12">
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl shadow-lg">
-                <Settings className="w-7 h-7" />
-              </div>
-              <h3 className="text-2xl lg:text-3xl font-bold tracking-tight">Our Service Process</h3>
+          <div className="bg-white border border-[#eee] p-12 lg:p-16 relative overflow-hidden group">
+            <div className="relative flex items-center gap-5 mb-16">
+              <h3 className="text-2xl lg:text-3xl font-black text-[#f44336] uppercase tracking-tighter">Our Service Process</h3>
+              <div className="flex-1 h-px bg-[#eee]"></div>
             </div>
             
-            <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+            <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
               {processSteps.map((item, index) => (
                 <div key={index} className="relative">
-                  {/* Connector line */}
-                  {index !== processSteps.length - 1 && (
-                    <div className="hidden lg:block absolute top-10 left-1/2 w-full h-0.5 bg-gradient-to-r from-white/20 to-white/5"></div>
-                  )}
-
                   {/* Step Card */}
-                  <div className="relative z-10 text-center">
-                    <div className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${item.gradient} font-bold text-2xl mx-auto mb-6 shadow-xl hover:scale-110 transition-transform duration-300`}>
+                  <div className="relative z-10">
+                    <div className="text-[#f44336] font-black text-6xl opacity-10 mb-6 group-hover:opacity-100 transition-opacity duration-700">
                       {item.step}
                     </div>
-                    <h4 className="font-bold text-lg mb-2.5 tracking-tight">{item.title}</h4>
-                    <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+                    <h4 className="font-black text-[#1a1a1a] text-sm uppercase tracking-widest mb-4 tracking-tight">{item.title}</h4>
+                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -401,101 +306,81 @@ const rollerServices = [
           </div>
         </div>
       </section>
-
       {/* ===== SERVICE HIGHLIGHTS ===== */}
-      <section className="py-20 md:py-28 lg:py-32 bg-gradient-to-br from-gray-50 via-white to-gray-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Left Content */}
-            <div className="space-y-7">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
-                Comprehensive{' '}
-                <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
-                  Service Coverage
-                </span>
-              </h2>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+            <div className="space-y-10">
+              <div className="space-y-4">
+                <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter leading-none">
+                  Comprehensive Service & Technical Coverage
+                </h2>
+                <div className="w-20 h-1 bg-[#f44336]"></div>
+              </div>
+
+              <p className="text-lg text-[#4a4a4a] leading-relaxed font-medium">
                 From initial assessment to final delivery, we provide end-to-end service covering every aspect of roller refabrication and machinery maintenance.
               </p>
               
-              <div className="space-y-4 pt-2">
+              <div className="grid sm:grid-cols-2 gap-6 pt-4">
                 {[
-                  "Complete roller restoration with advanced techniques",
-                  "ISO certified quality assurance at every step",
-                  "Express turnaround without compromising quality",
-                  "Comprehensive warranty on all services",
-                  "24/7 technical support and emergency assistance",
-                  "Cost-effective solutions tailored to your needs"
+                  "Complete roller restoration",
+                  "ISO certified quality",
+                  "Express turnaround",
+                  "Comprehensive warranty",
+                  "24/7 technical support",
+                  "Tailored solutions"
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-start group">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-red-50 to-red-100 group-hover:from-red-500 group-hover:to-red-600 transition-all duration-300">
-                        <CheckCircle className="w-3.5 h-3.5 text-red-600 group-hover:text-white transition-colors duration-300" />
-                      </div>
-                    </div>
-                    <span className="ml-3.5 text-gray-700 font-medium text-sm md:text-base leading-relaxed">{item}</span>
+                  <div key={idx} className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-[#f44336]"></div>
+                    <span className="text-[#1a1a1a] font-bold text-xs uppercase tracking-widest">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Right Visual Placeholder */}
-            <div className="lg:pl-8">
-              <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-96 lg:h-full lg:min-h-[500px] flex items-center justify-center shadow-xl border-2 border-gray-200 hover:shadow-2xl transition-all duration-500 overflow-hidden group">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-transparent to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-60"></div>
-                <div className="text-center relative z-10">
-                  <Wrench className="w-24 h-24 mx-auto text-gray-300 mb-4 group-hover:text-gray-400 transition-colors duration-500" />
-                  <p className="text-gray-500 font-semibold text-lg">Service Process Visual</p>
+            <div className="lg:pl-12">
+              <div className="relative aspect-square bg-[#fafafa] border border-[#eee] p-12 flex items-center justify-center group overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#eee]"></div>
+                <Wrench className="w-48 h-48 text-[#eee] group-hover:text-[#f44336] transition-colors duration-700" />
+                <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-[#fafafa] to-transparent">
+                  <p className="text-[#1a1a1a] text-2xl font-black uppercase tracking-tighter opacity-10">Precision Service</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* ===== CTA SECTION ===== */}
-      <section className="relative py-20 md:py-28 lg:py-32 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-7 tracking-tight">
-            Need Roller{' '}
-            <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-              Service?
-            </span>
-          </h2>
-          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+      <section className="py-16 bg-white border-t border-[#eee]">
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
+          <div className="space-y-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#f44336] uppercase tracking-tighter">
+              Need Roller Refabrication or Service?
+            </h2>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+          </div>
+          
+          <p className="text-lg md:text-xl text-[#4a4a4a] max-w-2xl mx-auto leading-relaxed font-medium">
             Get a free assessment and detailed quotation for your roller refabrication and maintenance needs
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+919894235419"
-              className="btn-primary group !px-10 !py-4"
+              className="px-12 py-4 bg-[#f44336] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] transition-colors"
             >
-              <Phone className="w-5 h-5 mr-2.5 group-hover:rotate-12 transition-transform duration-300" />
-              Call for Assessment
-            </a>
-            <a
-              href="mailto:hsiehhsu.india@gmail.com"
-              className="btn-outline group !px-10 !py-4"
-            >
-              <Mail className="w-5 h-5 mr-2.5" />
-              Email Requirements
+              Contact Us
             </a>
             <a
               href="https://wa.me/919894235419"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-xl font-semibold transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-95"
+              className="px-12 py-4 border-2 border-[#1a1a1a] text-[#1a1a1a] text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] hover:text-white transition-all"
             >
-              <svg className="w-5 h-5 mr-2.5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.935 1.353 9.879 9.879 0 006.474 13.104 9.865 9.865 0 004.935-1.352 9.879 9.879 0 00-6.474-13.105zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0z"/>
-              </svg>
-              WhatsApp
+              WhatsApp Support
             </a>
           </div>
         </div>

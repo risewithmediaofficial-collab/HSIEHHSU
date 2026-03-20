@@ -50,7 +50,7 @@ const Stats = () => {
               <div className="go-corner">
                 <div className="go-arrow">→</div>
               </div>
-              <div className="fancy-card-icon mb-4 w-12 h-12 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-red-600 transition-colors duration-500 text-red-600">
+              <div className="fancy-card-icon mb-4 w-12 h-12 flex items-center justify-center bg-red-50 rounded-xl group-hover:bg-[#f44336] transition-colors duration-500 text-[#f44336]">
                 {stat.icon}
               </div>
               <h3 className="text-3xl font-extrabold fancy-card-title mb-2">{stat.value}</h3>

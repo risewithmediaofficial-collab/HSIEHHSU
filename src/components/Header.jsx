@@ -35,10 +35,10 @@ const Header = () => {
           label: 'Corrugated Lines',
           path: '/portfolio/corrugated-lines',
           content: [
-            { label: 'HHC-200 (ECO)', path: '/portfolio/corrugated-lines/hhc-200' },
-            { label: 'HHC-250 (STEADY)', path: '/portfolio/corrugated-lines/hhc-250' },
-            { label: 'HHC-300 (CLASSIC OR VALUE)', path: '/portfolio/corrugated-lines/hhc-300' },
-            { label: 'HHC-350 (SPEED LINE)', path: '/portfolio/corrugated-lines/hhc-350' },
+            { label: 'HHC-200', path: '/portfolio/corrugated-lines/hhc-200' },
+            { label: 'HHC-250', path: '/portfolio/corrugated-lines/hhc-250' },
+            { label: 'HHC-300', path: '/portfolio/corrugated-lines/hhc-300' },
+            { label: 'HHC-350', path: '/portfolio/corrugated-lines/hhc-350' },
           ]
         },
         {
@@ -74,70 +74,64 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
-      {/* Top Bar - Modern Dark Design */}
-      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white">
+    <header className="sticky top-0 z-50 bg-white border-b border-[#eee]">
+      {/* Top Bar - Minimalist */}
+      <div className="bg-[#fafafa] border-b border-[#eee] text-[#4a4a4a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 py-3">
-            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 py-2">
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
               <a
                 href="tel:+919894235419"
-                className="group flex items-center gap-2 hover:text-red-400 transition-colors duration-300"
+                className="group flex items-center gap-2 hover:text-[#f44336] transition-colors duration-300"
               >
-                <div className="p-1 bg-red-600/20 rounded group-hover:bg-red-600/30 transition-colors duration-300">
-                  <Phone size={14} className="text-red-500" />
-                </div>
-                <span className="font-medium text-sm">+91 98942 35419</span>
+                <Phone size={12} className="text-[#f44336]" />
+                <span className="font-bold text-[10px] uppercase tracking-widest">+91 98942 35419</span>
               </a>
               <a
                 href="mailto:hsiehhsu.india@gmail.com"
-                className="group flex items-center gap-2 hover:text-red-400 transition-colors duration-300"
+                className="group flex items-center gap-2 hover:text-[#f44336] transition-colors duration-300"
               >
-                <div className="p-1 bg-red-600/20 rounded group-hover:bg-red-600/30 transition-colors duration-300">
-                  <Mail size={14} className="text-red-500" />
-                </div>
-                <span className="font-medium text-sm truncate max-w-[200px] sm:max-w-none">hsiehhsu.india@gmail.com</span>
+                <Mail size={12} className="text-[#f44336]" />
+                <span className="font-bold text-[10px] uppercase tracking-widest truncate max-w-[200px] sm:max-w-none">hsiehhsu.india@gmail.com</span>
               </a>
             </div>
-            <div className="hidden lg:flex items-center gap-2 text-sm">
-              <div className="p-1 bg-red-600/20 rounded">
-                <Factory size={14} className="text-red-500" />
-              </div>
-              <span className="font-medium text-slate-300">SIPCOT Industrial Park, Krishnagiri, TN</span>
+            <div className="hidden lg:flex items-center gap-2">
+              <Factory size={12} className="text-[#f44336]" />
+              <span className="font-bold text-[10px] uppercase tracking-widest text-[#7a7a7a]">SIPCOT Industrial Park, Krishnagiri, TN</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white border-b border-slate-100">
+      <nav className="bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between items-center py-0">
             {/* Logo */}
             <Link
               to="/"
               className="group flex items-center gap-3 hover:opacity-90 transition-opacity duration-300">
-              <img className='w-12 h-12' src={logo} alt="logo" />
+              <img className='w-10 h-10' src={logo} alt="logo" />
               <div className="flex flex-col">
-                <h1 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight leading-tight">
+                <h1 className="text-xl font-black text-[#1a1a1a] tracking-tighter leading-none uppercase">
                   HSIEHHSU
                 </h1>
-                <p className="text-[10px] sm:text-xs text-red-600 font-semibold tracking-wider uppercase">
-                  Machinery India Pvt Ltd
+                <p className="text-[9px] text-[#f44336] font-black tracking-[0.2em] uppercase mt-0.5">
+                  India Pvt Ltd
                 </p>
               </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-1">
+            <div className="hidden lg:flex items-center gap-0">
               {navItems.map((item) => (
                 <div key={item.path} className="relative group">
                   {item.isMega ? (
                     <>
                       <button
-                        className={`flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold transition-all duration-300 rounded-lg ${isActive(item.path)
-                          ? 'text-red-600 bg-red-50'
-                          : 'text-slate-700 hover:text-red-600 hover:bg-red-50'
+                        className={`flex items-center gap-1.5 px-5 py-7 text-[11px] font-bold uppercase tracking-wider transition-all duration-300 border-b-2 ${isActive(item.path)
+                          ? 'text-[#f44336] border-[#f44336]'
+                          : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
                           }`}
                       >
                         <span>{item.label}</span>
@@ -157,8 +151,8 @@ const Header = () => {
                                 key={category.id}
                                 onMouseEnter={() => setActivePortfolioTab(category.id)}
                                 className={`w-full text-left px-5 py-3 text-sm font-medium transition-all duration-300 flex items-center justify-between ${activePortfolioTab === category.id
-                                  ? 'bg-red-50 text-red-600 border-l-4 border-red-600'
-                                  : 'text-slate-700 hover:bg-red-50 hover:text-red-600 border-l-4 border-transparent hover:border-red-300'
+                                  ? 'bg-red-50 text-[#f44336] border-l-4 border-[#f44336]'
+                                  : 'text-slate-700 hover:bg-red-50 hover:text-[#f44336] border-l-4 border-transparent hover:border-red-300'
                                   }`}
                               >
                                 {category.label}
@@ -187,7 +181,7 @@ const Header = () => {
                                     to={sub.path}
                                     className="group/item block px-4 py-3 text-sm transition-all duration-300 hover:bg-red-50 rounded-xl"
                                   >
-                                    <div className="font-medium text-slate-700 group-hover/item:text-red-600 transition-colors">
+                                    <div className="font-medium text-slate-700 group-hover/item:text-[#f44336] transition-colors">
                                       {sub.label}
                                     </div>
                                     {sub.description && (
@@ -206,9 +200,9 @@ const Header = () => {
                   ) : item.dropdown ? (
                     <>
                       <button
-                        className={`flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold transition-all duration-300 rounded-lg ${isActive(item.path)
-                          ? 'text-red-600 bg-red-50'
-                          : 'text-slate-700 hover:text-red-600 hover:bg-red-50'
+                        className={`flex items-center gap-1.5 px-5 py-7 text-[11px] font-bold uppercase tracking-wider transition-all duration-300 border-b-2 ${isActive(item.path)
+                          ? 'text-[#f44336] border-[#f44336]'
+                          : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
                           }`}
                       >
                         <span>{item.label}</span>
@@ -225,8 +219,8 @@ const Header = () => {
                             key={subItem.path || idx}
                             to={subItem.path}
                             className={`block px-5 py-3 text-sm font-medium transition-all duration-300 ${isActive(subItem.path)
-                              ? 'bg-red-50 text-red-600 border-l-4 border-red-600'
-                              : 'text-slate-700 hover:bg-red-50 hover:text-red-600 border-l-4 border-transparent hover:border-red-300'
+                              ? 'bg-red-50 text-[#f44336] border-l-4 border-[#f44336]'
+                              : 'text-slate-700 hover:bg-red-50 hover:text-[#f44336] border-l-4 border-transparent hover:border-red-300'
                               }`}
                           >
                             {subItem.label}
@@ -237,9 +231,9 @@ const Header = () => {
                   ) : (
                     <Link
                       to={item.path}
-                      className={`px-4 py-2.5 text-sm font-semibold transition-all duration-300 rounded-lg block ${isActive(item.path)
-                        ? 'text-red-600 bg-red-50'
-                        : 'text-slate-700 hover:text-red-600 hover:bg-red-50'
+                      className={`px-5 py-7 text-[11px] font-bold uppercase tracking-wider transition-all duration-300 border-b-2 block ${isActive(item.path)
+                        ? 'text-[#f44336] border-[#f44336]'
+                        : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
                         }`}
                     >
                       {item.label}
@@ -248,26 +242,26 @@ const Header = () => {
                 </div>
               ))}
 
-              {/* WhatsApp Button */}
+              {/* WhatsApp Button - Brand Red */}
               <a
                 href="https://wa.me/919894235419"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-3 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-5 py-2.5 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 text-sm"
+                className="ml-6 px-5 py-2.5 bg-[#f44336] text-white text-[11px] font-bold uppercase tracking-wider hover:bg-[#d32f2f] transition-all duration-500 flex items-center gap-2 shadow-sm"
               >
-                <MessageCircle size={18} strokeWidth={2} />
+                <MessageCircle size={14} />
                 <span>WhatsApp</span>
               </a>
             </div>
 
             {/* Mobile menu button */}
             <button
-              className="lg:hidden p-2 text-slate-900 hover:bg-slate-100 rounded-lg transition-colors duration-300"
+              className="lg:hidden p-2 text-[#1a1a1a] hover:bg-[#fafafa] rounded-lg transition-colors duration-300"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
             >
               {isOpen ? (
-                <X size={24} className="text-red-600" />
+                <X size={24} className="text-[#f44336]" />
               ) : (
                 <Menu size={24} className="text-slate-900" />
               )}
@@ -285,7 +279,7 @@ const Header = () => {
                   {item.isMega ? (
                     <>
                       <button
-                        className="w-full text-left px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 flex items-center justify-between"
+                        className="w-full text-left px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-red-50 hover:text-[#f44336] rounded-lg transition-all duration-300 flex items-center justify-between"
                         onClick={() => setPortfolioOpen(!portfolioOpen)}
                       >
                         <span>{item.label}</span>
@@ -314,7 +308,7 @@ const Header = () => {
                                 <Link
                                   key={idx}
                                   to={sub.path}
-                                  className="block px-4 py-2 text-sm text-slate-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                                  className="block px-4 py-2 text-sm text-slate-700 hover:text-[#f44336] hover:bg-red-50 rounded-lg transition-colors"
                                   onClick={() => setIsOpen(false)}
                                 >
                                   {sub.label}
@@ -328,7 +322,7 @@ const Header = () => {
                   ) : item.dropdown ? (
                     <>
                       <button
-                        className="w-full text-left px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 flex items-center justify-between"
+                        className="w-full text-left px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-red-50 hover:text-[#f44336] rounded-lg transition-all duration-300 flex items-center justify-between"
                         onClick={() => setServicesOpen(!servicesOpen)}
                       >
                         <span>{item.label}</span>
@@ -346,8 +340,8 @@ const Header = () => {
                             key={subItem.path || idx}
                             to={subItem.path}
                             className={`block px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-300 ${isActive(subItem.path)
-                              ? 'bg-red-50 text-red-600'
-                              : 'text-slate-700 hover:text-red-600 hover:bg-red-50'
+                              ? 'bg-red-50 text-[#f44336]'
+                              : 'text-slate-700 hover:text-[#f44336] hover:bg-red-50'
                               }`}
                             onClick={() => {
                               setIsOpen(false);
@@ -363,8 +357,8 @@ const Header = () => {
                     <Link
                       to={item.path}
                       className={`block px-4 py-3 text-sm font-semibold rounded-lg transition-all duration-300 ${isActive(item.path)
-                        ? 'bg-red-50 text-red-600'
-                        : 'text-slate-900 hover:bg-red-50 hover:text-red-600'
+                        ? 'bg-red-50 text-[#f44336]'
+                        : 'text-slate-900 hover:bg-red-50 hover:text-[#f44336]'
                         }`}
                       onClick={() => setIsOpen(false)}
                     >
@@ -379,7 +373,7 @@ const Header = () => {
                 href="https://wa.me/919894235419"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-4 py-3 rounded-lg font-semibold mt-3 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="flex items-center justify-center gap-2 bg-[#f44336] hover:bg-[#d32f2f] text-white px-4 py-4 rounded-none text-xs font-black uppercase tracking-widest mt-6 transition-all duration-500 shadow-md"
                 onClick={() => setIsOpen(false)}
               >
                 <MessageCircle size={18} strokeWidth={2} />
