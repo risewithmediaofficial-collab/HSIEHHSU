@@ -78,7 +78,7 @@ const Header = () => {
       {/* Top Bar - Minimalist */}
       <div className="bg-[#fafafa] border-b border-[#eee] text-[#4a4a4a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="flex justify-between items-center py-2">
+          <div className="flex justify-between items-center py-3 sm:py-2">
             <div className="flex items-center gap-4 sm:gap-8">
               <a
                 href="tel:+919894235419"
@@ -106,7 +106,7 @@ const Header = () => {
       {/* Main Navigation */}
       <nav className="bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="flex justify-between items-center py-0">
+          <div className="flex justify-between items-center py-3 lg:py-0">
             {/* Logo */}
             <Link
               to="/"
