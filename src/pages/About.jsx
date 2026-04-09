@@ -98,17 +98,17 @@ const About = () => {
       </Helmet>
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative pt-20 pb-16 md:pt-28 md:pb-24 lg:pt-32 lg:pb-24 bg-white overflow-hidden flex items-center">
+      <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
         {/* Simple Red Accent */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fafafa] -z-10"></div>
         
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#f44336] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest mb-10">
+            <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#000000] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest mb-10">
               <span className="tracking-wide">Industry Leaders Since 2010</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#f44336] uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#000000] uppercase">
               About HSIEHHSU
             </h1>
             
@@ -142,11 +142,11 @@ const About = () => {
             {/* Content */}
             <div className="space-y-10">
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-5xl font-black text-[#f44336] tracking-tight leading-none uppercase">
+                <h2 className="text-4xl md:text-5xl font-black text-[#000000] tracking-tight leading-none uppercase">
                   Global Expertise, <br />
                   Indian Dedication
                 </h2>
-                <div className="w-20 h-1 bg-[#f44336]"></div>
+                <div className="w-20 h-1 bg-[#000000]"></div>
               </div>
               
               <p className="text-lg text-[#4a4a4a] leading-relaxed font-medium">
@@ -205,7 +205,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
             <div className="lg:w-1/2 space-y-10">
-              <h2 className="text-4xl md:text-5xl font-black text-[#f44336] leading-none uppercase tracking-tighter">
+              <h2 className="text-4xl md:text-5xl font-black text-[#000000] leading-none uppercase tracking-tighter">
                 Engineering Our Future <br />
                 With Excellence
               </h2>
@@ -252,7 +252,7 @@ const About = () => {
               <div className="inline-block px-4 py-1 border border-[#f44336] text-[#f44336] text-[10px] font-black uppercase tracking-[0.2em]">
                 Strategic Analysis
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-[#f44336] leading-none uppercase tracking-tighter">
+              <h2 className="text-4xl md:text-5xl font-black text-[#000000] leading-none uppercase tracking-tighter">
                 Prime Customer Base <br />
                 Segment Analysis
               </h2>
@@ -314,7 +314,7 @@ const About = () => {
       <section className="py-16 bg-[#fafafa]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter">
               Our Core Strengths & Values
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
@@ -369,7 +369,7 @@ const About = () => {
       <section className="py-16 bg-[#fafafa]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter text-center">
+            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter text-center">
               Why HSIEHHSU?
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
@@ -390,7 +390,7 @@ const About = () => {
       <section className="py-16 bg-white border-t border-[#eee]">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#f44336] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#000000] uppercase tracking-tighter">
               Ready to Partner?
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>

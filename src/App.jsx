@@ -17,6 +17,12 @@ import EcoLine from './pages/EcoLine';
 import SteadyLine from './pages/SteadyLine';
 import ClassicLine from './pages/ClassicLine';
 import SpeedLine from './pages/SpeedLine';
+import RollerRefabrication from './pages/RollerRefabrication';
+import RollerRepair from './pages/RollerRepair';
+import SurfaceRestoration from './pages/SurfaceRestoration';
+import MaintenanceServices from './pages/MaintenanceServices';
+import TungstenCarbideCoating from './pages/TungstenCarbideCoating';
+import HardChromePlating from './pages/HardChromePlating';
 import ScrollToTop from './components/ScrollToTop';
 
 import './App.css';
@@ -39,6 +45,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/roller-refabrication" element={<RollerRefabrication />} />
+          <Route path="/services/roller-repair" element={<RollerRepair />} />
+          <Route path="/services/surface-restoration" element={<SurfaceRestoration />} />
+          <Route path="/services/maintenance-support" element={<MaintenanceServices />} />
+          <Route path="/services/tungsten-carbide-coating" element={<TungstenCarbideCoating />} />
+          <Route path="/services/hard-chrome-plating" element={<HardChromePlating />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio/corrugators/overview" element={<CorrugatorsOverview />} />

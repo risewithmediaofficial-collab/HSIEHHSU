@@ -55,12 +55,12 @@ const Header = () => {
       path: '/Spares and services',
       label: 'Spares and Services',
       dropdown: [
-        { path: '/services#refabrication', label: 'Roller Refabrication' },
-        { path: '/services#repair', label: 'Roller Repair' },
-        { path: '/services#restoration', label: 'Surface Restoration' },
-        { path: '/services#maintenance', label: 'Maintenance Services' },
-        { path: '/services#tungsten', label: 'Tungsten Carbide Coating' },
-        { path: '/services#chrome', label: 'Hard Chrome Plating' },
+        { path: '/services/roller-refabrication', label: 'Roller Refabrication' },
+        { path: '/services/roller-repair', label: 'Roller Repair' },
+        { path: '/services/surface-restoration', label: 'Surface Restoration' },
+        { path: '/services/maintenance-support', label: 'Maintenance Services' },
+        { path: '/services/tungsten-carbide-coating', label: 'Tungsten Carbide Coating' },
+        { path: '/services/hard-chrome-plating', label: 'Hard Chrome Plating' },
       ]
     },
     { path: '/products', label: 'Products' },
@@ -68,9 +68,27 @@ const Header = () => {
   ];
 
   const isActive = (path) => {
+    // For service sub-pages - exact match
+    if (path.startsWith('/services/')) {
+      return location.pathname === path;
+    }
+    // For portfolio sub-pages - exact match
+    if (path.startsWith('/portfolio/')) {
+      return location.pathname === path;
+    }
+    // For main routes
     if (path === '/' && location.pathname === '/') return true;
-    if (path !== '/' && location.pathname.startsWith(path)) return true;
+    if (path === '/services' && location.pathname.startsWith('/services')) return true;
+    if (path === '/portfolio' && location.pathname.startsWith('/portfolio')) return true;
+    if (path !== '/' && path !== '/services' && path !== '/portfolio' && location.pathname === path) return true;
     return false;
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
@@ -129,10 +147,11 @@ const Header = () => {
                   {item.isMega ? (
                     <>
                       <button
-                        className={`flex items-center gap-1.5 px-5 py-7 text-[11px] font-bold uppercase tracking-wider transition-all duration-300 border-b-2 ${isActive(item.path)
-                          ? 'text-[#f44336] border-[#f44336]'
-                          : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
-                          }`}
+                        className={`flex items-center gap-1.5 px-5 py-7 text-[11px] font-bold uppercase tracking-wider transition-all duration-300 border-b-2 ${
+                          location.pathname.startsWith('/portfolio')
+                            ? 'text-[#f44336] border-[#f44336]'
+                            : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
+                        }`}
                       >
                         <span>{item.label}</span>
                         <ChevronDown
@@ -179,13 +198,26 @@ const Header = () => {
                                   <Link
                                     key={idx}
                                     to={sub.path}
-                                    className="group/item block px-4 py-3 text-sm transition-all duration-300 hover:bg-red-50 rounded-xl"
+                                    className={`group/item block px-4 py-3 text-sm transition-all duration-300 rounded-xl ${
+                                      isActive(sub.path)
+                                        ? 'bg-red-50 border-l-4 border-[#f44336]'
+                                        : 'hover:bg-red-50'
+                                    }`}
+                                    onClick={scrollToTop}
                                   >
-                                    <div className="font-medium text-slate-700 group-hover/item:text-[#f44336] transition-colors">
+                                    <div className={`font-medium transition-colors ${
+                                      isActive(sub.path)
+                                        ? 'text-[#f44336]'
+                                        : 'text-slate-700 group-hover/item:text-[#f44336]'
+                                    }`}>
                                       {sub.label}
                                     </div>
                                     {sub.description && (
-                                      <p className="text-xs text-slate-500 mt-1 line-clamp-2 leading-relaxed font-normal">
+                                      <p className={`text-xs mt-1 line-clamp-2 leading-relaxed font-normal ${
+                                        isActive(sub.path)
+                                          ? 'text-[#f44336]'
+                                          : 'text-slate-500'
+                                      }`}>
                                         {sub.description}
                                       </p>
                                     )}
@@ -200,10 +232,13 @@ const Header = () => {
                   ) : item.dropdown ? (
                     <>
                       <button
-                        className={`flex items-center gap-1.5 px-5 py-7 text-[11px] font-bold uppercase tracking-wider transition-all duration-300 border-b-2 ${isActive(item.path)
-                          ? 'text-[#f44336] border-[#f44336]'
-                          : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
-                          }`}
+                        className={`flex items-center gap-1.5 px-5 py-7 text-[11px] font-bold uppercase tracking-wider transition-all duration-300 border-b-2 ${
+                          item.label === 'Spares and Services' && location.pathname.startsWith('/services')
+                            ? 'text-[#f44336] border-[#f44336]'
+                            : isActive(item.path)
+                            ? 'text-[#f44336] border-[#f44336]'
+                            : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
+                        }`}
                       >
                         <span>{item.label}</span>
                         <ChevronDown
@@ -222,6 +257,7 @@ const Header = () => {
                               ? 'bg-red-50 text-[#f44336] border-l-4 border-[#f44336]'
                               : 'text-slate-700 hover:bg-red-50 hover:text-[#f44336] border-l-4 border-transparent hover:border-red-300'
                               }`}
+                            onClick={scrollToTop}
                           >
                             {subItem.label}
                           </Link>
@@ -235,6 +271,7 @@ const Header = () => {
                         ? 'text-[#f44336] border-[#f44336]'
                         : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
                         }`}
+                      onClick={scrollToTop}
                     >
                       {item.label}
                     </Link>
@@ -279,7 +316,11 @@ const Header = () => {
                   {item.isMega ? (
                     <>
                       <button
-                        className="w-full text-left px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-red-50 hover:text-[#f44336] rounded-lg transition-all duration-300 flex items-center justify-between"
+                        className={`w-full text-left px-4 py-3 text-sm font-semibold rounded-lg transition-all duration-300 flex items-center justify-between ${
+                          location.pathname.startsWith('/portfolio')
+                            ? 'bg-red-50 text-[#f44336]'
+                            : 'text-slate-900 hover:bg-red-50 hover:text-[#f44336]'
+                        }`}
                         onClick={() => setPortfolioOpen(!portfolioOpen)}
                       >
                         <span>{item.label}</span>
@@ -308,8 +349,15 @@ const Header = () => {
                                 <Link
                                   key={idx}
                                   to={sub.path}
-                                  className="block px-4 py-2 text-sm text-slate-700 hover:text-[#f44336] hover:bg-red-50 rounded-lg transition-colors"
-                                  onClick={() => setIsOpen(false)}
+                                  className={`block px-4 py-2 text-sm rounded-lg transition-colors ${
+                                    isActive(sub.path)
+                                      ? 'bg-red-50 text-[#f44336] border-l-4 border-[#f44336]'
+                                      : 'text-slate-700 hover:text-[#f44336] hover:bg-red-50 border-l-4 border-transparent'
+                                  }`}
+                                  onClick={() => {
+                                    scrollToTop();
+                                    setIsOpen(false);
+                                  }}
                                 >
                                   {sub.label}
                                 </Link>
@@ -322,7 +370,11 @@ const Header = () => {
                   ) : item.dropdown ? (
                     <>
                       <button
-                        className="w-full text-left px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-red-50 hover:text-[#f44336] rounded-lg transition-all duration-300 flex items-center justify-between"
+                        className={`w-full text-left px-4 py-3 text-sm font-semibold rounded-lg transition-all duration-300 flex items-center justify-between ${
+                          item.label === 'Spares and Services' && location.pathname.startsWith('/services')
+                            ? 'bg-red-50 text-[#f44336]'
+                            : 'text-slate-900 hover:bg-red-50 hover:text-[#f44336]'
+                        }`}
                         onClick={() => setServicesOpen(!servicesOpen)}
                       >
                         <span>{item.label}</span>
@@ -340,10 +392,11 @@ const Header = () => {
                             key={subItem.path || idx}
                             to={subItem.path}
                             className={`block px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-300 ${isActive(subItem.path)
-                              ? 'bg-red-50 text-[#f44336]'
-                              : 'text-slate-700 hover:text-[#f44336] hover:bg-red-50'
+                              ? 'bg-red-50 text-[#f44336] border-l-4 border-[#f44336]'
+                              : 'text-slate-700 hover:text-[#f44336] hover:bg-red-50 border-l-4 border-transparent'
                               }`}
                             onClick={() => {
+                              scrollToTop();
                               setIsOpen(false);
                               setServicesOpen(false);
                             }}
@@ -360,7 +413,10 @@ const Header = () => {
                         ? 'bg-red-50 text-[#f44336]'
                         : 'text-slate-900 hover:bg-red-50 hover:text-[#f44336]'
                         }`}
-                      onClick={() => setIsOpen(false)}
+                      onClick={() => {
+                        scrollToTop();
+                        setIsOpen(false);
+                      }}
                     >
                       {item.label}
                     </Link>

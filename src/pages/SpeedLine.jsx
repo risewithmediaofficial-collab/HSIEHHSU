@@ -33,7 +33,7 @@ const SpeedLine = () => {
       </Helmet>
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative pt-20 pb-16 md:pt-28 md:pb-24 lg:pt-32 lg:pb-24 bg-white overflow-hidden flex items-center">
+      <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
         {/* Simple Red Accent */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fafafa] -z-10"></div>
 
@@ -43,7 +43,7 @@ const SpeedLine = () => {
               <span className="tracking-wide">HHC-350 SERIES</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#f44336] uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#000000] uppercase">
               HHC-350
             </h1>
 
@@ -64,7 +64,7 @@ const SpeedLine = () => {
                   <Gauge className="w-4 h-4" />
                   Maximum Throughput
                 </div>
-                <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter leading-none">
+                <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter leading-none">
                   Unmatched Throughput
                 </h2>
                 <div className="w-20 h-1 bg-[#f44336]"></div>
@@ -105,7 +105,7 @@ const SpeedLine = () => {
       <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter">
               Automated Efficiency
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
@@ -132,7 +132,7 @@ const SpeedLine = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-10">
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-6xl font-black text-[#f44336] uppercase tracking-tighter leading-none">
+                <h2 className="text-4xl md:text-6xl font-black text-[#000000] uppercase tracking-tighter leading-none">
                   Supply Large Orders
                 </h2>
                 <div className="w-20 h-1 bg-[#f44336]"></div>

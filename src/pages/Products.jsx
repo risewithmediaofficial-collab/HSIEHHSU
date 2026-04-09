@@ -86,7 +86,7 @@ const Products = () => {
             </Helmet>
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative pt-20 pb-16 md:pt-28 md:pb-24 lg:pt-32 lg:pb-24 bg-white overflow-hidden flex items-center">
+      <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
         {/* Simple Red Accent */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fafafa] -z-10"></div>
         
@@ -96,7 +96,7 @@ const Products = () => {
               <span className="tracking-wide">Complete Machinery & Spares Supply</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#f44336] uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#000000] uppercase">
               Premium Machinery & Spares
             </h1>
             
@@ -111,7 +111,7 @@ const Products = () => {
       <section className="py-16 bg-[#fafafa] border-y border-[#eee]" id="machinery">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter">
               Advanced Corrugation Machinery Systems
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
@@ -170,7 +170,7 @@ const Products = () => {
       <section className="py-16 bg-white" id="spares">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter text-center">
+            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter text-center">
               Genuine Spare Parts & Components
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
@@ -200,7 +200,7 @@ const Products = () => {
       <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter">
               Precision Quality Assurance Protocol
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
@@ -241,7 +241,7 @@ const Products = () => {
       <section className="py-16 bg-white border-t border-[#eee]">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#f44336] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#000000] uppercase tracking-tighter">
               Need Machine Parts or Upgrades?
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>

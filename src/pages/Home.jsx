@@ -258,7 +258,7 @@ const Home = () => {
       </Helmet>
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative pt-20 pb-16 md:pt-28 md:pb-20 lg:pt-32 lg:pb-24 bg-white overflow-hidden flex items-center">
+      <section className="relative pt-10 pb-16 md:pt-16 md:pb-20 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
         {/* Background accent */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fdfdfd] -z-10"></div>
         <div className="absolute top-20 right-20 w-64 h-64 bg-red-500/5 rounded-full blur-3xl animate-pulse"></div>
@@ -438,7 +438,7 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-3xl mb-16 text-center mx-auto">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] mb-4 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-black text-[#000000] mb-4 tracking-tight">
               Why Hsiehhsu?
             </h2>
             <div className="w-24 h-1 bg-[#f44336] mx-auto mb-6"></div>
@@ -468,7 +468,7 @@ const Home = () => {
       <section className="py-16 bg-[#fafafa]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="mb-20">
-            <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tight">
+            <h2 className="text-4xl font-black text-[#000000] uppercase tracking-tight">
               Our Key Advantages
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mt-4"></div>
@@ -490,7 +490,7 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mb-20 text-center mx-auto">
-            <h2 className="text-3xl md:text-4xl font-black text-[#f44336] uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-black text-[#000000] uppercase tracking-tight">
               Explore Our Core Specialization Services
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto mt-4"></div>
@@ -527,21 +527,37 @@ const Home = () => {
       <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-4xl md:text-5xl font-black text-[#f44336] mb-6 uppercase tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-black text-[#1a1a1a] mb-6 uppercase tracking-tight">
               Our Precision Methodology
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
 
-          <div className="grid lg:grid-cols-4 gap-12">
+          <div className="grid lg:grid-cols-4 gap-0 relative">
+            {/* Connecting line with arrows */}
+            <div className="absolute top-10 left-0 right-0 hidden lg:block h-1 bg-[#ffcdd2] z-0"></div>
+            
             {processSteps.map((step, idx) => (
-              <div key={idx} className="relative group">
-                <div className="text-[#f44336] font-black text-6xl opacity-10 mb-6 group-hover:opacity-100 transition-opacity duration-700">
-                  {step.number}
-                </div>
-                <div className="relative z-10">
-                  <h3 className="text-sm font-black text-[#1a1a1a] mb-4 uppercase tracking-widest tracking-tight">{step.title}</h3>
-                  <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">{step.description}</p>
+              <div key={idx} className="relative z-10 mb-12 lg:mb-0">
+                <div className="flex flex-col items-center">
+                  {/* Round icon with number */}
+                  <div className="relative mb-8 group">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#f44336] to-[#d32f2f] flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 cursor-pointer group-hover:from-[#d32f2f] group-hover:to-[#b71c1c] relative z-20">
+                      <span className="text-white font-black text-3xl">{step.number}</span>
+                    </div>
+                    {/* Arrow on red line (except for last item) */}
+                    {idx < processSteps.length - 1 && (
+                      <div className="hidden lg:flex absolute -right-12 top-10 transform -translate-y-1/2 z-20 text-black text-xl font-bold group-hover:scale-150 transition-transform duration-300">
+                        →
+                      </div>
+                    )}
+                  </div>
+                  
+                  {/* Title and description */}
+                  <div className="text-center">
+                    <h3 className="text-sm font-black text-[#1a1a1a] mb-3 uppercase tracking-widest">{step.title}</h3>
+                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed px-2">{step.description}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -553,7 +569,7 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mb-20 text-center mx-auto">
-            <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tight">
+            <h2 className="text-4xl font-black text-[#000000] uppercase tracking-tight">
               Real-World Case Studies & Success
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto mt-4"></div>
@@ -576,7 +592,7 @@ const Home = () => {
       <section className="py-16 bg-[#fafafa]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mb-20 text-center mx-auto">
-            <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tight">
+            <h2 className="text-4xl font-black text-[#000000] uppercase tracking-tight">
               Client Testimonials & Feedback
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto mt-4"></div>
