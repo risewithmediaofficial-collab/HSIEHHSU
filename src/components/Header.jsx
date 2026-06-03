@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Factory, ChevronDown, MessageCircle } from 'lucide-react';
 import logo from '../assets/logo.png';
@@ -9,6 +9,30 @@ const Header = () => {
   const [portfolioOpen, setPortfolioOpen] = useState(false);
   const [activePortfolioTab, setActivePortfolioTab] = useState('corrugators');
   const location = useLocation();
+
+  useEffect(() => {
+    setIsOpen(false);
+    setServicesOpen(false);
+    setPortfolioOpen(false);
+    setActivePortfolioTab('corrugators');
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+    const previousHtmlOverflow = html.style.overflow;
+    const previousBodyOverflow = body.style.overflow;
+
+    if (isOpen) {
+      html.style.overflow = 'hidden';
+      body.style.overflow = 'hidden';
+    }
+
+    return () => {
+      html.style.overflow = previousHtmlOverflow;
+      body.style.overflow = previousBodyOverflow;
+    };
+  }, [isOpen]);
 
   const navItems = [
     { path: '/', label: 'Home' },
@@ -307,10 +331,13 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           <div
-            className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[600px] opacity-100 pb-4' : 'max-h-0 opacity-0'
-              }`}
+            className={`absolute inset-x-0 top-full lg:hidden transition-all duration-300 ease-in-out ${
+              isOpen ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'
+            }`}
           >
-            <div className="border-t border-slate-200 pt-4 space-y-1">
+            <div className="border-t border-slate-200 bg-white shadow-2xl">
+              <div className="mx-auto max-h-[calc(100vh-8.5rem)] max-w-7xl overflow-y-auto overscroll-contain px-4 pb-6 pt-4 sm:px-6">
+                <div className="space-y-1">
               {navItems.map((item) => (
                 <div key={item.path}>
                   {item.isMega ? (
@@ -330,8 +357,9 @@ const Header = () => {
                         />
                       </button>
                       <div
-                        className={`ml-4 space-y-1 overflow-hidden transition-all duration-300 ${portfolioOpen ? 'max-h-[800px] mt-1 opacity-100 pb-2' : 'max-h-0 opacity-0'
-                          }`}
+                        className={`ml-4 space-y-1 overflow-hidden transition-all duration-300 ${
+                          portfolioOpen ? 'mt-1 max-h-80 overflow-y-auto opacity-100 pb-2 pr-2' : 'max-h-0 opacity-0'
+                        }`}
                       >
                         {item.dropdown.map((category) => (
                           <div key={category.id} className="space-y-1">
@@ -384,8 +412,9 @@ const Header = () => {
                         />
                       </button>
                       <div
-                        className={`ml-4 space-y-1 overflow-hidden transition-all duration-300 ${servicesOpen ? 'max-h-60 mt-1 opacity-100' : 'max-h-0 opacity-0'
-                          }`}
+                        className={`ml-4 space-y-1 overflow-hidden transition-all duration-300 ${
+                          servicesOpen ? 'mt-1 max-h-72 overflow-y-auto opacity-100 pr-2' : 'max-h-0 opacity-0'
+                        }`}
                       >
                         {item.dropdown.map((subItem, idx) => (
                           <Link
@@ -435,6 +464,8 @@ const Header = () => {
                 <MessageCircle size={18} strokeWidth={2} />
                 <span>WhatsApp</span>
               </a>
+            </div>
+              </div>
             </div>
           </div>
         </div>
