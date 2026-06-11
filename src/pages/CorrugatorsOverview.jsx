@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Settings, CheckCircle, Zap, Shield, TrendingUp, Factory, Cpu, Layout, Users, BookOpen, Calendar, ArrowRight, Camera, Lock, Wifi, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import corrugatorOverviewImage from '../assets/ChatGPT Image Jun 11, 2026, 03_07_39 PM (6).png';
 
 const CorrugatorsOverview = () => {
   const solutions = [
@@ -125,10 +126,14 @@ const CorrugatorsOverview = () => {
               </div>
             </div>
             
-            <div className="relative aspect-square bg-[#fafafa] border border-[#eee] flex items-center justify-center group overflow-hidden">
+            <div className="relative aspect-square bg-[#fafafa] border border-[#eee] flex items-center justify-center group overflow-hidden p-8">
                <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#eee]"></div>
-               <Factory className="w-48 h-48 text-[#eee] group-hover:text-[#f44336] transition-colors duration-700" />
-               <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-[#fafafa] to-transparent">
+               <img
+                 src={corrugatorOverviewImage}
+                 alt="Complete HHC corrugator system"
+                 className="relative z-0 h-[82%] w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
+               />
+               <div className="absolute inset-x-0 bottom-0 z-10 p-12 bg-gradient-to-t from-[#fafafa] to-transparent">
                   <p className="text-[#1a1a1a] text-2xl font-black uppercase tracking-tighter opacity-10">Manufacturing Excellence</p>
                </div>
             </div>

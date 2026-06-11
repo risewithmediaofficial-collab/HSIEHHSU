@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async';
-import { Settings, CheckCircle, ChevronDown, HelpCircle, Target, Zap, Shield, TrendingUp, Factory } from 'lucide-react';
+import { Settings, CheckCircle, ChevronDown, HelpCircle, Zap, Shield, TrendingUp } from 'lucide-react';
 import { useState } from 'react';
+import corrugatingRollsImage from '../assets/ChatGPT Image Jun 11, 2026, 03_07_39 PM (7).png';
+import rollerApplicationImage from '../assets/ChatGPT Image Jun 11, 2026, 03_07_37 PM (3).png';
 
 const CorrugatingRolls = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -182,10 +184,14 @@ const CorrugatingRolls = () => {
               </div>
             </div>
             
-            <div className="relative aspect-square bg-[#fafafa] border border-[#eee] p-16 flex items-center justify-center group overflow-hidden">
+            <div className="relative aspect-square bg-[#fafafa] border border-[#eee] p-8 flex items-center justify-center group overflow-hidden">
                <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#eee]"></div>
-               <Factory className="w-48 h-48 text-[#eee] group-hover:text-[#f44336] transition-colors duration-700" />
-               <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-[#fafafa] to-transparent">
+               <img
+                 src={corrugatingRollsImage}
+                 alt="Precision corrugating rolls"
+                 className="relative z-0 h-[82%] w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
+               />
+               <div className="absolute inset-x-0 bottom-0 z-10 p-12 bg-gradient-to-t from-[#fafafa] to-transparent">
                   <p className="text-[#1a1a1a] text-2xl font-black uppercase tracking-tighter opacity-10 uppercase">Advanced Hub</p>
                </div>
             </div>
@@ -244,8 +250,12 @@ const CorrugatingRolls = () => {
              </div>
 
              <div className="hidden lg:flex justify-center">
-                <div className="w-full aspect-video bg-[#fafafa] border border-[#eee] flex items-center justify-center relative group">
-                   <Target className="w-32 h-32 text-[#eee] group-hover:text-[#f44336] transition-colors duration-700" />
+                <div className="w-full aspect-video bg-[#fafafa] border border-[#eee] flex items-center justify-center relative group overflow-hidden p-6">
+                   <img
+                     src={rollerApplicationImage}
+                     alt="Corrugating roll application detail"
+                     className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-105"
+                   />
                    <div className="absolute top-0 right-0 p-8">
                       <div className="w-12 h-1 bg-[#f44336]"></div>
                    </div>

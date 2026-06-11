@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Settings, CheckCircle, Zap, Shield, TrendingUp, Factory, Layout, Wrench } from 'lucide-react';
+import { Settings, CheckCircle, Zap, Shield, TrendingUp, Layout, Wrench } from 'lucide-react';
+import classicLineImage from '../assets/ChatGPT Image Jun 11, 2026, 03_07_38 PM (5).png';
 
 const ClassicLine = () => {
   const features = [
@@ -88,11 +89,15 @@ const ClassicLine = () => {
             <div className="order-1 lg:order-2">
               <div className="relative aspect-square bg-[#fafafa] border border-[#eee] flex items-center justify-center group overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#eee]"></div>
-                <Factory className="w-48 h-48 text-[#eee] group-hover:text-[#f44336] transition-colors duration-700" />
-                <div className="absolute top-6 left-6">
+                <img
+                  src={classicLineImage}
+                  alt="HHC-300 corrugation line"
+                  className="relative z-0 h-[82%] w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute top-6 left-6 z-20">
                   <span className="bg-[#1a1a1a] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest">Multi-Flute Ready</span>
                 </div>
-                <div className="absolute bottom-6 right-6">
+                <div className="absolute bottom-6 right-6 z-20">
                   <span className="bg-[#f44336] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest">6000 MT / MONTH</span>
                 </div>
               </div>
