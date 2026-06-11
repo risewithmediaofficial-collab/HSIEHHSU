@@ -50,7 +50,6 @@ const Home = () => {
       icon: <Hammer className="w-12 h-12" />,
       title: "Roller Refurbish",
       description: "Precision restoration bringing rollers back to original specifications with advanced metallurgical treatment",
-      features: ["Profile Restoration", "Surface Treatment", "Dynamic Balancing", "NDT Testing"],
       link: "/services/roller-refurbish",
     },
     {
@@ -58,7 +57,6 @@ const Home = () => {
       icon: <Cog className="w-12 h-12" />,
       title: "Machine Installation",
       description: "Complete commissioning, alignment, and integration of HHC fully automatic whole lines for 5-ply and 7-ply production",
-      features: ["Setup & Calibration", "Testing & Validation", "Staff Training", "Documentation"],
       link: "/services#installation",
     },
     {
@@ -66,7 +64,6 @@ const Home = () => {
       icon: <TrendingUp className="w-12 h-12" />,
       title: "Preventive Maintenance",
       description: "Scheduled servicing programs designed to maximize equipment uptime while reducing spare usage and maintenance load",
-      features: ["Inspection Protocols", "Lubrication Plans", "Performance Tracking", "Spare Parts"],
       link: "/services#maintenance",
     },
     {
@@ -74,7 +71,6 @@ const Home = () => {
       icon: <Award className="w-12 h-12" />,
       title: "Spare Parts Supply",
       description: "OEM quality components for all major corrugation machinery manufacturers and brands",
-      features: ["OEM Quality", "Fast Logistics", "Inventory Management", "Technical Support"],
       link: "/products",
     },
   ];
@@ -499,23 +495,14 @@ const Home = () => {
             <div className="w-20 h-1 bg-[#f44336] mx-auto mt-4"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-5 lg:gap-6">
             {services.map((service) => (
-              <div key={service.id} className="service-card group">
-                <div className="text-[#f44336] mb-8 group-hover:scale-110 transition-transform duration-300">
+              <div key={service.id} className="service-card group p-6 md:p-7 lg:p-8">
+                <div className="text-[#f44336] mb-5 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-black text-[#1a1a1a] mb-4 uppercase tracking-tighter">{service.title}</h3>
-                <p className="text-[#4a4a4a] mb-8 leading-relaxed font-medium">{service.description}</p>
-
-                <ul className="space-y-3 mb-10">
-                  {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-center text-[#1a1a1a] font-bold text-sm uppercase tracking-widest">
-                      <div className="w-1.5 h-1.5 bg-[#f44336] mr-3"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                <h3 className="text-xl md:text-2xl font-black text-[#1a1a1a] mb-3 uppercase tracking-tighter">{service.title}</h3>
+                <p className="text-[#4a4a4a] mb-6 leading-relaxed font-medium">{service.description}</p>
 
                 <Link to={service.link} className="inline-flex items-center text-[#f44336] font-black uppercase tracking-widest text-xs border-b-2 border-[#f44336] pb-1 hover:text-[#1a1a1a] hover:border-[#1a1a1a] transition-colors">
                   Explore Service <ArrowRight className="w-3 h-3 ml-2" />

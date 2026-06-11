@@ -152,7 +152,7 @@ const About = () => {
               </div>
               
               <p className="text-lg text-[#4a4a4a] leading-relaxed font-medium">
-                HSIEHHSU MACHINERY stands as a global titan in corrugation technology, with over 60 years of engineering pedigree. Recognized as a top-ranking corrugator manufacturer in China and Taiwan, our machinery powers high-volume production plants across continents.
+                HSIEHHSU MACHINERY stands as a global titan in corrugation technology, with over 40 years of engineering pedigree. Recognized as a top-ranking corrugator manufacturer in China and Taiwan, our machinery powers high-volume production plants across continents.
               </p>
               
               <p className="text-lg text-[#4a4a4a] leading-relaxed font-medium">
@@ -239,7 +239,7 @@ const About = () => {
                   className="relative z-0 h-[74%] w-[74%] md:h-[82%] md:w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-x-0 bottom-0 z-10 p-4 md:p-10 bg-gradient-to-t from-white via-white/90 to-transparent">
-                  <p className="max-w-[11rem] md:max-w-none text-[#1a1a1a] text-lg md:text-2xl font-black uppercase tracking-tighter opacity-20 leading-none">60 Years of Engineering</p>
+                  <p className="max-w-[11rem] md:max-w-none text-[#1a1a1a] text-lg md:text-2xl font-black uppercase tracking-tighter opacity-20 leading-none">40 Years of Engineering</p>
                 </div>
               </div>
               <div className="absolute bottom-4 right-4 md:-bottom-6 md:-right-6 z-20 bg-[#1a1a1a] px-4 py-4 md:p-10 text-white max-w-[12rem] md:max-w-none">
