@@ -1,11 +1,12 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { Settings, CheckCircle, Zap, Shield, TrendingUp, Factory, Cpu, Gauge } from 'lucide-react';
 
 const SpeedLine = () => {
   const features = [
     {
       title: "End-to-End Automation",
-      desc: "Features fully automated systems designed to maximize efficiency and minimize unit costs for large orders.",
+      desc: "Features fully automated systems designed to handle large orders with dependable plant-wide control.",
       icon: <Cpu className="w-6 h-6 text-[#f44336]" />
     },
     {
@@ -14,13 +15,13 @@ const SpeedLine = () => {
       icon: <Settings className="w-6 h-6 text-[#f44336]" />
     },
     {
-      title: "High Production Yield",
-      desc: "Achieve massive production volumes of up to 56,000 m²/hour with consistent board quality.",
+      title: "Monthly Output",
+      desc: "Monthly output up to 7000 MT depending on machine width with consistent board quality.",
       icon: <Gauge className="w-6 h-6 text-[#f44336]" />
     },
     {
-      title: "Massive Daily Output",
-      desc: "Configured for reliable daily output volumes exceeding one million square meters.",
+      title: "Large Order Supply",
+      desc: "Configured to supply large-volume orders with dependable scheduling and stable board quality.",
       icon: <TrendingUp className="w-6 h-6 text-[#f44336]" />
     }
   ];
@@ -29,7 +30,7 @@ const SpeedLine = () => {
     <>
       <Helmet>
         <title>HHC-350  | Hsieh Hsu India high-Speed Corrugated Lines</title>
-        <meta name="description" content="The HHC-350 from Hsieh Hsu India – high-volume solutions for transregional markets. Automated end-to-end for maximum efficiency." />
+        <meta name="description" content="The HHC-350 from Hsieh Hsu India delivers high-volume solutions for transregional markets with fully automated line control." />
       </Helmet>
 
       {/* ===== HERO SECTION ===== */}
@@ -71,7 +72,7 @@ const SpeedLine = () => {
               </div>
 
               <p className="text-[#4a4a4a] leading-relaxed text-lg font-medium">
-                The HHC-350 from Hsieh Hsu India features systems that are automated end-to-end, enabling you to achieve production volumes of up to 56,000 m²/hour. You also get maximum machine availability and cost-efficient configuration.
+                The HHC-350 from Hsieh Hsu India features fully automated end-to-end systems for large-volume production, stable quality, and dependable supply for major order programs.
               </p>
 
               <div className="p-10 bg-[#fafafa] border border-[#eee] relative group">
@@ -92,8 +93,8 @@ const SpeedLine = () => {
                   <span className="bg-[#1a1a1a] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest">Production Leader</span>
                 </div>
                 <div className="absolute bottom-6 left-6 right-6 flex justify-between gap-2">
-                  <div className="bg-[#1a1a1a] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest flex-1 text-center">56,000 m²/hour</div>
-                  <div className="bg-[#f44336] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest flex-1 text-center">1M+ Daily m²</div>
+                  <div className="bg-[#1a1a1a] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest flex-1 text-center">7000 MT / MONTH</div>
+                  <div className="bg-[#f44336] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest flex-1 text-center">1800 / 2200 / 2500 MM</div>
                 </div>
               </div>
             </div>
@@ -106,7 +107,7 @@ const SpeedLine = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter">
-              Automated Efficiency
+              Automated Line Efficiency
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
             <p className="text-[#7a7a7a] text-lg max-w-2xl mx-auto font-medium">
@@ -139,7 +140,7 @@ const SpeedLine = () => {
               </div>
 
               <p className="text-[#4a4a4a] text-lg font-medium leading-relaxed">
-                Supply your large-scale customers with absolute dependability. Our assistance systems deliver real-time quality parameters.
+                Supply your large-scale customers with absolute dependability. Our assistance systems deliver real-time quality parameters and support large order execution.
               </p>
 
               <div className="space-y-8">
@@ -148,8 +149,8 @@ const SpeedLine = () => {
                     <Zap className="w-6 h-6 text-[#1a1a1a]" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-2">Maximum Speed</h4>
-                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">Continuous top speed production across all board types.</p>
+                    <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-2">Monthly Output</h4>
+                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">7000 MT/month depending on machine width.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6 group">
@@ -157,8 +158,8 @@ const SpeedLine = () => {
                     <Shield className="w-6 h-6 text-[#1a1a1a]" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-2">High Availability</h4>
-                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">24/7 industrial-grade reliability for peak demand cycles.</p>
+                    <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-2">Machine Width</h4>
+                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">1800 MM / 2200 MM / 2500 MM machine width options.</p>
                   </div>
                 </div>
               </div>
@@ -168,10 +169,7 @@ const SpeedLine = () => {
               <h3 className="text-sm font-black uppercase tracking-widest mb-8 text-[#f44336]">System Specifications</h3>
               <ul className="space-y-6">
                 {[
-                  "Production Yield: up to 56,000 m²/hour",
-                  "Daily output volume: over 1 million m²",
                   "Automated end-to-end system control",
-                  "Real-time assistance system integration",
                   "Transregional supply chain optimization",
                   "Fast response global service support"
                 ].map((item, i) => (
@@ -182,6 +180,34 @@ const SpeedLine = () => {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-[#fafafa] border-t border-[#eee]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-10">
+          <div className="space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter">Need HHC-350 Details?</h2>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+          </div>
+
+          <p className="text-lg text-[#4a4a4a] max-w-3xl mx-auto leading-relaxed font-medium">
+            Request technical details, machine width confirmation, and large-order planning support for the HHC-350 line.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/get-quote?service=HHC-350"
+              className="px-12 py-4 bg-[#f44336] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] transition-colors"
+            >
+              Get Quote
+            </Link>
+            <Link
+              to="/apply?service=HHC-350"
+              className="px-12 py-4 border-2 border-[#1a1a1a] text-[#1a1a1a] text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] hover:text-white transition-all"
+            >
+              Apply Now
+            </Link>
           </div>
         </div>
       </section>

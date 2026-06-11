@@ -1,12 +1,13 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { Zap, CheckCircle, Shield, TrendingUp, Award } from 'lucide-react';
 
 const TungstenCarbideCoating = () => {
   return (
     <>
       <Helmet>
-        <title>Tungsten Carbide Coating | Ultra-Durable Surface Treatment</title>
-        <meta name="description" content="Ultra-hard tungsten carbide coating with 1250+ HRC hardness, 4x longer lifespan than chrome, superior wear resistance." />
+        <title>Tungsten Carbide Coating | High-Durability Surface Treatment</title>
+        <meta name="description" content="Tungsten carbide coating with 1250+ HRC hardness, 4x longer lifespan than chrome, and superior wear resistance." />
       </Helmet>
 
       {/* Hero Section */}
@@ -25,7 +26,7 @@ const TungstenCarbideCoating = () => {
             </h1>
             
             <p className="text-lg md:text-xl lg:text-2xl text-[#4a4a4a] leading-relaxed max-w-3xl mx-auto font-medium">
-              Ultra-hard tungsten carbide coating delivers 1250+ Vickers hardness (72 HRC) with superior wear resistance and 4x longer lifespan
+              High-durability tungsten carbide coating delivers 1250+ Vickers hardness (72 HRC) with controlled wear resistance for demanding use
             </p>
           </div>
         </div>
@@ -44,18 +45,16 @@ const TungstenCarbideCoating = () => {
               </div>
 
               <p className="text-lg text-[#4a4a4a] leading-relaxed font-medium">
-                Tungsten carbide coating provides the ultimate solution for extreme durability and superior wear resistance in demanding industrial environments. With micro hardness exceeding 1250 Vickers, it forms a high longwearing, tenacity protective surface.
+                Tungsten carbide coating provides a durable solution for demanding industrial environments. With micro hardness exceeding 1250 Vickers, it forms a strong, long-wearing protective surface.
               </p>
 
               <div className="space-y-4">
                 <h3 className="text-xl font-black text-[#1a1a1a] uppercase tracking-tight">Superior Performance</h3>
                 {[
                   "1250+ Vickers hardness (72 HRC)",
-                  "4+ times longer lifespan than chrome",
                   "Highest precision and dimensional accuracy",
-                  "No speed limitations",
                   "Adaptable to all corrugator types",
-                  "No grinding needed after installation"
+                  "Stable coating performance"
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-[#f44336] flex-shrink-0" />
@@ -124,17 +123,14 @@ const TungstenCarbideCoating = () => {
       <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#1a1a1a] uppercase tracking-tighter">Complete Advantages</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-[#1a1a1a] uppercase tracking-tighter">Process Highlights</h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             {[
               "Highest precision and dimensional accuracy for superior corrugation quality",
-              "No limitation of running speed with enhanced operational efficiency",
               "Adaptable design fits all types of single facer corrugator machines",
-              "No need to grind two sides after installation - reduces setup time",
-              "4+ times longer lifespan compared to hard chrome corrugating rolls",
               "UVV or V profile design increases F.C.T, reduces glue consumption",
               "Lighter medium paper can be used, reducing material costs",
               "Maintains same flute height with excellent printability and stability",
@@ -177,7 +173,7 @@ const TungstenCarbideCoating = () => {
               {
                 title: "Cost Per Hour",
                 value: "Lowest",
-                desc: "Superior long-term ROI and cost efficiency"
+                desc: "Superior long-term ROI with less spares usage and lower maintenance cost"
               }
             ].map((metric, idx) => (
               <div key={idx} className="bg-gradient-to-br from-[#f44336] to-[#ff5252] text-white p-8 lg:p-10 rounded-lg text-center">
@@ -195,7 +191,7 @@ const TungstenCarbideCoating = () => {
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#f44336] uppercase tracking-tighter">
-              Choose Ultimate Performance
+              Choose High-Durability Performance
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
@@ -205,12 +201,12 @@ const TungstenCarbideCoating = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+919894235419"
+            <Link
+              to="/get-quote?service=Tungsten%20Carbide%20Coating"
               className="px-12 py-4 bg-[#f44336] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] transition-colors"
             >
               Get Quote
-            </a>
+            </Link>
             <a
               href="https://wa.me/919894235419"
               target="_blank"

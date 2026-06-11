@@ -22,7 +22,7 @@ const HeroSlider = () => {
 
   const slides = [
     {
-      title: "Precision Roller Refabrication",
+      title: "Precision Roller Refurbish",
       description: "World-class corrugation machine roller restoration with global expertise",
       bgColor: "from-blue-800 to-blue-600",
     },

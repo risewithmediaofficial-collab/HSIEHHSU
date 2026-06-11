@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { Settings, CheckCircle, Zap, Shield, TrendingUp, Factory, Layout, Wrench } from 'lucide-react';
 
 const ClassicLine = () => {
@@ -9,18 +10,18 @@ const ClassicLine = () => {
       icon: <Layout className="w-6 h-6 text-[#f44336]" />
     },
     {
-      title: "Intuitive Technology",
-      desc: "Features cutting-edge, easy-to-use control systems for simple operation and reduced training time.",
+      title: "Advanced Technology",
+      desc: "Features cutting-edge control systems for dependable operation and reduced training time.",
       icon: <Zap className="w-6 h-6 text-[#f44336]" />
     },
     {
-      title: "High Production Yield",
-      desc: "Designed for intensive industrial use with a robust production output of up to 40,000 m²/hour.",
+      title: "Monthly Output",
+      desc: "Designed for intensive industrial use with monthly output up to 6000 MT depending upon width.",
       icon: <TrendingUp className="w-6 h-6 text-[#f44336]" />
     },
     {
       title: "Service Friendly",
-      desc: "Engineered for high availability with a layout that is very easy to service and maintain.",
+      desc: "Engineered with a layout that is very easy to service and maintain.",
       icon: <Wrench className="w-6 h-6 text-[#f44336]" />
     }
   ];
@@ -29,7 +30,7 @@ const ClassicLine = () => {
     <>
       <Helmet>
         <title>HHC-300 | Hsieh Hsu India Corrugated Lines</title>
-        <meta name="description" content="The HHC-300 from Hsieh Hsu India – The versatile allrounder for local markets. Flexible, reliable, and high-yield corrugated board production." />
+        <meta name="description" content="The HHC-300 from Hsieh Hsu India offers flexible, reliable corrugated board production for local markets." />
       </Helmet>
 
       {/* ===== HERO SECTION ===== */}
@@ -48,7 +49,7 @@ const ClassicLine = () => {
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl text-[#4a4a4a] leading-relaxed max-w-3xl mx-auto font-medium">
-              Flexible and versatile for local market leadership
+              Flexible performance for local market leadership
             </p>
           </div>
         </div>
@@ -65,13 +66,13 @@ const ClassicLine = () => {
                   Reliability Guaranteed
                 </div>
                 <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter leading-none">
-                  The Versatile Allrounder
+                  Reliable Local Market Performance
                 </h2>
                 <div className="w-20 h-1 bg-[#f44336]"></div>
               </div>
 
               <p className="text-[#4a4a4a] leading-relaxed text-lg font-medium">
-                The HHC-300 from Hsieh Hsu India stands for reliable corrugator lines with cutting-edge, intuitive technology. HHC-300 gives you the flexibility you need to meet any customer’s requirements.
+                The HHC-300 from Hsieh Hsu India stands for reliable corrugator lines with cutting-edge, advanced technology. HHC-300 gives you the flexibility you need to meet customer requirements across multiple widths.
               </p>
 
               <div className="p-10 bg-[#fafafa] border border-[#eee] relative group">
@@ -92,7 +93,7 @@ const ClassicLine = () => {
                   <span className="bg-[#1a1a1a] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest">Multi-Flute Ready</span>
                 </div>
                 <div className="absolute bottom-6 right-6">
-                  <span className="bg-[#f44336] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest">40,000 m²/hour</span>
+                  <span className="bg-[#f44336] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest">6000 MT / MONTH</span>
                 </div>
               </div>
             </div>
@@ -138,7 +139,7 @@ const ClassicLine = () => {
               </div>
 
               <p className="text-[#4a4a4a] text-lg font-medium leading-relaxed">
-                Another advantage of the HHC-300 is that it is very easy to service, ensuring high availability and reliable delivery performance.
+                Another advantage of the HHC-300 is that it is very easy to service while supporting reliable delivery performance.
               </p>
 
               <div className="space-y-8">
@@ -147,8 +148,8 @@ const ClassicLine = () => {
                     <Shield className="w-6 h-6 text-[#1a1a1a]" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-2">High Availability</h4>
-                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">Maximum uptime through industrial-grade components and accessible design.</p>
+                    <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-2">Machine Width</h4>
+                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">1800 MM / 2200 MM / 2500 MM machine width options.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6 group">
@@ -167,11 +168,10 @@ const ClassicLine = () => {
               <h3 className="text-sm font-black uppercase tracking-widest mb-8 text-[#f44336]">Core Specifications</h3>
               <ul className="space-y-6">
                 {[
-                  "Production Yield: up to 40,000 m²/hour",
-                  "Intuitive User Control Technology",
+                  "Monthly Output: 6000 MT depending upon width",
+                  "Advanced User Control Technology",
                   "Modular Assistance Systems Available",
                   "Easy Maintenance Design",
-                  "Microflute to Standard Board Range",
                   "High Service Life & Durability"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-4">
@@ -181,6 +181,34 @@ const ClassicLine = () => {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-[#fafafa] border-t border-[#eee]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-10">
+          <div className="space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter">Need HHC-300 Details?</h2>
+            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+          </div>
+
+          <p className="text-lg text-[#4a4a4a] max-w-3xl mx-auto leading-relaxed font-medium">
+            Request technical details, machine width confirmation, and monthly output planning support for the HHC-300 line.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/get-quote?service=HHC-300"
+              className="px-12 py-4 bg-[#f44336] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] transition-colors"
+            >
+              Get Quote
+            </Link>
+            <Link
+              to="/apply?service=HHC-300"
+              className="px-12 py-4 border-2 border-[#1a1a1a] text-[#1a1a1a] text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] hover:text-white transition-all"
+            >
+              Apply Now
+            </Link>
           </div>
         </div>
       </section>

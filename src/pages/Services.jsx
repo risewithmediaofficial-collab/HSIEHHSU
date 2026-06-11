@@ -1,6 +1,7 @@
-import { Helmet } from 'react-helmet-async';
-import { Wrench, Settings, RefreshCw, Shield, Clock, TrendingUp, Phone, Mail, CheckCircle, ArrowRight, Zap, Target } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Wrench, Settings, Shield, Clock, TrendingUp, Phone, Mail, CheckCircle, ArrowRight, Zap, Target } from 'lucide-react';
 import { useState } from 'react';
+import SeoHelmet from '../components/SeoHelmet';
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(0);
@@ -8,57 +9,21 @@ const Services = () => {
   const rollerServices = [
   {
     icon: <Wrench className="w-10 h-10" />,
-    title: "Roller Refabrication",
+    title: "Roller Refurbish",
     description: "Complete restoration of corrugation rollers to original specifications using advanced metallurgical techniques and precision engineering",
-    features: ["Hard chrome plating", "Precision grinding", "Dynamic balancing", "Surface hardening"],
+    features: ["Precision grinding", "Dynamic balancing", "Surface hardening", "Dimensional correction"],
     badge: "PREMIUM",
     turnaround: "45-60 days",
-    warranty: "12 months",
-  },
-  {
-    icon: <RefreshCw className="w-10 h-10" />,
-    title: "Roller Repair",
-    description: "Expert repair of damaged rollers including bearing journals, surface defects, and structural issues",
-    features: ["Journal repair", "Weld buildup", "Crack repair", "Geometry restoration"],
-    badge: "QUICK",
-    turnaround: "45-60 days",
-    warranty: "12 months",
+    path: "/services/roller-refurbish",
   },
   {
     icon: <Settings className="w-10 h-10" />,
-    title: "Surface Restoration",
-    description: "Specialized surface treatments to enhance durability, performance, and extend operational life significantly",
-    features: ["Chrome plating", "Ceramic coating", "Nitriding", "Tungsten carbide"],
+    title: "Machine Support",
+    description: "Structured machine support services focused on stability, alignment, and dependable production performance",
+    features: ["Inspection planning", "Line alignment", "Production support", "Maintenance guidance"],
     badge: "ADVANCED",
     turnaround: "45-60 days",
-    warranty: "12 months",
-  },
-  {
-    icon: <TrendingUp className="w-10 h-10" />,
-    title: "Performance Enhancement",
-    description: "Strategic upgrades to improve roller efficiency, reduce wear, and extend overall service lifespan",
-    features: ["Profile optimization", "Heat treatment", "Precision balancing", "Custom coatings"],
-    badge: "PREMIUM+",
-    turnaround: "45-60 days",
-    warranty: "12 months",
-  },
-  {
-    icon: <Zap className="w-10 h-10" />,
-    title: "Tungsten Carbide Coating",
-    description: "Ultra-hard tungsten carbide coating application for extreme durability and superior wear resistance in demanding industrial environments",
-    features: ["Tungsten carbide deposition", "Thermal spray application", "Enhanced hardness", "Extended service life"],
-    badge: "ULTRA-DURABLE",
-    turnaround: "45-60 days",
-    warranty: "12 months",
-  },
-  {
-    icon: <Shield className="w-10 h-10" />,
-    title: "Hard Chrome Plating",
-    description: "Industrial-grade chrome plating service delivering superior hardness, corrosion resistance, and dimensional precision for optimal roller performance",
-    features: ["Hard chrome plating", "Corrosion protection", "Wear resistance", "Dimensional control"],
-    badge: "PROVEN",
-    turnaround: "45-60 days",
-    warranty: "12 months",
+    path: "/services/maintenance-support",
   },
 ];
 
@@ -122,10 +87,6 @@ const Services = () => {
       description: "18+ years of combined expertise",
     },
     { 
-      title: "Standard Warranty", 
-      description: "Comprehensive 12-month warranty",
-    },
-    { 
       title: "24/7 Support", 
       description: "Always available for assistance",
     },
@@ -137,10 +98,11 @@ const Services = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Our Services | Corrugation Roller Refabrication & Repair</title>
-        <meta name="description" content="Complete corrugation machine roller refabrication, repair, restoration, and maintenance services. ISO certified quality with quick turnaround." />
-      </Helmet>
+      <SeoHelmet
+        title="Our Services | Corrugation Roller Refurbish & Repair"
+        description="Complete corrugation machine roller refurbish, repair, restoration, and maintenance services. ISO certified quality with quick turnaround."
+        path="/services"
+      />
 
       {/* ===== HERO SECTION ===== */}
       <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
@@ -165,13 +127,24 @@ const Services = () => {
       </section>
 
       {/* ===== ROLLER SERVICES - TIMELINE ===== */}
-      <section className="py-20 bg-white overflow-hidden" id="refabrication">
+      <section className="py-20 bg-white overflow-hidden" id="refurbish">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a1a1a] uppercase tracking-tighter">
               Our Roller Services
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+            <div className="flex flex-wrap justify-center gap-3 pt-4">
+              {rollerServices.map((service) => (
+                <Link
+                  key={service.title}
+                  to={service.path}
+                  className="px-4 py-2 border border-[#eee] bg-[#fafafa] text-[#1a1a1a] text-[10px] font-black uppercase tracking-widest hover:border-[#f44336] hover:text-[#f44336] transition-colors"
+                >
+                  {service.title}
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* Horizontal Timeline */}
@@ -276,7 +249,7 @@ const Services = () => {
                       <h4 className="font-black text-sm uppercase tracking-widest">Expected Outcome</h4>
                     </div>
                     <p className="text-base lg:text-lg leading-relaxed">
-                      Superior quality with {rollerServices[selectedService].turnaround} turnaround and {rollerServices[selectedService].warranty} warranty coverage
+                      Superior quality with {rollerServices[selectedService].turnaround} turnaround and process-focused delivery support
                     </p>
                   </div>
 
@@ -294,9 +267,20 @@ const Services = () => {
                     </div>
                   </div>
 
-                  <button className="w-full bg-white text-[#f44336] px-6 py-3 font-black text-sm uppercase tracking-widest hover:bg-[#f5f5f5] transition-colors rounded">
-                    Get Quote
-                  </button>
+                  <div className="space-y-3">
+                    <Link
+                      to={`/get-quote?service=${encodeURIComponent(rollerServices[selectedService].title)}`}
+                      className="block w-full bg-white text-[#f44336] px-6 py-3 text-center font-black text-sm uppercase tracking-widest hover:bg-[#f5f5f5] transition-colors rounded"
+                    >
+                      Get Quote
+                    </Link>
+                    <Link
+                      to={rollerServices[selectedService].path}
+                      className="block w-full border border-white/50 text-white px-6 py-3 text-center font-black text-sm uppercase tracking-widest hover:bg-white hover:text-[#f44336] transition-colors rounded"
+                    >
+                      View Details
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -304,43 +288,6 @@ const Services = () => {
         </div>
       </section>
       
-      {/* ===== SERVICE GUARANTEES ===== */}
-      <section className="py-16 bg-[#fafafa] relative overflow-hidden border-y border-[#eee]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-8 items-stretch">
-            {/* Warranty Card */}
-            <div className="bg-white p-12 border border-[#eee] group">
-              <div className="text-[#f44336] mb-8">
-                <Shield className="w-10 h-10" />
-              </div>
-              <h3 className="text-3xl font-black text-[#f44336] mb-6 uppercase tracking-tighter">12-Month Comprehensive Warranty Promise</h3>
-              <p className="text-[#4a4a4a] leading-relaxed text-lg mb-8 font-medium">
-                Every roller refabrication and repair service is backed by our comprehensive 12-month professional warranty. We cover metallurgical integrity, surface bonding, and dimensional stability.
-              </p>
-              <div className="flex items-center gap-3 text-[#f44336] font-black uppercase tracking-[0.2em] text-[10px]">
-                <Target className="w-4 h-4" />
-                <span>Quality Guaranteed</span>
-              </div>
-            </div>
-
-            {/* Turnaround Card */}
-            <div className="bg-[#1a1a1a] p-12 text-white group">
-              <div className="text-[#f44336] mb-8">
-                <Clock className="w-10 h-10" />
-              </div>
-              <h3 className="text-3xl font-black text-[#f44336] mb-6 uppercase tracking-tighter">45-60 Day Precision Turnaround Plan</h3>
-              <p className="text-[#aaa] leading-relaxed text-lg mb-8 font-medium">
-                Our 45-60 day turnaround plan is engineered for precision. This window allows for deep-stage material tempering and multi-layer plating, guaranteeing OEM specifications.
-              </p>
-              <div className="flex items-center gap-3 text-[#f44336] font-black uppercase tracking-[0.2em] text-[10px]">
-                <TrendingUp className="w-4 h-4" />
-                <span>Precision Engineering</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ===== WHY CHOOSE US ===== */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -444,7 +391,7 @@ const Services = () => {
               </div>
 
               <p className="text-lg text-[#4a4a4a] leading-relaxed font-medium">
-                From initial assessment to final delivery, we provide end-to-end service covering every aspect of roller refabrication and machinery maintenance.
+                From initial assessment to final delivery, we provide end-to-end service covering every aspect of roller refurbish and machinery maintenance.
               </p>
               
               <div className="grid sm:grid-cols-2 gap-6 pt-4">
@@ -649,22 +596,22 @@ const Services = () => {
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#f44336] uppercase tracking-tighter">
-              Need Roller Refabrication or Service?
+              Need Roller Refurbish or Service?
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
           
           <p className="text-lg md:text-xl text-[#4a4a4a] max-w-2xl mx-auto leading-relaxed font-medium">
-            Get a free assessment and detailed quotation for your roller refabrication and maintenance needs
+            Get a free assessment and detailed quotation for your roller refurbish and maintenance needs
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+919894235419"
+            <Link
+              to="/get-quote?service=Roller%20Refurbish"
               className="px-12 py-4 bg-[#f44336] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] transition-colors"
             >
-              Contact Us
-            </a>
+              Get Quote
+            </Link>
             <a
               href="https://wa.me/919894235419"
               target="_blank"

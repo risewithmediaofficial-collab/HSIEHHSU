@@ -79,7 +79,7 @@ const Header = () => {
       path: '/Spares and services',
       label: 'Spares and Services',
       dropdown: [
-        { path: '/services/roller-refabrication', label: 'Roller Refabrication' },
+        { path: '/services/roller-refurbish', label: 'Roller Refurbish' },
         { path: '/services/roller-repair', label: 'Roller Repair' },
         { path: '/services/surface-restoration', label: 'Surface Restoration' },
         { path: '/services/maintenance-support', label: 'Maintenance Services' },
@@ -130,11 +130,11 @@ const Header = () => {
                 <span className="font-bold text-[10px] uppercase tracking-widest">+91 98942 35419</span>
               </a>
               <a
-                href="mailto:hsiehhsu.india@gmail.com"
+                href="mailto:kamal01hhsales@gmail.com"
                 className="hidden sm:flex items-center gap-1.5 hover:text-[#f44336] transition-colors duration-300"
               >
                 <Mail size={11} className="text-[#f44336]" />
-                <span className="font-bold text-[10px] uppercase tracking-widest">hsiehhsu.india@gmail.com</span>
+                <span className="font-bold text-[10px] tracking-widest">kamal01hhsales@gmail.com</span>
               </a>
             </div>
             <div className="hidden lg:flex items-center gap-2">

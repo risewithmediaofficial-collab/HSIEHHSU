@@ -9,13 +9,13 @@ const Footer = () => {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/portfolio', label: 'Portfolio' },
-    { path: '/spares and services', label: 'Our Services' },
+    { path: '/services', label: 'Our Services' },
     { path: '/products', label: 'Products' },
     { path: '/contact', label: 'Contact Us' },
   ];
 
   const services = [
-    'Roller Refabrication',
+    'Roller Refurbish',
     'Roller Repair & Reconditioning',
     'Surface Restoration',
     'Machine Installation',
@@ -59,8 +59,8 @@ const Footer = () => {
     {
       icon: <Mail size={18} />,
       title: 'Email',
-      content: 'hsiehhsu.india@gmail.com',
-      link: 'mailto:hsiehhsu.india@gmail.com',
+      content: 'kamal01hhsales@gmail.com',
+      link: 'mailto:kamal01hhsales@gmail.com',
       testId: 'contact-email',
     },
     {
@@ -122,7 +122,7 @@ const Footer = () => {
               </div>
 
               <p className="text-[#4a4a4a] leading-relaxed text-sm max-w-md font-medium" data-testid="company-description">
-                World-class corrugation solutions, built on 18+ years of industry experience. Specialists in precision roller refabrication, restoration, and comprehensive maintenance services.
+                World-class corrugation solutions, built on 18+ years of industry experience. Specialists in precision roller refurbishing, restoration, and comprehensive maintenance services.
               </p>
 
               {/* Social Links */}

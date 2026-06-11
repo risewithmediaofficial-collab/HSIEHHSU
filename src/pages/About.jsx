@@ -1,11 +1,11 @@
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Globe, Target, Award, Users, Factory, Clock, ArrowRight, CheckCircle, Zap, TrendingUp, Shield, Phone } from 'lucide-react';
+import SeoHelmet from '../components/SeoHelmet';
 
 const About = () => {
   const milestones = [
     { year: "2024", event: "Launch of HHC Digital Intelligence Line in India" },
-    { year: "1980s", event: "Standardizing High-Speed Corrugator Tech in Asia" },
+    { year: "1980", event: "Standardizing High-Speed Corrugator Tech in Asia" },
     { year: "60+ YRS", event: "Unbroken Legacy of Machinery Innovation" },
     { year: "GLOBAL", event: "Hubs in Taiwan, China, Vietnam & India" },
     { year: "VISION", event: "Pioneering OEE-centric Production Systems" },
@@ -38,11 +38,11 @@ const About = () => {
   const stats = [
     { number: "500+", label: "Projects Delivered" },
     { number: "40+", label: "Years Experience" },
-    { number: "99.2%", label: "Success Rate" },
-    { number: "50+", label: "Satisfied Clients" },
+    { number: "50+", label: "Success Stories" },
+    { number: "24/7", label: "Support Coverage" },
   ];
 
-  const teamAreas = [
+  const TeamAreas = [
     {
       title: "Precision Engineering",
       description: "Advanced metallurgy and CAD-driven design for perfect rollers",
@@ -78,7 +78,7 @@ const About = () => {
     },
     {
       title: "Proven Track Record",
-      description: "500+ successful projects with 99.2% customer satisfaction",
+      description: "500+ successful projects delivered with dedicated customer support",
     },
     {
       title: "Cost-Effective Solutions",
@@ -92,10 +92,11 @@ const About = () => {
 
   return (
     <>
-      <Helmet>
-        <title>About Us | HSIEHHSU MACHINERY INDIA - Premium Corrugation Solutions</title>
-        <meta name="description" content="Learn about HSIEHHSU MACHINERY INDIA - Global leaders in corrugation solutions with 40+ years of expertise in roller refabrication, restoration, and machinery." />
-      </Helmet>
+      <SeoHelmet
+        title="About Us | HSIEHHSU MACHINERY INDIA - Premium Corrugation Solutions"
+        description="Learn about HSIEHHSU MACHINERY INDIA - Global leaders in corrugation solutions with 40+ years of expertise in roller refurbishing, restoration, and machinery."
+        path="/about"
+      />
 
       {/* ===== HERO SECTION ===== */}
       <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
@@ -162,7 +163,7 @@ const About = () => {
                   "ISO 9001:2015 Certified",
                   "40+ Years of Experience",
                   "500+ Projects Completed",
-                  "99.2% Satisfaction Rate"
+                  "50+ Success Stories"
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-[#f44336]"></div>
@@ -215,7 +216,7 @@ const About = () => {
               <div className="grid gap-4">
                 {[
                   { title: "High-Speed Reliability", desc: "Configuration for maximum production speeds up to 56,000 m²/hour with reliable daily availability." },
-                  { title: "Digital Intelligence 4.0", desc: "Automated end-to-end systems that deliver quality-related parameters in real-time." },
+                  { title: "Digital Intelligence 2.0", desc: "Automated end-to-end systems that deliver quality-related parameters in real time." },
                   { title: "OEE Optimization", desc: "Strategic focus on reducing manufacturing costs per square meter through system-wide effectiveness." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 bg-white p-6 border border-[#eee] hover:border-[#f44336] transition-colors group">
@@ -262,7 +263,7 @@ const About = () => {
               
               <div className="space-y-8">
                 {[
-                  { segment: "Market Leaders", percentage: "40%", desc: "High-volume transregional plants requiring end-to-end automated HHC-350 systems." },
+                  { segment: "Market Leaders", percentage: "40%", desc: "High-volume transregional plants requiring end-to-end automated HHC-350." },
                   { segment: "Industry Pioneers", percentage: "35%", desc: "Regional specialists utilizing HHC-300 and HHC-250 for high-quality niche output." },
                   { segment: "Emerging Corporations", percentage: "25%", desc: "Future-proof plants leveraging HHC-200 technology for growth in emergent markets." }
                 ].map((item, i) => (
@@ -285,7 +286,7 @@ const About = () => {
                 <div className="bg-[#fafafa] p-10 border border-[#eee] hover:border-[#f44336] transition-colors group">
                    <TrendingUp size={24} className="text-[#f44336] mb-6" />
                    <h4 className="font-black text-[#1a1a1a] uppercase text-sm tracking-widest mb-3">ROI Focus</h4>
-                   <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium">Analyzing equipment lifecycle to maximize return on investment for partners.</p>
+                   <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium">Analyzing equipment lifecycle to reduce spare consumption and maintenance costs for partners.</p>
                 </div>
                 <div className="bg-[#1a1a1a] p-10 text-white">
                    <h3 className="text-5xl font-black mb-1 tracking-tighter">500+</h3>
@@ -295,9 +296,9 @@ const About = () => {
               </div>
               <div className="space-y-8 mt-16">
                 <div className="bg-[#f44336] p-10 text-white relative overflow-hidden group">
-                   <h3 className="text-5xl font-black mb-1 tracking-tighter">99.2%</h3>
-                   <div className="text-white/80 font-bold uppercase tracking-widest text-[10px] mb-4">Uptime Analysis</div>
-                   <p className="text-white/70 text-xs leading-relaxed font-medium">Our prime customers maintain world-class uptime records through our service partnership.</p>
+                   <h3 className="text-5xl font-black mb-1 tracking-tighter">50+</h3>
+                   <div className="text-white/80 font-bold uppercase tracking-widest text-[10px] mb-4">Success Stories</div>
+                   <p className="text-white/70 text-xs leading-relaxed font-medium">Our prime customers continue to rely on our service partnership for long-term plant performance.</p>
                 </div>
                 <div className="bg-[#fafafa] p-10 border border-[#eee] hover:border-[#f44336] transition-colors group">
                    <Users size={24} className="text-[#f44336] mb-6" />

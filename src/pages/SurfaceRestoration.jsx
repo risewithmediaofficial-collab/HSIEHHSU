@@ -50,10 +50,8 @@ const SurfaceRestoration = () => {
               <div className="space-y-4">
                 <h3 className="text-xl font-black text-[#1a1a1a] uppercase tracking-tight">Treatment Options</h3>
                 {[
-                  "Hard chrome plating for wear resistance",
                   "Advanced ceramic coating technology",
                   "Nitriding for surface hardening",
-                  "Tungsten carbide application",
                   "Thermal spray applications",
                   "Custom coating solutions"
                 ].map((item, idx) => (
@@ -140,7 +138,7 @@ const SurfaceRestoration = () => {
               },
               { 
                 title: "Tungsten Carbide",
-                benefits: ["Ultra durable", "1250+ HRC hardness", "4x longer life", "Premium quality"]
+                benefits: ["High durability", "1250+ HRC hardness", "4x longer life", "Premium quality"]
               },
               { 
                 title: "Nitriding",

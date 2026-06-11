@@ -44,6 +44,44 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Global body text bump: increase non-heading utility text sizes by roughly 1px */
+.text-\[9px\] {
+  font-size: 10px !important;
+}
+
+.text-\[10px\] {
+  font-size: 11px !important;
+}
+
+.text-\[11px\] {
+  font-size: 12px !important;
+}
+
+.text-xs {
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+}
+
+.text-sm {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+.text-base {
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+}
+
+.text-lg {
+  font-size: 19px !important;
+  line-height: 1.65 !important;
+}
+
+.text-xl {
+  font-size: 21px !important;
+  line-height: 1.6 !important;
+}
+
 /* Custom Animations - Minimalist */
 @keyframes slideUpFade {
   from {

@@ -1,7 +1,7 @@
-import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, MessageSquare, ArrowRight, Building2, MessageCircle } from 'lucide-react';
 import emailjs from 'emailjs-com';
+import SeoHelmet from '../components/SeoHelmet';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +31,7 @@ const Contact = () => {
     e.preventDefault();
 
     // Basic validation
-    if (!formData.name || !formData.email || !formData.phone || !formData.service || !formData.message) {
+    if (!formData.name || !formData.phone || !formData.message) {
       setError('Please fill in all required fields');
       return;
     }
@@ -46,7 +46,7 @@ const Contact = () => {
         {
           name: formData.name,
           company: formData.company || 'Not provided',
-          email: formData.email,
+          email: formData.email || 'Not provided',
           phone: formData.phone,
           service: formData.service,
           message: formData.message,
@@ -119,7 +119,7 @@ const Contact = () => {
       icon: <Mail size={24} />,
       title: 'Email Address',
       details: [
-        { label: 'General', email: 'hsiehhsu.india@gmail.com', testId: 'email-general' },
+        { label: 'Sales', email: 'kamal01hhsales@gmail.com', testId: 'email-general' },
       ],
       testId: 'contact-email',
     },
@@ -136,7 +136,7 @@ const Contact = () => {
   ];
 
   const services = [
-    'Roller Refabrication',
+    'Roller Refurbish',
     'Roller Repair',
     'Machine Installation',
     'Maintenance Service',
@@ -147,10 +147,11 @@ const Contact = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Contact Us | HSIEHHSU MACHINERY INDIA</title>
-        <meta name="description" content="Contact HSIEHHSU MACHINERY INDIA for corrugation machine roller services, machinery, and spare parts. Get in touch with our experts today." />
-      </Helmet>
+      <SeoHelmet
+        title="Contact Us | HSIEHHSU MACHINERY INDIA"
+        description="Contact HSIEHHSU MACHINERY INDIA for corrugation machine roller services, machinery, and spare parts. Get in touch with our experts today."
+        path="/contact"
+      />
 
       {/* ===== HERO SECTION ===== */}
       <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
@@ -234,14 +235,13 @@ const Contact = () => {
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest" htmlFor="email">Email Address *</label>
+                        <label className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest" htmlFor="email">Email Address</label>
                         <input
                           type="email"
                           id="email"
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
-                          required
                           className="w-full px-6 py-4 bg-[#fafafa] border border-[#eee] focus:border-[#f44336] outline-none transition-colors text-sm font-medium"
                           placeholder="EMAIL@EXAMPLE.COM"
                         />
@@ -509,7 +509,7 @@ const Contact = () => {
                     <MapPin size={64} className="text-[#eee] group-hover:text-[#f44336] transition-colors duration-700 mx-auto" />
                     <div className="space-y-2">
                        <h3 className="text-sm font-black uppercase tracking-widest text-[#1a1a1a]">Krishnagiri Facility</h3>
-                       <p className="text-[10px] text-[#7a7a7a] font-medium uppercase tracking-widest leading-relaxed">Premium Roller Refabrication & restoration</p>
+                       <p className="text-[10px] text-[#7a7a7a] font-medium uppercase tracking-widest leading-relaxed">Premium Roller Refurbish & restoration</p>
                     </div>
                     <a 
                        href="https://maps.google.com" 

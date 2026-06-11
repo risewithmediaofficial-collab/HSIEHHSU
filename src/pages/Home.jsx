@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import SeoHelmet from '../components/SeoHelmet';
 import {
   CheckCircle, ArrowRight, Shield, Zap, Clock, Users,
   TrendingUp, Hammer, Cog, Award, Briefcase, Headphones,
@@ -46,18 +46,18 @@ const Home = () => {
 
   const services = [
     {
-      id: "refabrication",
+      id: "refurbish",
       icon: <Hammer className="w-12 h-12" />,
-      title: "Roller Refabrication",
+      title: "Roller Refurbish",
       description: "Precision restoration bringing rollers back to original specifications with advanced metallurgical treatment",
       features: ["Profile Restoration", "Surface Treatment", "Dynamic Balancing", "NDT Testing"],
-      link: "/services#refabrication",
+      link: "/services/roller-refurbish",
     },
     {
       id: "installation",
       icon: <Cog className="w-12 h-12" />,
       title: "Machine Installation",
-      description: "Complete commissioning, alignment, and integration of corrugation production lines",
+      description: "Complete commissioning, alignment, and integration of HHC fully automatic whole lines for 5-ply and 7-ply production",
       features: ["Setup & Calibration", "Testing & Validation", "Staff Training", "Documentation"],
       link: "/services#installation",
     },
@@ -65,7 +65,7 @@ const Home = () => {
       id: "maintenance",
       icon: <TrendingUp className="w-12 h-12" />,
       title: "Preventive Maintenance",
-      description: "Scheduled servicing programs designed to maximize equipment uptime and longevity",
+      description: "Scheduled servicing programs designed to maximize equipment uptime while reducing spare usage and maintenance load",
       features: ["Inspection Protocols", "Lubrication Plans", "Performance Tracking", "Spare Parts"],
       link: "/services#maintenance",
     },
@@ -114,7 +114,7 @@ const Home = () => {
       id: 1,
       position: "Operations Manager",
       company: "Girnar Packaging",
-      feedback: "HSIEHHSU transformed our maintenance approach. Downtime reduced by 60% in the first year alone. Their technical expertise is unmatched.",
+      feedback: "HSIEHHSU transformed our maintenance approach. Downtime reduced by 60% and support stayed consistent.",
       rating: 5,
       initial: "GP"
     },
@@ -122,7 +122,7 @@ const Home = () => {
       id: 2,
       position: "Plant Head",
       company: "Horizon Packs",
-      feedback: "Professional, reliable, and genuinely invested in our success. They don't just service equipment—they become partners in our growth.",
+      feedback: "Professional, reliable, and genuinely invested in our success. They became a trusted production partner.",
       rating: 5,
       initial: "HP"
     },
@@ -130,7 +130,7 @@ const Home = () => {
       id: 3,
       position: "Production Manager",
       company: "Meghdoot Packaging",
-      feedback: "The technical expertise is exceptional. They proactively identify issues before they become problems, saving us significant costs annually.",
+      feedback: "The technical expertise is exceptional. They identify issues early and help us avoid unnecessary cost.",
       rating: 5,
       initial: "MP"
     },
@@ -138,7 +138,7 @@ const Home = () => {
       id: 4,
       position: "Supply Chain Head",
       company: "Worthpheriphril",
-      feedback: "Their 24/7 support has been a game-changer. Response times are incredible, and their solutions are always innovative and effective.",
+      feedback: "Their 24/7 support has been a game-changer. Response times stay fast and the solutions work.",
       rating: 5,
       initial: "WP"
     },
@@ -146,7 +146,7 @@ const Home = () => {
       id: 5,
       position: "Technical Director",
       company: "Pioneer Packaging",
-      feedback: "Outstanding service quality and quick turnaround times. HSIEHHSU has been instrumental in improving our production efficiency by 45%.",
+      feedback: "Outstanding service quality and quick turnaround times. HSIEHHSU helped us improve production efficiency.",
       rating: 5,
       initial: "PP"
     },
@@ -154,7 +154,7 @@ const Home = () => {
       id: 6,
       position: "Plant Manager",
       company: "Vandana Packaging",
-      feedback: "Exceptional technical knowledge combined with customer-first approach. Their maintenance programs have revolutionized our operations.",
+      feedback: "Exceptional technical knowledge with a customer-first approach. Their maintenance program improved operations.",
       rating: 5,
       initial: "VP"
     },
@@ -162,7 +162,7 @@ const Home = () => {
       id: 7,
       position: "Operations Head",
       company: "Rubykon Packaging",
-      feedback: "Reliable, efficient, and always available when we need them. HSIEHHSU's expertise in roller refabrication is truly world-class.",
+      feedback: "Reliable, efficient, and always available when we need them. Their roller refurbish work is dependable.",
       rating: 5,
       initial: "RP"
     },
@@ -170,7 +170,7 @@ const Home = () => {
       id: 8,
       position: "Production Supervisor",
       company: "Ravi Packages",
-      feedback: "Excellent workmanship and superior after-sales support. We have complete confidence in their technical capabilities.",
+      feedback: "Excellent workmanship and strong after-sales support. We have full confidence in their technical capability.",
       rating: 5,
       initial: "RP"
     },
@@ -221,7 +221,7 @@ const Home = () => {
     },
     {
       title: "Reliability",
-      description: "Proven track record with 99.2% equipment uptime achievement.",
+      description: "Proven track record with dependable uptime across demanding plant conditions.",
       icon: <Shield className="w-6 h-6" />
     },
     {
@@ -252,10 +252,11 @@ const Home = () => {
 
   return (
     <>
-      <Helmet>
-        <title>HSIEHHSU MACHINERY INDIA | Premium Corrugation Excellence</title>
-        <meta name="description" content="ISO-certified corrugation specialists. Premium roller refabrication, restoration, and maintenance solutions for maximum uptime and performance." />
-      </Helmet>
+      <SeoHelmet
+        title="HSIEHHSU MACHINERY INDIA | Premium Corrugation Excellence"
+        description="ISO-certified corrugation specialists. Premium roller refurbishing, restoration, and maintenance solutions for maximum uptime and performance."
+        path="/"
+      />
 
       {/* ===== HERO SECTION ===== */}
       <section className="relative pt-10 pb-16 md:pt-16 md:pb-20 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
@@ -276,7 +277,7 @@ const Home = () => {
               </h1>
 
               <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed max-w-xl font-medium">
-                ISO-certified specialists delivering world-class roller refabrication, restoration, and comprehensive maintenance solutions.
+                ISO-certified specialists delivering world-class roller refurbishing, restoration, and comprehensive maintenance solutions.
               </p>
 
               {/* CTA Buttons — left-aligned to match heading */}
@@ -285,7 +286,7 @@ const Home = () => {
                   href="tel:+919894235419"
                   className="btn-primary whitespace-nowrap"
                 >
-                  <Phone className="w-4 h-4 mr-2.5 flex-shrink-0" />
+                  <Phone className="w-4 h-4 mr-2.5 'flex-shrink-0" />
                   Call: +91 98942 35419
                 </a>
                 <Link
@@ -303,6 +304,7 @@ const Home = () => {
                   { label: "ISO 9001:2015", desc: "Certified" },
                   { label: "40+ Years", desc: "Industry Experience" },
                   { label: "99.2%", desc: "Uptime Rate" },
+                  { label: "--", desc: "Next Metric" },
                 ].map((stat, i) => (
                   <div key={i} className="flex flex-col">
                     <span className="text-[#f44336] font-black text-base tracking-tighter">{stat.label}</span>
@@ -325,10 +327,10 @@ const Home = () => {
                   </h2>
                   <div className="space-y-4">
                     {[
-                      "Roller Refabrication & Repair",
+                      "Roller Refurbish & Repair",
                       "Machine Installation & Commissioning",
                       "Preventive Maintenance Programs",
-                      "HHC Corrugated Line Supply",
+                      "HHC fully automatic whole line - 5-ply / 7-ply",
                     ].map((item, i) => (
                       <div key={i} className="flex items-center gap-3">
                         <div className="w-1.5 h-1.5 bg-[#f44336] flex-shrink-0"></div>
@@ -359,12 +361,13 @@ const Home = () => {
       {/* ===== STATS BAR ===== */}
       <section className="py-16 md:py-16 bg-white border-y border-[#eee] relative overflow-hidden">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12">
             {[
               { label: "Projects Delivered", value: "500+" },
               { label: "Industry Experience", value: "40+" },
               { label: "Uptime Success Rate", value: "99.2%" },
-              { label: "Support Availability", value: "24/7" }
+              { label: "Support Availability", value: "24/7" },
+              { label: "Next Metric", value: "--" }
             ].map((stat, idx) => (
               <div key={idx} className="text-center group border-r last:border-r-0 border-[#eee]">
                 <div className="text-4xl md:text-5xl font-black text-[#f44336] mb-2 tracking-tighter">
@@ -610,7 +613,7 @@ const Home = () => {
                   ))}
                 </div>
 
-                <p className="text-[#4a4a4a] text-sm leading-relaxed mb-8 font-medium">"{testimonial.feedback}"</p>
+                <p className="text-[#4a4a4a] text-sm leading-relaxed mb-8 font-medium line-clamp-2">"{testimonial.feedback}"</p>
 
                 <div className="pt-6 border-t border-[#eee]">
                   <p className="text-[#1a1a1a] font-black text-[10px] uppercase tracking-widest">{testimonial.company}</p>
@@ -632,7 +635,7 @@ const Home = () => {
               Ready to Transform <span className="text-[#f44336]">Your Operations?</span>
             </h2>
             <p className="text-base text-[#aaa] leading-relaxed mb-10 max-w-2xl mx-auto font-medium">
-              Get expert guidance with a comprehensive technical consultation. Our team delivers customized solutions optimized for maximum efficiency and ROI.
+              Get expert guidance with a comprehensive technical consultation. Our team delivers customized solutions optimized for maximum efficiency, less spares usage, and lower maintenance load.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
