@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Factory, ChevronDown, MessageCircle } from 'lucide-react';
 import logo from '../assets/logo.png';
@@ -8,7 +8,9 @@ const Header = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [portfolioOpen, setPortfolioOpen] = useState(false);
   const [activePortfolioTab, setActivePortfolioTab] = useState('corrugators');
+  const [mobileMenuTop, setMobileMenuTop] = useState(0);
   const location = useLocation();
+  const headerRef = useRef(null);
 
   useEffect(() => {
     setIsOpen(false);
@@ -33,6 +35,22 @@ const Header = () => {
       body.style.overflow = previousBodyOverflow;
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    const updateMobileMenuTop = () => {
+      if (!headerRef.current) return;
+      setMobileMenuTop(headerRef.current.getBoundingClientRect().bottom);
+    };
+
+    updateMobileMenuTop();
+    window.addEventListener('resize', updateMobileMenuTop);
+    window.addEventListener('scroll', updateMobileMenuTop);
+
+    return () => {
+      window.removeEventListener('resize', updateMobileMenuTop);
+      window.removeEventListener('scroll', updateMobileMenuTop);
+    };
+  }, [location.pathname, isOpen]);
 
   const navItems = [
     { path: '/', label: 'Home' },
@@ -116,7 +134,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-[#eee]">
+    <header ref={headerRef} className="sticky top-0 z-50 bg-white border-b border-[#eee]">
       {/* Top Bar - Minimalist */}
       <div className="bg-[#fafafa] border-b border-[#eee] text-[#4a4a4a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -331,12 +349,16 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           <div
-            className={`absolute inset-x-0 top-full lg:hidden transition-all duration-300 ease-in-out ${
+            className={`fixed inset-x-0 lg:hidden transition-all duration-300 ease-in-out ${
               isOpen ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'
             }`}
+            style={{
+              top: `${mobileMenuTop}px`,
+              maxHeight: `calc(100dvh - ${mobileMenuTop}px)`,
+            }}
           >
-            <div className="border-t border-slate-200 bg-white shadow-2xl">
-              <div className="mx-auto max-h-[calc(100vh-8.5rem)] max-w-7xl overflow-y-auto overscroll-contain px-4 pb-6 pt-4 sm:px-6">
+            <div className="h-full border-t border-slate-200 bg-white shadow-2xl">
+              <div className="mx-auto h-full max-w-7xl overflow-y-auto overscroll-contain px-4 pb-6 pt-4 sm:px-6">
                 <div className="space-y-1">
               {navItems.map((item) => (
                 <div key={item.path}>

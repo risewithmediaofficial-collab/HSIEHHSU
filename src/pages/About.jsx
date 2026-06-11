@@ -231,20 +231,20 @@ const About = () => {
               </div>
             </div>
             <div className="lg:w-1/2 relative">
-              <div className="aspect-square bg-white border border-[#eee] p-8 flex items-center justify-center group relative overflow-hidden">
+              <div className="aspect-square bg-white border border-[#eee] p-4 md:p-8 flex items-center justify-center group relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#fafafa] -mr-16 -mt-16 rotate-45"></div>
                 <img
                   src={aboutMachineryImage}
                   alt="HHC corrugation line machinery"
-                  className="relative z-0 h-[82%] w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
+                  className="relative z-0 h-[74%] w-[74%] md:h-[82%] md:w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-x-0 bottom-0 z-10 p-10 bg-gradient-to-t from-white to-transparent">
-                  <p className="text-[#1a1a1a] text-2xl font-black uppercase tracking-tighter opacity-20">60 Years of Engineering</p>
+                <div className="absolute inset-x-0 bottom-0 z-10 p-4 md:p-10 bg-gradient-to-t from-white via-white/90 to-transparent">
+                  <p className="max-w-[11rem] md:max-w-none text-[#1a1a1a] text-lg md:text-2xl font-black uppercase tracking-tighter opacity-20 leading-none">60 Years of Engineering</p>
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 z-20 bg-[#1a1a1a] p-10 text-white hidden md:block">
-                 <div className="font-black text-4xl mb-1 uppercase tracking-tighter">HHC Series</div>
-                 <div className="text-[10px] font-bold uppercase tracking-[0.3em] opacity-60">Industry Gold Standard</div>
+              <div className="absolute bottom-4 right-4 md:-bottom-6 md:-right-6 z-20 bg-[#1a1a1a] px-4 py-4 md:p-10 text-white max-w-[12rem] md:max-w-none">
+                 <div className="font-black text-lg md:text-4xl mb-1 uppercase tracking-tighter">HHC Series</div>
+                 <div className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] opacity-60">Industry Gold Standard</div>
               </div>
             </div>
           </div>

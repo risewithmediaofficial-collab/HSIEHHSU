@@ -42,6 +42,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
 }
 
 /* Global body text bump: increase non-heading utility text sizes by roughly 1px */
@@ -339,6 +344,26 @@ img {
 @media (max-width: 640px) {
   html {
     font-size: 14px;
+  }
+
+  .fancy-card,
+  .service-card,
+  .notification-card {
+    padding: 1.25rem;
+  }
+
+  .noti-metric {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    overflow-x: clip;
+  }
+
+  .container {
+    width: 100%;
   }
 }
 
