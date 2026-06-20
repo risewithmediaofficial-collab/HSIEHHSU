@@ -3,21 +3,13 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Factory, ChevronDown, MessageCircle } from 'lucide-react';
 import logo from '../assets/logo.png';
 
-const Header = () => {
+const HeaderContent = ({ location }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [portfolioOpen, setPortfolioOpen] = useState(false);
   const [activePortfolioTab, setActivePortfolioTab] = useState('corrugators');
   const [mobileMenuTop, setMobileMenuTop] = useState(0);
-  const location = useLocation();
   const headerRef = useRef(null);
-
-  useEffect(() => {
-    setIsOpen(false);
-    setServicesOpen(false);
-    setPortfolioOpen(false);
-    setActivePortfolioTab('corrugators');
-  }, [location.pathname]);
 
   useEffect(() => {
     const html = document.documentElement;
@@ -494,6 +486,12 @@ const Header = () => {
       </nav>
     </header>
   );
+};
+
+const Header = () => {
+  const location = useLocation();
+
+  return <HeaderContent key={location.pathname} location={location} />;
 };
 
 export default Header;
