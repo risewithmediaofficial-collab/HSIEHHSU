@@ -300,7 +300,6 @@ const Home = () => {
                   { label: "ISO 9001:2015", desc: "Certified" },
                   { label: "40+ Years", desc: "Industry Experience" },
                   { label: "99.2%", desc: "Uptime Rate" },
-                  { label: "--", desc: "Next Metric" },
                 ].map((stat, i) => (
                   <div key={i} className="flex flex-col">
                     <span className="text-[#f44336] font-black text-base tracking-tighter">{stat.label}</span>
@@ -363,7 +362,6 @@ const Home = () => {
               { label: "Industry Experience", value: "40+" },
               { label: "Uptime Success Rate", value: "99.2%" },
               { label: "Support Availability", value: "24/7" },
-              { label: "Next Metric", value: "--" }
             ].map((stat, idx) => (
               <div key={idx} className="text-center group border-r last:border-r-0 border-[#eee]">
                 <div className="text-4xl md:text-5xl font-black text-[#f44336] mb-2 tracking-tighter">
