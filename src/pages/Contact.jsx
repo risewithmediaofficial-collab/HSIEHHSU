@@ -109,7 +109,7 @@ const Contact = () => {
         {
           label: 'Office',
           name: 'HSIEHHSU India',
-          number: '+91 63699 12595',
+          number: '+91 86673 63796',
           testId: 'phone-office',
         },
       ],
@@ -119,7 +119,7 @@ const Contact = () => {
       icon: <Mail size={24} />,
       title: 'Email Address',
       details: [
-        { label: 'Sales', email: 'kamal01hhsales@gmail.com', testId: 'email-general' },
+        { label: 'Sales', email: 'hsiehhsu.india@gmail.com ', testId: 'email-general' },
       ],
       testId: 'contact-email',
     },

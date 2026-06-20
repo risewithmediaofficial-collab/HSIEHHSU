@@ -49,7 +49,7 @@ const Footer = () => {
         {
           label: 'Office',
           subLabel: 'HSIEHHSU India',
-          number: '+91 63699 12595',
+          number: '+91 86673 63796',
           testId: 'phone-office'
         },
       ],
@@ -59,8 +59,8 @@ const Footer = () => {
     {
       icon: <Mail size={18} />,
       title: 'Email',
-      content: 'kamal01hhsales@gmail.com',
-      link: 'mailto:kamal01hhsales@gmail.com',
+      content: 'hsiehhsu.india@gmail.com ',
+      link: 'mailto:hsiehhsuindia.admin@gmail.com',
       testId: 'contact-email',
     },
     {

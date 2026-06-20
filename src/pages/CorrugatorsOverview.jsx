@@ -284,7 +284,7 @@ const CorrugatorsOverview = () => {
                 </div>
                 <div>
                   <p className="text-[#aaa] text-[9px] font-black uppercase tracking-widest mb-1">Sales</p>
-                  <p className="text-white text-xl font-black">+91 63699 12595</p>
+                  <p className="text-white text-xl font-black">+91 86673 63796</p>
                 </div>
               </div>
             </div>
