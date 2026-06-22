@@ -195,7 +195,7 @@ const HeaderContent = ({ location }) => {
                       </button>
 
                       {/* Mega Dropdown Menu */}
-                      <div className="absolute left-1/2 -translate-x-1/2 mt-1 w-[800px] bg-white shadow-2xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-slate-200 overflow-hidden flex">
+                      <div className="absolute left-1/2 -translate-x-1/2 mt-1 'w-[800px]' bg-white shadow-2xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-slate-200 overflow-hidden flex">
                         {/* Sidebar */}
                         <div className="w-1/3 py-2 border-r border-slate-100">
                           <div className="space-y-0.5">

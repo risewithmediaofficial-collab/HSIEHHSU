@@ -78,9 +78,7 @@ const Footer = () => {
     { icon: Instagram, label: 'Instagram', url: '#', testId: 'social-instagram' },
   ];
 
-  const brochureUrl = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-    ? '/HSIEHHSU_Machinery_Brochure.pdf'
-    : 'https://raw.githubusercontent.com/risewithmediaofficial-collab/HSIEHHSU/main/public/HSIEHHSU_Machinery_Brochure.pdf';
+  const brochureUrl = 'https://raw.githubusercontent.com/risewithmediaofficial-collab/HSIEHHSU/76e226a6cf83082aabc901a0f3ab979e73c9847d/public/HSIEHHSU_Machinery_Brochure.pdf';
 
   return (
     <footer

@@ -12,13 +12,13 @@ const About = () => {
     { year: "VISION", event: "Pioneering OEE-centric Production Systems" },
     { year: "SUPPORT", event: "24/7 Global Lifecycle Partnership Network" },
   ];
-
   const values = [
     {
       icon: <Target className="w-10 h-10" />,
       title: "Excellence",
       description: "Uncompromising quality in every project",
     },
+    
     {
       icon: <Users className="w-10 h-10" />,
       title: "Partnership",

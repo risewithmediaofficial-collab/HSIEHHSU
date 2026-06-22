@@ -43,7 +43,7 @@ const HeroSlider = () => {
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index}>
-            <div className={`relative bg-gradient-to-r ${slide.bgColor} text-white py-20 px-8 md:px-16 rounded-xl`}>
+            <div className={`relative 'bg-gradient-to-r' ${slide.bgColor} text-white py-20 px-8 md:px-16 rounded-xl`}>
               <div className="container mx-auto">
                 <div 
                   className="max-w-3xl"
@@ -59,7 +59,7 @@ const HeroSlider = () => {
                   <div className="flex flex-wrap gap-4">
                     <a 
                       href="/contact"
-                      className="btn-secondary !text-blue-700 border-none"
+                      className="btn-secondary '!text-blue-700' border-none"
                     >
                       Get Free Consultation
                     </a>
