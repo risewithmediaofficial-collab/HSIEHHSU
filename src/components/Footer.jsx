@@ -78,20 +78,7 @@ const Footer = () => {
     { icon: Instagram, label: 'Instagram', url: '#', testId: 'social-instagram' },
   ];
 
-  // Brochure download handler
-  const handleBrochureDownload = () => {
-    try {
-      const brochureUrl = '/brochure/HSIEHHSU_Machinery_Brochure.pdf';
-      const link = document.createElement('a');
-      link.href = brochureUrl;
-      link.download = 'HSIEHHSU_Machinery_Brochure.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (error) {
-      console.error('Brochure download failed:', error);
-    }
-  };
+  const brochureUrl = '/brouchure.pdf';
 
   return (
     <footer
@@ -149,13 +136,14 @@ const Footer = () => {
 
               {/* Brochure Download Button */}
               <div className="pt-2">
-                <button
-                  onClick={handleBrochureDownload}
+                <a
+                  href={brochureUrl}
+                  download="HSIEHHSU_Machinery_Brochure.pdf"
                   className="bg-[#f44336] text-white px-8 py-3 text-[11px] font-black uppercase tracking-widest hover:bg-[#1a1a1a] transition-colors duration-300"
                 >
                   <Download size={14} className="inline mr-2" />
                   Download Brochure
-                </button>
+                </a>
               </div>
             </div>
 
