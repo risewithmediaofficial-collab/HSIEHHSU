@@ -78,7 +78,7 @@ const Footer = () => {
     { icon: Instagram, label: 'Instagram', url: '#', testId: 'social-instagram' },
   ];
 
-  const brochureUrl = '/brouchure.pdf';
+  const brochureUrl = '/HSIEHHSU_Machinery_Brochure.pdf';
 
   return (
     <footer
