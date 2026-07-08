@@ -10,9 +10,12 @@ compatibility_date = "2026-07-08"
 # route = "example.com/*"
 # zone_id = "your-zone-id"
 
-# By default, Workers uses the `workers_dev` sandbox. Set to false if deploying to a route.
+# For static sites (Workers Sites) ensure the `site` bucket points to the Vite output `dist` directory.
+# Cloudflare Pages may run `wrangler` when this file exists — providing [site] avoids the "Missing entry-point" error.
 workers_dev = true
 
-# If you use a custom build or entrypoint, add `type` and `main` as needed.
-# type = "javascript"
-# main = "./dist/index.js"
+[site]
+bucket = "./dist"
+
+# If you use a custom Worker entry (server-side Worker), set the `main` field to the worker entry file.
+# For example: main = "src/index.ts"
