@@ -1,0 +1,18 @@
+## Wrangler config for Cloudflare Workers
+# Replace the placeholders below with your Cloudflare Account ID and any zone/route you use.
+# Do NOT commit your API token here. Set `CF_API_TOKEN` as an environment variable in Cloudflare Pages.
+
+name = "hsiehhsuindia"
+account_id = "REPLACE_WITH_ACCOUNT_ID"
+compatibility_date = "2026-07-08"
+
+# If you deploy to a route, set `route` and `zone_id` (optional)
+# route = "example.com/*"
+# zone_id = "your-zone-id"
+
+# By default, Workers uses the `workers_dev` sandbox. Set to false if deploying to a route.
+workers_dev = true
+
+# If you use a custom build or entrypoint, add `type` and `main` as needed.
+# type = "javascript"
+# main = "./dist/index.js"
