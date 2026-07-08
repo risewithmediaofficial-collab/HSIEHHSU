@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Settings, CheckCircle, ChevronDown, HelpCircle, Zap, Shield, TrendingUp } from 'lucide-react';
+import { Settings, CheckCircle, ChevronDown, HelpCircle, Zap, Shield, TrendingUp, Target } from 'lucide-react';
 import { useState } from 'react';
 import corrugatingRollsImage from '../assets/ChatGPT Image Jun 11, 2026, 03_07_39 PM (7).png';
 import rollerApplicationImage from '../assets/ChatGPT Image Jun 11, 2026, 03_07_37 PM (3).png';
