@@ -2,7 +2,7 @@
 # Replace the placeholders below with your Cloudflare Account ID and any zone/route you use.
 # Do NOT commit your API token here. Set `CF_API_TOKEN` as an environment variable in Cloudflare Pages.
 
-name = "hsiehhsuindia"
+name = 'hseihshuindia'
 account_id = "REPLACE_WITH_ACCOUNT_ID"
 compatibility_date = "2026-07-08"
 
