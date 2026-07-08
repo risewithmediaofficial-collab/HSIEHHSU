@@ -191,8 +191,8 @@ const CorrugatingRolls = () => {
                  alt="Precision corrugating rolls"
                  className="relative z-0 h-[82%] w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
                />
-               <div className="absolute inset-x-0 bottom-0 z-10 p-12 bg-gradient-to-t from-[#fafafa] to-transparent">
-                  <p className="text-[#1a1a1a] text-2xl font-black uppercase tracking-tighter opacity-10 uppercase">Advanced Hub</p>
+              <div className="absolute inset-x-0 bottom-0 z-10 p-12 bg-linear-to-t from-[#fafafa] to-transparent">
+                <p className="text-[#1a1a1a] text-2xl font-black uppercase tracking-tighter opacity-10">Advanced Hub</p>
                </div>
             </div>
           </div>
@@ -216,7 +216,7 @@ const CorrugatingRolls = () => {
                   {feature.icon}
                 </div>
                 <div>
-                   <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4 tracking-tight">{feature.title}</h3>
+                   <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4">{feature.title}</h3>
                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed uppercase">{feature.desc}</p>
                 </div>
               </div>
@@ -289,14 +289,14 @@ const CorrugatingRolls = () => {
                            <div className="text-[#1a1a1a]">{item.icon}</div>
                         </div>
                         <div>
-                          <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest tracking-tight">{item.title}</h3>
+                          <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest">{item.title}</h3>
                           <p className="text-[10px] font-black text-[#f44336] uppercase tracking-widest">{item.subtitle}</p>
                         </div>
                       </div>
                       <ChevronDown className={`w-5 h-5 transition-transform duration-500 ${activeMaterialTab === idx ? 'rotate-180 text-[#f44336]' : 'text-[#aaa]'}`} />
                     </button>
                     
-                    <div className={`transition-all duration-500 ease-in-out ${activeMaterialTab === idx ? 'max-h-[1200px] opacity-100 p-10 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                    <div className={`transition-all duration-500 ease-in-out ${activeMaterialTab === idx ? 'max-h-300 opacity-100 p-10 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                       <div className="pt-10 border-t border-[#eee] space-y-10">
                         <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed uppercase">{item.desc}</p>
                         

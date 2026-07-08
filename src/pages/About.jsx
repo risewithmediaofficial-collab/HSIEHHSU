@@ -185,7 +185,7 @@ const About = () => {
                 <div className="space-y-8">
                   {milestones.map((milestone, index) => (
                     <div key={index} className="flex gap-6 group">
-                      <div className="text-[#f44336] font-black text-xs uppercase tracking-widest pt-1 min-w-[60px]">
+                      <div className="text-[#f44336] font-black text-xs uppercase tracking-widest pt-1 min-w-15">
                         {milestone.year}
                       </div>
                       <div className="flex-1">
@@ -221,7 +221,7 @@ const About = () => {
                   { title: "OEE Optimization", desc: "Strategic focus on reducing manufacturing costs per square meter through system-wide effectiveness." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 bg-white p-6 border border-[#eee] hover:border-[#f44336] transition-colors group">
-                    <CheckCircle className="w-5 h-5 text-[#f44336] flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#f44336] shrink-0" />
                     <div>
                       <h4 className="text-[#1a1a1a] font-bold text-sm uppercase tracking-widest mb-1">{item.title}</h4>
                       <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">{item.desc}</p>
@@ -238,11 +238,11 @@ const About = () => {
                   alt="HHC corrugation line machinery"
                   className="relative z-0 h-[74%] w-[74%] md:h-[82%] md:w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-x-0 bottom-0 z-10 p-4 md:p-10 bg-gradient-to-t from-white via-white/90 to-transparent">
-                  <p className="max-w-[11rem] md:max-w-none text-[#1a1a1a] text-lg md:text-2xl font-black uppercase tracking-tighter opacity-20 leading-none">40 Years of Engineering</p>
+                <div className="absolute inset-x-0 bottom-0 z-10 p-4 md:p-10 bg-linear-to-t from-white via-white/90 to-transparent">
+                  <p className="max-w-44 md:max-w-none text-[#1a1a1a] text-lg md:text-2xl font-black uppercase tracking-tighter opacity-20 leading-none">40 Years of Engineering</p>
                 </div>
               </div>
-              <div className="absolute bottom-4 right-4 md:-bottom-6 md:-right-6 z-20 bg-[#1a1a1a] px-4 py-4 md:p-10 text-white max-w-[12rem] md:max-w-none">
+              <div className="absolute bottom-4 right-4 md:-bottom-6 md:-right-6 z-20 bg-[#1a1a1a] px-4 py-4 md:p-10 text-white max-w-48 md:max-w-none">
                  <div className="font-black text-lg md:text-4xl mb-1 uppercase tracking-tighter">HHC Series</div>
                  <div className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] opacity-60">Industry Gold Standard</div>
               </div>
