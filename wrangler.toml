@@ -12,10 +12,11 @@ compatibility_date = "2026-07-08"
 
 # For static sites (Workers Sites) ensure the `site` bucket points to the Vite output `dist` directory.
 # Cloudflare Pages may run `wrangler` when this file exists — providing [site] avoids the "Missing entry-point" error.
+
 workers_dev = true
 
-[site]
-bucket = "./dist"
+[assets]
+directory = "./dist"
 
 # If you use a custom Worker entry (server-side Worker), set the `main` field to the worker entry file.
 # For example: main = "src/index.ts"
