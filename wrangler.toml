@@ -1,22 +1,8 @@
-## Wrangler config for Cloudflare Workers
-# Replace the placeholders below with your Cloudflare Account ID and any zone/route you use.
-# Do NOT commit your API token here. Set `CF_API_TOKEN` as an environment variable in Cloudflare Pages.
-
-name = 'hseihshuindia'
+name = "hsiehhsuindia"
 account_id = "37800ec4632ae8f1ffb513535e0cf907"
 compatibility_date = "2026-07-08"
-
-# If you deploy to a route, set `route` and `zone_id` (optional)
-# route = "example.com/*"
-# zone_id = "your-zone-id"
-
-# For static sites (Workers Sites) ensure the `site` bucket points to the Vite output `dist` directory.
-# Cloudflare Pages may run `wrangler` when this file exists — providing [site] avoids the "Missing entry-point" error.
 
 workers_dev = true
 
 [assets]
 directory = "./dist"
-
-# If you use a custom Worker entry (server-side Worker), set the `main` field to the worker entry file.
-# For example: main = "src/index.ts"
