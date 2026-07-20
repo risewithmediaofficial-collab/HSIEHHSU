@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Facebook, Linkedin, Instagram, ArrowRight, Download, MessageCircle } from 'lucide-react';
 import logo from '../assets/logo.png';
+import brochureFile from '../assets/hshs_v1 (2).pdf';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -78,7 +79,7 @@ const Footer = () => {
     { icon: Instagram, label: 'Instagram', url: '#', testId: 'social-instagram' },
   ];
 
-  const brochureUrl = 'https://raw.githubusercontent.com/risewithmediaofficial-collab/HSIEHHSU/76e226a6cf83082aabc901a0f3ab979e73c9847d/public/HSIEHHSU_Machinery_Brochure.pdf';
+  const brochureUrl = brochureFile;
 
   return (
     <footer
