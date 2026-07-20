@@ -364,7 +364,7 @@ const Home = () => {
       {/* ===== STATS BAR ===== */}
       <section className="py-16 md:py-16 bg-white border-y border-[#eee] relative overflow-hidden">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {[
               { label: "Projects Delivered", value: "500+" },
               { label: "Industry Experience", value: "40+" },
