@@ -16,6 +16,7 @@ import ravilogo from '../assets/ravi.png';
 import sriharilogo from '../assets/srihari.jpg';
 import vandhanalogo from '../assets/vandhana.jpg';
 import Rubykonlogo from '../assets/Rubykon.jpg';
+import sriRamanaLogo from '../assets/SRI RAMANA CARTONS Logo.avif';
 const Home = () => {
   const features = [
     {
@@ -243,7 +244,7 @@ const Home = () => {
     { name: "Rubykon Packaging", location: "Faridabad", logo: Rubykonlogo },
     { name: "Ravi Packages", location: "Hosur", logo: ravilogo },
     { name: "Sri Hari Packaging", location: "Karur", logo: sriharilogo },
-    { name: "Ramana Carton", location: "Villupuram", initials: "RC" },
+    { name: "Sri Ramana Cartons", location: "Villupuram", logo: sriRamanaLogo },
   ];
 
   return (

@@ -91,14 +91,8 @@ const SteadyLine = () => {
                 <img
                   src={steadyLineImage}
                   alt="HHC-250 corrugation line control section"
-                  className="relative z-0 h-[82%] w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
+                  className="relative z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute top-6 left-6 z-20">
-                  <span className="bg-[#1a1a1a] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest">2,200 mm Width</span>
-                </div>
-                <div className="absolute bottom-6 right-6 z-20">
-                  <span className="bg-[#f44336] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest">8.5 Million m²/Month</span>
-                </div>
               </div>
             </div>
           </div>

@@ -231,12 +231,12 @@ const About = () => {
               </div>
             </div>
             <div className="lg:w-1/2 relative">
-              <div className="aspect-square bg-white border border-[#eee] p-4 md:p-8 flex items-center justify-center group relative overflow-hidden">
+              <div className="aspect-square bg-white border border-[#eee] flex items-center justify-center group relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#fafafa] -mr-16 -mt-16 rotate-45"></div>
                 <img
                   src={aboutMachineryImage}
                   alt="HHC corrugation line machinery"
-                  className="relative z-0 h-[74%] w-[74%] md:h-[82%] md:w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
+                  className="relative z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-x-0 bottom-0 z-10 p-4 md:p-10 bg-linear-to-t from-white via-white/90 to-transparent">
                   <p className="max-w-44 md:max-w-none text-[#1a1a1a] text-lg md:text-2xl font-black uppercase tracking-tighter opacity-20 leading-none">40 Years of Engineering</p>

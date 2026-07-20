@@ -126,12 +126,12 @@ const CorrugatorsOverview = () => {
               </div>
             </div>
             
-            <div className="relative aspect-square bg-[#fafafa] border border-[#eee] flex items-center justify-center group overflow-hidden p-8">
+            <div className="relative aspect-square bg-[#fafafa] border border-[#eee] flex items-center justify-center group overflow-hidden">
                <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#eee]"></div>
                <img
                  src={corrugatorOverviewImage}
                  alt="Complete HHC corrugator system"
-                 className="relative z-0 h-[82%] w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
+                 className="relative z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                />
                <div className="absolute inset-x-0 bottom-0 z-10 p-12 bg-linear-to-t from-[#fafafa] to-transparent">
                   <p className="text-[#1a1a1a] text-2xl font-black uppercase tracking-tighter opacity-10">Manufacturing Excellence</p>

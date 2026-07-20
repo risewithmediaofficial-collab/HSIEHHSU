@@ -92,11 +92,8 @@ const EcoLine = () => {
                 <img
                   src={ecoLineImage}
                   alt="HHC-200 corrugation line"
-                  className="relative z-0 h-[82%] w-[82%] object-contain transition-transform duration-700 group-hover:scale-105"
+                  className="relative z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute top-6 left-6 z-20">
-                  <span className="bg-[#1a1a1a] text-white px-6 py-2 text-[10px] font-black uppercase tracking-widest">1800 / 2200 / 2500 MM</span>
-                </div>
               </div>
             </div>
           </div>

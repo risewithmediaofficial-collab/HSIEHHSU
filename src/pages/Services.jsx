@@ -414,12 +414,12 @@ const Services = () => {
 
             {/* Right Visual Placeholder */}
             <div className="lg:pl-12">
-              <div className="relative aspect-square bg-[#fafafa] border border-[#eee] p-8 flex items-center justify-center group overflow-hidden">
+              <div className="relative aspect-square bg-[#fafafa] border border-[#eee] flex items-center justify-center group overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#eee]"></div>
                 <img
                   src={serviceRollerImage}
                   alt="Roller refurbish and service assembly"
-                  className="relative z-10 h-full w-full object-contain transition-transform duration-700 group-hover:scale-105"
+                  className="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-[#fafafa] to-transparent">
                   <p className="text-[#1a1a1a] text-2xl font-black uppercase tracking-tighter opacity-10">Precision Service</p>
