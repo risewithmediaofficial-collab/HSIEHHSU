@@ -256,7 +256,7 @@ const Home = () => {
       />
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative pt-10 pb-16 md:pt-16 md:pb-20 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
+      <section className="relative pt-2 pb-16 md:pt-4 md:pb-20 lg:pt-6 lg:pb-24 bg-white overflow-hidden flex items-center">
         {/* Background accent */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fdfdfd] -z-10"></div>
         <div className="absolute top-20 right-20 w-64 h-64 bg-red-500/5 rounded-full blur-3xl animate-pulse"></div>
@@ -278,13 +278,20 @@ const Home = () => {
               </p>
 
               {/* CTA Buttons — left-aligned to match heading */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-2">
                 <a
                   href="tel:+919894235419"
                   className="btn-primary whitespace-nowrap"
                 >
-                  <Phone className="w-4 h-4 mr-2.5 'flex-shrink-0" />
-                  Call: +91 98942 35419
+                  <Phone className="w-4 h-4 mr-2.5 flex-shrink-0" />
+                  Call 1: +91 98942 35419
+                </a>
+                <a
+                  href="tel:+918800350183"
+                  className="btn-primary whitespace-nowrap"
+                >
+                  <Phone className="w-4 h-4 mr-2.5 flex-shrink-0" />
+                  Call 2: +91 88003 50183
                 </a>
                 <Link
                   to="/contact"
