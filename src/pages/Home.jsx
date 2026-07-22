@@ -17,6 +17,22 @@ import sriharilogo from '../assets/srihari.jpg';
 import vandhanalogo from '../assets/vandhana.jpg';
 import Rubykonlogo from '../assets/Rubykon.jpg';
 import sriRamanaLogo from '../assets/SRI RAMANA CARTONS Logo.avif';
+import premIndustriesLogo from '../assets/prem industries logo.png';
+import akshayPackingLogo from '../assets/akshay packing logo.png';
+import southIndiaPaperMillLogo from '../assets/southmillpapermill.jpg';
+import ranganayakiPapersLogo from '../assets/rangabayaki logo.jpg';
+
+import techExcellenceImg from '../assets/technical excellence.jpg';
+import costEfficiencyImg from '../assets/cost effiecney.jpg';
+import timeSavingsImg from '../assets/time savings.jpg';
+import reliabilityImg from '../assets/realiblity.jpg';
+import supportSystemImg from '../assets/support system.jpg';
+import innovationImg from '../assets/innovation.jpg';
+
+import rollerRefurbishImg from '../assets/roller refurbish.jpg';
+import machineInstallationImg from '../assets/machine installation.jpg';
+import maintenanceImg from '../assets/maintannece.png';
+import sparePartsImg from '../assets/spare parts.jpeg';
 const Home = () => {
   const features = [
     {
@@ -52,6 +68,7 @@ const Home = () => {
       title: "Roller Refurbish",
       description: "Precision restoration bringing rollers back to original specifications with advanced metallurgical treatment",
       link: "/services/roller-refurbish",
+      image: rollerRefurbishImg,
     },
     {
       id: "installation",
@@ -59,6 +76,7 @@ const Home = () => {
       title: "Machine Installation",
       description: "Complete commissioning, alignment, and integration of HHC fully automatic whole lines for 5-ply and 7-ply production",
       link: "/services#installation",
+      image: machineInstallationImg,
     },
     {
       id: "maintenance",
@@ -66,6 +84,7 @@ const Home = () => {
       title: "Preventive Maintenance",
       description: "Scheduled servicing programs designed to maximize equipment uptime while reducing spare usage and maintenance load",
       link: "/services#maintenance",
+      image: maintenanceImg,
     },
     {
       id: "parts",
@@ -73,6 +92,7 @@ const Home = () => {
       title: "Spare Parts Supply",
       description: "OEM quality components for all major corrugation machinery manufacturers and brands",
       link: "/products",
+      image: sparePartsImg,
     },
   ];
 
@@ -204,32 +224,38 @@ const Home = () => {
     {
       title: "Technical Excellence",
       description: "State-of-the-art equipment and methodologies for superior results.",
-      icon: <Zap className="w-6 h-6" />
+      icon: <Zap className="w-6 h-6" />,
+      image: techExcellenceImg
     },
     {
       title: "Cost Efficiency",
       description: "Optimized processes reducing operational costs significantly.",
-      icon: <TrendingUp className="w-6 h-6" />
+      icon: <TrendingUp className="w-6 h-6" />,
+      image: costEfficiencyImg
     },
     {
       title: "Time Savings",
       description: "Rapid turnaround without quality compromise.",
-      icon: <Clock className="w-6 h-6" />
+      icon: <Clock className="w-6 h-6" />,
+      image: timeSavingsImg
     },
     {
       title: "Reliability",
       description: "Proven track record with dependable uptime across demanding plant conditions.",
-      icon: <Shield className="w-6 h-6" />
+      icon: <Shield className="w-6 h-6" />,
+      image: reliabilityImg
     },
     {
       title: "Support System",
       description: "Dedicated team available around the clock for immediate assistance.",
-      icon: <Headphones className="w-6 h-6" />
+      icon: <Headphones className="w-6 h-6" />,
+      image: supportSystemImg
     },
     {
       title: "Innovation",
       description: "Continuous improvement through latest industry technologies.",
-      icon: <Lightbulb className="w-6 h-6" />
+      icon: <Lightbulb className="w-6 h-6" />,
+      image: innovationImg
     },
   ];
 
@@ -245,6 +271,10 @@ const Home = () => {
     { name: "Ravi Packages", location: "Hosur", logo: ravilogo },
     { name: "Sri Hari Packaging", location: "Karur", logo: sriharilogo },
     { name: "Sri Ramana Cartons", location: "Villupuram", logo: sriRamanaLogo },
+    { name: "Prem Industries", location: "India", logo: premIndustriesLogo },
+    { name: "Akshay Packing", location: "India", logo: akshayPackingLogo },
+    { name: "South India Paper Mill", location: "Nanjangud", logo: southIndiaPaperMillLogo },
+    { name: "Ranganayaki Papers", location: "Coimbatore", logo: ranganayakiPapersLogo },
   ];
 
   return (
@@ -472,7 +502,7 @@ const Home = () => {
       {/* ===== KEY ADVANTAGES ===== */}
       <section className="py-16 bg-[#fafafa]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="mb-20">
+          <div className="mb-12">
             <h2 className="text-4xl font-black text-[#000000] uppercase tracking-tight">
               Our Key Advantages
             </h2>
@@ -481,10 +511,33 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {advantages.map((adv, idx) => (
-              <div key={idx} className="bg-white p-10 border border-[#eee] hover:border-[#f44336] transition-colors duration-300">
-                <div className="text-[#f44336] mb-6">{adv.icon}</div>
-                <h3 className="text-xl font-black text-[#1a1a1a] mb-4 uppercase tracking-tighter">{adv.title}</h3>
-                <p className="text-[#4a4a4a] text-sm leading-relaxed">{adv.description}</p>
+              <div
+                key={idx}
+                className="bg-white rounded-lg border border-[#eee] shadow-sm hover:shadow-md hover:border-[#f44336] transition-all duration-300 overflow-hidden flex flex-col h-full group"
+              >
+                {/* Image on top like reference image */}
+                <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-gray-100">
+                  <img
+                    src={adv.image}
+                    alt={adv.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+
+                {/* Content below image */}
+                <div className="p-6 md:p-7 flex flex-col flex-grow">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="text-[#f44336] p-2 bg-red-50 rounded-md flex-shrink-0">
+                      {adv.icon}
+                    </div>
+                    <h3 className="text-xl font-black text-[#1a1a1a] uppercase tracking-tighter">
+                      {adv.title}
+                    </h3>
+                  </div>
+                  <p className="text-[#4a4a4a] text-sm leading-relaxed font-medium">
+                    {adv.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -494,25 +547,59 @@ const Home = () => {
       {/* ===== SERVICES SECTION ===== */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-4xl mb-20 text-center mx-auto">
+          <div className="max-w-4xl mb-16 text-center mx-auto">
             <h2 className="text-3xl md:text-4xl font-black text-[#000000] uppercase tracking-tight">
               Explore Our Core Specialization Services
             </h2>
             <div className="w-20 h-1 bg-[#f44336] mx-auto mt-4"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-5 lg:gap-6">
-            {services.map((service) => (
-              <div key={service.id} className="service-card group p-6 md:p-7 lg:p-8">
-                <div className="text-[#f44336] mb-5 group-hover:scale-110 transition-transform duration-300">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl md:text-2xl font-black text-[#1a1a1a] mb-3 uppercase tracking-tighter">{service.title}</h3>
-                <p className="text-[#4a4a4a] mb-6 leading-relaxed font-medium">{service.description}</p>
+          <div className="flex flex-col gap-10 lg:gap-12">
+            {services.map((service, idx) => (
+              <div
+                key={service.id}
+                className="bg-white rounded-xl border border-[#eee] shadow-sm hover:shadow-md hover:border-[#f44336] transition-all duration-300 overflow-hidden group"
+              >
+                <div className="grid md:grid-cols-2 items-center">
+                  {/* Image Container */}
+                  <div
+                    className={`h-64 sm:h-72 md:h-80 lg:h-96 w-full overflow-hidden bg-gray-100 ${
+                      idx % 2 !== 0 ? 'md:order-2' : 'md:order-1'
+                    }`}
+                  >
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
 
-                <Link to={service.link} className="inline-flex items-center text-[#f44336] font-black uppercase tracking-widest text-xs border-b-2 border-[#f44336] pb-1 hover:text-[#1a1a1a] hover:border-[#1a1a1a] transition-colors">
-                  Explore Service <ArrowRight className="w-3 h-3 ml-2" />
-                </Link>
+                  {/* Content Container */}
+                  <div
+                    className={`p-6 sm:p-8 lg:p-12 flex flex-col justify-center ${
+                      idx % 2 !== 0 ? 'md:order-1' : 'md:order-2'
+                    }`}
+                  >
+                    <div className="text-[#f44336] mb-4 p-3 bg-red-50 rounded-lg inline-block w-fit group-hover:scale-110 transition-transform duration-300">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-black text-[#1a1a1a] mb-4 uppercase tracking-tight">
+                      {service.title}
+                    </h3>
+                    <p className="text-[#4a4a4a] text-sm md:text-base leading-relaxed font-medium mb-6">
+                      {service.description}
+                    </p>
+
+                    <div>
+                      <Link
+                        to={service.link}
+                        className="inline-flex items-center text-[#f44336] font-black uppercase tracking-widest text-xs md:text-sm border-b-2 border-[#f44336] pb-1 hover:text-[#1a1a1a] hover:border-[#1a1a1a] transition-colors"
+                      >
+                        Explore Service <ArrowRight className="w-4 h-4 ml-2" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
