@@ -236,7 +236,7 @@ const Footer = () => {
             </div>
 
             <a
-              href="https://wa.me/919894235419"
+              href="https://wa.me/918800350183"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#1a1a1a] text-white px-8 py-3 text-[11px] font-black uppercase tracking-widest hover:bg-[#f44336] transition-colors duration-300 flex items-center gap-2"

@@ -371,7 +371,7 @@ const Contact = () => {
                  </div>
 
                  <a 
-                    href="https://wa.me/919894235419"
+                    href="https://wa.me/918800350183"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between p-10 border border-[#eee] hover:border-[#f44336] transition-colors bg-[#fafafa] group"

@@ -315,7 +315,7 @@ const HeaderContent = ({ location }) => {
 
               {/* WhatsApp Button - Brand Red */}
               <a
-                href="https://wa.me/919894235419"
+                href="https://wa.me/918800350183"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-6 px-5 py-2.5 bg-[#f44336] text-white text-[11px] font-bold uppercase tracking-wider hover:bg-[#d32f2f] transition-all duration-500 flex items-center gap-2 shadow-sm"
@@ -469,7 +469,7 @@ const HeaderContent = ({ location }) => {
 
               {/* Mobile WhatsApp Button */}
               <a
-                href="https://wa.me/919894235419"
+                href="https://wa.me/918800350183"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-[#f44336] hover:bg-[#d32f2f] text-white px-4 py-4 rounded-none text-xs font-black uppercase tracking-widest mt-6 transition-all duration-500 shadow-md"
