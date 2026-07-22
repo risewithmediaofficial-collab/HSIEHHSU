@@ -97,7 +97,7 @@ const Footer = () => {
             <div className="lg:col-span-2 sm:col-span-2 space-y-6" data-testid="company-info">
               <div className="flex items-center gap-4">
                 <Link to="/" className="group hover:opacity-90 transition-opacity">
-                  <img src={logo} alt="HSIEHHSU Logo" className="w-12 h-12" />
+                  <img src={logo} alt="HSIEHHSU Logo" className="w-12 h-12" loading="lazy" decoding="async" />
                 </Link>
                 <div className="flex flex-col">
                   <h3 className="text-xl sm:text-2xl font-black text-[#1a1a1a] tracking-tighter leading-none uppercase" data-testid="company-name">

@@ -236,6 +236,8 @@ const About = () => {
                 <img
                   src={aboutMachineryImage}
                   alt="HHC corrugation line machinery"
+                  loading="lazy"
+                  decoding="async"
                   className="relative z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-x-0 bottom-0 z-10 p-4 md:p-10 bg-linear-to-t from-white via-white/90 to-transparent">

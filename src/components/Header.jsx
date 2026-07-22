@@ -163,7 +163,7 @@ const HeaderContent = ({ location }) => {
             <Link
               to="/"
               className="group flex items-center gap-3 hover:opacity-90 transition-opacity duration-300">
-              <img className='w-10 h-10' src={logo} alt="logo" />
+              <img className='w-10 h-10' src={logo} alt="logo" loading="lazy" decoding="async" />
               <div className="flex flex-col">
                 <h1 className="text-xl font-black text-[#1a1a1a] tracking-tighter leading-none uppercase">
                   HSIEHHSU

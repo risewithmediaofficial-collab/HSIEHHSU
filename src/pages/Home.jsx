@@ -454,6 +454,8 @@ const Home = () => {
                     <img
                       src={client.logo}
                       alt={client.name}
+                      loading="lazy"
+                      decoding="async"
                       className="h-10 w-auto object-contain max-w-[120px]"
                     />
                   ) : (
@@ -520,6 +522,8 @@ const Home = () => {
                   <img
                     src={adv.image}
                     alt={adv.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -570,6 +574,8 @@ const Home = () => {
                     <img
                       src={service.image}
                       alt={service.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
