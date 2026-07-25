@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Wrench, CheckCircle, Clock, Shield, TrendingUp, Phone } from 'lucide-react';
+import rollerRepairImg from '../assets/roller repair.webp';
 
 const RollerRepair = () => {
   return (
@@ -65,53 +66,35 @@ const RollerRepair = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#fafafa] to-white border border-[#eee] p-12 rounded-lg">
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#f44336] text-white flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-black text-[#1a1a1a] text-sm uppercase tracking-widest mb-2">Quick Turnaround</h3>
-                    <p className="text-[#4a4a4a]">45-60 days or faster for urgent cases</p>
-                  </div>
-                </div>
+            <div className="space-y-6">
+              <div className="relative aspect-video bg-[#fafafa] border border-[#eee] overflow-hidden group">
+                <img 
+                  src={rollerRepairImg} 
+                  alt="Roller Repair Expert Services" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                />
+              </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#f44336] text-white flex items-center justify-center flex-shrink-0">
-                    <Shield className="w-6 h-6" />
+              <div className="bg-gradient-to-br from-[#fafafa] to-white border border-[#eee] p-8">
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#f44336] text-white flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-black text-[#1a1a1a] text-xs uppercase tracking-widest mb-1">Turnaround</h3>
+                      <p className="text-[#4a4a4a] text-xs">45-60 days</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-black text-[#1a1a1a] text-sm uppercase tracking-widest mb-2">12-Month Warranty</h3>
-                    <p className="text-[#4a4a4a]">Complete coverage on all repair work</p>
-                  </div>
-                </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#f44336] text-white flex items-center justify-center flex-shrink-0">
-                    <TrendingUp className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-black text-[#1a1a1a] text-sm uppercase tracking-widest mb-2">Expert Technicians</h3>
-                    <p className="text-[#4a4a4a]">18+ years of repair experience</p>
-                  </div>
-                </div>
-
-                <div className="pt-6 border-t border-[#eee]">
-                  <p className="text-xs text-[#7a7a7a] mb-4 uppercase font-black tracking-widest">Repair Capabilities</p>
-                  <div className="space-y-2">
-                    {[
-                      "Journal bearing repairs",
-                      "Weld and buildup work",
-                      "Crack detection & repair",
-                      "Geometry correction",
-                      "Surface restoration"
-                    ].map((service, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-[#f44336]"></div>
-                        <span className="text-[#4a4a4a] text-sm">{service}</span>
-                      </div>
-                    ))}
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#f44336] text-white flex items-center justify-center flex-shrink-0">
+                      <Shield className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-black text-[#1a1a1a] text-xs uppercase tracking-widest mb-1">Warranty</h3>
+                      <p className="text-[#4a4a4a] text-xs">12-Month Warranty</p>
+                    </div>
                   </div>
                 </div>
               </div>

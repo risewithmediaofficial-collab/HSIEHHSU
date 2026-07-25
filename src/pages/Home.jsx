@@ -30,6 +30,7 @@ import supportSystemImg from '../assets/support system.jpg';
 import innovationImg from '../assets/innovation.jpg';
 
 import rollerRefurbishImg from '../assets/roller refurbish.jpg';
+import rollerRepairImg from '../assets/roller repair.webp';
 import machineInstallationImg from '../assets/machine installation.jpg';
 import maintenanceImg from '../assets/maintannece.png';
 import sparePartsImg from '../assets/spare parts.jpeg';
@@ -69,6 +70,14 @@ const Home = () => {
       description: "Precision restoration bringing rollers back to original specifications with advanced metallurgical treatment",
       link: "/services/roller-refurbish",
       image: rollerRefurbishImg,
+    },
+    {
+      id: "repair",
+      icon: <Wrench className="w-12 h-12" />,
+      title: "Roller Repair",
+      description: "Expert repair of damaged corrugation rollers including bearing journals, surface defects, and structural restoration",
+      link: "/services/roller-repair",
+      image: rollerRepairImg,
     },
     {
       id: "installation",

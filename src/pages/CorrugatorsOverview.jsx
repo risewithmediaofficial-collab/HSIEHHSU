@@ -2,18 +2,22 @@ import { Helmet } from 'react-helmet-async';
 import { Settings, CheckCircle, Zap, Shield, TrendingUp, Factory, Cpu, Layout, Users, BookOpen, Calendar, ArrowRight, Camera, Lock, Wifi, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import corrugatorOverviewImage from '../assets/ChatGPT Image Jun 11, 2026, 03_07_39 PM (6).png';
+import digitalIntelligenceImg from '../assets/digital intellligence.jpg';
+import individualMachinesImg from '../assets/individual machines.webp';
 
 const CorrugatorsOverview = () => {
   const solutions = [
     {
       title: "Individual Machines",
       desc: "Precision-engineered single components to upgrade your existing corrugator performance.",
-      icon: <Settings className="w-8 h-8 text-[#f44336]" />
+      icon: <Settings className="w-8 h-8 text-[#f44336]" />,
+      image: individualMachinesImg
     },
     {
       title: "Corrugator Lines",
       desc: "Complete, high-performance corrugator solutions tailored to your production requirements.",
       icon: <Factory className="w-8 h-8 text-[#f44336]" />,
+      image: corrugatorOverviewImage,
       subLinks: [
         { label: 'HHC-200', path: '/portfolio/corrugated-lines/hhc-200' },
         { label: 'HHC-250', path: '/portfolio/corrugated-lines/hhc-250' },
@@ -24,7 +28,8 @@ const CorrugatorsOverview = () => {
     {
       title: "Digital Intelligence",
       desc: "Smart process- and control systems under our Industry 4.0 connectivity initiative.",
-      icon: <Cpu className="w-8 h-8 text-[#f44336]" />
+      icon: <Cpu className="w-8 h-8 text-[#f44336]" />,
+      image: digitalIntelligenceImg
     }
   ];
 
@@ -151,14 +156,23 @@ const CorrugatorsOverview = () => {
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-3 gap-6">
             {solutions.map((item, idx) => (
-              <div key={idx} className="service-card p-10 flex flex-col items-center text-center">
-                <div className="text-[#f44336] mb-8">
+              <div key={idx} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#eee] hover:border-[#f44336] transition-all group overflow-hidden">
+                {item.image && (
+                  <div className="w-full h-48 mb-6 overflow-hidden border border-[#eee]">
+                    <img 
+                      src={item.image} 
+                      alt={item.title} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+                <div className="text-[#f44336] mb-4">
                   {item.icon}
                 </div>
-                <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4">{item.title}</h3>
-                <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium mb-8">{item.desc}</p>
+                <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-3">{item.title}</h3>
+                <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium mb-6">{item.desc}</p>
                 {item.subLinks ? (
                   <div className="w-full space-y-2 mt-auto">
                     {item.subLinks.map((sub, i) => (

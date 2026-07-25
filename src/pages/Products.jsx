@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import { Package, Settings, Cpu, Wrench, Shield, Zap, Phone, TrendingUp, ArrowUpRight } from 'lucide-react';
 import { productCatalog } from '../data/productCatalog';
 import SeoHelmet from '../components/SeoHelmet';
+import sparePartsImg from '../assets/spare parts.jpeg';
+import rollerRefurbishImg from '../assets/roller refurbish.jpg';
+import rollerRepairImg from '../assets/roller repair.webp';
+import digitalIntelligenceImg from '../assets/digital intellligence.jpg';
 
 const Products = () => {
   const spares = [
@@ -10,24 +14,28 @@ const Products = () => {
       items: ['Corrugating rolls', 'Pressure rolls', 'Doctor blades', 'Anvil rolls'],
       icon: <Cpu size={28} className="transition-transform duration-300 group-hover:scale-110" />,
       description: 'Premium roller assemblies and components',
+      image: sparePartsImg,
     },
     {
-      category: 'Wear Parts',
+      category: 'Wear Parts & Refurbish',
       items: ['Bearings', 'Bushings', 'Gears', 'Chains'],
       icon: <Wrench size={28} className="transition-transform duration-300 group-hover:scale-110" />,
-      description: 'High-durability wear-resistant components',
+      description: 'High-durability components & roller refurbish',
+      image: rollerRefurbishImg,
     },
     {
-      category: 'Electrical Components',
+      category: 'Roller Repair Services',
+      items: ['Journal repair', 'Surface restoration', 'Crack repair', 'Balancing'],
+      icon: <Settings size={28} className="transition-transform duration-300 group-hover:scale-110" />,
+      description: 'Comprehensive roller repair and restoration',
+      image: rollerRepairImg,
+    },
+    {
+      category: 'Electrical & Control',
       items: ['Motors', 'Controllers', 'Sensors', 'Heating elements'],
       icon: <Zap size={28} className="transition-transform duration-300 group-hover:scale-110" />,
-      description: 'Genuine electrical and control systems',
-    },
-    {
-      category: 'Consumables',
-      items: ['Lubricants', 'Adhesives', 'Cleaning agents', 'Sealants'],
-      icon: <Package size={28} className="transition-transform duration-300 group-hover:scale-110" />,
-      description: 'Industrial-grade consumable supplies',
+      description: 'Digital intelligence & electrical controls',
+      image: digitalIntelligenceImg,
     },
   ];
 
@@ -145,13 +153,22 @@ const Products = () => {
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {spares.map((category) => (
-              <div key={category.category} className="service-card p-10 flex flex-col items-center text-center">
-                <div className="text-[#f44336] mb-8">{category.icon}</div>
-                <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4">{category.category}</h3>
+              <div key={category.category} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#eee] hover:border-[#f44336] transition-all group overflow-hidden">
+                {category.image && (
+                  <div className="w-full h-40 mb-6 overflow-hidden border border-[#eee]">
+                    <img 
+                      src={category.image} 
+                      alt={category.category} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                    />
+                  </div>
+                )}
+                <div className="text-[#f44336] mb-4">{category.icon}</div>
+                <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-3">{category.category}</h3>
                 <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium mb-6">{category.description}</p>
-                <ul className="space-y-2 text-left w-full">
+                <ul className="space-y-2 text-left w-full mt-auto">
                   {category.items.map((item) => (
                     <li key={item} className="flex items-center gap-2">
                       <div className="w-1 h-1 bg-[#f44336]"></div>

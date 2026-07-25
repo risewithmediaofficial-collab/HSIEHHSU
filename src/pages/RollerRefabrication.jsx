@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Wrench, CheckCircle, Clock, Shield, TrendingUp, Phone } from 'lucide-react';
+import rollerRefurbishImg from '../assets/roller refurbish.jpg';
 
 const RollerRefabrication = () => {
   return (
@@ -65,42 +66,35 @@ const RollerRefabrication = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#fafafa] to-white border border-[#eee] p-12 rounded-lg">
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#f44336] text-white flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-black text-[#1a1a1a] text-sm uppercase tracking-widest mb-2">Turnaround Time</h3>
-                    <p className="text-[#4a4a4a]">45-60 days for precision completion</p>
-                  </div>
-                </div>
+            <div className="space-y-6">
+              <div className="relative aspect-video bg-[#fafafa] border border-[#eee] overflow-hidden group">
+                <img 
+                  src={rollerRefurbishImg} 
+                  alt="Roller Refurbish Precision Service" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                />
+              </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#f44336] text-white flex items-center justify-center flex-shrink-0">
-                    <TrendingUp className="w-6 h-6" />
+              <div className="bg-gradient-to-br from-[#fafafa] to-white border border-[#eee] p-8">
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#f44336] text-white flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-black text-[#1a1a1a] text-xs uppercase tracking-widest mb-1">Turnaround</h3>
+                      <p className="text-[#4a4a4a] text-xs">45-60 days</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-black text-[#1a1a1a] text-sm uppercase tracking-widest mb-2">Quality Assurance</h3>
-                    <p className="text-[#4a4a4a]">ISO certified process with precision testing</p>
-                  </div>
-                </div>
 
-                <div className="pt-6 border-t border-[#eee]">
-                  <p className="text-xs text-[#7a7a7a] mb-4 uppercase font-black tracking-widest">Included Services</p>
-                  <div className="space-y-2">
-                    {[
-                      "Detailed inspection & analysis",
-                      "Precision grinding",
-                      "Dynamic balancing",
-                      "Final certification"
-                    ].map((service, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-[#f44336]"></div>
-                        <span className="text-[#4a4a4a] text-sm">{service}</span>
-                      </div>
-                    ))}
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#f44336] text-white flex items-center justify-center flex-shrink-0">
+                      <TrendingUp className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-black text-[#1a1a1a] text-xs uppercase tracking-widest mb-1">Quality Assurance</h3>
+                      <p className="text-[#4a4a4a] text-xs">ISO Certified</p>
+                    </div>
                   </div>
                 </div>
               </div>

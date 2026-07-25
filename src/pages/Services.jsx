@@ -1,53 +1,74 @@
 import { Link } from 'react-router-dom';
-import { Wrench, Settings, Shield, Clock, TrendingUp, Phone, Mail, CheckCircle, ArrowRight, Zap, Target } from 'lucide-react';
+import { Wrench, Settings, Shield, Clock, TrendingUp, Phone, Mail, CheckCircle, ArrowRight, Zap, Target, Package } from 'lucide-react';
 import { useState } from 'react';
 import SeoHelmet from '../components/SeoHelmet';
 import serviceRollerImage from '../assets/ChatGPT Image Jun 11, 2026, 03_07_37 PM (3).png';
+import rollerRefurbishImg from '../assets/roller refurbish.jpg';
+import rollerRepairImg from '../assets/roller repair.webp';
+import sparePartsImg from '../assets/spare parts.jpeg';
+import machineInstallationImg from '../assets/machine installation.jpg';
+import maintenanceImg from '../assets/maintannece.png';
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(0);
 
   const rollerServices = [
-  {
-    icon: <Wrench className="w-10 h-10" />,
-    title: "Roller Refurbish",
-    description: "Complete restoration of corrugation rollers to original specifications using advanced metallurgical techniques and precision engineering",
-    features: ["Precision grinding", "Dynamic balancing", "Surface hardening", "Dimensional correction"],
-    badge: "PREMIUM",
-    turnaround: "45-60 days",
-    path: "/services/roller-refurbish",
-  },
-  {
-    icon: <Settings className="w-10 h-10" />,
-    title: "Machine Support",
-    description: "Structured machine support services focused on stability, alignment, and dependable production performance",
-    features: ["Inspection planning", "Line alignment", "Production support", "Maintenance guidance"],
-    badge: "ADVANCED",
-    turnaround: "45-60 days",
-    path: "/services/maintenance-support",
-  },
-];
+    {
+      icon: <Wrench className="w-10 h-10" />,
+      title: "Roller Refurbish",
+      description: "Complete restoration of corrugation rollers to original specifications using advanced metallurgical techniques and precision engineering",
+      features: ["Precision grinding", "Dynamic balancing", "Surface hardening", "Dimensional correction"],
+      badge: "PREMIUM",
+      turnaround: "45-60 days",
+      path: "/services/roller-refurbish",
+      image: rollerRefurbishImg,
+    },
+    {
+      icon: <Wrench className="w-10 h-10" />,
+      title: "Roller Repair",
+      description: "Expert repair of damaged corrugation rollers including bearing journals, surface defects, and structural integrity restoration",
+      features: ["Journal bearing repair", "Weld buildup", "Crack repair & geometry correction", "Emergency quick-turnaround"],
+      badge: "EXPERT",
+      turnaround: "30-45 days",
+      path: "/services/roller-repair",
+      image: rollerRepairImg,
+    },
+    {
+      icon: <Settings className="w-10 h-10" />,
+      title: "Machine Support",
+      description: "Structured machine support services focused on stability, alignment, and dependable production performance",
+      features: ["Inspection planning", "Line alignment", "Production support", "Maintenance guidance"],
+      badge: "ADVANCED",
+      turnaround: "45-60 days",
+      path: "/services/maintenance-support",
+      image: maintenanceImg,
+    },
+  ];
 
   const supportServices = [
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Installation & Commissioning",
       description: "Complete setup, alignment, and commissioning of new corrugation machine lines with staff training",
+      image: machineInstallationImg,
     },
     {
       icon: <Clock className="w-8 h-8" />,
       title: "Technical Support 24/7",
       description: "Round-the-clock technical assistance, troubleshooting, and expert guidance for all queries",
+      image: rollerRepairImg,
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Preventive Maintenance",
       description: "Scheduled maintenance programs designed to prevent breakdowns and maximize uptime",
+      image: maintenanceImg,
     },
     {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: "Emergency Breakdown Support",
-      description: "Rapid response service for unexpected machine failures with immediate on-site assistance",
+      icon: <Package className="w-8 h-8" />,
+      title: "Spare Parts Support",
+      description: "OEM quality components for all major corrugation machinery manufacturers and brands",
+      image: sparePartsImg,
     },
   ];
 
@@ -171,15 +192,6 @@ const Services = () => {
                         {service.icon}
                       </div>
                       
-                      {/* Number Badge */}
-                      <div className={`absolute -top-2 -right-2 w-7 h-7 rounded-full font-black text-xs flex items-center justify-center shadow-md transition-all duration-300 ${
-                        selectedService === index
-                          ? 'bg-white text-[#f44336] scale-110'
-                          : 'bg-[#f44336] text-white group-hover:scale-110 group-hover:shadow-lg'
-                      }`}>
-                        {index + 1}
-                      </div>
-
                       {/* Hover Glow Effect */}
                       <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
                         selectedService === index
@@ -209,6 +221,15 @@ const Services = () => {
             <div className="grid lg:grid-cols-3 gap-0">
               {/* Left Content */}
               <div className="lg:col-span-2 p-8 lg:p-12 border-r border-[#eee]">
+                {rollerServices[selectedService].image && (
+                  <div className="w-full h-64 mb-8 overflow-hidden border border-[#eee]">
+                    <img 
+                      src={rollerServices[selectedService].image} 
+                      alt={rollerServices[selectedService].title} 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
                 <div className="flex items-start gap-4 mb-6">
                   <div className="text-[#f44336]">
                     {rollerServices[selectedService].icon}
@@ -288,7 +309,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-      
+
       {/* ===== WHY CHOOSE US ===== */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -310,6 +331,7 @@ const Services = () => {
           </div>
         </div>
       </section>
+
       {/* ===== SUPPORT SERVICES ===== */}
       <section className="py-16 bg-[#fafafa] border-y border-[#eee]" id="maintenance">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -320,15 +342,25 @@ const Services = () => {
             <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {supportServices.map((service, index) => (
-              <div key={index} className="service-card p-10 flex flex-col items-center text-center">
-                 <div className="text-[#f44336] mb-8">{service.icon}</div>
-                 <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4">{service.title}</h3>
+              <div key={index} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#eee] hover:border-[#f44336] transition-all group overflow-hidden">
+                 {service.image && (
+                   <div className="w-full h-40 mb-6 overflow-hidden border border-[#eee]">
+                     <img 
+                       src={service.image} 
+                       alt={service.title} 
+                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                     />
+                   </div>
+                 )}
+                 <div className="text-[#f44336] mb-4">{service.icon}</div>
+                 <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-3">{service.title}</h3>
                  <p className="text-[#7a7a7a] text-xs leading-relaxed font-medium">{service.description}</p>
               </div>
             ))}
           </div>
+
           {/* Service Process */}
           <div className="bg-white border border-[#eee] p-12 lg:p-16 relative overflow-hidden group">
             <div className="relative flex items-center gap-5 mb-16">
@@ -338,28 +370,22 @@ const Services = () => {
             
             {/* Timeline Process */}
             <div className="relative">
-              {/* Connecting line */}
               <div className="absolute top-10 left-0 right-0 hidden lg:block h-1 bg-[#ffcdd2] z-0"></div>
               
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
                 {processSteps.map((item, index) => (
                   <div key={index} className="relative flex flex-col">
-                    {/* Step Number Circle - Rounded Design */}
                     <div className="flex items-center justify-center mb-8 relative group">
-                      {/* Arrow on red line (except for last item) */}
                       {index < processSteps.length - 1 && (
                         <div className="hidden lg:flex absolute -right-12 top-10 transform -translate-y-1/2 z-20 text-black text-xl font-bold group-hover:scale-150 transition-transform duration-300">
                           →
                         </div>
                       )}
-                      
-                      {/* Number Circle */}
                       <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#f44336] to-[#d32f2f] text-white flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 cursor-pointer group-hover:from-[#d32f2f] group-hover:to-[#b71c1c] relative z-10">
                         <span className="font-black text-2xl tracking-tight">{item.step}</span>
                       </div>
                     </div>
                     
-                    {/* Content */}
                     <div className="space-y-3 text-center">
                       <h4 className="font-black text-[#1a1a1a] text-sm uppercase tracking-widest">{item.title}</h4>
                       <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">{item.desc}</p>
@@ -378,11 +404,11 @@ const Services = () => {
           </div>
         </div>
       </section>
+
       {/* ===== SERVICE HIGHLIGHTS ===== */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            {/* Left Content */}
             <div className="space-y-10">
               <div className="space-y-4">
                 <h2 className="text-4xl md:text-5xl font-black text-[#f44336] uppercase tracking-tighter leading-none">
