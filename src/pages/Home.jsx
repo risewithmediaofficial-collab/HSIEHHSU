@@ -25,7 +25,7 @@ import ranganayakiPapersLogo from '../assets/rangabayaki logo.jpg';
 import techExcellenceImg from '../assets/technical excellence.jpg';
 import costEfficiencyImg from '../assets/cost effiecney.jpg';
 import timeSavingsImg from '../assets/time savings.jpg';
-import reliabilityImg from '../assets/realiblity.jpg';
+import reliabilityImg from '../assets/realiblity.png';
 import supportSystemImg from '../assets/support system.jpg';
 import innovationImg from '../assets/innovation.jpg';
 
