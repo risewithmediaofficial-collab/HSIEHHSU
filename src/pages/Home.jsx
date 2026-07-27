@@ -287,7 +287,7 @@ const Home = () => {
   ];
 
   return (
-    <>
+    <div className="home-page-theme text-[#213058]">
       <SeoHelmet
         title="HSIEHHSU MACHINERY INDIA | Premium Corrugation Excellence"
         description="ISO-certified corrugation specialists. Premium roller refurbishing, restoration, and maintenance solutions for maximum uptime and performance."
@@ -297,22 +297,22 @@ const Home = () => {
       {/* ===== HERO SECTION ===== */}
       <section className="relative pt-2 pb-16 md:pt-4 md:pb-20 lg:pt-6 lg:pb-24 bg-white overflow-hidden flex items-center">
         {/* Background accent */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fdfdfd] -z-10"></div>
-        <div className="absolute top-20 right-20 w-64 h-64 bg-red-500/5 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#faf6f0] -z-10"></div>
+        <div className="absolute top-20 right-20 w-64 h-64 bg-[#28696A]/10 rounded-full blur-3xl animate-pulse"></div>
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center">
             {/* Content */}
             <div className="space-y-6 lg:space-y-7 animate-slide-up">
-              <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#f44336] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest">
+              <div className="inline-flex items-center gap-2.5 bg-[#F0E6D7] text-[#28696A] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#28696A] uppercase tracking-widest">
                 <span className="tracking-wide">Industry Trusted Solutions</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black leading-[1.1] text-[#1a1a1a] tracking-tight">
-                Premium <span className="text-[#f44336]">Corrugation</span> Engineering Excellence
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black leading-[1.1] text-[#213058] tracking-tight">
+                Premium <span className="text-[#28696A]">Corrugation</span> Engineering Excellence
               </h1>
 
-              <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed max-w-xl font-medium">
+              <p className="text-base md:text-lg text-[#213058]/80 leading-relaxed max-w-xl font-medium">
                 ISO-certified specialists delivering world-class roller refurbishing, restoration, and comprehensive maintenance solutions.
               </p>
 
@@ -327,7 +327,7 @@ const Home = () => {
                 </a>
                 <a
                   href="tel:+918800350183"
-                  className="btn-primary whitespace-nowrap"
+                  className="btn-gold whitespace-nowrap"
                 >
                   <Phone className="w-4 h-4 mr-2.5 flex-shrink-0" />
                   Call 2: +91 88003 50183
@@ -342,30 +342,30 @@ const Home = () => {
               </div>
 
               {/* Quick Trust Signals */}
-              <div className="flex flex-wrap gap-6 pt-4 border-t border-[#eee]">
+              <div className="flex flex-wrap gap-6 pt-4 border-t border-[#F0E6D7]">
                 {[
                   { label: "ISO 9001:2015", desc: "Certified" },
                   { label: "40+ Years", desc: "Industry Experience" },
                   { label: "99.2%", desc: "Uptime Rate" },
                 ].map((stat, i) => (
                   <div key={i} className="flex flex-col">
-                    <span className="text-[#f44336] font-black text-base tracking-tighter">{stat.label}</span>
-                    <span className="text-[#7a7a7a] text-[10px] font-bold uppercase tracking-widest">{stat.desc}</span>
+                    <span className="text-[#28696A] font-black text-base tracking-tighter">{stat.label}</span>
+                    <span className="text-[#213058]/60 text-[10px] font-bold uppercase tracking-widest">{stat.desc}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Hero Visual — polished info panel */}
+            {/* Hero Visual — polished info panel with Navy & Gold theme */}
             <div className="relative hidden lg:block animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <div className="relative bg-[#1a1a1a] h-[480px] xl:h-[540px] flex flex-col justify-between overflow-hidden">
-                {/* Red accent bar */}
-                <div className="absolute top-0 left-0 w-1 h-full bg-[#f44336]"></div>
+              <div className="relative bg-[#213058] h-[480px] xl:h-[540px] flex flex-col justify-between overflow-hidden shadow-xl">
+                {/* Gold accent bar */}
+                <div className="absolute top-0 left-0 w-1.5 h-full bg-[#F4AE3F]"></div>
                 {/* Top content */}
                 <div className="p-12 pt-16 pl-14">
-                  <p className="text-[#f44336] text-[10px] font-black uppercase tracking-[0.3em] mb-6">HSIEHHSU Machinery India</p>
+                  <p className="text-[#F4AE3F] text-[10px] font-black uppercase tracking-[0.3em] mb-6">HSIEHHSU Machinery India</p>
                   <h2 className="text-white font-black text-3xl xl:text-4xl tracking-tight leading-tight mb-8">
-                    Engineering<br />Corrugation<br /><span className="text-[#f44336]">Excellence</span>
+                    Engineering<br />Corrugation<br /><span className="text-[#F4AE3F]">Excellence</span>
                   </h2>
                   <div className="space-y-4">
                     {[
@@ -375,22 +375,22 @@ const Home = () => {
                       "HHC fully automatic whole line - 5-ply / 7-ply",
                     ].map((item, i) => (
                       <div key={i} className="flex items-center gap-3">
-                        <div className="w-1.5 h-1.5 bg-[#f44336] flex-shrink-0"></div>
-                        <span className="text-[#ccc] text-xs font-bold uppercase tracking-widest">{item}</span>
+                        <div className="w-2 h-2 bg-[#F4AE3F] flex-shrink-0"></div>
+                        <span className="text-[#F0E6D7] text-xs font-bold uppercase tracking-widest">{item}</span>
                       </div>
                     ))}
                   </div>
                 </div>
                 {/* Bottom stat strip */}
-                <div className="grid grid-cols-3 border-t border-white/10">
+                <div className="grid grid-cols-3 border-t border-white/10 bg-[#172240]">
                   {[
                     { v: "500+", l: "Projects" },
                     { v: "40+", l: "Years" },
                     { v: "24/7", l: "Support" },
                   ].map((s, i) => (
                     <div key={i} className={`py-6 flex flex-col items-center ${i < 2 ? "border-r border-white/10" : ""}`}>
-                      <span className="text-[#f44336] font-black text-xl tracking-tighter">{s.v}</span>
-                      <span className="text-[#aaa] text-[9px] font-bold uppercase tracking-widest mt-1">{s.l}</span>
+                      <span className="text-[#F4AE3F] font-black text-xl tracking-tighter">{s.v}</span>
+                      <span className="text-[#F0E6D7]/70 text-[9px] font-bold uppercase tracking-widest mt-1">{s.l}</span>
                     </div>
                   ))}
                 </div>
@@ -401,7 +401,7 @@ const Home = () => {
       </section>
 
       {/* ===== STATS BAR ===== */}
-      <section className="py-16 md:py-16 bg-white border-y border-[#eee] relative overflow-hidden">
+      <section className="py-16 md:py-16 bg-[#F0E6D7] border-y border-[#28696A]/10 relative overflow-hidden">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {[
@@ -410,11 +410,11 @@ const Home = () => {
               { label: "Uptime Success Rate", value: "99.2%" },
               { label: "Support Availability", value: "24/7" },
             ].map((stat, idx) => (
-              <div key={idx} className="text-center group border-r last:border-r-0 border-[#eee]">
-                <div className="text-4xl md:text-5xl font-black text-[#f44336] mb-2 tracking-tighter">
+              <div key={idx} className="text-center group border-r last:border-r-0 border-[#28696A]/20">
+                <div className="text-4xl md:text-5xl font-black text-[#28696A] mb-2 tracking-tighter">
                   {stat.value}
                 </div>
-                <p className="text-[#7a7a7a] text-xs font-bold uppercase tracking-widest">{stat.label}</p>
+                <p className="text-[#213058] text-xs font-bold uppercase tracking-widest">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -422,21 +422,21 @@ const Home = () => {
       </section>
 
       {/* ===== CLIENT LOGOS SECTION ===== */}
-      <section className="relative py-16 bg-[#fafafa] overflow-hidden">
+      <section className="relative py-16 bg-[#faf6f0] overflow-hidden">
         {/* Section Header — full width */}
         <div className="text-center mb-12 px-4">
-          <h2 className="text-3xl font-black text-[#1a1a1a] mb-3 uppercase tracking-tight">
+          <h2 className="text-3xl font-black text-[#213058] mb-3 uppercase tracking-tight">
             Trusted by Packaging Industry Leaders
           </h2>
-          <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+          <div className="w-20 h-1 bg-[#F4AE3F] mx-auto"></div>
         </div>
 
         {/* Carousel with edge fade masks */}
         <div className="relative">
           {/* Left fade */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{ background: 'linear-gradient(to right, #fafafa, transparent)' }}></div>
+          <div className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{ background: 'linear-gradient(to right, #faf6f0, transparent)' }}></div>
           {/* Right fade */}
-          <div className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{ background: 'linear-gradient(to left, #fafafa, transparent)' }}></div>
+          <div className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{ background: 'linear-gradient(to left, #faf6f0, transparent)' }}></div>
 
           <div className="overflow-hidden">
             <style>{`
@@ -457,7 +457,7 @@ const Home = () => {
               {[...clientsData, ...clientsData].map((client, idx) => (
                 <div
                   key={idx}
-                  className="flex-shrink-0 p-6 bg-white border border-[#eee] w-[180px] flex flex-col items-center justify-center gap-3 hover:border-[#f44336] transition-all duration-300"
+                  className="flex-shrink-0 p-6 bg-white border border-[#F0E6D7] w-[180px] flex flex-col items-center justify-center gap-3 hover:border-[#28696A] transition-all duration-300 shadow-sm"
                 >
                   {client.logo ? (
                     <img
@@ -468,11 +468,11 @@ const Home = () => {
                       className="h-10 w-auto object-contain max-w-[120px]"
                     />
                   ) : (
-                    <div className="w-12 h-12 bg-[#f44336] text-white flex items-center justify-center font-black text-xs">
+                    <div className="w-12 h-12 bg-[#28696A] text-white flex items-center justify-center font-black text-xs">
                       {client.initials}
                     </div>
                   )}
-                  <p className="text-[#1a1a1a] font-bold text-[9px] uppercase tracking-widest text-center leading-tight">{client.name}</p>
+                  <p className="text-[#213058] font-bold text-[9px] uppercase tracking-widest text-center leading-tight">{client.name}</p>
                 </div>
               ))}
             </div>
@@ -484,25 +484,25 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-3xl mb-16 text-center mx-auto">
-            <h2 className="text-4xl md:text-5xl font-black text-[#000000] mb-4 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-black text-[#213058] mb-4 tracking-tight">
               Why Hsiehhsu?
             </h2>
-            <div className="w-24 h-1 bg-[#f44336] mx-auto mb-6"></div>
-            <p className="text-base text-[#4a4a4a] leading-relaxed font-medium">
+            <div className="w-24 h-1 bg-[#28696A] mx-auto mb-6"></div>
+            <p className="text-base text-[#213058]/80 leading-relaxed font-medium">
               We combine technical precision with unparalleled customer-centric service delivery.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 border border-[#eee]">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 border border-[#F0E6D7]">
             {features.map((feature, index) => (
-              <div key={index} className="fancy-card border-r border-b border-[#eee] last:border-r-0 sm:[&:nth-child(2)]:border-r-0 lg:[&:nth-child(2)]:border-r">
+              <div key={index} className="fancy-card border-r border-b border-[#F0E6D7] last:border-r-0 sm:[&:nth-child(2)]:border-r-0 lg:[&:nth-child(2)]:border-r">
                 <div className="fancy-card-icon">
                   {feature.icon}
                 </div>
                 <h3 className="fancy-card-title">{feature.title}</h3>
                 <p className="fancy-card-desc">{feature.description}</p>
                 <div className="mt-auto pt-6">
-                  <span className="text-[#f44336] text-xs font-black uppercase tracking-widest">{feature.stat}</span>
+                  <span className="text-[#28696A] text-xs font-black uppercase tracking-widest">{feature.stat}</span>
                 </div>
               </div>
             ))}
@@ -511,22 +511,22 @@ const Home = () => {
       </section>
 
       {/* ===== KEY ADVANTAGES ===== */}
-      <section className="py-16 bg-[#fafafa]">
+      <section className="py-16 bg-[#F0E6D7]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="mb-12">
-            <h2 className="text-4xl font-black text-[#000000] uppercase tracking-tight">
+            <h2 className="text-4xl font-black text-[#213058] uppercase tracking-tight">
               Our Key Advantages
             </h2>
-            <div className="w-20 h-1 bg-[#f44336] mt-4"></div>
+            <div className="w-20 h-1 bg-[#F4AE3F] mt-4"></div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {advantages.map((adv, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-lg border border-[#eee] shadow-sm hover:shadow-md hover:border-[#f44336] transition-all duration-300 overflow-hidden flex flex-col h-full group"
+                className="bg-white rounded-lg border border-white/50 shadow-sm hover:shadow-md hover:border-[#28696A] transition-all duration-300 overflow-hidden flex flex-col h-full group"
               >
-                {/* Image on top like reference image */}
+                {/* Image on top */}
                 <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-gray-100">
                   <img
                     src={adv.image}
@@ -540,14 +540,14 @@ const Home = () => {
                 {/* Content below image */}
                 <div className="p-6 md:p-7 flex flex-col flex-grow">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="text-[#f44336] p-2 bg-red-50 rounded-md flex-shrink-0">
+                    <div className="text-[#28696A] p-2.5 bg-[#F0E6D7]/60 rounded-md flex-shrink-0">
                       {adv.icon}
                     </div>
-                    <h3 className="text-xl font-black text-[#1a1a1a] uppercase tracking-tighter">
+                    <h3 className="text-xl font-black text-[#213058] uppercase tracking-tighter">
                       {adv.title}
                     </h3>
                   </div>
-                  <p className="text-[#4a4a4a] text-sm leading-relaxed font-medium">
+                  <p className="text-[#213058]/80 text-sm leading-relaxed font-medium">
                     {adv.description}
                   </p>
                 </div>
@@ -561,17 +561,17 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mb-16 text-center mx-auto">
-            <h2 className="text-3xl md:text-4xl font-black text-[#000000] uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-black text-[#213058] uppercase tracking-tight">
               Explore Our Core Specialization Services
             </h2>
-            <div className="w-20 h-1 bg-[#f44336] mx-auto mt-4"></div>
+            <div className="w-20 h-1 bg-[#28696A] mx-auto mt-4"></div>
           </div>
 
           <div className="flex flex-col gap-10 lg:gap-12">
             {services.map((service, idx) => (
               <div
                 key={service.id}
-                className="bg-white rounded-xl border border-[#eee] shadow-sm hover:shadow-md hover:border-[#f44336] transition-all duration-300 overflow-hidden group"
+                className="bg-white rounded-xl border border-[#F0E6D7] shadow-sm hover:shadow-md hover:border-[#28696A] transition-all duration-300 overflow-hidden group"
               >
                 <div className="grid md:grid-cols-2 items-center">
                   {/* Image Container */}
@@ -595,20 +595,20 @@ const Home = () => {
                       idx % 2 !== 0 ? 'md:order-1' : 'md:order-2'
                     }`}
                   >
-                    <div className="text-[#f44336] mb-4 p-3 bg-red-50 rounded-lg inline-block w-fit group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-[#28696A] mb-4 p-3 bg-[#F0E6D7]/70 rounded-lg inline-block w-fit group-hover:scale-110 transition-transform duration-300">
                       {service.icon}
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-black text-[#1a1a1a] mb-4 uppercase tracking-tight">
+                    <h3 className="text-2xl md:text-3xl font-black text-[#213058] mb-4 uppercase tracking-tight">
                       {service.title}
                     </h3>
-                    <p className="text-[#4a4a4a] text-sm md:text-base leading-relaxed font-medium mb-6">
+                    <p className="text-[#213058]/80 text-sm md:text-base leading-relaxed font-medium mb-6">
                       {service.description}
                     </p>
 
                     <div>
                       <Link
                         to={service.link}
-                        className="inline-flex items-center text-[#f44336] font-black uppercase tracking-widest text-xs md:text-sm border-b-2 border-[#f44336] pb-1 hover:text-[#1a1a1a] hover:border-[#1a1a1a] transition-colors"
+                        className="inline-flex items-center text-[#28696A] font-black uppercase tracking-widest text-xs md:text-sm border-b-2 border-[#28696A] pb-1 hover:text-[#213058] hover:border-[#213058] transition-colors"
                       >
                         Explore Service <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
@@ -622,30 +622,30 @@ const Home = () => {
       </section>
 
       {/* ===== PROCESS SECTION ===== */}
-      <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
+      <section className="py-16 bg-[#faf6f0] border-y border-[#F0E6D7]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-4xl md:text-5xl font-black text-[#1a1a1a] mb-6 uppercase tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-black text-[#213058] mb-6 uppercase tracking-tight">
               Our Precision Methodology
             </h2>
-            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#F4AE3F] mx-auto"></div>
           </div>
 
           <div className="grid lg:grid-cols-4 gap-0 relative">
             {/* Connecting line with arrows */}
-            <div className="absolute top-10 left-0 right-0 hidden lg:block h-1 bg-[#ffcdd2] z-0"></div>
+            <div className="absolute top-10 left-0 right-0 hidden lg:block h-1 bg-[#28696A]/20 z-0"></div>
             
             {processSteps.map((step, idx) => (
               <div key={idx} className="relative z-10 mb-12 lg:mb-0">
                 <div className="flex flex-col items-center">
                   {/* Round icon with number */}
                   <div className="relative mb-8 group">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#f44336] to-[#d32f2f] flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 cursor-pointer group-hover:from-[#d32f2f] group-hover:to-[#b71c1c] relative z-20">
-                      <span className="text-white font-black text-3xl">{step.number}</span>
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#28696A] to-[#213058] flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 cursor-pointer relative z-20">
+                      <span className="text-[#F4AE3F] font-black text-3xl">{step.number}</span>
                     </div>
-                    {/* Arrow on red line (except for last item) */}
+                    {/* Arrow on connecting line */}
                     {idx < processSteps.length - 1 && (
-                      <div className="hidden lg:flex absolute -right-12 top-10 transform -translate-y-1/2 z-20 text-black text-xl font-bold group-hover:scale-150 transition-transform duration-300">
+                      <div className="hidden lg:flex absolute -right-12 top-10 transform -translate-y-1/2 z-20 text-[#28696A] text-xl font-bold group-hover:scale-150 transition-transform duration-300">
                         →
                       </div>
                     )}
@@ -653,8 +653,8 @@ const Home = () => {
                   
                   {/* Title and description */}
                   <div className="text-center">
-                    <h3 className="text-sm font-black text-[#1a1a1a] mb-3 uppercase tracking-widest">{step.title}</h3>
-                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed px-2">{step.description}</p>
+                    <h3 className="text-sm font-black text-[#213058] mb-3 uppercase tracking-widest">{step.title}</h3>
+                    <p className="text-[#213058]/70 text-xs font-medium leading-relaxed px-2">{step.description}</p>
                   </div>
                 </div>
               </div>
@@ -667,17 +667,17 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mb-20 text-center mx-auto">
-            <h2 className="text-4xl font-black text-[#000000] uppercase tracking-tight">
+            <h2 className="text-4xl font-black text-[#213058] uppercase tracking-tight">
               Real-World Case Studies & Success
             </h2>
-            <div className="w-20 h-1 bg-[#f44336] mx-auto mt-4"></div>
+            <div className="w-20 h-1 bg-[#28696A] mx-auto mt-4"></div>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((study) => (
               <div key={study.id} className="notification-card h-full">
                 <div className="noti-metric">{study.metric}</div>
-                <h3 className="text-xl font-black text-[#1a1a1a] mb-2 uppercase tracking-tighter">{study.title}</h3>
+                <h3 className="text-xl font-black text-[#213058] mb-2 uppercase tracking-tighter">{study.title}</h3>
                 <div className="noti-company">{study.company} • {study.industry}</div>
                 <p className="noti-desc font-medium">{study.description}</p>
               </div>
@@ -687,32 +687,32 @@ const Home = () => {
       </section>
 
       {/* ===== TESTIMONIALS SECTION ===== */}
-      <section className="py-16 bg-[#fafafa]">
+      <section className="py-16 bg-[#F0E6D7]/60">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mb-20 text-center mx-auto">
-            <h2 className="text-4xl font-black text-[#000000] uppercase tracking-tight">
+            <h2 className="text-4xl font-black text-[#213058] uppercase tracking-tight">
               Client Testimonials & Feedback
             </h2>
-            <div className="w-20 h-1 bg-[#f44336] mx-auto mt-4"></div>
+            <div className="w-20 h-1 bg-[#F4AE3F] mx-auto mt-4"></div>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="bg-white p-8 border border-[#eee] hover:border-[#f44336] transition-all duration-300"
+                className="bg-white p-8 border border-white/60 hover:border-[#28696A] transition-all duration-300 shadow-sm"
               >
                 <div className="flex gap-1 mb-6">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 fill-[#f44336] text-[#f44336]" />
+                    <Star key={i} className="w-3.5 h-3.5 fill-[#F4AE3F] text-[#F4AE3F]" />
                   ))}
                 </div>
 
-                <p className="text-[#4a4a4a] text-sm leading-relaxed mb-8 font-medium line-clamp-2">"{testimonial.feedback}"</p>
+                <p className="text-[#213058]/80 text-sm leading-relaxed mb-8 font-medium line-clamp-2">"{testimonial.feedback}"</p>
 
-                <div className="pt-6 border-t border-[#eee]">
-                  <p className="text-[#1a1a1a] font-black text-[10px] uppercase tracking-widest">{testimonial.company}</p>
-                  <p className="text-[#7a7a7a] text-[9px] uppercase tracking-widest mt-1">{testimonial.position}</p>
+                <div className="pt-6 border-t border-[#F0E6D7]">
+                  <p className="text-[#213058] font-black text-[10px] uppercase tracking-widest">{testimonial.company}</p>
+                  <p className="text-[#213058]/60 text-[9px] uppercase tracking-widest mt-1">{testimonial.position}</p>
                 </div>
               </div>
             ))}
@@ -721,41 +721,41 @@ const Home = () => {
       </section>
 
       {/* ===== FINAL CTA ===== */}
-      <section className="relative py-16 bg-[#1a1a1a] overflow-hidden">
-        <div className="absolute top-1/3 -right-48 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
+      <section className="relative py-16 bg-[#213058] overflow-hidden">
+        <div className="absolute top-1/3 -right-48 w-96 h-96 bg-[#28696A]/20 rounded-full blur-3xl"></div>
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">
-              Ready to Transform <span className="text-[#f44336]">Your Operations?</span>
+              Ready to Transform <span className="text-[#F4AE3F]">Your Operations?</span>
             </h2>
-            <p className="text-base text-[#aaa] leading-relaxed mb-10 max-w-2xl mx-auto font-medium">
+            <p className="text-base text-[#F0E6D7]/80 leading-relaxed mb-10 max-w-2xl mx-auto font-medium">
               Get expert guidance with a comprehensive technical consultation. Our team delivers customized solutions optimized for maximum efficiency, less spares usage, and lower maintenance load.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-              <a href="tel:+919894235419" className="btn-primary">
+              <a href="tel:+919894235419" className="btn-gold">
                 <Phone className="w-5 h-5 mr-3" />
                 Call Now
               </a>
-              <Link to="/contact" className="btn-secondary">
+              <Link to="/contact" className="btn-primary">
                 Schedule Meeting
                 <ArrowRight className="w-5 h-5 ml-3" />
               </Link>
             </div>
 
-            <div className="grid sm:grid-cols-3 gap-0 border border-white/10">
+            <div className="grid sm:grid-cols-3 gap-0 border border-white/10 bg-[#172240]/50">
               {[
                 { icon: <MapPin className="w-6 h-6" />, label: 'Location', desc: 'India-based Operations' },
                 { icon: <Briefcase className="w-6 h-6" />, label: 'Experience', desc: '40+ Years Expertise' },
                 { icon: <Headphones className="w-6 h-6" />, label: 'Support', desc: '24/7 Available' },
               ].map((item, i) => (
                 <div key={i} className={`flex flex-col items-center py-10 px-6 ${i < 2 ? 'border-b sm:border-b-0 sm:border-r border-white/10' : ''}`}>
-                  <div className="w-12 h-12 border border-white/20 flex items-center justify-center text-[#f44336] mb-4">
+                  <div className="w-12 h-12 border border-[#F4AE3F]/40 flex items-center justify-center text-[#F4AE3F] mb-4">
                     {item.icon}
                   </div>
                   <p className="font-black text-white uppercase tracking-tighter mb-1 text-sm">{item.label}</p>
-                  <p className="text-[#7a7a7a] text-[10px] uppercase tracking-widest">{item.desc}</p>
+                  <p className="text-[#F0E6D7]/60 text-[10px] uppercase tracking-widest">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -764,7 +764,7 @@ const Home = () => {
       </section>
 
       <WhatsAppButton />
-    </>
+    </div>
   );
 };
 

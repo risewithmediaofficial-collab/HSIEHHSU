@@ -242,6 +242,62 @@ body {
   transform: scale(0.95);
 }
 
+/* Home Page Scoped Theme Classes (Palette: #28696A, #F4AE3F, #F0E6D7, #213058) */
+.home-page-theme {
+  --theme-teal: #28696A;
+  --theme-teal-hover: #1e5152;
+  --theme-gold: #F4AE3F;
+  --theme-cream: #F0E6D7;
+  --theme-cream-light: #faf6f0;
+  --theme-navy: #213058;
+}
+
+.home-page-theme .btn-primary {
+  background-color: #28696A;
+  border-color: #28696A;
+  color: #ffffff;
+}
+.home-page-theme .btn-primary:hover {
+  background-color: #1e5152;
+  border-color: #1e5152;
+}
+
+.home-page-theme .btn-secondary {
+  background-color: #ffffff;
+  color: #213058;
+  border-color: #213058;
+}
+.home-page-theme .btn-secondary:hover {
+  background-color: #213058;
+  color: #ffffff;
+}
+
+.home-page-theme .btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4AE3F;
+  color: #213058;
+  padding: 0.75rem 2rem;
+  border-radius: 0;
+  font-weight: 800;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  border: 2px solid #F4AE3F;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.home-page-theme .btn-gold:hover {
+  background-color: #e09c2e;
+  border-color: #e09c2e;
+  color: #172240;
+}
+.home-page-theme .btn-gold:active {
+  transform: scale(0.95);
+}
+
 .btn-outline {
   display: inline-flex;
   align-items: center;
@@ -492,3 +548,34 @@ img {
   color: var(--text-gray-dark);
   line-height: 1.6;
 }
+
+/* Home Page Card Component Palette Overrides */
+.home-page-theme .fancy-card:hover {
+  border-color: #28696A;
+}
+
+.home-page-theme .fancy-card::after {
+  background-color: #F4AE3F;
+}
+
+.home-page-theme .fancy-card-icon {
+  color: #28696A;
+}
+
+.home-page-theme .fancy-card-title {
+  color: #213058;
+}
+
+.home-page-theme .notification-card:hover {
+  border-left-color: #F4AE3F;
+  background: #f7f3ec;
+}
+
+.home-page-theme .noti-metric {
+  color: #28696A;
+}
+
+.home-page-theme .noti-company {
+  color: #213058;
+}
+
