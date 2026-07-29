@@ -8,22 +8,22 @@ const EcoLine = () => {
     {
       title: "Built Solid",
       desc: "Designed for extreme durability with a sturdy layout, built for 20+ years of reliable operation.",
-      icon: <Shield className="w-6 h-6 text-[#f44336]" />
+      icon: <Shield className="w-6 h-6 text-[#1F7A8C]" />
     },
     {
       title: "Emergent Market Optimized",
       desc: "Perfect for manufacturers targeting monthly output around 5,000 tons, depending on machine width and production mix.",
-      icon: <TrendingUp className="w-6 h-6 text-[#f44336]" />
+      icon: <TrendingUp className="w-6 h-6 text-[#1F7A8C]" />
     },
     {
       title: "Resilient Engineering",
       desc: "Largely impervious to external influences including power fluctuations and frequent changes of raw material.",
-      icon: <Zap className="w-6 h-6 text-[#f44336]" />
+      icon: <Zap className="w-6 h-6 text-[#1F7A8C]" />
     },
     {
       title: "Precision Control",
       desc: "Equipped with a cleverly devised control system to ensure high-quality corrugated board production.",
-      icon: <Settings className="w-6 h-6 text-[#f44336]" />
+      icon: <Settings className="w-6 h-6 text-[#1F7A8C]" />
     }
   ];
 
@@ -36,20 +36,20 @@ const EcoLine = () => {
 
       {/* ===== HERO SECTION ===== */}
       <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
-        {/* Simple Red Accent */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fafafa] -z-10"></div>
+        {/* Background Accent */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#E1E5F2] -z-10"></div>
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#f44336] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest mb-10">
+            <div className="inline-flex items-center gap-2.5 bg-[#BFDBF7]/40 text-[#1F7A8C] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#1F7A8C] uppercase tracking-widest mb-10">
               <span className="tracking-wide">HHC-200 SERIES</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#000000] uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#022B3A] uppercase">
               HHC-200
             </h1>
 
-            <p className="text-lg md:text-xl lg:text-2xl text-[#4a4a4a] leading-relaxed max-w-3xl mx-auto font-medium">
+            <p className="text-lg md:text-xl lg:text-2xl text-[#022B3A]/80 leading-relaxed max-w-3xl mx-auto font-medium">
               A future-proof product for emergent markets
             </p>
           </div>
@@ -62,24 +62,24 @@ const EcoLine = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 space-y-10">
               <div className="space-y-4">
-                <div className="inline-flex items-center gap-2 text-[#f44336] text-xs font-black uppercase tracking-widest">
+                <div className="inline-flex items-center gap-2 text-[#1F7A8C] text-xs font-black uppercase tracking-widest">
                   <TrendingUp className="w-4 h-4" />
                   Growth Oriented Solutions
                 </div>
-                <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter leading-none">
+                <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter leading-none">
                   Invest in Growth
                 </h2>
-                <div className="w-20 h-1 bg-[#f44336]"></div>
+                <div className="w-20 h-1 bg-[#1F7A8C]"></div>
               </div>
 
-              <p className="text-[#4a4a4a] leading-relaxed text-lg font-medium">
+              <p className="text-[#022B3A]/80 leading-relaxed text-lg font-medium">
                 Are you looking to invest in a potential market? The HHC-200 from Hsieh Hsu India meets the needs of manufacturers looking for dependable output, flexible widths, and stable production under challenging conditions.
               </p>
 
-              <div className="p-10 bg-[#fafafa] border border-[#eee] relative group">
+              <div className="p-10 bg-[#E1E5F2]/40 border border-[#E1E5F2] relative group">
                 <div className="space-y-4">
-                  <h3 className="text-xl font-black text-[#1a1a1a] uppercase tracking-tighter">Peak Reliability</h3>
-                  <p className="text-[#7a7a7a] text-sm leading-relaxed font-medium italic">
+                  <h3 className="text-xl font-black text-[#022B3A] uppercase tracking-tighter">Peak Reliability</h3>
+                  <p className="text-[#022B3A]/70 text-sm leading-relaxed font-medium italic">
                     "The HHC-200 delivers peak reliability even under difficult production conditions."
                   </p>
                 </div>
@@ -87,8 +87,8 @@ const EcoLine = () => {
             </div>
 
             <div className="order-1 lg:order-2">
-              <div className="relative aspect-square bg-[#fafafa] border border-[#eee] flex items-center justify-center group overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#eee]"></div>
+              <div className="relative aspect-square bg-[#E1E5F2]/40 border border-[#E1E5F2] flex items-center justify-center group overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#E1E5F2]"></div>
                 <img
                   src={ecoLineImage}
                   alt="HHC-200 corrugation line"
@@ -101,14 +101,14 @@ const EcoLine = () => {
       </section>
 
       {/* ENGINEERING EXCELLENCE */}
-      <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
+      <section className="py-16 bg-[#E1E5F2]/40 border-y border-[#E1E5F2]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter">
               Built Solid
             </h2>
-            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
-            <p className="text-[#7a7a7a] text-lg max-w-2xl mx-auto font-medium">
+            <div className="w-20 h-1 bg-[#1F7A8C] mx-auto"></div>
+            <p className="text-[#022B3A]/70 text-lg max-w-2xl mx-auto font-medium">
               Designed based on our robust high-end technology but optimized for a 1,800 mm width.
             </p>
           </div>
@@ -116,9 +116,9 @@ const EcoLine = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {features.map((feature, idx) => (
               <div key={idx} className="service-card p-10 flex flex-col items-center text-center">
-                <div className="text-[#f44336] mb-8">{feature.icon}</div>
-                <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4 tracking-tight">{feature.title}</h3>
-                <p className="text-[#7a7a7a] text-[10px] leading-relaxed font-medium">{feature.desc}</p>
+                <div className="text-[#1F7A8C] mb-8">{feature.icon}</div>
+                <h3 className="text-sm font-black text-[#022B3A] uppercase tracking-widest mb-4 tracking-tight">{feature.title}</h3>
+                <p className="text-[#022B3A]/70 text-[10px] leading-relaxed font-medium">{feature.desc}</p>
               </div>
             ))}
           </div>
@@ -131,40 +131,40 @@ const EcoLine = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-10">
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-6xl font-black text-[#000000] uppercase tracking-tighter leading-none">
+                <h2 className="text-4xl md:text-6xl font-black text-[#022B3A] uppercase tracking-tighter leading-none">
                   Global Expertise
                 </h2>
-                <div className="w-20 h-1 bg-[#f44336]"></div>
+                <div className="w-20 h-1 bg-[#1F7A8C]"></div>
               </div>
 
-              <p className="text-[#4a4a4a] text-lg font-medium leading-relaxed">
+              <p className="text-[#022B3A]/80 text-lg font-medium leading-relaxed">
                 The HHC-200 is largely impervious to external influences including power fluctuations and frequent changes of raw material.
               </p>
 
               <div className="space-y-8">
                 <div className="flex items-start gap-6 group">
-                  <div className="w-12 h-12 bg-[#fafafa] border border-[#eee] flex items-center justify-center flex-shrink-0 group-hover:border-[#f44336] transition-colors">
-                    <Users className="w-6 h-6 text-[#1a1a1a]" />
+                  <div className="w-12 h-12 bg-[#E1E5F2]/40 border border-[#E1E5F2] flex items-center justify-center flex-shrink-0 group-hover:border-[#1F7A8C] transition-colors">
+                    <Users className="w-6 h-6 text-[#022B3A]" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-2">Local Support</h4>
-                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">Expert service teams available worldwide for immediate assistance and training.</p>
+                    <h4 className="text-sm font-black text-[#022B3A] uppercase tracking-widest mb-2">Local Support</h4>
+                    <p className="text-[#022B3A]/70 text-xs font-medium leading-relaxed">Expert service teams available worldwide for immediate assistance and training.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6 group">
-                  <div className="w-12 h-12 bg-[#fafafa] border border-[#eee] flex items-center justify-center flex-shrink-0 group-hover:border-[#f44336] transition-colors">
-                    <Globe className="w-6 h-6 text-[#1a1a1a]" />
+                  <div className="w-12 h-12 bg-[#E1E5F2]/40 border border-[#E1E5F2] flex items-center justify-center flex-shrink-0 group-hover:border-[#1F7A8C] transition-colors">
+                    <Globe className="w-6 h-6 text-[#022B3A]" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-2">Full Maintenance</h4>
-                    <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed">End-to-end lifecycle solutions ensuring your corrugator runs at peak efficiency.</p>
+                    <h4 className="text-sm font-black text-[#022B3A] uppercase tracking-widest mb-2">Full Maintenance</h4>
+                    <p className="text-[#022B3A]/70 text-xs font-medium leading-relaxed">End-to-end lifecycle solutions ensuring your corrugator runs at peak efficiency.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#1a1a1a] p-12 text-white border border-[#1a1a1a] relative group">
-              <h3 className="text-sm font-black uppercase tracking-widest mb-8 text-[#f44336]">Technical Spec</h3>
+            <div className="bg-[#022B3A] p-12 text-white border border-[#022B3A] relative group">
+              <h3 className="text-sm font-black uppercase tracking-widest mb-8 text-[#BFDBF7]">Technical Spec</h3>
               <ul className="space-y-6">
                 {[
                   "Designed for 20+ years of operation",
@@ -175,8 +175,8 @@ const EcoLine = () => {
                   "Local sales teams with right solutions"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-4">
-                    <div className="w-2 h-2 bg-[#f44336]"></div>
-                    <span className="text-xs font-black uppercase tracking-widest">{item}</span>
+                    <div className="w-2 h-2 bg-[#1F7A8C]"></div>
+                    <span className="text-xs font-black uppercase tracking-widest text-[#BFDBF7]">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -185,27 +185,27 @@ const EcoLine = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-[#fafafa] border-t border-[#eee]">
+      <section className="py-16 bg-[#E1E5F2]/40 border-t border-[#E1E5F2]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-10">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter">Need HHC-200 Details?</h2>
-            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter">Need HHC-200 Details?</h2>
+            <div className="w-20 h-1 bg-[#1F7A8C] mx-auto"></div>
           </div>
 
-          <p className="text-lg text-[#4a4a4a] max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-lg text-[#022B3A]/80 max-w-3xl mx-auto leading-relaxed font-medium">
             Request technical details, width confirmation, and output planning support for the HHC-200 line.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/get-quote?service=HHC-200"
-              className="px-12 py-4 bg-[#f44336] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] transition-colors"
+              className="px-12 py-4 bg-[#1F7A8C] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#022B3A] transition-colors"
             >
               Get Quote
             </Link>
             <Link
               to="/apply?service=HHC-200"
-              className="px-12 py-4 border-2 border-[#1a1a1a] text-[#1a1a1a] text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a1a1a] hover:text-white transition-all"
+              className="px-12 py-4 border-2 border-[#1F7A8C] text-[#1F7A8C] text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1F7A8C] hover:text-white transition-all"
             >
               Apply Now
             </Link>

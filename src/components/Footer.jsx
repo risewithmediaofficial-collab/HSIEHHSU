@@ -83,7 +83,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-white border-t border-[#eee] text-[#1a1a1a] relative overflow-hidden"
+      className="bg-[#022B3A] border-t border-[#FFD601]/40 text-white relative overflow-hidden"
       role="contentinfo"
       data-testid="footer"
     >
@@ -100,22 +100,22 @@ const Footer = () => {
                   <img src={logo} alt="HSIEHHSU Logo" className="w-12 h-12" loading="lazy" decoding="async" />
                 </Link>
                 <div className="flex flex-col">
-                  <h3 className="text-xl sm:text-2xl font-black text-[#1a1a1a] tracking-tighter leading-none uppercase" data-testid="company-name">
+                  <h3 className="text-xl sm:text-2xl font-black text-white tracking-tighter leading-none uppercase" data-testid="company-name">
                     HSIEHHSU
                   </h3>
-                  <p className="text-[10px] sm:text-xs text-[#f44336] font-black tracking-widest uppercase mt-0.5" data-testid="company-subtitle">
+                  <p className="text-[10px] sm:text-xs text-[#FFD601] font-black tracking-widest uppercase mt-0.5" data-testid="company-subtitle">
                     Machinery India Pvt Ltd
                   </p>
                 </div>
               </div>
 
-              <p className="text-[#4a4a4a] leading-relaxed text-sm max-w-md font-medium" data-testid="company-description">
+              <p className="text-[#E1DEE6] leading-relaxed text-sm max-w-md font-medium" data-testid="company-description">
                 World-class corrugation solutions, built on 18+ years of industry experience. Specialists in precision roller refurbishing, restoration, and comprehensive maintenance services.
               </p>
 
               {/* Social Links */}
               <div className="space-y-4">
-                <span className="text-[10px] font-black text-[#7a7a7a] uppercase tracking-[0.2em]">
+                <span className="text-[10px] font-black text-[#FFD601] uppercase tracking-[0.2em]">
                   Follow Us
                 </span>
                 <div className="flex gap-4" data-testid="social-links">
@@ -125,7 +125,7 @@ const Footer = () => {
                       <a
                         key={idx}
                         href={social.url}
-                        className="text-[#1a1a1a] hover:text-[#f44336] transition-colors duration-300"
+                        className="text-white hover:text-[#FFD601] transition-colors duration-300"
                         title={social.label}
                       >
                         <Icon size={18} />
@@ -140,7 +140,7 @@ const Footer = () => {
                 <a
                   href={brochureUrl}
                   download="HSIEHHSU_Machinery_Brochure.pdf"
-                  className="bg-[#f44336] text-white px-8 py-3 text-[11px] font-black uppercase tracking-widest hover:bg-[#1a1a1a] transition-colors duration-300"
+                  className="bg-[#FFD601] text-[#022B3A] px-8 py-3 text-[11px] font-black uppercase tracking-widest hover:bg-[#E5C000] transition-colors duration-300 inline-block shadow-md"
                 >
                   <Download size={14} className="inline mr-2" />
                   Download Brochure
@@ -150,16 +150,16 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div className="space-y-8" data-testid="quick-links">
-              <h4 className="text-xs font-black text-[#1a1a1a] uppercase tracking-[0.2em] relative">
+              <h4 className="text-xs font-black text-white uppercase tracking-[0.2em] relative">
                 Quick Links
-                <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#f44336]"></span>
+                <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#FFD601]"></span>
               </h4>
               <ul className="space-y-4">
                 {quickLinks.map((link) => (
                   <li key={link.path}>
                     <Link
                       to={link.path}
-                      className="text-[#4a4a4a] hover:text-[#f44336] transition-colors duration-300 text-[11px] font-bold uppercase tracking-widest"
+                      className="text-[#E1DEE6]/80 hover:text-[#FFD601] transition-colors duration-300 text-[11px] font-bold uppercase tracking-widest"
                     >
                       {link.label}
                     </Link>
@@ -170,15 +170,15 @@ const Footer = () => {
 
             {/* Services */}
             <div className="space-y-8" data-testid="services">
-              <h4 className="text-xs font-black text-[#1a1a1a] uppercase tracking-[0.2em] relative">
+              <h4 className="text-xs font-black text-white uppercase tracking-[0.2em] relative">
                 Our Services
-                <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#f44336]"></span>
+                <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#FFD601]"></span>
               </h4>
               <ul className="space-y-4">
                 {services.map((service, idx) => (
                   <li
                     key={idx}
-                    className="text-[#4a4a4a] hover:text-[#f44336] transition-colors duration-300 text-[11px] font-bold uppercase tracking-widest cursor-pointer"
+                    className="text-[#E1DEE6]/80 hover:text-[#FFD601] transition-colors duration-300 text-[11px] font-bold uppercase tracking-widest cursor-pointer"
                   >
                     {service}
                   </li>
@@ -187,50 +187,50 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="border-t border-[#eee] my-12"></div>
+          <div className="border-t border-white/10 my-12"></div>
 
           {/* Contact Info Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12" data-testid="contact-info-grid">
             {contactInfo.map((info, idx) => (
               <div key={idx} className="space-y-4" data-testid={info.testId}>
-                <div className="flex items-center gap-3 text-[#f44336]">
+                <div className="flex items-center gap-3 text-[#FFD601]">
                   {info.icon}
-                  <span className="text-[10px] font-black uppercase tracking-widest text-[#1a1a1a]">{info.title}</span>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-white">{info.title}</span>
                 </div>
                 
                 {info.details ? (
                   <div className="space-y-4">
                     {info.details.map((phone, pIdx) => (
                       <div key={pIdx} data-testid={phone.testId}>
-                        <p className="text-[9px] text-[#7a7a7a] font-bold uppercase tracking-widest">{phone.subLabel}</p>
-                        <a href={`tel:${phone.number.replace(/\s/g, '')}`} className="text-[#1a1a1a] font-black text-sm hover:text-[#f44336]" data-testid={`${phone.testId}-link`}>{phone.number}</a>
+                        <p className="text-[9px] text-[#FFD601]/80 font-bold uppercase tracking-widest">{phone.subLabel}</p>
+                        <a href={`tel:${phone.number.replace(/\s/g, '')}`} className="text-white font-black text-sm hover:text-[#FFD601]" data-testid={`${phone.testId}-link`}>{phone.number}</a>
                       </div>
                     ))}
                   </div>
                 ) : info.link ? (
                   <a
                     href={info.link}
-                    className="text-[#4a4a4a] text-sm font-medium leading-relaxed hover:text-[#f44336]"
+                    className="text-[#E1DEE6]/80 text-sm font-medium leading-relaxed hover:text-[#FFD601]"
                     data-testid={`${info.testId}-link`}
                   >
                     {info.content}
                   </a>
                 ) : (
-                   <p className="text-[#4a4a4a] text-sm font-medium leading-relaxed" data-testid={`${info.testId}-content`}>{info.content}</p>
+                   <p className="text-[#E1DEE6]/80 text-sm font-medium leading-relaxed" data-testid={`${info.testId}-content`}>{info.content}</p>
                 )}
               </div>
             ))}
           </div>
 
-          <div className="border-t border-[#eee] py-8"></div>
+          <div className="border-t border-white/10 py-8"></div>
 
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-6" data-testid="footer-bottom">
             <div data-testid="copyright">
-              <p className="text-[#7a7a7a] text-[10px] font-bold uppercase tracking-widest">
-                © {currentYear} <span className="text-[#f44336]">HSIEHHSU MACHINERY INDIA</span> PRIVATE LIMITED.
+              <p className="text-[#E1DEE6]/80 text-[10px] font-bold uppercase tracking-widest">
+                © {currentYear} <span className="text-[#FFD601]">HSIEHHSU MACHINERY INDIA</span> PRIVATE LIMITED.
               </p>
-              <p className="text-[#aaa] text-[9px] uppercase tracking-widest mt-1">
+              <p className="text-[#E1DEE6]/60 text-[9px] uppercase tracking-widest mt-1">
                 GST No: 33AAHCH9753M1Z0 | ISO Certified
               </p>
             </div>
@@ -239,7 +239,7 @@ const Footer = () => {
               href="https://wa.me/918800350183"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#1a1a1a] text-white px-8 py-3 text-[11px] font-black uppercase tracking-widest hover:bg-[#f44336] transition-colors duration-300 flex items-center gap-2"
+              className="bg-[#FFD601] text-[#022B3A] px-8 py-3 text-[11px] font-black uppercase tracking-widest hover:bg-[#E5C000] transition-colors duration-300 flex items-center gap-2 shadow-md"
             >
               <MessageCircle size={14} />
               Quick Chat

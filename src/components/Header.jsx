@@ -126,30 +126,30 @@ const HeaderContent = ({ location }) => {
   };
 
   return (
-    <header ref={headerRef} className="sticky top-0 z-50 bg-white border-b border-[#eee]">
-      {/* Top Bar - Minimalist */}
-      <div className="bg-[#fafafa] border-b border-[#eee] text-[#4a4a4a]">
+    <header ref={headerRef} className="sticky top-0 z-50 bg-white border-b border-[#E1DEE6]">
+      {/* Top Bar - Deep Navy & Gold */}
+      <div className="bg-[#022B3A] border-b border-[#FFD601]/30 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex justify-between items-center py-3 sm:py-2">
             <div className="flex items-center gap-4 sm:gap-8">
               <a
                 href="tel:+919894235419"
-                className="group flex items-center gap-1.5 hover:text-[#f44336] transition-colors duration-300"
+                className="group flex items-center gap-1.5 hover:text-[#FFD601] transition-colors duration-300"
               >
-                <Phone size={11} className="text-[#f44336]" />
+                <Phone size={11} className="text-[#FFD601]" />
                 <span className="font-bold text-[10px] uppercase tracking-widest">+91 98942 35419</span>
               </a>
               <a
                 href="mailto:hsiehhsu.india@gmail.com "
-                className="hidden sm:flex items-center gap-1.5 hover:text-[#f44336] transition-colors duration-300"
+                className="hidden sm:flex items-center gap-1.5 hover:text-[#FFD601] transition-colors duration-300"
               >
-                <Mail size={11} className="text-[#f44336]" />
+                <Mail size={11} className="text-[#FFD601]" />
                 <span className="font-bold text-[10px] tracking-widest">hsiehhsu.india@gmail.com </span>
               </a>
             </div>
             <div className="hidden lg:flex items-center gap-2">
-              <Factory size={11} className="text-[#f44336]" />
-              <span className="font-bold text-[10px] uppercase tracking-widest text-[#7a7a7a]">SIPCOT Industrial Park, Krishnagiri, TN</span>
+              <Factory size={11} className="text-[#FFD601]" />
+              <span className="font-bold text-[10px] uppercase tracking-widest text-[#E1DEE6]">SIPCOT Industrial Park, Krishnagiri, TN</span>
             </div>
           </div>
         </div>
@@ -165,10 +165,10 @@ const HeaderContent = ({ location }) => {
               className="group flex items-center gap-3 hover:opacity-90 transition-opacity duration-300">
               <img className='w-10 h-10' src={logo} alt="logo" loading="lazy" decoding="async" />
               <div className="flex flex-col">
-                <h1 className="text-xl font-black text-[#1a1a1a] tracking-tighter leading-none uppercase">
+                <h1 className="text-xl font-black text-[#022B3A] tracking-tighter leading-none uppercase">
                   HSIEHHSU
                 </h1>
-                <p className="text-[9px] text-[#f44336] font-black tracking-[0.2em] uppercase mt-0.5">
+                <p className="text-[9px] text-[#022B3A] font-black tracking-[0.2em] uppercase mt-0.5">
                   India Pvt Ltd
                 </p>
               </div>
@@ -181,10 +181,10 @@ const HeaderContent = ({ location }) => {
                   {item.isMega ? (
                     <>
                       <button
-                        className={`flex items-center gap-1.5 px-5 py-7 text-[11px] font-bold uppercase tracking-wider transition-all duration-300 border-b-2 ${
+                        className={`flex items-center gap-1.5 px-5 py-7 text-[11px] font-black uppercase tracking-wider transition-all duration-300 border-b-2 ${
                           location.pathname.startsWith('/portfolio')
-                            ? 'text-[#f44336] border-[#f44336]'
-                            : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
+                            ? 'text-[#022B3A] border-[#FFD601]'
+                            : 'text-[#022B3A] border-transparent hover:text-[#FFD601]'
                         }`}
                       >
                         <span>{item.label}</span>
@@ -195,17 +195,17 @@ const HeaderContent = ({ location }) => {
                       </button>
 
                       {/* Mega Dropdown Menu */}
-                      <div className="absolute left-1/2 -translate-x-1/2 mt-1 w-[90vw] max-w-275 bg-white shadow-2xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-slate-200 overflow-hidden flex">
+                      <div className="absolute left-1/2 -translate-x-1/2 mt-1 w-[90vw] max-w-275 bg-white shadow-2xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-[#E1DEE6] overflow-hidden flex">
                         {/* Sidebar */}
-                        <div className="w-1/3 py-2 border-r border-slate-100">
+                        <div className="w-1/3 py-2 border-r border-[#E1DEE6]">
                           <div className="space-y-0.5">
                             {item.dropdown.map((category) => (
                               <button
                                 key={category.id}
                                 onMouseEnter={() => setActivePortfolioTab(category.id)}
-                                className={`w-full text-left px-5 py-3 text-sm font-medium transition-all duration-300 flex items-center justify-between ${activePortfolioTab === category.id
-                                  ? 'bg-red-50 text-[#f44336] border-l-4 border-[#f44336]'
-                                  : 'text-slate-700 hover:bg-red-50 hover:text-[#f44336] border-l-4 border-transparent hover:border-red-300'
+                                className={`w-full text-left px-5 py-3 text-sm font-bold transition-all duration-300 flex items-center justify-between ${activePortfolioTab === category.id
+                                  ? 'bg-[#E1DEE6] text-[#022B3A] border-l-4 border-[#022B3A]'
+                                  : 'text-slate-700 hover:bg-[#E1DEE6] hover:text-[#022B3A] border-l-4 border-transparent hover:border-[#022B3A]'
                                   }`}
                               >
                                 {category.label}
@@ -223,7 +223,7 @@ const HeaderContent = ({ location }) => {
                               className={`${activePortfolioTab === category.id ? 'block' : 'hidden'} animate-in fade-in slide-in-from-left-2 duration-300`}
                             >
                               <div className="mb-4">
-                                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest px-2">
+                                <h3 className="text-xs font-black text-[#022B3A] uppercase tracking-widest px-2">
                                   {category.label}
                                 </h3>
                               </div>
@@ -234,23 +234,23 @@ const HeaderContent = ({ location }) => {
                                     to={sub.path}
                                     className={`group/item block px-4 py-3 text-sm transition-all duration-300 rounded-xl ${
                                       isActive(sub.path)
-                                        ? 'bg-red-50 border-l-4 border-[#f44336]'
-                                        : 'hover:bg-red-50'
+                                        ? 'bg-[#FFD601]/20 border-l-4 border-[#022B3A]'
+                                        : 'hover:bg-[#E1DEE6]'
                                     }`}
                                     onClick={scrollToTop}
                                   >
-                                    <div className={`font-medium transition-colors ${
+                                    <div className={`font-bold transition-colors ${
                                       isActive(sub.path)
-                                        ? 'text-[#f44336]'
-                                        : 'text-slate-700 group-hover/item:text-[#f44336]'
+                                        ? 'text-[#022B3A]'
+                                        : 'text-[#022B3A] group-hover/item:text-[#022B3A]'
                                     }`}>
                                       {sub.label}
                                     </div>
                                     {sub.description && (
                                       <p className={`text-xs mt-1 line-clamp-2 leading-relaxed font-normal ${
                                         isActive(sub.path)
-                                          ? 'text-[#f44336]'
-                                          : 'text-slate-500'
+                                          ? 'text-[#022B3A]'
+                                          : 'text-[#022B3A]/70'
                                       }`}>
                                         {sub.description}
                                       </p>
@@ -266,12 +266,12 @@ const HeaderContent = ({ location }) => {
                   ) : item.dropdown ? (
                     <>
                       <button
-                        className={`flex items-center gap-1.5 px-5 py-7 text-[11px] font-bold uppercase tracking-wider transition-all duration-300 border-b-2 ${
+                        className={`flex items-center gap-1.5 px-5 py-7 text-[11px] font-black uppercase tracking-wider transition-all duration-300 border-b-2 ${
                           item.label === 'Spares and Services' && location.pathname.startsWith('/services')
-                            ? 'text-[#f44336] border-[#f44336]'
+                            ? 'text-[#022B3A] border-[#FFD601]'
                             : isActive(item.path)
-                            ? 'text-[#f44336] border-[#f44336]'
-                            : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
+                            ? 'text-[#022B3A] border-[#FFD601]'
+                            : 'text-[#022B3A] border-transparent hover:text-[#022B3A]'
                         }`}
                       >
                         <span>{item.label}</span>
@@ -282,14 +282,14 @@ const HeaderContent = ({ location }) => {
                       </button>
 
                       {/* Dropdown Menu */}
-                      <div className="absolute left-0 mt-1 w-56 bg-white shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2 border border-slate-200 overflow-hidden">
+                      <div className="absolute left-0 mt-1 w-56 bg-white shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2 border border-[#E1DEE6] overflow-hidden">
                         {item.dropdown.map((subItem, idx) => (
                           <Link
                             key={subItem.path || idx}
                             to={subItem.path}
-                            className={`block px-5 py-3 text-sm font-medium transition-all duration-300 ${isActive(subItem.path)
-                              ? 'bg-red-50 text-[#f44336] border-l-4 border-[#f44336]'
-                              : 'text-slate-700 hover:bg-red-50 hover:text-[#f44336] border-l-4 border-transparent hover:border-red-300'
+                            className={`block px-5 py-3 text-sm font-bold transition-all duration-300 ${isActive(subItem.path)
+                              ? 'bg-[#E1DEE6] text-[#022B3A] border-l-4 border-[#022B3A]'
+                              : 'text-[#022B3A] hover:bg-[#E1DEE6] hover:text-[#022B3A] border-l-4 border-transparent hover:border-[#022B3A]'
                               }`}
                             onClick={scrollToTop}
                           >
@@ -301,9 +301,9 @@ const HeaderContent = ({ location }) => {
                   ) : (
                     <Link
                       to={item.path}
-                      className={`px-5 py-7 text-[11px] font-bold uppercase tracking-wider transition-all duration-300 border-b-2 block ${isActive(item.path)
-                        ? 'text-[#f44336] border-[#f44336]'
-                        : 'text-[#1a1a1a] border-transparent hover:text-[#f44336]'
+                      className={`px-5 py-7 text-[11px] font-black uppercase tracking-wider transition-all duration-300 border-b-2 block ${isActive(item.path)
+                        ? 'text-[#022B3A] border-[#FFD601]'
+                        : 'text-[#022B3A] border-transparent hover:text-[#022B3A]'
                         }`}
                       onClick={scrollToTop}
                     >
@@ -313,12 +313,12 @@ const HeaderContent = ({ location }) => {
                 </div>
               ))}
 
-              {/* WhatsApp Button - Brand Red */}
+              {/* WhatsApp Button - Vibrant Gold */}
               <a
                 href="https://wa.me/918800350183"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-6 px-5 py-2.5 bg-[#f44336] text-white text-[11px] font-bold uppercase tracking-wider hover:bg-[#d32f2f] transition-all duration-500 flex items-center gap-2 shadow-sm"
+                className="ml-6 px-5 py-2.5 bg-[#FFD601] text-[#022B3A] text-[11px] font-black uppercase tracking-wider hover:bg-[#E5C000] transition-all duration-300 flex items-center gap-2 shadow-sm"
               >
                 <MessageCircle size={14} />
                 <span>WhatsApp</span>
@@ -327,14 +327,14 @@ const HeaderContent = ({ location }) => {
 
             {/* Mobile menu button */}
             <button
-              className="lg:hidden p-2 text-[#1a1a1a] hover:bg-[#fafafa] rounded-lg transition-colors duration-300"
+              className="lg:hidden p-2 text-[#022B3A] hover:bg-[#E1E5F2] rounded-lg transition-colors duration-300"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
             >
               {isOpen ? (
-                <X size={24} className="text-[#f44336]" />
+                <X size={24} className="text-[#1F7A8C]" />
               ) : (
-                <Menu size={24} className="text-slate-900" />
+                <Menu size={24} className="text-[#022B3A]" />
               )}
             </button>
           </div>
@@ -349,7 +349,7 @@ const HeaderContent = ({ location }) => {
               maxHeight: `calc(100dvh - ${mobileMenuTop}px)`,
             }}
           >
-            <div className="h-full border-t border-slate-200 bg-white shadow-2xl">
+            <div className="h-full border-t border-[#E1E5F2] bg-white shadow-2xl">
               <div className="mx-auto h-full max-w-7xl overflow-y-auto overscroll-contain px-4 pb-6 pt-4 sm:px-6">
                 <div className="space-y-1">
               {navItems.map((item) => (
@@ -359,8 +359,8 @@ const HeaderContent = ({ location }) => {
                       <button
                         className={`w-full text-left px-4 py-3 text-sm font-semibold rounded-lg transition-all duration-300 flex items-center justify-between ${
                           location.pathname.startsWith('/portfolio')
-                            ? 'bg-red-50 text-[#f44336]'
-                            : 'text-slate-900 hover:bg-red-50 hover:text-[#f44336]'
+                            ? 'bg-[#BFDBF7]/30 text-[#1F7A8C]'
+                            : 'text-[#022B3A] hover:bg-[#E1E5F2] hover:text-[#1F7A8C]'
                         }`}
                         onClick={() => setPortfolioOpen(!portfolioOpen)}
                       >
@@ -378,7 +378,7 @@ const HeaderContent = ({ location }) => {
                         {item.dropdown.map((category) => (
                           <div key={category.id} className="space-y-1">
                             <button
-                              className="w-full text-left px-4 py-2 text-xs font-bold text-slate-500 uppercase tracking-wider"
+                              className="w-full text-left px-4 py-2 text-xs font-bold text-[#1F7A8C] uppercase tracking-wider"
                               onClick={() => {
                                 if (activePortfolioTab === category.id) setActivePortfolioTab(null);
                                 else setActivePortfolioTab(category.id);
@@ -386,15 +386,15 @@ const HeaderContent = ({ location }) => {
                             >
                               {category.label}
                             </button>
-                            <div className={`space-y-1 ml-2 border-l-2 border-slate-100 pl-2 transition-all duration-300 ${activePortfolioTab === category.id ? 'block' : 'hidden'}`}>
+                            <div className={`space-y-1 ml-2 border-l-2 border-[#E1E5F2] pl-2 transition-all duration-300 ${activePortfolioTab === category.id ? 'block' : 'hidden'}`}>
                               {category.content.map((sub, idx) => (
                                 <Link
                                   key={idx}
                                   to={sub.path}
                                   className={`block px-4 py-2 text-sm rounded-lg transition-colors ${
                                     isActive(sub.path)
-                                      ? 'bg-red-50 text-[#f44336] border-l-4 border-[#f44336]'
-                                      : 'text-slate-700 hover:text-[#f44336] hover:bg-red-50 border-l-4 border-transparent'
+                                      ? 'bg-[#BFDBF7]/30 text-[#1F7A8C] border-l-4 border-[#1F7A8C]'
+                                      : 'text-[#022B3A] hover:text-[#1F7A8C] hover:bg-[#E1E5F2] border-l-4 border-transparent'
                                   }`}
                                   onClick={() => {
                                     scrollToTop();
@@ -414,8 +414,8 @@ const HeaderContent = ({ location }) => {
                       <button
                         className={`w-full text-left px-4 py-3 text-sm font-semibold rounded-lg transition-all duration-300 flex items-center justify-between ${
                           item.label === 'Spares and Services' && location.pathname.startsWith('/services')
-                            ? 'bg-red-50 text-[#f44336]'
-                            : 'text-slate-900 hover:bg-red-50 hover:text-[#f44336]'
+                            ? 'bg-[#BFDBF7]/30 text-[#1F7A8C]'
+                            : 'text-[#022B3A] hover:bg-[#E1E5F2] hover:text-[#1F7A8C]'
                         }`}
                         onClick={() => setServicesOpen(!servicesOpen)}
                       >
@@ -435,8 +435,8 @@ const HeaderContent = ({ location }) => {
                             key={subItem.path || idx}
                             to={subItem.path}
                             className={`block px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-300 ${isActive(subItem.path)
-                              ? 'bg-red-50 text-[#f44336] border-l-4 border-[#f44336]'
-                              : 'text-slate-700 hover:text-[#f44336] hover:bg-red-50 border-l-4 border-transparent'
+                              ? 'bg-[#BFDBF7]/30 text-[#1F7A8C] border-l-4 border-[#1F7A8C]'
+                              : 'text-[#022B3A] hover:text-[#1F7A8C] hover:bg-[#E1E5F2] border-l-4 border-transparent'
                               }`}
                             onClick={() => {
                               scrollToTop();
@@ -453,8 +453,8 @@ const HeaderContent = ({ location }) => {
                     <Link
                       to={item.path}
                       className={`block px-4 py-3 text-sm font-semibold rounded-lg transition-all duration-300 ${isActive(item.path)
-                        ? 'bg-red-50 text-[#f44336]'
-                        : 'text-slate-900 hover:bg-red-50 hover:text-[#f44336]'
+                        ? 'bg-[#BFDBF7]/30 text-[#1F7A8C]'
+                        : 'text-[#022B3A] hover:bg-[#E1E5F2] hover:text-[#1F7A8C]'
                         }`}
                       onClick={() => {
                         scrollToTop();
@@ -472,7 +472,7 @@ const HeaderContent = ({ location }) => {
                 href="https://wa.me/918800350183"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-[#f44336] hover:bg-[#d32f2f] text-white px-4 py-4 rounded-none text-xs font-black uppercase tracking-widest mt-6 transition-all duration-500 shadow-md"
+                className="flex items-center justify-center gap-2 bg-[#1F7A8C] hover:bg-[#176372] text-white px-4 py-4 rounded-none text-xs font-black uppercase tracking-widest mt-6 transition-all duration-500 shadow-md"
                 onClick={() => setIsOpen(false)}
               >
                 <MessageCircle size={18} strokeWidth={2} />

@@ -33,7 +33,7 @@ const CorrugatingRolls = () => {
         "Regrindability: Support for 2-3 regrinds without precision loss",
         "Consistent Level: Hardness stays constant over entire service life"
       ],
-      icon: <Shield className="w-8 h-8 text-[#f44336]" />
+      icon: <Shield className="w-8 h-8 text-[#1F7A8C]" />
     },
     {
       title: "Surface Coating",
@@ -51,7 +51,7 @@ const CorrugatingRolls = () => {
         "Exceptional adhesion to the base material",
         "Low roughness for optimal bonding performance"
       ],
-      icon: <Zap className="w-8 h-8 text-[#f44336]" />
+      icon: <Zap className="w-8 h-8 text-[#1F7A8C]" />
     }
   ];
 
@@ -59,27 +59,27 @@ const CorrugatingRolls = () => {
     {
       title: "High Precision Flute Profiles",
       desc: "Designed for accurate flute formation across all standard configurations (A, B, C, E, F & custom profiles).",
-      icon: <Target className="w-6 h-6 text-[#f44336]" />
+      icon: <Target className="w-6 h-6 text-[#1F7A8C]" />
     },
     {
       title: "Superior Surface Hardness",
       desc: "Manufactured using specially treated alloy steel that retains hardness even under high-temperature operations.",
-      icon: <Shield className="w-6 h-6 text-[#f44336]" />
+      icon: <Shield className="w-6 h-6 text-[#1F7A8C]" />
     },
     {
       title: "Advanced Coating Technology",
       desc: "Available with tungsten carbide and chrome coatings for excellent wear resistance and extended lifespan.",
-      icon: <Zap className="w-6 h-6 text-[#f44336]" />
+      icon: <Zap className="w-6 h-6 text-[#1F7A8C]" />
     },
     {
       title: "Optimized Surface Finish",
       desc: "Low roughness ensures smooth paper flow, better adhesive bonding, and consistent board quality.",
-      icon: <Settings className="w-6 h-6 text-[#f44336]" />
+      icon: <Settings className="w-6 h-6 text-[#1F7A8C]" />
     },
     {
       title: "High Durability & Regrind Capability",
       desc: "Designed for multiple regrinding cycles without compromising performance.",
-      icon: <TrendingUp className="w-6 h-6 text-[#f44336]" />
+      icon: <TrendingUp className="w-6 h-6 text-[#1F7A8C]" />
     }
   ];
 
@@ -138,20 +138,20 @@ const CorrugatingRolls = () => {
 
       {/* ===== HERO SECTION ===== */}
       <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
-        {/* Simple Red Accent */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#fafafa] -z-10"></div>
+        {/* Background Accent */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#E1E5F2] -z-10"></div>
         
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2.5 bg-red-50 text-[#f44336] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#f44336] uppercase tracking-widest mb-10">
+            <div className="inline-flex items-center gap-2.5 bg-[#BFDBF7]/40 text-[#1F7A8C] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#1F7A8C] uppercase tracking-widest mb-10">
                <span className="tracking-wide">Precision Engineered Solutions</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#000000] uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#022B3A] uppercase">
                Precision Corrugating Rolls Excellence
             </h1>
             
-            <p className="text-lg md:text-xl lg:text-2xl text-[#4a4a4a] leading-relaxed max-w-3xl mx-auto font-medium">
+            <p className="text-lg md:text-xl lg:text-2xl text-[#022B3A]/80 leading-relaxed max-w-3xl mx-auto font-medium">
                Precision Engineered for Superior Board Quality. The core of your production excellence.
             </p>
           </div>
@@ -164,35 +164,35 @@ const CorrugatingRolls = () => {
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div className="space-y-12">
                <div className="space-y-4">
-                  <h2 className="text-4xl font-black text-[#000000] uppercase tracking-tighter">High-Performance Roller Core Systems</h2>
-                  <div className="w-20 h-1 bg-[#f44336]"></div>
+                  <h2 className="text-4xl font-black text-[#022B3A] uppercase tracking-tighter">High-Performance Roller Core Systems</h2>
+                  <div className="w-20 h-1 bg-[#1F7A8C]"></div>
                 </div>
 
-              <p className="text-lg text-[#4a4a4a] leading-relaxed font-medium">
+              <p className="text-lg text-[#022B3A]/80 leading-relaxed font-medium">
                 Corrugating rolls are the core component of any corrugation system, directly influencing the strength, consistency, and overall quality of corrugated boards.
               </p>
               
-              <div className="p-10 border border-[#eee] bg-[#fafafa] space-y-6">
-                <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest">Innovation Overview</h3>
-                <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed uppercase">
+              <div className="p-10 border border-[#E1E5F2] bg-[#E1E5F2]/40 space-y-6">
+                <h3 className="text-sm font-black text-[#022B3A] uppercase tracking-widest">Innovation Overview</h3>
+                <p className="text-[#022B3A]/70 text-xs font-medium leading-relaxed uppercase">
                   Our corrugating rolls are engineered using advanced manufacturing techniques and deep industry expertise. Designed to perform under high temperatures and continuous operations, they ensure reliable output, improved productivity, and long service life.
                 </p>
-                <div className="pt-6 border-t border-[#eee] flex items-center gap-4">
-                   <div className="w-1.5 h-1.5 bg-[#f44336]"></div>
-                   <span className="text-[10px] font-black uppercase tracking-widest text-[#1a1a1a]">Maximum Durability</span>
+                <div className="pt-6 border-t border-[#E1E5F2] flex items-center gap-4">
+                   <div className="w-1.5 h-1.5 bg-[#1F7A8C]"></div>
+                   <span className="text-[10px] font-black uppercase tracking-widest text-[#022B3A]">Maximum Durability</span>
                 </div>
               </div>
             </div>
             
-            <div className="relative aspect-square bg-[#fafafa] border border-[#eee] flex items-center justify-center group overflow-hidden">
-               <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#eee]"></div>
+            <div className="relative aspect-square bg-[#E1E5F2]/40 border border-[#E1E5F2] flex items-center justify-center group overflow-hidden">
+               <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#E1E5F2]"></div>
                <img
                  src={corrugatingRollsImage}
                  alt="Precision corrugating rolls"
                  className="relative z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                />
-              <div className="absolute inset-x-0 bottom-0 z-10 p-12 bg-linear-to-t from-[#fafafa] to-transparent">
-                <p className="text-[#1a1a1a] text-2xl font-black uppercase tracking-tighter opacity-10">Advanced Hub</p>
+              <div className="absolute inset-x-0 bottom-0 z-10 p-12 bg-linear-to-t from-[#E1E5F2] to-transparent">
+                <p className="text-[#022B3A] text-2xl font-black uppercase tracking-tighter opacity-10">Advanced Hub</p>
                </div>
             </div>
           </div>
@@ -200,24 +200,24 @@ const CorrugatingRolls = () => {
       </section>
 
       {/* ===== KEY FEATURES ===== */}
-      <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
+      <section className="py-16 bg-[#E1E5F2]/40 border-y border-[#E1E5F2]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#000000] uppercase tracking-tighter text-center">
+            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter text-center">
                Key Engineering Features Overview
             </h2>
-            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#1F7A8C] mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#eee] border border-[#eee]">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#E1E5F2] border border-[#E1E5F2]">
             {features.map((feature, idx) => (
-              <div key={idx} className="bg-white p-12 space-y-8 group hover:bg-[#fafafa] transition-colors">
-                <div className="text-[#f44336] group-hover:scale-110 transition-transform duration-500">
+              <div key={idx} className="bg-white p-12 space-y-8 group hover:bg-[#E1E5F2]/20 transition-colors">
+                <div className="text-[#1F7A8C] group-hover:scale-110 transition-transform duration-500">
                   {feature.icon}
                 </div>
                 <div>
-                   <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest mb-4">{feature.title}</h3>
-                   <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed uppercase">{feature.desc}</p>
+                   <h3 className="text-sm font-black text-[#022B3A] uppercase tracking-widest mb-4">{feature.title}</h3>
+                   <p className="text-[#022B3A]/70 text-xs font-medium leading-relaxed uppercase">{feature.desc}</p>
                 </div>
               </div>
             ))}
@@ -231,103 +231,105 @@ const CorrugatingRolls = () => {
           <div className="grid lg:grid-cols-2 gap-24 items-center">
              <div className="space-y-12">
                <div className="space-y-4">
-                  <h2 className="text-4xl font-black text-[#000000] uppercase tracking-tighter">Versatile Industry Applications Matrix</h2>
-                  <div className="w-20 h-1 bg-[#f44336]"></div>
+                  <h2 className="text-4xl font-black text-[#022B3A] uppercase tracking-tighter">Versatile Industry Applications Matrix</h2>
+                  <div className="w-20 h-1 bg-[#1F7A8C]"></div>
                 </div>
 
-                <p className="text-lg text-[#4a4a4a] leading-relaxed font-medium">
+                <p className="text-lg text-[#022B3A]/80 leading-relaxed font-medium">
                    Our corrugating rolls are widely used across various sectors of the packaging industry, providing unmatched stability and performance.
                 </p>
 
-                <div className="grid sm:grid-cols-2 gap-px bg-[#eee] border border-[#eee]">
+                <div className="grid sm:grid-cols-2 gap-px bg-[#E1E5F2] border border-[#E1E5F2]">
                    {applications.map((app, idx) => (
-                      <div key={idx} className="bg-[#fafafa] p-6 flex items-center gap-4">
-                         <div className="w-2 h-2 bg-[#f44336]"></div>
-                         <span className="text-[10px] font-black uppercase tracking-widest text-[#1a1a1a]">{app}</span>
+                      <div key={idx} className="bg-[#E1E5F2]/40 p-6 flex items-center gap-4">
+                         <div className="w-2 h-2 bg-[#1F7A8C]"></div>
+                         <span className="text-[10px] font-black uppercase tracking-widest text-[#022B3A]">{app}</span>
                       </div>
                    ))}
                 </div>
              </div>
 
              <div className="hidden lg:flex justify-center">
-                <div className="w-full aspect-video bg-[#fafafa] border border-[#eee] flex items-center justify-center relative group overflow-hidden p-6">
+                <div className="w-full aspect-video bg-[#E1E5F2]/40 border border-[#E1E5F2] flex items-center justify-center relative group overflow-hidden p-6">
                    <img
                      src={rollerApplicationImage}
                      alt="Corrugating roll application detail"
                      className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-105"
                    />
                    <div className="absolute top-0 right-0 p-8">
-                      <div className="w-12 h-1 bg-[#f44336]"></div>
+                      <div className="w-12 h-1 bg-[#1F7A8C]"></div>
                    </div>
                 </div>
              </div>
           </div>
         </div>
-      </section>      {/* ===== MATERIAL & COATING ===== */}
-      <section className="py-16 bg-[#fafafa] border-y border-[#eee]">
+      </section>
+
+      {/* ===== MATERIAL & COATING ===== */}
+      <section className="py-16 bg-[#E1E5F2]/40 border-y border-[#E1E5F2]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-24 items-start">
             <div className="space-y-12">
                <div className="space-y-4">
-                  <h2 className="text-4xl font-black text-[#000000] uppercase tracking-tighter leading-none">Material Composition & Coating</h2>
-                  <div className="w-20 h-1 bg-[#f44336]"></div>
+                  <h2 className="text-4xl font-black text-[#022B3A] uppercase tracking-tighter leading-none">Material Composition & Coating</h2>
+                  <div className="w-20 h-1 bg-[#1F7A8C]"></div>
                 </div>
 
-              <p className="text-lg text-[#4a4a4a] leading-relaxed font-medium">
+              <p className="text-lg text-[#022B3A]/80 leading-relaxed font-medium">
                   The quality and performance of a corrugating roll starts with the base material and is perfected by the surface coating.
               </p>
               
               <div className="grid gap-4">
                 {materialContent.map((item, idx) => (
-                  <div key={idx} className="notification-card bg-white p-0 overflow-hidden border-[#eee]">
+                  <div key={idx} className="notification-card bg-white p-0 overflow-hidden border-[#E1E5F2]">
                     <button 
                       onClick={() => toggleMaterialTab(idx)}
                       className="w-full text-left p-10 flex items-center justify-between group"
                     >
                       <div className="flex items-center gap-6">
-                        <div className="w-12 h-12 bg-[#fafafa] border border-[#eee] flex items-center justify-center group-hover:border-[#f44336] transition-colors">
-                           <div className="text-[#1a1a1a]">{item.icon}</div>
+                        <div className="w-12 h-12 bg-[#E1E5F2]/40 border border-[#E1E5F2] flex items-center justify-center group-hover:border-[#1F7A8C] transition-colors">
+                           <div className="text-[#022B3A]">{item.icon}</div>
                         </div>
                         <div>
-                          <h3 className="text-sm font-black text-[#1a1a1a] uppercase tracking-widest">{item.title}</h3>
-                          <p className="text-[10px] font-black text-[#f44336] uppercase tracking-widest">{item.subtitle}</p>
+                          <h3 className="text-sm font-black text-[#022B3A] uppercase tracking-widest">{item.title}</h3>
+                          <p className="text-[10px] font-black text-[#1F7A8C] uppercase tracking-widest">{item.subtitle}</p>
                         </div>
                       </div>
-                      <ChevronDown className={`w-5 h-5 transition-transform duration-500 ${activeMaterialTab === idx ? 'rotate-180 text-[#f44336]' : 'text-[#aaa]'}`} />
+                      <ChevronDown className={`w-5 h-5 transition-transform duration-500 ${activeMaterialTab === idx ? 'rotate-180 text-[#1F7A8C]' : 'text-[#022B3A]/40'}`} />
                     </button>
                     
                     <div className={`transition-all duration-500 ease-in-out ${activeMaterialTab === idx ? 'max-h-300 opacity-100 p-10 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-                      <div className="pt-10 border-t border-[#eee] space-y-10">
-                        <p className="text-[#7a7a7a] text-xs font-medium leading-relaxed uppercase">{item.desc}</p>
+                      <div className="pt-10 border-t border-[#E1E5F2] space-y-10">
+                        <p className="text-[#022B3A]/70 text-xs font-medium leading-relaxed uppercase">{item.desc}</p>
                         
                         <div className="grid md:grid-cols-2 gap-10">
                           <div className="space-y-4">
-                             <h4 className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest">Key Features</h4>
+                             <h4 className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest">Key Features</h4>
                              <ul className="space-y-3">
                                {item.highlights.map((h, i) => (
                                  <li key={i} className="flex items-center gap-3">
-                                   <div className="w-1 h-1 bg-[#f44336]"></div>
-                                   <span className="text-[10px] font-bold text-[#4a4a4a] uppercase tracking-widest">{h}</span>
+                                   <div className="w-1 h-1 bg-[#1F7A8C]"></div>
+                                   <span className="text-[10px] font-bold text-[#022B3A]/80 uppercase tracking-widest">{h}</span>
                                  </li>
                                 ))}
                              </ul>
                           </div>
                           <div className="space-y-4">
-                             <h4 className="text-[10px] font-black text-[#1a1a1a] uppercase tracking-widest">Advantages</h4>
+                             <h4 className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest">Advantages</h4>
                              <ul className="space-y-3">
                                {item.details.map((d, i) => (
                                  <li key={i} className="flex items-center gap-3">
-                                   <div className="w-1 h-1 bg-[#f44336]"></div>
-                                   <span className="text-[10px] font-bold text-[#4a4a4a] uppercase tracking-widest">{d}</span>
+                                   <div className="w-1 h-1 bg-[#1F7A8C]"></div>
+                                   <span className="text-[10px] font-bold text-[#022B3A]/80 uppercase tracking-widest">{d}</span>
                                  </li>
                                ))}
                              </ul>
                           </div>
                         </div>
                         
-                        <div className="bg-[#1a1a1a] p-8 text-white relative group overflow-hidden">
-                           <p className="text-[10px] text-[#f44336] font-black uppercase tracking-widest mb-2">Hsieh Hsu Performance Guarantee</p>
-                           <p className="text-xs font-medium uppercase leading-relaxed">Maximum cost-effectiveness and engineering precision.</p>
+                        <div className="bg-[#022B3A] p-8 text-white relative group overflow-hidden">
+                           <p className="text-[10px] text-[#BFDBF7] font-black uppercase tracking-widest mb-2">Hsieh Hsu Performance Guarantee</p>
+                           <p className="text-xs font-medium uppercase leading-relaxed text-[#BFDBF7]/80">Maximum cost-effectiveness and engineering precision.</p>
                         </div>
                       </div>
                     </div>
@@ -337,24 +339,24 @@ const CorrugatingRolls = () => {
             </div>
             
             <div className="lg:mt-24">
-               <div className="bg-white p-12 lg:p-16 border border-[#eee] space-y-12">
-                  <div className="w-16 h-1 bg-[#f44336]"></div>
+               <div className="bg-white p-12 lg:p-16 border border-[#E1E5F2] space-y-12">
+                  <div className="w-16 h-1 bg-[#1F7A8C]"></div>
                   <div className="space-y-6">
-                    <h3 className="text-3xl font-black text-[#f44336] uppercase tracking-tighter leading-tight">WLF Finishing Process</h3>
-                    <p className="text-[#4a4a4a] leading-relaxed text-lg font-medium">
+                    <h3 className="text-3xl font-black text-[#1F7A8C] uppercase tracking-tighter leading-tight">WLF Finishing Process</h3>
+                    <p className="text-[#022B3A]/80 leading-relaxed text-lg font-medium">
                        With our **WLF (Tungsten Lapping Finishing)** process, we achieve a perfect surface coating of **&lt; 0.2 µ Ra**, ensuring optimum flute formation and moisture management for all medium papers.
                     </p>
                   </div>
                   
-                  <div className="pt-10 border-t border-[#eee]">
+                  <div className="pt-10 border-t border-[#E1E5F2]">
                     <div className="grid grid-cols-2 gap-12">
                       <div className="space-y-1">
-                        <div className="text-[#1a1a1a] text-3xl font-black tracking-tighter italic">100 µm</div>
-                        <div className="text-[#7a7a7a] text-[10px] font-black uppercase tracking-widest leading-none">Chrome Thickness</div>
+                        <div className="text-[#022B3A] text-3xl font-black tracking-tighter italic">100 µm</div>
+                        <div className="text-[#022B3A]/60 text-[10px] font-black uppercase tracking-widest leading-none">Chrome Thickness</div>
                       </div>
                       <div className="space-y-1">
-                        <div className="text-[#1a1a1a] text-3xl font-black tracking-tighter italic">RA &lt; 0.2</div>
-                        <div className="text-[#7a7a7a] text-[10px] font-black uppercase tracking-widest leading-none">Surface Finish</div>
+                        <div className="text-[#022B3A] text-3xl font-black tracking-tighter italic">RA &lt; 0.2</div>
+                        <div className="text-[#022B3A]/60 text-[10px] font-black uppercase tracking-widest leading-none">Surface Finish</div>
                       </div>
                     </div>
                   </div>
@@ -364,37 +366,36 @@ const CorrugatingRolls = () => {
         </div>
       </section>
 
-
       {/* ===== FAQs ===== */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-             <div className="w-16 h-16 bg-[#fafafa] border border-[#eee] flex items-center justify-center mx-auto mb-8">
-                <HelpCircle className="w-8 h-8 text-[#1a1a1a]" />
+             <div className="w-16 h-16 bg-[#E1E5F2]/40 border border-[#E1E5F2] flex items-center justify-center mx-auto mb-8">
+                <HelpCircle className="w-8 h-8 text-[#022B3A]" />
              </div>
-            <h2 className="text-4xl font-black text-[#f44336] uppercase tracking-tighter">
+            <h2 className="text-4xl font-black text-[#1F7A8C] uppercase tracking-tighter">
                Corrugating Rolls FAQs
             </h2>
-            <div className="w-20 h-1 bg-[#f44336] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#1F7A8C] mx-auto"></div>
           </div>
 
           <div className="grid gap-4">
             {faqs.map((faq, idx) => (
               <div 
                 key={idx}
-                className="notification-card bg-[#fafafa] p-0 overflow-hidden border-[#eee] group"
+                className="notification-card bg-[#E1E5F2]/40 p-0 overflow-hidden border-[#E1E5F2] group"
               >
                 <button 
                   onClick={() => toggleFaq(idx)}
                   className="w-full text-left p-8 lg:p-10 flex items-center justify-between gap-6"
                 >
-                  <span className={`text-sm font-black uppercase tracking-widest leading-tight transition-colors ${openFaq === idx ? 'text-[#f44336]' : 'text-[#1a1a1a]'}`}>
+                  <span className={`text-sm font-black uppercase tracking-widest leading-tight transition-colors ${openFaq === idx ? 'text-[#1F7A8C]' : 'text-[#022B3A]'}`}>
                     {idx + 1}. {faq.q}
                   </span>
-                  <ChevronDown className={`w-5 h-5 transition-transform duration-500 ${openFaq === idx ? 'rotate-180 text-[#f44336]' : 'text-[#aaa]'}`} />
+                  <ChevronDown className={`w-5 h-5 transition-transform duration-500 ${openFaq === idx ? 'rotate-180 text-[#1F7A8C]' : 'text-[#022B3A]/40'}`} />
                 </button>
                 <div className={`transition-all duration-500 ${openFaq === idx ? 'max-h-96 opacity-100 p-10 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-                  <div className="pt-10 border-t border-[#eee] text-[#7a7a7a] text-xs font-medium leading-relaxed uppercase">
+                  <div className="pt-10 border-t border-[#E1E5F2] text-[#022B3A]/70 text-xs font-medium leading-relaxed uppercase">
                     {faq.a}
                   </div>
                 </div>

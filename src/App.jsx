@@ -33,7 +33,7 @@ const InquiryFormPage = lazy(() => import('./pages/InquiryFormPage'));
 const RouteLoader = () => (
   <div className="min-h-[40vh] flex items-center justify-center px-6">
     <div className="text-center space-y-3">
-      <div className="w-10 h-10 mx-auto border-2 border-[#f44336] border-t-transparent rounded-full animate-spin"></div>
+      <div className="w-10 h-10 mx-auto border-2 border-[#1F7A8C] border-t-transparent rounded-full animate-spin"></div>
       <p className="text-sm font-bold uppercase tracking-widest text-[#7a7a7a]">Loading Page</p>
     </div>
   </div>
