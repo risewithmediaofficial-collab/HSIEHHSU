@@ -121,7 +121,7 @@ const CorrugatorsOverview = () => {
                 From individual machines to complete corrugators and all the way to intelligent corrugating box plants: **Hsieh Hsu India** puts decades of experience to work for you.
               </p>
               
-              <div className="p-10 bg-[#f7f9fb]/40 border border-[#f7f9fb] relative group">
+              <div className="p-10 bg-[#f7f9fb]/40 border border-[#d6e4f0] relative group">
                 <div className="space-y-4">
                   <h3 className="text-xl font-black text-[#1a365d] uppercase tracking-tighter">Driving OEE Excellence</h3>
                   <p className="text-[#1a365d]/70 text-sm leading-relaxed font-medium">
@@ -131,8 +131,8 @@ const CorrugatorsOverview = () => {
               </div>
             </div>
             
-            <div className="relative aspect-square bg-[#f7f9fb]/40 border border-[#f7f9fb] flex items-center justify-center group overflow-hidden">
-               <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#f7f9fb]"></div>
+            <div className="relative aspect-square bg-[#f7f9fb]/40 border border-[#d6e4f0] flex items-center justify-center group overflow-hidden">
+               <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#d6e4f0]"></div>
                <img
                  src={corrugatorOverviewImage}
                  alt="Complete HHC corrugator system"
@@ -147,7 +147,7 @@ const CorrugatorsOverview = () => {
       </section>
 
       {/* SOLUTIONS GRID */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">
@@ -158,9 +158,9 @@ const CorrugatorsOverview = () => {
           
           <div className="grid md:grid-cols-3 gap-6">
             {solutions.map((item, idx) => (
-              <div key={idx} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#f7f9fb] hover:border-[#2b6caf] transition-all group overflow-hidden">
+              <div key={idx} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#d6e4f0] hover:border-[#2b6caf] transition-all group overflow-hidden">
                 {item.image && (
-                  <div className="w-full h-48 mb-6 overflow-hidden border border-[#f7f9fb]">
+                  <div className="w-full h-48 mb-6 overflow-hidden border border-[#d6e4f0]">
                     <img 
                       src={item.image} 
                       alt={item.title} 
@@ -179,7 +179,7 @@ const CorrugatorsOverview = () => {
                       <Link 
                         key={i} 
                         to={sub.path}
-                        className="flex items-center justify-between p-3 bg-white border border-[#f7f9fb] hover:border-[#2b6caf] text-[#1a365d] font-black text-[9px] uppercase tracking-widest transition-all"
+                        className="flex items-center justify-between p-3 bg-white border border-[#d6e4f0] hover:border-[#2b6caf] text-[#1a365d] font-black text-[9px] uppercase tracking-widest transition-all"
                       >
                         {sub.label}
                         <ArrowRight className="w-3 h-3 text-[#2b6caf]" />
@@ -205,7 +205,7 @@ const CorrugatorsOverview = () => {
           <div className="grid lg:grid-cols-3 gap-16">
             <div className="lg:col-span-1 space-y-10">
               <div className="space-y-4">
-                <div className="w-16 h-16 bg-[#f7f9fb]/40 flex items-center justify-center border border-[#f7f9fb]">
+                <div className="w-16 h-16 bg-[#f7f9fb]/40 flex items-center justify-center border border-[#d6e4f0]">
                   <BookOpen className="w-8 h-8 text-[#1a365d]" />
                 </div>
                 <h2 className="text-4xl md:text-5xl font-black text-[#2b6caf] uppercase tracking-tighter">Technical Mastery & Training</h2>
@@ -235,7 +235,7 @@ const CorrugatorsOverview = () => {
       </section>
 
       {/* NEWS SECTION */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="space-y-4">
@@ -252,7 +252,7 @@ const CorrugatorsOverview = () => {
           
           <div className="grid md:grid-cols-3 gap-4">
             {news.map((item, idx) => (
-              <div key={idx} className="bg-white p-10 border border-[#f7f9fb] hover:border-[#2b6caf] transition-all group">
+              <div key={idx} className="bg-white p-10 border border-[#d6e4f0] hover:border-[#2b6caf] transition-all group">
                 <div className="flex justify-between items-center mb-10">
                    <span className="text-[#2b6caf] font-black text-[9px] uppercase tracking-widest px-3 py-1 bg-[#d6e4f0]/40">{item.tag}</span>
                    <span className="text-[9px] font-bold text-[#1a365d]/60 uppercase flex items-center gap-1"><Calendar className="w-3 h-3" /> {item.date}</span>
@@ -269,7 +269,7 @@ const CorrugatorsOverview = () => {
       </section>
 
       {/* CTA SECTION */}
-      <section className="py-16 bg-white border-t border-[#f7f9fb]">
+      <section className="py-16 bg-white border-t border-[#d6e4f0]">
         <div className="container mx-auto px-4 max-w-7xl text-center space-y-16">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-6xl font-black text-[#2b6caf] uppercase tracking-tighter">Ready to Optimize Production?</h2>
@@ -277,7 +277,7 @@ const CorrugatorsOverview = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 text-left">
-            <div className="bg-[#f7f9fb]/40 p-12 border border-[#f7f9fb]">
+            <div className="bg-[#f7f9fb]/40 p-12 border border-[#d6e4f0]">
               <h3 className="text-sm font-black text-[#1a365d] uppercase tracking-widest mb-8 flex items-center gap-3">
                 <Factory className="w-5 h-5 text-[#2b6caf]" /> Visit Our Factory
               </h3>

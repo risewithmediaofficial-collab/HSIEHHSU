@@ -76,7 +76,7 @@ const EcoLine = () => {
                 Are you looking to invest in a potential market? The HHC-200 from Hsieh Hsu India meets the needs of manufacturers looking for dependable output, flexible widths, and stable production under challenging conditions.
               </p>
 
-              <div className="p-10 bg-[#f7f9fb]/40 border border-[#f7f9fb] relative group">
+              <div className="p-10 bg-[#f7f9fb]/40 border border-[#d6e4f0] relative group">
                 <div className="space-y-4">
                   <h3 className="text-xl font-black text-[#1a365d] uppercase tracking-tighter">Peak Reliability</h3>
                   <p className="text-[#1a365d]/70 text-sm leading-relaxed font-medium italic">
@@ -87,8 +87,8 @@ const EcoLine = () => {
             </div>
 
             <div className="order-1 lg:order-2">
-              <div className="relative aspect-square bg-[#f7f9fb]/40 border border-[#f7f9fb] flex items-center justify-center group overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#f7f9fb]"></div>
+              <div className="relative aspect-square bg-[#f7f9fb]/40 border border-[#d6e4f0] flex items-center justify-center group overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#d6e4f0]"></div>
                 <img
                   src={ecoLineImage}
                   alt="HHC-200 corrugation line"
@@ -101,7 +101,7 @@ const EcoLine = () => {
       </section>
 
       {/* ENGINEERING EXCELLENCE */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">
@@ -143,7 +143,7 @@ const EcoLine = () => {
 
               <div className="space-y-8">
                 <div className="flex items-start gap-6 group">
-                  <div className="w-12 h-12 bg-[#f7f9fb]/40 border border-[#f7f9fb] flex items-center justify-center flex-shrink-0 group-hover:border-[#2b6caf] transition-colors">
+                  <div className="w-12 h-12 bg-[#f7f9fb]/40 border border-[#d6e4f0] flex items-center justify-center flex-shrink-0 group-hover:border-[#2b6caf] transition-colors">
                     <Users className="w-6 h-6 text-[#1a365d]" />
                   </div>
                   <div>
@@ -152,7 +152,7 @@ const EcoLine = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-6 group">
-                  <div className="w-12 h-12 bg-[#f7f9fb]/40 border border-[#f7f9fb] flex items-center justify-center flex-shrink-0 group-hover:border-[#2b6caf] transition-colors">
+                  <div className="w-12 h-12 bg-[#f7f9fb]/40 border border-[#d6e4f0] flex items-center justify-center flex-shrink-0 group-hover:border-[#2b6caf] transition-colors">
                     <Globe className="w-6 h-6 text-[#1a365d]" />
                   </div>
                   <div>
@@ -185,7 +185,7 @@ const EcoLine = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-[#f7f9fb]/40 border-t border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-t border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-10">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">Need HHC-200 Details?</h2>

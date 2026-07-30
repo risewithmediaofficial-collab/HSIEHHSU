@@ -149,11 +149,11 @@ const About = () => {
       </section>
 
       {/* ===== STATS BAR ===== */}
-      <section className="py-16 md:py-16 bg-white border-y border-[#f7f9fb] relative overflow-hidden">
+      <section className="py-16 md:py-16 bg-white border-y border-[#d6e4f0] relative overflow-hidden">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {stats.map((stat, idx) => (
-              <div key={idx} className="text-center group border-r last:border-r-0 border-[#f7f9fb]">
+              <div key={idx} className="text-center group border-r last:border-r-0 border-[#d6e4f0]">
                 <div className="text-4xl md:text-5xl lg:text-6xl font-black text-[#2b6caf] mb-2 tracking-tighter transition-transform duration-300 group-hover:scale-105">
                   {stat.number}
                 </div>
@@ -203,7 +203,7 @@ const About = () => {
             
             {/* Timeline */}
             <div className="lg:pl-12">
-              <div className="bg-[#f7f9fb]/40 p-10 lg:p-12 border border-[#f7f9fb]">
+              <div className="bg-[#f7f9fb]/40 p-10 lg:p-12 border border-[#d6e4f0]">
                 <div className="flex items-center gap-4 mb-10">
                   <h3 className="text-2xl font-black text-[#1a365d] uppercase tracking-tighter">Our Journey</h3>
                   <div className="flex-1 h-px bg-[#f7f9fb]"></div>
@@ -230,7 +230,7 @@ const About = () => {
       </section>
 
       {/* ===== MACHINERY EXCELLENCE SECTION ===== */}
-      <section className="py-16 bg-[#f7f9fb]/40 overflow-hidden relative border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 overflow-hidden relative border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
             <div className="lg:w-1/2 space-y-10">
@@ -247,7 +247,7 @@ const About = () => {
                   { title: "Digital Intelligence 2.0", desc: "Automated end-to-end systems that deliver quality-related parameters in real time." },
                   { title: "OEE Optimization", desc: "Strategic focus on reducing manufacturing costs per square meter through system-wide effectiveness." }
                 ].map((item, i) => (
-                  <div key={i} className="flex gap-4 bg-white p-6 border border-[#f7f9fb] hover:border-[#2b6caf] transition-colors group">
+                  <div key={i} className="flex gap-4 bg-white p-6 border border-[#d6e4f0] hover:border-[#2b6caf] transition-colors group">
                     <CheckCircle className="w-5 h-5 text-[#2b6caf] shrink-0" />
                     <div>
                       <h4 className="text-[#1a365d] font-bold text-sm uppercase tracking-widest mb-1">{item.title}</h4>
@@ -258,7 +258,7 @@ const About = () => {
               </div>
             </div>
             <div className="lg:w-1/2 relative">
-              <div className="aspect-square bg-white border border-[#f7f9fb] flex items-center justify-center group relative overflow-hidden">
+              <div className="aspect-square bg-white border border-[#d6e4f0] flex items-center justify-center group relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#f7f9fb]/40 -mr-16 -mt-16 rotate-45"></div>
                 <img
                   src={aboutMachineryImage}
@@ -316,7 +316,7 @@ const About = () => {
             
             <div className="lg:w-1/2 grid grid-cols-2 gap-8">
               <div className="space-y-8">
-                <div className="bg-white p-10 border border-[#f7f9fb] hover:border-[#2b6caf] transition-colors group rounded-xl shadow-sm">
+                <div className="bg-white p-10 border border-[#d6e4f0] hover:border-[#2b6caf] transition-colors group rounded-xl shadow-sm">
                    <TrendingUp size={24} className="text-[#1a365d] mb-6" />
                    <h4 className="font-black text-[#1a365d] uppercase text-sm tracking-widest mb-3">ROI Focus</h4>
                    <p className="text-[#1a365d]/70 text-xs leading-relaxed font-medium">Analyzing equipment lifecycle to reduce spare consumption and maintenance costs for partners.</p>
@@ -333,7 +333,7 @@ const About = () => {
                    <div className="text-white/90 font-bold uppercase tracking-widest text-[10px] mb-4">Success Stories</div>
                    <p className="text-[#f7f9fb]/80 text-xs leading-relaxed font-medium">Our prime customers continue to rely on our service partnership for long-term plant performance.</p>
                 </div>
-                <div className="bg-white p-10 border border-[#f7f9fb] hover:border-[#2b6caf] transition-colors group rounded-xl shadow-sm">
+                <div className="bg-white p-10 border border-[#d6e4f0] hover:border-[#2b6caf] transition-colors group rounded-xl shadow-sm">
                    <Users size={24} className="text-[#1a365d] mb-6" />
                    <h4 className="font-black text-[#1a365d] uppercase text-sm tracking-widest mb-3">Support Hubs</h4>
                    <p className="text-[#1a365d]/70 text-xs leading-relaxed font-medium">Integrated support hubs localized for prime manufacturing clusters.</p>
@@ -356,7 +356,7 @@ const About = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <div key={index} className="service-card p-8 flex flex-col items-center text-center bg-white border border-[#f7f9fb] hover:border-[#2b6caf] transition-all rounded-xl shadow-sm group">
+              <div key={index} className="service-card p-8 flex flex-col items-center text-center bg-white border border-[#d6e4f0] hover:border-[#2b6caf] transition-all rounded-xl shadow-sm group">
                  <div className={`w-16 h-16 rounded-xl ${value.badgeBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                    {value.icon}
                  </div>
@@ -371,7 +371,7 @@ const About = () => {
       {/* ===== VISION & MISSION ===== */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-px bg-[#f7f9fb] border border-[#f7f9fb] rounded-xl overflow-hidden shadow-sm">
+          <div className="grid lg:grid-cols-2 gap-px bg-[#f7f9fb] border border-[#d6e4f0] rounded-xl overflow-hidden shadow-sm">
             {/* Vision */}
             <div className="bg-white p-16 lg:p-20">
               <div className="space-y-10">
@@ -413,7 +413,7 @@ const About = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyChooseUs.map((item, idx) => (
-              <div key={idx} className="notification-card p-8 bg-white border border-[#f7f9fb] hover:border-[#2b6caf] transition-all rounded-xl shadow-sm flex flex-col group">
+              <div key={idx} className="notification-card p-8 bg-white border border-[#d6e4f0] hover:border-[#2b6caf] transition-all rounded-xl shadow-sm flex flex-col group">
                 <div className={`w-14 h-14 rounded-xl ${item.badgeBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                   {item.icon}
                 </div>
@@ -426,7 +426,7 @@ const About = () => {
       </section>
 
       {/* ===== CTA SECTION ===== */}
-      <section className="py-16 bg-white border-t border-[#f7f9fb]">
+      <section className="py-16 bg-white border-t border-[#d6e4f0]">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#1a365d] uppercase tracking-tighter">

@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, MessageSquare, ArrowRight, Building2, MessageCircle } from 'lucide-react';
 import {
   Place,
@@ -201,7 +201,7 @@ const Contact = () => {
                 </div>
 
                 {submitted ? (
-                   <div className="p-16 bg-[#f7f9fb]/40 border border-[#f7f9fb] text-center space-y-6 rounded-xl">
+                   <div className="p-16 bg-[#f7f9fb]/40 border border-[#d6e4f0] text-center space-y-6 rounded-xl">
                     <div className="w-16 h-16 bg-[#1a365d] flex items-center justify-center mx-auto rounded-full">
                       <CheckCircle size={32} className="text-[#2b6caf]" />
                     </div>
@@ -228,7 +228,7 @@ const Contact = () => {
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium rounded-lg"
+                          className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium rounded-lg text-[#1a365d] placeholder:text-slate-400"
                           placeholder="EX: JOHN DOE"
                         />
                       </div>
@@ -240,7 +240,7 @@ const Contact = () => {
                           name="company"
                           value={formData.company}
                           onChange={handleChange}
-                          className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium rounded-lg"
+                          className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium rounded-lg text-[#1a365d] placeholder:text-slate-400"
                           placeholder="EX: COMPANY LTD"
                         />
                       </div>
@@ -255,7 +255,7 @@ const Contact = () => {
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
-                          className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium rounded-lg"
+                          className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium rounded-lg text-[#1a365d] placeholder:text-slate-400"
                           placeholder="EMAIL@EXAMPLE.COM"
                         />
                       </div>
@@ -268,7 +268,7 @@ const Contact = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           required
-                          className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium rounded-lg"
+                          className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium rounded-lg text-[#1a365d] placeholder:text-slate-400"
                           placeholder="+91 00000 00000"
                         />
                       </div>
@@ -282,7 +282,7 @@ const Contact = () => {
                         value={formData.service}
                         onChange={handleChange}
                         required
-                        className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium appearance-none rounded-lg"
+                        className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium rounded-lg text-[#1a365d]"
                       >
                         <option value="">SELECT A SERVICE</option>
                         {services.map((service, index) => (
@@ -299,8 +299,8 @@ const Contact = () => {
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        rows="6"
-                        className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium resize-none rounded-lg"
+                        rows="5"
+                        className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium resize-none rounded-lg text-[#1a365d] placeholder:text-slate-400"
                         placeholder="TELL US ABOUT YOUR REQUIREMENTS..."
                       ></textarea>
                     </div>
@@ -326,7 +326,7 @@ const Contact = () => {
 
               <div className="grid gap-4">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="notification-card p-8 flex gap-6 group rounded-xl border border-[#f7f9fb]">
+                  <div key={index} className="notification-card p-8 flex gap-6 group rounded-xl border border-[#d6e4f0]">
                     <div className={`w-14 h-14 ${info.badgeBg} flex items-center justify-center flex-shrink-0 rounded-xl shadow-sm group-hover:scale-110 transition-transform duration-300`}>
                       {info.icon}
                     </div>
@@ -387,13 +387,13 @@ const Contact = () => {
                     href="https://wa.me/918800350183"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between p-10 border border-[#f7f9fb] hover:border-[#1a365d] transition-colors bg-[#f7f9fb]/40 group rounded-xl"
+                    className="flex items-center justify-between p-10 border border-[#d6e4f0] hover:border-[#1a365d] transition-colors bg-[#f7f9fb]/40 group rounded-xl"
                  >
                     <div className="space-y-2">
                        <h3 className="text-sm font-black uppercase tracking-widest text-[#1a365d]">WhatsApp Chat</h3>
                        <p className="text-[#1a365d]/70 text-[10px] font-medium leading-relaxed uppercase">Immediate Response for Urgent Support</p>
                     </div>
-                    <div className="w-12 h-12 bg-white border border-[#f7f9fb] flex items-center justify-center group-hover:bg-[#2b6caf] group-hover:text-[#1a365d] transition-colors rounded-xl shadow-sm">
+                    <div className="w-12 h-12 bg-white border border-[#d6e4f0] flex items-center justify-center group-hover:bg-[#2b6caf] group-hover:text-[#1a365d] transition-colors rounded-xl shadow-sm">
                        <MessageCircle size={24} />
                     </div>
                  </a>
@@ -404,7 +404,7 @@ const Contact = () => {
       </section>
 
       {/* ===== GLOBAL PRESENCE ===== */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">
@@ -416,7 +416,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-px bg-[#f7f9fb] border border-[#f7f9fb] rounded-xl overflow-hidden shadow-sm">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-px bg-[#f7f9fb] border border-[#d6e4f0] rounded-xl overflow-hidden shadow-sm">
             {[
               {
                 country: "Taiwan Headquarters",
@@ -489,7 +489,7 @@ const Contact = () => {
       {/* ===== FACTORY LOCATION ===== */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-px bg-[#f7f9fb] border border-[#f7f9fb] rounded-xl overflow-hidden shadow-sm">
+          <div className="grid lg:grid-cols-2 gap-px bg-[#f7f9fb] border border-[#d6e4f0] rounded-xl overflow-hidden shadow-sm">
             <div className="bg-white p-16 lg:p-20 space-y-12">
                <div className="space-y-4">
                   <h2 className="text-4xl font-black text-[#1a365d] uppercase tracking-tighter">Find Our Factory</h2>
@@ -517,7 +517,7 @@ const Contact = () => {
             </div>
 
             <div className="bg-[#f7f9fb]/40 p-12 lg:p-16 flex items-center justify-center relative overflow-hidden group">
-                 <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#f7f9fb]"></div>
+                 <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#d6e4f0]"></div>
                  <div className="text-center space-y-6 relative z-10">
                     <MapPin size={64} className="text-[#1a365d]/30 group-hover:text-[#1a365d] transition-colors duration-700 mx-auto" />
                     <div className="space-y-2">

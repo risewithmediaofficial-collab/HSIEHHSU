@@ -172,20 +172,20 @@ const CorrugatingRolls = () => {
                 Corrugating rolls are the core component of any corrugation system, directly influencing the strength, consistency, and overall quality of corrugated boards.
               </p>
               
-              <div className="p-10 border border-[#f7f9fb] bg-[#f7f9fb]/40 space-y-6">
+              <div className="p-10 border border-[#d6e4f0] bg-[#f7f9fb]/40 space-y-6">
                 <h3 className="text-sm font-black text-[#1a365d] uppercase tracking-widest">Innovation Overview</h3>
                 <p className="text-[#1a365d]/70 text-xs font-medium leading-relaxed uppercase">
                   Our corrugating rolls are engineered using advanced manufacturing techniques and deep industry expertise. Designed to perform under high temperatures and continuous operations, they ensure reliable output, improved productivity, and long service life.
                 </p>
-                <div className="pt-6 border-t border-[#f7f9fb] flex items-center gap-4">
+                <div className="pt-6 border-t border-[#d6e4f0] flex items-center gap-4">
                    <div className="w-1.5 h-1.5 bg-[#2b6caf]"></div>
                    <span className="text-[10px] font-black uppercase tracking-widest text-[#1a365d]">Maximum Durability</span>
                 </div>
               </div>
             </div>
             
-            <div className="relative aspect-square bg-[#f7f9fb]/40 border border-[#f7f9fb] flex items-center justify-center group overflow-hidden">
-               <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#f7f9fb]"></div>
+            <div className="relative aspect-square bg-[#f7f9fb]/40 border border-[#d6e4f0] flex items-center justify-center group overflow-hidden">
+               <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#d6e4f0]"></div>
                <img
                  src={corrugatingRollsImage}
                  alt="Precision corrugating rolls"
@@ -200,7 +200,7 @@ const CorrugatingRolls = () => {
       </section>
 
       {/* ===== KEY FEATURES ===== */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter text-center">
@@ -209,7 +209,7 @@ const CorrugatingRolls = () => {
             <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#f7f9fb] border border-[#f7f9fb]">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#f7f9fb] border border-[#d6e4f0]">
             {features.map((feature, idx) => (
               <div key={idx} className="bg-white p-12 space-y-8 group hover:bg-[#f7f9fb]/20 transition-colors">
                 <div className="text-[#2b6caf] group-hover:scale-110 transition-transform duration-500">
@@ -239,7 +239,7 @@ const CorrugatingRolls = () => {
                    Our corrugating rolls are widely used across various sectors of the packaging industry, providing unmatched stability and performance.
                 </p>
 
-                <div className="grid sm:grid-cols-2 gap-px bg-[#f7f9fb] border border-[#f7f9fb]">
+                <div className="grid sm:grid-cols-2 gap-px bg-[#f7f9fb] border border-[#d6e4f0]">
                    {applications.map((app, idx) => (
                       <div key={idx} className="bg-[#f7f9fb]/40 p-6 flex items-center gap-4">
                          <div className="w-2 h-2 bg-[#2b6caf]"></div>
@@ -250,7 +250,7 @@ const CorrugatingRolls = () => {
              </div>
 
              <div className="hidden lg:flex justify-center">
-                <div className="w-full aspect-video bg-[#f7f9fb]/40 border border-[#f7f9fb] flex items-center justify-center relative group overflow-hidden p-6">
+                <div className="w-full aspect-video bg-[#f7f9fb]/40 border border-[#d6e4f0] flex items-center justify-center relative group overflow-hidden p-6">
                    <img
                      src={rollerApplicationImage}
                      alt="Corrugating roll application detail"
@@ -266,7 +266,7 @@ const CorrugatingRolls = () => {
       </section>
 
       {/* ===== MATERIAL & COATING ===== */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-24 items-start">
             <div className="space-y-12">
@@ -281,13 +281,13 @@ const CorrugatingRolls = () => {
               
               <div className="grid gap-4">
                 {materialContent.map((item, idx) => (
-                  <div key={idx} className="notification-card bg-white p-0 overflow-hidden border-[#f7f9fb]">
+                  <div key={idx} className="notification-card bg-white p-0 overflow-hidden border-[#d6e4f0]">
                     <button 
                       onClick={() => toggleMaterialTab(idx)}
                       className="w-full text-left p-10 flex items-center justify-between group"
                     >
                       <div className="flex items-center gap-6">
-                        <div className="w-12 h-12 bg-[#f7f9fb]/40 border border-[#f7f9fb] flex items-center justify-center group-hover:border-[#2b6caf] transition-colors">
+                        <div className="w-12 h-12 bg-[#f7f9fb]/40 border border-[#d6e4f0] flex items-center justify-center group-hover:border-[#2b6caf] transition-colors">
                            <div className="text-[#1a365d]">{item.icon}</div>
                         </div>
                         <div>
@@ -299,7 +299,7 @@ const CorrugatingRolls = () => {
                     </button>
                     
                     <div className={`transition-all duration-500 ease-in-out ${activeMaterialTab === idx ? 'max-h-300 opacity-100 p-10 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-                      <div className="pt-10 border-t border-[#f7f9fb] space-y-10">
+                      <div className="pt-10 border-t border-[#d6e4f0] space-y-10">
                         <p className="text-[#1a365d]/70 text-xs font-medium leading-relaxed uppercase">{item.desc}</p>
                         
                         <div className="grid md:grid-cols-2 gap-10">
@@ -339,7 +339,7 @@ const CorrugatingRolls = () => {
             </div>
             
             <div className="lg:mt-24">
-               <div className="bg-white p-12 lg:p-16 border border-[#f7f9fb] space-y-12">
+               <div className="bg-white p-12 lg:p-16 border border-[#d6e4f0] space-y-12">
                   <div className="w-16 h-1 bg-[#2b6caf]"></div>
                   <div className="space-y-6">
                     <h3 className="text-3xl font-black text-[#2b6caf] uppercase tracking-tighter leading-tight">WLF Finishing Process</h3>
@@ -348,7 +348,7 @@ const CorrugatingRolls = () => {
                     </p>
                   </div>
                   
-                  <div className="pt-10 border-t border-[#f7f9fb]">
+                  <div className="pt-10 border-t border-[#d6e4f0]">
                     <div className="grid grid-cols-2 gap-12">
                       <div className="space-y-1">
                         <div className="text-[#1a365d] text-3xl font-black tracking-tighter italic">100 µm</div>
@@ -370,7 +370,7 @@ const CorrugatingRolls = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-             <div className="w-16 h-16 bg-[#f7f9fb]/40 border border-[#f7f9fb] flex items-center justify-center mx-auto mb-8">
+             <div className="w-16 h-16 bg-[#f7f9fb]/40 border border-[#d6e4f0] flex items-center justify-center mx-auto mb-8">
                 <HelpCircle className="w-8 h-8 text-[#1a365d]" />
              </div>
             <h2 className="text-4xl font-black text-[#2b6caf] uppercase tracking-tighter">
@@ -383,7 +383,7 @@ const CorrugatingRolls = () => {
             {faqs.map((faq, idx) => (
               <div 
                 key={idx}
-                className="notification-card bg-[#f7f9fb]/40 p-0 overflow-hidden border-[#f7f9fb] group"
+                className="notification-card bg-[#f7f9fb]/40 p-0 overflow-hidden border-[#d6e4f0] group"
               >
                 <button 
                   onClick={() => toggleFaq(idx)}
@@ -395,7 +395,7 @@ const CorrugatingRolls = () => {
                   <ChevronDown className={`w-5 h-5 transition-transform duration-500 ${openFaq === idx ? 'rotate-180 text-[#2b6caf]' : 'text-[#1a365d]/40'}`} />
                 </button>
                 <div className={`transition-all duration-500 ${openFaq === idx ? 'max-h-96 opacity-100 p-10 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-                  <div className="pt-10 border-t border-[#f7f9fb] text-[#1a365d]/70 text-xs font-medium leading-relaxed uppercase">
+                  <div className="pt-10 border-t border-[#d6e4f0] text-[#1a365d]/70 text-xs font-medium leading-relaxed uppercase">
                     {faq.a}
                   </div>
                 </div>

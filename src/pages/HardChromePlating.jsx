@@ -65,7 +65,7 @@ const HardChromePlating = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#f7f9fb] p-12 rounded-lg">
+            <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#d6e4f0] p-12 rounded-lg">
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-[#2b6caf] text-white flex items-center justify-center flex-shrink-0">
@@ -97,7 +97,7 @@ const HardChromePlating = () => {
                   </div>
                 </div>
 
-                <div className="pt-6 border-t border-[#f7f9fb]">
+                <div className="pt-6 border-t border-[#d6e4f0]">
                   <p className="text-xs text-[#1a365d]/60 mb-4 uppercase font-black tracking-widest">Plating Specifications</p>
                   <div className="space-y-2">
                     {[
@@ -121,7 +121,7 @@ const HardChromePlating = () => {
       </section>
 
       {/* Key Features */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">Why Choose Hard Chrome?</h2>
@@ -155,7 +155,7 @@ const HardChromePlating = () => {
                 desc: "ISO certified process with rigorous testing"
               }
             ].map((feature, idx) => (
-              <div key={idx} className="bg-white p-8 lg:p-10 rounded-lg border border-[#f7f9fb] hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
+              <div key={idx} className="bg-white p-8 lg:p-10 rounded-lg border border-[#d6e4f0] hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
                 <h3 className="font-black text-[#1a365d] text-sm uppercase tracking-widest mb-4">{feature.title}</h3>
                 <p className="text-[#1a365d]/80 text-sm leading-relaxed">{feature.desc}</p>
               </div>
@@ -197,7 +197,7 @@ const HardChromePlating = () => {
                 ]
               }
             ].map((item, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#f7f9fb] p-8 lg:p-12 rounded-lg">
+              <div key={idx} className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#d6e4f0] p-8 lg:p-12 rounded-lg">
                 <h3 className="text-2xl font-black text-[#1a365d] uppercase tracking-tight mb-8">{item.title}</h3>
                 <div className="space-y-4">
                   {item.points.map((point, pidx) => (

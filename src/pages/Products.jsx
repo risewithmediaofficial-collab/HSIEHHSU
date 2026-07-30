@@ -101,7 +101,7 @@ const Products = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]" id="machinery">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]" id="machinery">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">
@@ -115,7 +115,7 @@ const Products = () => {
               <Link
                 key={product.slug}
                 to={`/products/${product.slug}`}
-                className="bg-white border border-[#f7f9fb] hover:border-[#1a365d] transition-colors p-10 lg:p-12 group block rounded-2xl shadow-sm"
+                className="bg-white border border-[#d6e4f0] hover:border-[#1a365d] transition-colors p-10 lg:p-12 group block rounded-2xl shadow-sm"
               >
                 <div className="space-y-8">
                   <div className="space-y-3">
@@ -125,7 +125,7 @@ const Products = () => {
                     </h3>
                   </div>
 
-                  <div className="aspect-[16/10] bg-[#f7f9fb]/40 border border-[#f7f9fb] overflow-hidden rounded-xl">
+                  <div className="aspect-[16/10] bg-[#f7f9fb]/40 border border-[#d6e4f0] overflow-hidden rounded-xl">
                     <img
                       src={product.imageSrc}
                       alt={product.imageAlt}
@@ -147,7 +147,7 @@ const Products = () => {
                     </div>
                   </div>
 
-                  <div className="pt-8 border-t border-[#f7f9fb] flex items-center justify-between gap-3">
+                  <div className="pt-8 border-t border-[#d6e4f0] flex items-center justify-between gap-3">
                     <span className="text-[#1a365d]/60 text-[10px] font-black uppercase tracking-widest">{product.category}</span>
                     <span className="inline-flex items-center gap-2 text-[#1a365d] text-[10px] font-black uppercase tracking-widest group-hover:text-[#2b6caf]">
                       View Product <ArrowUpRight size={14} />
@@ -171,9 +171,9 @@ const Products = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {spares.map((category) => (
-              <div key={category.category} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#f7f9fb] hover:border-[#2b6caf] transition-all rounded-xl group overflow-hidden shadow-sm">
+              <div key={category.category} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#d6e4f0] hover:border-[#2b6caf] transition-all rounded-xl group overflow-hidden shadow-sm">
                 {category.image && (
-                  <div className="w-full h-40 mb-6 overflow-hidden rounded-lg border border-[#f7f9fb]">
+                  <div className="w-full h-40 mb-6 overflow-hidden rounded-lg border border-[#d6e4f0]">
                     <img 
                       src={category.image} 
                       alt={category.category} 
@@ -200,7 +200,7 @@ const Products = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">
@@ -211,7 +211,7 @@ const Products = () => {
 
           <div className="grid sm:grid-cols-3 gap-8">
             {qualityPoints.map((point) => (
-              <div key={point.title} className="bg-white p-10 border border-[#f7f9fb] hover:border-[#2b6caf] transition-all rounded-xl text-center group shadow-sm flex flex-col items-center">
+              <div key={point.title} className="bg-white p-10 border border-[#d6e4f0] hover:border-[#2b6caf] transition-all rounded-xl text-center group shadow-sm flex flex-col items-center">
                 <div className={`w-14 h-14 rounded-xl ${point.badgeBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                   {point.icon}
                 </div>
@@ -231,7 +231,7 @@ const Products = () => {
               { icon: <LocalShipping className="w-7 h-7 text-[#059669]" />, badgeBg: "bg-[#ECFDF5] border-[#A7F3D0]", title: 'Fast Delivery', desc: 'Express shipping for urgent needs across India' },
               { icon: <Memory className="w-7 h-7 text-[#9333EA]" />, badgeBg: "bg-[#F3E8FF] border-[#E9D5FF]", title: 'Expert Support', desc: 'Technical guidance on selection and installation' },
             ].map((item) => (
-              <div key={item.title} className="notification-card p-8 bg-white border border-[#f7f9fb] hover:border-[#2b6caf] transition-all rounded-xl shadow-sm flex flex-col items-center text-center group">
+              <div key={item.title} className="notification-card p-8 bg-white border border-[#d6e4f0] hover:border-[#2b6caf] transition-all rounded-xl shadow-sm flex flex-col items-center text-center group">
                 <div className={`w-14 h-14 rounded-xl ${item.badgeBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                   {item.icon}
                 </div>
@@ -243,7 +243,7 @@ const Products = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-white border-t border-[#f7f9fb]">
+      <section className="py-16 bg-white border-t border-[#d6e4f0]">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#1a365d] uppercase tracking-tighter">

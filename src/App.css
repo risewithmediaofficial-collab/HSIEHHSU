@@ -49,6 +49,25 @@ body {
   overflow-x: hidden;
 }
 
+/* ── Global Form Input Styling ── */
+input, select, textarea {
+  background-color: #ffffff;
+  border: 1px solid #d6e4f0 !important;
+  color: #1a365d;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1 !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #2b6caf !important;
+  box-shadow: 0 0 0 3px rgba(43, 108, 175, 0.15) !important;
+}
+
 #root { overflow-x: hidden; }
 
 /* ── Bump body text sizes ── */

@@ -70,7 +70,7 @@ const SurfaceRestoration = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#f7f9fb] p-12 rounded-2xl shadow-sm">
+            <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#d6e4f0] p-12 rounded-2xl shadow-sm">
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-[#E0F2FE] border border-[#BAE6FD] flex items-center justify-center flex-shrink-0 shadow-sm">
@@ -102,7 +102,7 @@ const SurfaceRestoration = () => {
                   </div>
                 </div>
 
-                <div className="pt-6 border-t border-[#f7f9fb]">
+                <div className="pt-6 border-t border-[#d6e4f0]">
                   <p className="text-xs text-[#1a365d]/60 mb-4 uppercase font-black tracking-widest">Treatment Benefits</p>
                   <div className="space-y-2">
                     {[
@@ -126,7 +126,7 @@ const SurfaceRestoration = () => {
       </section>
 
       {/* Treatment Comparison */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">Surface Treatment Options</h2>
@@ -160,7 +160,7 @@ const SurfaceRestoration = () => {
                 benefits: ["Tailored treatment", "Application specific", "Expert consultation", "Optimal performance"]
               }
             ].map((treatment, idx) => (
-              <div key={idx} className="bg-white p-8 lg:p-10 rounded-xl border border-[#f7f9fb] hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
+              <div key={idx} className="bg-white p-8 lg:p-10 rounded-xl border border-[#d6e4f0] hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
                 <h3 className="font-black text-[#1a365d] text-sm uppercase tracking-widest mb-6">{treatment.title}</h3>
                 <div className="space-y-3">
                   {treatment.benefits.map((benefit, bidx) => (

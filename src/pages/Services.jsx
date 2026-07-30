@@ -204,7 +204,7 @@ const Services = () => {
                 <Link
                   key={service.title}
                   to={service.path}
-                  className="px-4 py-2 border border-[#f7f9fb] bg-[#f7f9fb]/40 text-[#1a365d] text-[10px] font-black uppercase tracking-widest hover:border-[#1a365d] hover:text-[#1a365d] transition-colors rounded-lg"
+                  className="px-4 py-2 border border-[#d6e4f0] bg-[#f7f9fb]/40 text-[#1a365d] text-[10px] font-black uppercase tracking-widest hover:border-[#1a365d] hover:text-[#1a365d] transition-colors rounded-lg"
                 >
                   {service.title}
                 </Link>
@@ -228,7 +228,7 @@ const Services = () => {
                       className={`relative w-20 h-20 rounded-full flex items-center justify-center font-black text-sm transition-all duration-300 ease-out z-10 group cursor-pointer ${
                         selectedService === index
                           ? 'bg-[#1a365d] text-white shadow-2xl scale-110'
-                          : 'bg-white text-[#1a365d] border-2 border-[#f7f9fb] hover:border-[#1a365d] hover:shadow-lg hover:scale-105 hover:bg-[#f7f9fb]/40'
+                          : 'bg-white text-[#1a365d] border-2 border-[#d6e4f0] hover:border-[#1a365d] hover:shadow-lg hover:scale-105 hover:bg-[#f7f9fb]/40'
                       }`}
                     >
                       <div className={`transition-all duration-300 ${selectedService === index ? 'scale-100' : 'group-hover:scale-110'}`}>
@@ -260,12 +260,12 @@ const Services = () => {
           </div>
 
           {/* Service Detail Card */}
-          <div className="bg-white border border-[#f7f9fb] rounded-lg overflow-hidden">
+          <div className="bg-white border border-[#d6e4f0] rounded-lg overflow-hidden">
             <div className="grid lg:grid-cols-3 gap-0">
               {/* Left Content */}
-              <div className="lg:col-span-2 p-8 lg:p-12 border-r border-[#f7f9fb]">
+              <div className="lg:col-span-2 p-8 lg:p-12 border-r border-[#d6e4f0]">
                 {rollerServices[selectedService].image && (
-                  <div className="w-full h-64 mb-8 overflow-hidden border border-[#f7f9fb]">
+                  <div className="w-full h-64 mb-8 overflow-hidden border border-[#d6e4f0]">
                     <img 
                       src={rollerServices[selectedService].image} 
                       alt={rollerServices[selectedService].title} 
@@ -365,7 +365,7 @@ const Services = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyChoose.map((item, idx) => (
-              <div key={idx} className="notification-card p-8 bg-white border border-[#f7f9fb] hover:border-[#2b6caf] transition-all rounded-xl shadow-sm flex flex-col group">
+              <div key={idx} className="notification-card p-8 bg-white border border-[#d6e4f0] hover:border-[#2b6caf] transition-all rounded-xl shadow-sm flex flex-col group">
                 <div className={`w-14 h-14 rounded-xl ${item.badgeBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                   {item.icon}
                 </div>
@@ -378,7 +378,7 @@ const Services = () => {
       </section>
 
       {/* ===== SUPPORT SERVICES ===== */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]" id="maintenance">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]" id="maintenance">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#2b6caf] uppercase tracking-tighter">
@@ -389,9 +389,9 @@ const Services = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {supportServices.map((service, index) => (
-              <div key={index} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#f7f9fb] hover:border-[#2b6caf] transition-all rounded-xl group overflow-hidden shadow-sm">
+              <div key={index} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#d6e4f0] hover:border-[#2b6caf] transition-all rounded-xl group overflow-hidden shadow-sm">
                  {service.image && (
-                   <div className="w-full h-40 mb-6 overflow-hidden rounded-lg border border-[#f7f9fb]">
+                   <div className="w-full h-40 mb-6 overflow-hidden rounded-lg border border-[#d6e4f0]">
                      <img 
                        src={service.image} 
                        alt={service.title} 
@@ -409,7 +409,7 @@ const Services = () => {
           </div>
 
           {/* Service Process */}
-          <div className="bg-white border border-[#f7f9fb] p-12 lg:p-16 relative overflow-hidden group rounded-xl shadow-sm">
+          <div className="bg-white border border-[#d6e4f0] p-12 lg:p-16 relative overflow-hidden group rounded-xl shadow-sm">
             <div className="relative flex items-center gap-5 mb-16">
               <h3 className="text-2xl lg:text-3xl font-black text-[#2b6caf] uppercase tracking-tighter">Our Service Process</h3>
               <div className="flex-1 h-px bg-[#f7f9fb]"></div>
@@ -444,7 +444,7 @@ const Services = () => {
             </div>
             
             {/* Bottom Message */}
-            <div className="mt-16 pt-12 border-t border-[#f7f9fb]">
+            <div className="mt-16 pt-12 border-t border-[#d6e4f0]">
               <p className="text-center text-[#1a365d]/80 text-sm font-medium">
                 <span className="font-black text-[#2b6caf]">Structured methodology</span> ensuring successful delivery and measurable results every time
               </p>
@@ -488,8 +488,8 @@ const Services = () => {
 
             {/* Right Visual Placeholder */}
             <div className="lg:pl-12">
-              <div className="relative aspect-square bg-[#f7f9fb]/40 border border-[#f7f9fb] flex items-center justify-center group overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#f7f9fb]"></div>
+              <div className="relative aspect-square bg-[#f7f9fb]/40 border border-[#d6e4f0] flex items-center justify-center group overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff] -mr-16 -mt-16 rotate-45 border border-[#d6e4f0]"></div>
                 <img
                   src={serviceRollerImage}
                   alt="Roller refurbish and service assembly"
@@ -529,7 +529,7 @@ const Services = () => {
               "No paper wastage even during emergency shutdowns",
               "Increased lifespan reduces maintenance intervals and bearing replacement costs"
             ].map((advantage, idx) => (
-              <div key={idx} className="flex gap-4 p-6 lg:p-8 bg-[#f7f9fb]/40 border border-[#f7f9fb] rounded-xl hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
+              <div key={idx} className="flex gap-4 p-6 lg:p-8 bg-[#f7f9fb]/40 border border-[#d6e4f0] rounded-xl hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
                 <div className="flex-shrink-0 mt-1">
                   <div className="flex items-center justify-center h-6 w-6 rounded-full bg-[#1a365d] text-[#2b6caf]">
                     <CheckCircle className="w-4 h-4" />
@@ -545,7 +545,7 @@ const Services = () => {
       </section>
 
       {/* ===== PRODUCTS & SERVICES ===== */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">
@@ -556,7 +556,7 @@ const Services = () => {
 
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* New & Re-furbishing */}
-            <div className="bg-white border border-[#f7f9fb] p-8 lg:p-12 rounded-xl shadow-sm">
+            <div className="bg-white border border-[#d6e4f0] p-8 lg:p-12 rounded-xl shadow-sm">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-10 h-10 rounded-full bg-[#1a365d] text-[#2b6caf] flex items-center justify-center font-black">1</div>
                 <h3 className="text-xl lg:text-2xl font-black text-[#1a365d] uppercase tracking-tighter">New / Re-furbishing Rolls</h3>
@@ -582,13 +582,13 @@ const Services = () => {
             </div>
 
             {/* Glue Machine Rolls */}
-            <div className="bg-white border border-[#f7f9fb] p-8 lg:p-12 rounded-xl shadow-sm">
+            <div className="bg-white border border-[#d6e4f0] p-8 lg:p-12 rounded-xl shadow-sm">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-10 h-10 rounded-full bg-[#1a365d] text-[#2b6caf] flex items-center justify-center font-black">2</div>
                 <h3 className="text-xl lg:text-2xl font-black text-[#1a365d] uppercase tracking-tighter">Glue Machine Rolls</h3>
               </div>
               
-              <div className="space-y-4 pt-6 border-t border-[#f7f9fb]">
+              <div className="space-y-4 pt-6 border-t border-[#d6e4f0]">
                 {[
                   { label: "Glue Roll", desc: "Stainless Steel / Hard Chrome construction" },
                   { label: "Doctor Roll", desc: "Premium precision engineered for consistency" },
@@ -637,7 +637,7 @@ const Services = () => {
                 description: "Complete powder analysis and coating integrity verification at microscopic level for quality assurance"
               }
             ].map((test, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#f7f9fb] p-8 lg:p-10 rounded-xl hover:shadow-lg transition-all duration-300">
+              <div key={idx} className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#d6e4f0] p-8 lg:p-10 rounded-xl hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-8 h-8 rounded-full bg-[#1a365d] text-[#2b6caf] flex items-center justify-center font-black text-sm">{idx + 1}</div>
                   <h3 className="text-lg lg:text-xl font-black text-[#1a365d] uppercase tracking-tight">{test.title}</h3>
@@ -671,7 +671,7 @@ const Services = () => {
       </section>
 
       {/* ===== CTA SECTION ===== */}
-      <section className="py-16 bg-white border-t border-[#f7f9fb]">
+      <section className="py-16 bg-white border-t border-[#d6e4f0]">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#1a365d] uppercase tracking-tighter">

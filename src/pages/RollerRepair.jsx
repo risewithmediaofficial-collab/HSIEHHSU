@@ -74,7 +74,7 @@ const RollerRepair = () => {
             </div>
 
             <div className="space-y-6">
-              <div className="relative aspect-video bg-[#f7f9fb]/40 border border-[#f7f9fb] rounded-xl overflow-hidden group shadow-sm">
+              <div className="relative aspect-video bg-[#f7f9fb]/40 border border-[#d6e4f0] rounded-xl overflow-hidden group shadow-sm">
                 <img 
                   src={rollerRepairImg} 
                   alt="Roller Repair Expert Services" 
@@ -82,7 +82,7 @@ const RollerRepair = () => {
                 />
               </div>
 
-              <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#f7f9fb] p-8 rounded-xl shadow-sm">
+              <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#d6e4f0] p-8 rounded-xl shadow-sm">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="flex items-start gap-3.5">
                     <div className="w-12 h-12 rounded-xl bg-[#E0F2FE] border border-[#BAE6FD] flex items-center justify-center flex-shrink-0 shadow-sm">
@@ -111,7 +111,7 @@ const RollerRepair = () => {
       </section>
 
       {/* Repair Types */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">Types of Repairs We Handle</h2>
@@ -127,7 +127,7 @@ const RollerRepair = () => {
               { title: "Crack Repair", desc: "Detection, analysis, and repair of cracks" },
               { title: "Emergency Service", desc: "Rapid response for urgent repairs" }
             ].map((repair, idx) => (
-              <div key={idx} className="bg-white p-8 lg:p-10 rounded-lg border border-[#f7f9fb] hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
+              <div key={idx} className="bg-white p-8 lg:p-10 rounded-lg border border-[#d6e4f0] hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
                 <h3 className="font-black text-[#1a365d] text-sm uppercase tracking-widest mb-4">{repair.title}</h3>
                 <p className="text-[#1a365d]/80 text-sm leading-relaxed">{repair.desc}</p>
               </div>

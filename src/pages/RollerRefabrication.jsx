@@ -67,7 +67,7 @@ const RollerRefabrication = () => {
             </div>
 
             <div className="space-y-6">
-              <div className="relative aspect-video bg-[#f7f9fb]/40 border border-[#f7f9fb] overflow-hidden group">
+              <div className="relative aspect-video bg-[#f7f9fb]/40 border border-[#d6e4f0] overflow-hidden group">
                 <img 
                   src={rollerRefurbishImg} 
                   alt="Roller Refurbish Precision Service" 
@@ -75,7 +75,7 @@ const RollerRefabrication = () => {
                 />
               </div>
 
-              <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#f7f9fb] p-8">
+              <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#d6e4f0] p-8">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-full bg-[#2b6caf] text-white flex items-center justify-center flex-shrink-0">
@@ -104,7 +104,7 @@ const RollerRefabrication = () => {
       </section>
 
       {/* Key Features */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">Key Features & Benefits</h2>
@@ -120,7 +120,7 @@ const RollerRefabrication = () => {
               { title: "Cost Effective", desc: "Extends roller lifespan and saves costs" },
               { title: "Rapid Turnaround", desc: "45-60 days for completion" }
             ].map((feature, idx) => (
-              <div key={idx} className="bg-white p-8 lg:p-10 rounded-lg border border-[#f7f9fb] hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
+              <div key={idx} className="bg-white p-8 lg:p-10 rounded-lg border border-[#d6e4f0] hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
                 <h3 className="font-black text-[#1a365d] text-sm uppercase tracking-widest mb-4">{feature.title}</h3>
                 <p className="text-[#1a365d]/80 text-sm leading-relaxed">{feature.desc}</p>
               </div>

@@ -1,4 +1,4 @@
-﻿import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { CheckCircle, Send } from 'lucide-react';
 import emailjs from 'emailjs-com';
@@ -136,9 +136,9 @@ const InquiryFormPage = ({ type = 'quote' }) => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <div className="bg-[#f7f9fb]/40 border border-[#f7f9fb] p-8 lg:p-12">
+          <div className="bg-[#f7f9fb]/40 border border-[#d6e4f0] p-8 lg:p-12">
             {submitted ? (
-              <div className="p-12 bg-white border border-[#f7f9fb] text-center space-y-6">
+              <div className="p-12 bg-white border border-[#d6e4f0] text-center space-y-6">
                 <div className="w-16 h-16 bg-[#2b6caf] flex items-center justify-center mx-auto">
                   <CheckCircle size={32} className="text-white" />
                 </div>
@@ -167,7 +167,7 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium"
+                      className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium rounded-lg text-[#1a365d] placeholder:text-slate-400"
                       placeholder="EX: JOHN DOE"
                     />
                   </div>
@@ -181,7 +181,7 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium"
+                      className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium rounded-lg text-[#1a365d] placeholder:text-slate-400"
                       placeholder="EX: COMPANY LTD"
                     />
                   </div>
@@ -198,7 +198,7 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium"
+                      className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium rounded-lg text-[#1a365d] placeholder:text-slate-400"
                       placeholder="EMAIL@EXAMPLE.COM"
                     />
                   </div>
@@ -213,7 +213,7 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium"
+                      className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium rounded-lg text-[#1a365d] placeholder:text-slate-400"
                       placeholder="+91 00000 00000"
                     />
                   </div>
@@ -229,7 +229,7 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                     value={formData.service}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium appearance-none"
+                    className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium rounded-lg text-[#1a365d]"
                   >
                     <option value="">SELECT A REQUIREMENT</option>
                     {serviceOptions.map((service) => (
@@ -250,9 +250,9 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    rows="6"
-                    className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium resize-none"
-                    placeholder="TELL US ABOUT YOUR REQUIREMENT..."
+                    rows="5"
+                    className="w-full px-5 py-3.5 bg-white border border-[#d6e4f0] focus:border-[#2b6caf] outline-none transition-all text-sm font-medium resize-none rounded-lg text-[#1a365d] placeholder:text-slate-400"
+                    placeholder="TELL US ABOUT YOUR REQUIREMENTS..."
                   ></textarea>
                 </div>
 

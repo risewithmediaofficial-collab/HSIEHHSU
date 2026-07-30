@@ -64,8 +64,8 @@ const ProductDetailPage = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#f7f9fb] p-12 rounded-2xl shadow-sm">
-              <div className="aspect-[4/3] border border-[#f7f9fb] bg-white flex items-center justify-center p-6 overflow-hidden rounded-xl">
+            <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#d6e4f0] p-12 rounded-2xl shadow-sm">
+              <div className="aspect-[4/3] border border-[#d6e4f0] bg-white flex items-center justify-center p-6 overflow-hidden rounded-xl">
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}
@@ -77,10 +77,10 @@ const ProductDetailPage = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-8">
-            <div className="bg-white border border-[#f7f9fb] p-10 rounded-2xl shadow-sm">
+            <div className="bg-white border border-[#d6e4f0] p-10 rounded-2xl shadow-sm">
               <div className="flex items-center gap-3 mb-8">
                 <CheckCircle className="w-5 h-5 text-[#1a365d]" />
                 <h2 className="text-2xl font-black text-[#1a365d] uppercase tracking-tighter">Features</h2>
@@ -113,7 +113,7 @@ const ProductDetailPage = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-white border-t border-[#f7f9fb]">
+      <section className="py-16 bg-white border-t border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-10">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">Need {product.code} Details?</h2>

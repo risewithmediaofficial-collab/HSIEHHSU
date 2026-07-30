@@ -64,7 +64,7 @@ const TungstenCarbideCoating = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#f7f9fb] p-12 rounded-lg">
+            <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#d6e4f0] p-12 rounded-lg">
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-[#2b6caf] text-white flex items-center justify-center flex-shrink-0">
@@ -96,7 +96,7 @@ const TungstenCarbideCoating = () => {
                   </div>
                 </div>
 
-                <div className="pt-6 border-t border-[#f7f9fb]">
+                <div className="pt-6 border-t border-[#d6e4f0]">
                   <p className="text-xs text-[#1a365d]/60 mb-4 uppercase font-black tracking-widest">Key Specifications</p>
                   <div className="space-y-2">
                     {[
@@ -120,7 +120,7 @@ const TungstenCarbideCoating = () => {
       </section>
 
       {/* Detailed Advantages */}
-      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">Process Highlights</h2>
@@ -139,7 +139,7 @@ const TungstenCarbideCoating = () => {
               "No paper wastage even during emergency shutdowns",
               "Increased lifespan reduces maintenance intervals and bearing replacement costs"
             ].map((advantage, idx) => (
-              <div key={idx} className="flex gap-4 p-6 lg:p-8 bg-white border border-[#f7f9fb] rounded-lg hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
+              <div key={idx} className="flex gap-4 p-6 lg:p-8 bg-white border border-[#d6e4f0] rounded-lg hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
                 <div className="flex-shrink-0 mt-1">
                   <CheckCircle className="w-5 h-5 text-[#2b6caf]" />
                 </div>

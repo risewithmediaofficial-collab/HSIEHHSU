@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import SeoHelmet from '../components/SeoHelmet';
 import {
   CheckCircle, ArrowRight,
@@ -493,7 +493,7 @@ const Home = () => {
               {[...clientsData, ...clientsData].map((client, idx) => (
                 <div
                   key={idx}
-                  className="flex-shrink-0 p-6 bg-white border border-[#f7f9fb] w-[180px] flex flex-col items-center justify-center gap-3 hover:border-[#1a365d] transition-all duration-300 shadow-sm"
+                  className="flex-shrink-0 p-6 bg-white border border-[#d6e4f0] w-[180px] flex flex-col items-center justify-center gap-3 hover:border-[#1a365d] transition-all duration-300 shadow-sm"
                 >
                   {client.logo ? (
                     <img
@@ -531,13 +531,13 @@ const Home = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
-              <div key={index} className="fancy-card border border-[#f7f9fb] hover:border-[#2b6caf] p-8 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col">
+              <div key={index} className="fancy-card border border-[#d6e4f0] hover:border-[#2b6caf] p-8 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col">
                 <div className={`w-16 h-16 rounded-xl ${feature.badgeBg} flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110 shadow-sm`}>
                   {feature.icon}
                 </div>
                 <h3 className="fancy-card-title text-[#1a365d] text-xl font-black mb-2 uppercase tracking-tight">{feature.title}</h3>
                 <p className="fancy-card-desc text-[#1a365d]/80 text-sm leading-relaxed mb-6 font-medium">{feature.description}</p>
-                <div className="mt-auto pt-4 border-t border-[#f7f9fb]">
+                <div className="mt-auto pt-4 border-t border-[#d6e4f0]">
                   <span className="text-[#1a365d] text-xs font-black uppercase tracking-widest">{feature.stat}</span>
                 </div>
               </div>
@@ -560,7 +560,7 @@ const Home = () => {
             {advantages.map((adv, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-xl border border-[#f7f9fb] shadow-sm hover:shadow-md hover:border-[#1a365d] transition-all duration-300 overflow-hidden flex flex-col h-full group"
+                className="bg-white rounded-xl border border-[#d6e4f0] shadow-sm hover:shadow-md hover:border-[#1a365d] transition-all duration-300 overflow-hidden flex flex-col h-full group"
               >
                 {/* Image on top */}
                 <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-gray-100">
@@ -607,7 +607,7 @@ const Home = () => {
             {services.map((service, idx) => (
               <div
                 key={service.id}
-                className="bg-white rounded-xl border border-[#f7f9fb] shadow-sm hover:shadow-md hover:border-[#1a365d] transition-all duration-300 overflow-hidden group"
+                className="bg-white rounded-xl border border-[#d6e4f0] shadow-sm hover:shadow-md hover:border-[#1a365d] transition-all duration-300 overflow-hidden group"
               >
                 <div className="grid md:grid-cols-2 items-center">
                   {/* Image Container */}
@@ -658,7 +658,7 @@ const Home = () => {
       </section>
 
       {/* ===== PROCESS SECTION ===== */}
-      <section className="py-16 bg-[#f7f9fb]/50 border-y border-[#f7f9fb]">
+      <section className="py-16 bg-[#f7f9fb]/50 border-y border-[#d6e4f0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] mb-6 uppercase tracking-tight">
@@ -737,7 +737,7 @@ const Home = () => {
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="bg-white p-8 border border-[#f7f9fb] hover:border-[#2b6caf] transition-all duration-300 shadow-sm rounded-xl"
+                className="bg-white p-8 border border-[#d6e4f0] hover:border-[#2b6caf] transition-all duration-300 shadow-sm rounded-xl"
               >
                 <div className="flex gap-1 mb-6">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -747,7 +747,7 @@ const Home = () => {
 
                 <p className="text-[#1a365d]/80 text-sm leading-relaxed mb-8 font-medium line-clamp-2">"{testimonial.feedback}"</p>
 
-                <div className="pt-6 border-t border-[#f7f9fb]">
+                <div className="pt-6 border-t border-[#d6e4f0]">
                   <p className="text-[#1a365d] font-black text-[10px] uppercase tracking-widest">{testimonial.company}</p>
                   <p className="text-[#1a365d]/80 text-[9px] font-bold uppercase tracking-widest mt-1">{testimonial.position}</p>
                 </div>
