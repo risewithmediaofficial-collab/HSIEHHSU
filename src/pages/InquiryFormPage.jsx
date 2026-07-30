@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+﻿import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { CheckCircle, Send } from 'lucide-react';
 import emailjs from 'emailjs-com';
@@ -115,19 +115,19 @@ const InquiryFormPage = ({ type = 'quote' }) => {
       />
 
       <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#E1E5F2] -z-10"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#f7f9fb] -z-10"></div>
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2.5 bg-[#BFDBF7]/40 text-[#1F7A8C] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#1F7A8C] uppercase tracking-widest mb-10">
+            <div className="inline-flex items-center gap-2.5 bg-[#d6e4f0]/40 text-[#2b6caf] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#2b6caf] uppercase tracking-widest mb-10">
               <span className="tracking-wide">{config.heroTag}</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#022B3A] uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#1a365d] uppercase">
               {config.title}
             </h1>
 
-            <p className="text-lg md:text-xl lg:text-2xl text-[#022B3A]/80 leading-relaxed max-w-3xl mx-auto font-medium">
+            <p className="text-lg md:text-xl lg:text-2xl text-[#1a365d]/80 leading-relaxed max-w-3xl mx-auto font-medium">
               {config.description}
             </p>
           </div>
@@ -136,28 +136,28 @@ const InquiryFormPage = ({ type = 'quote' }) => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <div className="bg-[#E1E5F2]/40 border border-[#E1E5F2] p-8 lg:p-12">
+          <div className="bg-[#f7f9fb]/40 border border-[#f7f9fb] p-8 lg:p-12">
             {submitted ? (
-              <div className="p-12 bg-white border border-[#E1E5F2] text-center space-y-6">
-                <div className="w-16 h-16 bg-[#1F7A8C] flex items-center justify-center mx-auto">
+              <div className="p-12 bg-white border border-[#f7f9fb] text-center space-y-6">
+                <div className="w-16 h-16 bg-[#2b6caf] flex items-center justify-center mx-auto">
                   <CheckCircle size={32} className="text-white" />
                 </div>
                 <div className="space-y-2">
-                  <h2 className="text-2xl font-black text-[#022B3A] uppercase tracking-tighter">Request Sent</h2>
-                  <p className="text-[#022B3A]/70 text-sm font-medium">Our team will contact you shortly.</p>
+                  <h2 className="text-2xl font-black text-[#1a365d] uppercase tracking-tighter">Request Sent</h2>
+                  <p className="text-[#1a365d]/70 text-sm font-medium">Our team will contact you shortly.</p>
                 </div>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 {error && (
-                  <div className="bg-[#BFDBF7]/40 text-[#1F7A8C] px-6 py-4 border-l-4 border-[#1F7A8C] text-sm font-bold uppercase tracking-widest">
+                  <div className="bg-[#d6e4f0]/40 text-[#2b6caf] px-6 py-4 border-l-4 border-[#2b6caf] text-sm font-bold uppercase tracking-widest">
                     {error}
                   </div>
                 )}
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="name">
+                    <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="name">
                       Full Name *
                     </label>
                     <input
@@ -167,12 +167,12 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-6 py-4 bg-white border border-[#E1E5F2] focus:border-[#1F7A8C] outline-none transition-colors text-sm font-medium"
+                      className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium"
                       placeholder="EX: JOHN DOE"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="company">
+                    <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="company">
                       Company Name
                     </label>
                     <input
@@ -181,7 +181,7 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-6 py-4 bg-white border border-[#E1E5F2] focus:border-[#1F7A8C] outline-none transition-colors text-sm font-medium"
+                      className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium"
                       placeholder="EX: COMPANY LTD"
                     />
                   </div>
@@ -189,7 +189,7 @@ const InquiryFormPage = ({ type = 'quote' }) => {
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="email">
+                    <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="email">
                       Email Address
                     </label>
                     <input
@@ -198,12 +198,12 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-6 py-4 bg-white border border-[#E1E5F2] focus:border-[#1F7A8C] outline-none transition-colors text-sm font-medium"
+                      className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium"
                       placeholder="EMAIL@EXAMPLE.COM"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="phone">
+                    <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="phone">
                       Phone Number *
                     </label>
                     <input
@@ -213,14 +213,14 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-6 py-4 bg-white border border-[#E1E5F2] focus:border-[#1F7A8C] outline-none transition-colors text-sm font-medium"
+                      className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium"
                       placeholder="+91 00000 00000"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="service">
+                  <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="service">
                     Requirement *
                   </label>
                   <select
@@ -229,7 +229,7 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                     value={formData.service}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 bg-white border border-[#E1E5F2] focus:border-[#1F7A8C] outline-none transition-colors text-sm font-medium appearance-none"
+                    className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium appearance-none"
                   >
                     <option value="">SELECT A REQUIREMENT</option>
                     {serviceOptions.map((service) => (
@@ -241,7 +241,7 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="message">
+                  <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="message">
                     Details *
                   </label>
                   <textarea
@@ -251,7 +251,7 @@ const InquiryFormPage = ({ type = 'quote' }) => {
                     onChange={handleChange}
                     required
                     rows="6"
-                    className="w-full px-6 py-4 bg-white border border-[#E1E5F2] focus:border-[#1F7A8C] outline-none transition-colors text-sm font-medium resize-none"
+                    className="w-full px-6 py-4 bg-white border border-[#f7f9fb] focus:border-[#2b6caf] outline-none transition-colors text-sm font-medium resize-none"
                     placeholder="TELL US ABOUT YOUR REQUIREMENT..."
                   ></textarea>
                 </div>

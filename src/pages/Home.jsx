@@ -298,7 +298,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="home-page-theme text-[#022B3A]">
+    <div className="home-page-theme text-[#1a365d]">
       <SeoHelmet
         title="HSIEHHSU MACHINERY INDIA | Premium Corrugation Excellence"
         description="ISO-certified corrugation specialists. Premium roller refurbishing, restoration, and maintenance solutions for maximum uptime and performance."
@@ -306,113 +306,138 @@ const Home = () => {
       />
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative pt-2 pb-16 md:pt-4 md:pb-20 lg:pt-6 lg:pb-24 bg-white overflow-hidden flex items-center">
-        {/* Background accent */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#E1E5F2] -z-10"></div>
-        <div className="absolute top-20 right-20 w-64 h-64 bg-[#1F7A8C]/10 rounded-full blur-3xl animate-pulse"></div>
+      <section className="relative pt-4 pb-8 md:pt-6 md:pb-10 lg:pt-8 lg:pb-12 bg-white overflow-hidden">
+        {/* Subtle ambient light accents */}
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-[#f7f9fb] -z-10 rounded-l-3xl"></div>
+        <div className="absolute top-12 right-12 w-96 h-96 bg-[#2b6caf]/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center">
-            {/* Content */}
-            <div className="space-y-6 lg:space-y-7 animate-slide-up">
-              <div className="inline-flex items-center gap-2.5 bg-[#BFDBF7]/40 text-[#1F7A8C] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#1F7A8C] uppercase tracking-widest">
-                <span className="tracking-wide">Industry Trusted Solutions</span>
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+            
+            {/* Left Content Column */}
+            <div className="lg:col-span-6 space-y-6 animate-slide-up">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f7f9fb] border border-[#d6e4f0] text-[#2b6caf] text-xs font-bold tracking-wide">
+                <span className="w-2 h-2 rounded-full bg-[#2b6caf] animate-pulse"></span>
+                <span>ISO 9001:2015 CERTIFIED SPECIALISTS</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black leading-[1.1] text-[#022B3A] tracking-tight">
-                Premium <span className="text-[#022B3A] underline decoration-[#FFD601] decoration-4">Corrugation</span> Engineering Excellence
+              {/* Main Heading */}
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-black text-[#1a365d] tracking-tight leading-[1.15]">
+                Precision Corrugation <span className="text-[#2b6caf]">Engineering</span> & Machinery
               </h1>
 
-              <p className="text-base md:text-lg text-[#022B3A]/80 leading-relaxed max-w-xl font-medium">
-                ISO-certified specialists delivering world-class roller refurbishing, restoration, and comprehensive maintenance solutions.
+              {/* Subtitle */}
+              <p className="text-base sm:text-lg text-[#1a365d]/80 leading-relaxed font-normal max-w-xl">
+                World-class roller refurbishing, tungsten carbide surface restoration, and high-performance corrugator line solutions for maximum production uptime.
               </p>
 
-              {/* CTA Buttons — left-aligned to match heading */}
-              <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-2">
-                <a
-                  href="tel:+919894235419"
-                  className="btn-primary whitespace-nowrap"
-                >
-                  <PhoneMui className="w-4 h-4 mr-2.5 flex-shrink-0" />
-                  Call 1: +91 98942 35419
-                </a>
-                <a
-                  href="tel:+918800350183"
-                  className="btn-gold whitespace-nowrap"
-                >
-                  <PhoneMui className="w-4 h-4 mr-2.5 flex-shrink-0" />
-                  Call 2: +91 88003 50183
-                </a>
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-4 pt-2">
                 <Link
                   to="/contact"
-                  className="btn-secondary"
+                  className="btn-primary flex items-center gap-2 shadow-md hover:shadow-lg transition-all"
                 >
-                  Schedule Consultation
-                  <ArrowRight className="w-4 h-4 ml-2.5" />
+                  <span>Schedule Consultation</span>
+                  <ArrowRight className="w-4 h-4" />
                 </Link>
+
+                <a
+                  href="tel:+919894235419"
+                  className="btn-secondary flex items-center gap-2"
+                >
+                  <PhoneMui className="w-4 h-4 text-[#2b6caf]" />
+                  <span>+91 98942 35419</span>
+                </a>
               </div>
 
-              {/* Quick Trust Signals */}
-              <div className="flex flex-wrap gap-6 pt-4 border-t border-[#E1DEE6]">
-                {[
-                  { label: "ISO 9001:2015", desc: "Certified" },
-                  { label: "40+ Years", desc: "Industry Experience" },
-                  { label: "99.2%", desc: "Uptime Rate" },
-                ].map((stat, i) => (
-                  <div key={i} className="flex flex-col">
-                    <span className="text-[#022B3A] font-black text-base tracking-tighter">{stat.label}</span>
-                    <span className="text-[#022B3A]/60 text-[10px] font-bold uppercase tracking-widest">{stat.desc}</span>
-                  </div>
-                ))}
+              {/* Trust Metrics Bar */}
+              <div className="pt-6 border-t border-[#d6e4f0] grid grid-cols-3 gap-4">
+                <div>
+                  <p className="text-2xl font-black text-[#1a365d]">40+</p>
+                  <p className="text-xs text-[#1a365d]/70 font-semibold uppercase tracking-wider mt-0.5">Years Experience</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-black text-[#1a365d]">500+</p>
+                  <p className="text-xs text-[#1a365d]/70 font-semibold uppercase tracking-wider mt-0.5">Projects Done</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-black text-[#2b6caf]">99.2%</p>
+                  <p className="text-xs text-[#1a365d]/70 font-semibold uppercase tracking-wider mt-0.5">Uptime Rate</p>
+                </div>
               </div>
             </div>
 
-            {/* Hero Visual — polished info panel with Deep Navy & Gold theme */}
-            <div className="relative hidden lg:block animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <div className="relative bg-[#022B3A] h-[480px] xl:h-[540px] flex flex-col justify-between overflow-hidden shadow-xl rounded-2xl">
-                {/* Yellow accent bar */}
-                <div className="absolute top-0 left-0 w-2 h-full bg-[#FFD601]"></div>
-                {/* Top content */}
-                <div className="p-12 pt-16 pl-14">
-                  <p className="text-[#FFD601] text-[10px] font-black uppercase tracking-[0.3em] mb-6">HSIEHHSU Machinery India</p>
-                  <h2 className="text-white font-black text-3xl xl:text-4xl tracking-tight leading-tight mb-8">
-                    Engineering<br />Corrugation<br /><span className="text-[#FFD601]">Excellence</span>
-                  </h2>
-                  <div className="space-y-4">
-                    {[
-                      "Roller Refurbish & Repair",
-                      "Machine Installation & Commissioning",
-                      "Preventive Maintenance Programs",
-                      "HHC fully automatic whole line - 5-ply / 7-ply",
-                    ].map((item, i) => (
-                      <div key={i} className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-[#FFD601] flex-shrink-0"></div>
-                        <span className="text-[#E1DEE6] text-xs font-bold uppercase tracking-widest">{item}</span>
-                      </div>
-                    ))}
+            {/* Right Showcase Column — Clean Modern 2x2 Capabilities Card */}
+            <div className="lg:col-span-6 animate-fade-in">
+              <div className="bg-white border border-[#d6e4f0] rounded-2xl p-5 sm:p-6 shadow-lg relative overflow-hidden">
+                {/* Header inside card */}
+                <div className="flex items-center justify-between pb-4 border-b border-[#d6e4f0] mb-4">
+                  <div>
+                    <p className="text-[11px] font-bold text-[#2b6caf] uppercase tracking-widest">HSIEHHSU Machinery India</p>
+                    <h3 className="text-lg font-black text-[#1a365d] mt-0.5">Core Capabilities & Services</h3>
                   </div>
+                  <span className="px-2.5 py-1 bg-[#2b6caf]/10 text-[#2b6caf] text-[10px] font-black rounded-md uppercase">
+                    OEE Focus
+                  </span>
                 </div>
-                {/* Bottom stat strip */}
-                <div className="grid grid-cols-3 border-t border-white/10 bg-[#022B3A]">
-                  {[
-                    { v: "500+", l: "Projects" },
-                    { v: "40+", l: "Years" },
-                    { v: "24/7", l: "Support" },
-                  ].map((s, i) => (
-                    <div key={i} className={`py-6 flex flex-col items-center ${i < 2 ? "border-r border-white/10" : ""}`}>
-                      <span className="text-[#FFD601] font-black text-xl tracking-tighter">{s.v}</span>
-                      <span className="text-[#E1DEE6]/70 text-[9px] font-bold uppercase tracking-widest mt-1">{s.l}</span>
+
+                {/* 2x2 Feature Grid */}
+                <div className="grid sm:grid-cols-2 gap-3">
+                  <div className="p-3.5 rounded-xl bg-[#f7f9fb] border border-[#d6e4f0]/60 hover:border-[#2b6caf] transition-all group">
+                    <div className="w-8 h-8 rounded-lg bg-[#1a365d] text-white flex items-center justify-center mb-2 group-hover:bg-[#2b6caf] transition-colors">
+                      <PrecisionManufacturing className="w-4 h-4" />
                     </div>
-                  ))}
+                    <h4 className="font-bold text-[#1a365d] text-xs mb-0.5">Roller Refurbishing</h4>
+                    <p className="text-[11px] text-[#1a365d]/70 leading-relaxed">Precision grinding, chrome & tungsten carbide coating.</p>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#f7f9fb] border border-[#d6e4f0]/60 hover:border-[#2b6caf] transition-all group">
+                    <div className="w-8 h-8 rounded-lg bg-[#1a365d] text-white flex items-center justify-center mb-2 group-hover:bg-[#2b6caf] transition-colors">
+                      <Factory className="w-4 h-4" />
+                    </div>
+                    <h4 className="font-bold text-[#1a365d] text-xs mb-0.5">Corrugator Lines</h4>
+                    <p className="text-[11px] text-[#1a365d]/70 leading-relaxed">High-speed 5-ply & 7-ply automatic machinery.</p>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#f7f9fb] border border-[#d6e4f0]/60 hover:border-[#2b6caf] transition-all group">
+                    <div className="w-8 h-8 rounded-lg bg-[#1a365d] text-white flex items-center justify-center mb-2 group-hover:bg-[#2b6caf] transition-colors">
+                      <Engineering className="w-4 h-4" />
+                    </div>
+                    <h4 className="font-bold text-[#1a365d] text-xs mb-0.5">Surface Restoration</h4>
+                    <p className="text-[11px] text-[#1a365d]/70 leading-relaxed">Restoration of damaged rolls to original specifications.</p>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#f7f9fb] border border-[#d6e4f0]/60 hover:border-[#2b6caf] transition-all group">
+                    <div className="w-8 h-8 rounded-lg bg-[#1a365d] text-white flex items-center justify-center mb-2 group-hover:bg-[#2b6caf] transition-colors">
+                      <SupportAgent className="w-4 h-4" />
+                    </div>
+                    <h4 className="font-bold text-[#1a365d] text-xs mb-0.5">24/7 Technical Support</h4>
+                    <p className="text-[11px] text-[#1a365d]/70 leading-relaxed">Preventive maintenance & rapid response service.</p>
+                  </div>
                 </div>
+
+                {/* Footer banner inside card */}
+                <div className="mt-4 pt-3.5 border-t border-[#d6e4f0] flex items-center justify-between">
+                  <div className="flex items-center gap-1.5 text-xs text-[#1a365d]/80 font-semibold">
+                    <CheckCircle className="w-3.5 h-3.5 text-[#2b6caf]" />
+                    <span>SIPCOT Industrial Park, TN</span>
+                  </div>
+                  <Link to="/portfolio" className="text-xs font-bold text-[#2b6caf] hover:text-[#1a365d] flex items-center gap-1 transition-colors">
+                    <span>View All Solutions</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
       {/* ===== STATS BAR ===== */}
-      <section className="py-16 md:py-16 bg-[#E1DEE6] border-y border-[#022B3A]/20 relative overflow-hidden">
+      <section className="py-16 md:py-16 bg-[#f7f9fb] border-y border-[#1a365d]/20 relative overflow-hidden">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {[
@@ -421,11 +446,11 @@ const Home = () => {
               { label: "Uptime Success Rate", value: "99.2%" },
               { label: "Support Availability", value: "24/7" },
             ].map((stat, idx) => (
-              <div key={idx} className="text-center group border-r last:border-r-0 border-[#022B3A]/20">
-                <div className="text-4xl md:text-5xl font-black text-[#022B3A] mb-2 tracking-tighter">
+              <div key={idx} className="text-center group border-r last:border-r-0 border-[#1a365d]/20">
+                <div className="text-4xl md:text-5xl font-black text-[#1a365d] mb-2 tracking-tighter">
                   {stat.value}
                 </div>
-                <p className="text-[#022B3A] text-xs font-bold uppercase tracking-widest">{stat.label}</p>
+                <p className="text-[#1a365d] text-xs font-bold uppercase tracking-widest">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -433,21 +458,21 @@ const Home = () => {
       </section>
 
       {/* ===== CLIENT LOGOS SECTION ===== */}
-      <section className="relative py-16 bg-[#E1DEE6]/40 overflow-hidden">
+      <section className="relative py-16 bg-[#f7f9fb]/40 overflow-hidden">
         {/* Section Header — full width */}
         <div className="text-center mb-12 px-4">
-          <h2 className="text-3xl font-black text-[#022B3A] mb-3 uppercase tracking-tight">
+          <h2 className="text-3xl font-black text-[#1a365d] mb-3 uppercase tracking-tight">
             Trusted by Packaging Industry Leaders
           </h2>
-          <div className="w-20 h-1 bg-[#FFD601] mx-auto"></div>
+          <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
         </div>
 
         {/* Carousel with edge fade masks */}
         <div className="relative">
           {/* Left fade */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{ background: 'linear-gradient(to right, #E1DEE6, transparent)' }}></div>
+          <div className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{ background: 'linear-gradient(to right, #f7f9fb, transparent)' }}></div>
           {/* Right fade */}
-          <div className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{ background: 'linear-gradient(to left, #E1DEE6, transparent)' }}></div>
+          <div className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none" style={{ background: 'linear-gradient(to left, #f7f9fb, transparent)' }}></div>
 
           <div className="overflow-hidden">
             <style>{`
@@ -468,7 +493,7 @@ const Home = () => {
               {[...clientsData, ...clientsData].map((client, idx) => (
                 <div
                   key={idx}
-                  className="flex-shrink-0 p-6 bg-white border border-[#E1DEE6] w-[180px] flex flex-col items-center justify-center gap-3 hover:border-[#022B3A] transition-all duration-300 shadow-sm"
+                  className="flex-shrink-0 p-6 bg-white border border-[#f7f9fb] w-[180px] flex flex-col items-center justify-center gap-3 hover:border-[#1a365d] transition-all duration-300 shadow-sm"
                 >
                   {client.logo ? (
                     <img
@@ -479,11 +504,11 @@ const Home = () => {
                       className="h-10 w-auto object-contain max-w-[120px]"
                     />
                   ) : (
-                    <div className="w-12 h-12 bg-[#022B3A] text-white flex items-center justify-center font-black text-xs">
+                    <div className="w-12 h-12 bg-[#1a365d] text-white flex items-center justify-center font-black text-xs">
                       {client.initials}
                     </div>
                   )}
-                  <p className="text-[#022B3A] font-bold text-[9px] uppercase tracking-widest text-center leading-tight">{client.name}</p>
+                  <p className="text-[#1a365d] font-bold text-[9px] uppercase tracking-widest text-center leading-tight">{client.name}</p>
                 </div>
               ))}
             </div>
@@ -495,25 +520,25 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-3xl mb-16 text-center mx-auto">
-            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] mb-4 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] mb-4 tracking-tight">
               Why Hsiehhsu?
             </h2>
-            <div className="w-24 h-1 bg-[#FFD601] mx-auto mb-6"></div>
-            <p className="text-base text-[#022B3A]/80 leading-relaxed font-medium">
+            <div className="w-24 h-1 bg-[#2b6caf] mx-auto mb-6"></div>
+            <p className="text-base text-[#1a365d]/80 leading-relaxed font-medium">
               We combine technical precision with unparalleled customer-centric service delivery.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
-              <div key={index} className="fancy-card border border-[#E1DEE6] hover:border-[#FFD601] p-8 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col">
+              <div key={index} className="fancy-card border border-[#f7f9fb] hover:border-[#2b6caf] p-8 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col">
                 <div className={`w-16 h-16 rounded-xl ${feature.badgeBg} flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110 shadow-sm`}>
                   {feature.icon}
                 </div>
-                <h3 className="fancy-card-title text-[#022B3A] text-xl font-black mb-2 uppercase tracking-tight">{feature.title}</h3>
-                <p className="fancy-card-desc text-[#022B3A]/80 text-sm leading-relaxed mb-6 font-medium">{feature.description}</p>
-                <div className="mt-auto pt-4 border-t border-[#E1DEE6]">
-                  <span className="text-[#022B3A] text-xs font-black uppercase tracking-widest">{feature.stat}</span>
+                <h3 className="fancy-card-title text-[#1a365d] text-xl font-black mb-2 uppercase tracking-tight">{feature.title}</h3>
+                <p className="fancy-card-desc text-[#1a365d]/80 text-sm leading-relaxed mb-6 font-medium">{feature.description}</p>
+                <div className="mt-auto pt-4 border-t border-[#f7f9fb]">
+                  <span className="text-[#1a365d] text-xs font-black uppercase tracking-widest">{feature.stat}</span>
                 </div>
               </div>
             ))}
@@ -522,20 +547,20 @@ const Home = () => {
       </section>
 
       {/* ===== KEY ADVANTAGES ===== */}
-      <section className="py-16 bg-[#E1DEE6]/40">
+      <section className="py-16 bg-[#f7f9fb]/40">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="mb-12">
-            <h2 className="text-4xl font-black text-[#022B3A] uppercase tracking-tight">
+            <h2 className="text-4xl font-black text-[#1a365d] uppercase tracking-tight">
               Our Key Advantages
             </h2>
-            <div className="w-20 h-1 bg-[#FFD601] mt-4"></div>
+            <div className="w-20 h-1 bg-[#2b6caf] mt-4"></div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {advantages.map((adv, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-xl border border-[#E1DEE6] shadow-sm hover:shadow-md hover:border-[#022B3A] transition-all duration-300 overflow-hidden flex flex-col h-full group"
+                className="bg-white rounded-xl border border-[#f7f9fb] shadow-sm hover:shadow-md hover:border-[#1a365d] transition-all duration-300 overflow-hidden flex flex-col h-full group"
               >
                 {/* Image on top */}
                 <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-gray-100">
@@ -554,11 +579,11 @@ const Home = () => {
                     <div className={`p-3 ${adv.badgeBg} rounded-xl flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300`}>
                       {adv.icon}
                     </div>
-                    <h3 className="text-xl font-black text-[#022B3A] uppercase tracking-tighter">
+                    <h3 className="text-xl font-black text-[#1a365d] uppercase tracking-tighter">
                       {adv.title}
                     </h3>
                   </div>
-                  <p className="text-[#022B3A]/80 text-sm leading-relaxed font-medium">
+                  <p className="text-[#1a365d]/80 text-sm leading-relaxed font-medium">
                     {adv.description}
                   </p>
                 </div>
@@ -572,17 +597,17 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mb-16 text-center mx-auto">
-            <h2 className="text-3xl md:text-4xl font-black text-[#022B3A] uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-black text-[#1a365d] uppercase tracking-tight">
               Explore Our Core Specialization Services
             </h2>
-            <div className="w-20 h-1 bg-[#FFD601] mx-auto mt-4"></div>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto mt-4"></div>
           </div>
 
           <div className="flex flex-col gap-10 lg:gap-12">
             {services.map((service, idx) => (
               <div
                 key={service.id}
-                className="bg-white rounded-xl border border-[#E1DEE6] shadow-sm hover:shadow-md hover:border-[#022B3A] transition-all duration-300 overflow-hidden group"
+                className="bg-white rounded-xl border border-[#f7f9fb] shadow-sm hover:shadow-md hover:border-[#1a365d] transition-all duration-300 overflow-hidden group"
               >
                 <div className="grid md:grid-cols-2 items-center">
                   {/* Image Container */}
@@ -609,17 +634,17 @@ const Home = () => {
                     <div className={`mb-5 p-4 ${service.badgeBg} rounded-xl inline-block w-fit group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                       {service.icon}
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-black text-[#022B3A] mb-4 uppercase tracking-tight">
+                    <h3 className="text-2xl md:text-3xl font-black text-[#1a365d] mb-4 uppercase tracking-tight">
                       {service.title}
                     </h3>
-                    <p className="text-[#022B3A]/80 text-sm md:text-base leading-relaxed font-medium mb-6">
+                    <p className="text-[#1a365d]/80 text-sm md:text-base leading-relaxed font-medium mb-6">
                       {service.description}
                     </p>
 
                     <div>
                       <Link
                         to={service.link}
-                        className="inline-flex items-center text-[#022B3A] font-black uppercase tracking-widest text-xs md:text-sm border-b-2 border-[#FFD601] pb-1 hover:text-[#022B3A] transition-colors"
+                        className="inline-flex items-center text-[#1a365d] font-black uppercase tracking-widest text-xs md:text-sm border-b-2 border-[#2b6caf] pb-1 hover:text-[#1a365d] transition-colors"
                       >
                         Explore Service <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
@@ -633,18 +658,18 @@ const Home = () => {
       </section>
 
       {/* ===== PROCESS SECTION ===== */}
-      <section className="py-16 bg-[#E1DEE6]/50 border-y border-[#E1DEE6]">
+      <section className="py-16 bg-[#f7f9fb]/50 border-y border-[#f7f9fb]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] mb-6 uppercase tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] mb-6 uppercase tracking-tight">
               Our Precision Methodology
             </h2>
-            <div className="w-20 h-1 bg-[#FFD601] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
           </div>
 
           <div className="grid lg:grid-cols-4 gap-0 relative">
             {/* Connecting line with arrows */}
-            <div className="absolute top-10 left-0 right-0 hidden lg:block h-1 bg-[#022B3A]/20 z-0"></div>
+            <div className="absolute top-10 left-0 right-0 hidden lg:block h-1 bg-[#1a365d]/20 z-0"></div>
             
             {processSteps.map((step, idx) => (
               <div key={idx} className="relative z-10 mb-12 lg:mb-0">
@@ -656,7 +681,7 @@ const Home = () => {
                     </div>
                     {/* Arrow on connecting line */}
                     {idx < processSteps.length - 1 && (
-                      <div className="hidden lg:flex absolute -right-12 top-10 transform -translate-y-1/2 z-20 text-[#022B3A] text-xl font-bold group-hover:scale-150 transition-transform duration-300">
+                      <div className="hidden lg:flex absolute -right-12 top-10 transform -translate-y-1/2 z-20 text-[#1a365d] text-xl font-bold group-hover:scale-150 transition-transform duration-300">
                         →
                       </div>
                     )}
@@ -664,9 +689,9 @@ const Home = () => {
                   
                   {/* Title and description */}
                   <div className="text-center">
-                    <div className="inline-block text-xs font-black text-[#022B3A] uppercase tracking-widest mb-1">{step.number}</div>
-                    <h3 className="text-sm font-black text-[#022B3A] mb-3 uppercase tracking-widest">{step.title}</h3>
-                    <p className="text-[#022B3A]/70 text-xs font-medium leading-relaxed px-2">{step.description}</p>
+                    <div className="inline-block text-xs font-black text-[#1a365d] uppercase tracking-widest mb-1">{step.number}</div>
+                    <h3 className="text-sm font-black text-[#1a365d] mb-3 uppercase tracking-widest">{step.title}</h3>
+                    <p className="text-[#1a365d]/70 text-xs font-medium leading-relaxed px-2">{step.description}</p>
                   </div>
                 </div>
               </div>
@@ -679,19 +704,19 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mb-20 text-center mx-auto">
-            <h2 className="text-4xl font-black text-[#022B3A] uppercase tracking-tight">
+            <h2 className="text-4xl font-black text-[#1a365d] uppercase tracking-tight">
               Real-World Case Studies & Success
             </h2>
-            <div className="w-20 h-1 bg-[#FFD601] mx-auto mt-4"></div>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto mt-4"></div>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((study) => (
               <div key={study.id} className="notification-card h-full">
-                <div className="noti-metric text-[#022B3A]">{study.metric}</div>
-                <h3 className="text-xl font-black text-[#022B3A] mb-2 uppercase tracking-tighter">{study.title}</h3>
-                <div className="noti-company text-[#022B3A]">{study.company} • {study.industry}</div>
-                <p className="noti-desc font-medium text-[#022B3A]/80">{study.description}</p>
+                <div className="noti-metric text-[#1a365d]">{study.metric}</div>
+                <h3 className="text-xl font-black text-[#1a365d] mb-2 uppercase tracking-tighter">{study.title}</h3>
+                <div className="noti-company text-[#1a365d]">{study.company} • {study.industry}</div>
+                <p className="noti-desc font-medium text-[#1a365d]/80">{study.description}</p>
               </div>
             ))}
           </div>
@@ -699,20 +724,20 @@ const Home = () => {
       </section>
 
       {/* ===== TESTIMONIALS SECTION ===== */}
-      <section className="py-16 bg-[#E1DEE6]/50">
+      <section className="py-16 bg-[#f7f9fb]/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mb-20 text-center mx-auto">
-            <h2 className="text-4xl font-black text-[#022B3A] uppercase tracking-tight">
+            <h2 className="text-4xl font-black text-[#1a365d] uppercase tracking-tight">
               Client Testimonials & Feedback
             </h2>
-            <div className="w-20 h-1 bg-[#FFD601] mx-auto mt-4"></div>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto mt-4"></div>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="bg-white p-8 border border-[#E1DEE6] hover:border-[#FFD601] transition-all duration-300 shadow-sm rounded-xl"
+                className="bg-white p-8 border border-[#f7f9fb] hover:border-[#2b6caf] transition-all duration-300 shadow-sm rounded-xl"
               >
                 <div className="flex gap-1 mb-6">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -720,11 +745,11 @@ const Home = () => {
                   ))}
                 </div>
 
-                <p className="text-[#022B3A]/80 text-sm leading-relaxed mb-8 font-medium line-clamp-2">"{testimonial.feedback}"</p>
+                <p className="text-[#1a365d]/80 text-sm leading-relaxed mb-8 font-medium line-clamp-2">"{testimonial.feedback}"</p>
 
-                <div className="pt-6 border-t border-[#E1DEE6]">
-                  <p className="text-[#022B3A] font-black text-[10px] uppercase tracking-widest">{testimonial.company}</p>
-                  <p className="text-[#022B3A]/80 text-[9px] font-bold uppercase tracking-widest mt-1">{testimonial.position}</p>
+                <div className="pt-6 border-t border-[#f7f9fb]">
+                  <p className="text-[#1a365d] font-black text-[10px] uppercase tracking-widest">{testimonial.company}</p>
+                  <p className="text-[#1a365d]/80 text-[9px] font-bold uppercase tracking-widest mt-1">{testimonial.position}</p>
                 </div>
               </div>
             ))}
@@ -733,15 +758,15 @@ const Home = () => {
       </section>
 
       {/* ===== FINAL CTA ===== */}
-      <section className="relative py-16 bg-[#022B3A] overflow-hidden">
-        <div className="absolute top-1/3 -right-48 w-96 h-96 bg-[#FFD601]/20 rounded-full blur-3xl"></div>
+      <section className="relative py-16 bg-[#1a365d] overflow-hidden">
+        <div className="absolute top-1/3 -right-48 w-96 h-96 bg-[#2b6caf]/20 rounded-full blur-3xl"></div>
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">
-              Ready to Transform <span className="text-[#FFD601]">Your Operations?</span>
+              Ready to Transform <span className="text-[#2b6caf]">Your Operations?</span>
             </h2>
-            <p className="text-base text-[#E1DEE6]/80 leading-relaxed mb-10 max-w-2xl mx-auto font-medium">
+            <p className="text-base text-[#f7f9fb]/80 leading-relaxed mb-10 max-w-2xl mx-auto font-medium">
               Get expert guidance with a comprehensive technical consultation. Our team delivers customized solutions optimized for maximum efficiency, less spares usage, and lower maintenance load.
             </p>
 
@@ -758,16 +783,16 @@ const Home = () => {
 
             <div className="grid sm:grid-cols-3 gap-0 border border-white/10 bg-[#0D1D4A]">
               {[
-                { icon: <PlaceMui className="w-6 h-6 text-[#FFD601]" />, label: 'Location', desc: 'India-based Operations' },
-                { icon: <WorkMui className="w-6 h-6 text-[#FFD601]" />, label: 'Experience', desc: '40+ Years Expertise' },
-                { icon: <HeadsetMic className="w-6 h-6 text-[#FFD601]" />, label: 'Support', desc: '24/7 Available' },
+                { icon: <PlaceMui className="w-6 h-6 text-[#2b6caf]" />, label: 'Location', desc: 'India-based Operations' },
+                { icon: <WorkMui className="w-6 h-6 text-[#2b6caf]" />, label: 'Experience', desc: '40+ Years Expertise' },
+                { icon: <HeadsetMic className="w-6 h-6 text-[#2b6caf]" />, label: 'Support', desc: '24/7 Available' },
               ].map((item, i) => (
                 <div key={i} className={`flex flex-col items-center py-10 px-6 ${i < 2 ? 'border-b sm:border-b-0 sm:border-r border-white/10' : ''}`}>
-                  <div className="w-12 h-12 border border-[#FFD601]/40 flex items-center justify-center text-[#FFD601] mb-4">
+                  <div className="w-12 h-12 border border-[#2b6caf]/40 flex items-center justify-center text-[#2b6caf] mb-4">
                     {item.icon}
                   </div>
                   <p className="font-black text-white uppercase tracking-tighter mb-1 text-sm">{item.label}</p>
-                  <p className="text-[#E1DEE6]/70 text-[10px] uppercase tracking-widest">{item.desc}</p>
+                  <p className="text-[#f7f9fb]/70 text-[10px] uppercase tracking-widest">{item.desc}</p>
                 </div>
               ))}
             </div>

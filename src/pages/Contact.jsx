@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, MessageSquare, ArrowRight, Building2, MessageCircle } from 'lucide-react';
 import {
   Place,
@@ -169,19 +169,19 @@ const Contact = () => {
       {/* ===== HERO SECTION ===== */}
       <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
         {/* Background Accent */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#E1DEE6] -z-10"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#f7f9fb] -z-10"></div>
         
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2.5 bg-[#FFD601]/20 text-[#022B3A] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#022B3A] uppercase tracking-widest mb-10">
+            <div className="inline-flex items-center gap-2.5 bg-[#2b6caf]/20 text-[#1a365d] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#1a365d] uppercase tracking-widest mb-10">
                <span className="tracking-wide">Global Lifecycle Partnership</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#022B3A] uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#1a365d] uppercase">
                Get In Touch
             </h1>
             
-            <p className="text-lg md:text-xl lg:text-2xl text-[#022B3A]/80 leading-relaxed max-w-3xl mx-auto font-medium">
+            <p className="text-lg md:text-xl lg:text-2xl text-[#1a365d]/80 leading-relaxed max-w-3xl mx-auto font-medium">
                Contact our experts for corrugation solutions, machinery inquiries, and technical support. We are here to power your production.
             </p>
           </div>
@@ -196,31 +196,31 @@ const Contact = () => {
             <div>
               <div className="space-y-10">
                 <div className="space-y-4">
-                  <h2 className="text-4xl font-black text-[#022B3A] uppercase tracking-tighter">Send a Message</h2>
-                  <div className="w-20 h-1 bg-[#FFD601]"></div>
+                  <h2 className="text-4xl font-black text-[#1a365d] uppercase tracking-tighter">Send a Message</h2>
+                  <div className="w-20 h-1 bg-[#2b6caf]"></div>
                 </div>
 
                 {submitted ? (
-                   <div className="p-16 bg-[#E1DEE6]/40 border border-[#E1DEE6] text-center space-y-6 rounded-xl">
-                    <div className="w-16 h-16 bg-[#022B3A] flex items-center justify-center mx-auto rounded-full">
-                      <CheckCircle size={32} className="text-[#FFD601]" />
+                   <div className="p-16 bg-[#f7f9fb]/40 border border-[#f7f9fb] text-center space-y-6 rounded-xl">
+                    <div className="w-16 h-16 bg-[#1a365d] flex items-center justify-center mx-auto rounded-full">
+                      <CheckCircle size={32} className="text-[#2b6caf]" />
                     </div>
                     <div className="space-y-2">
-                       <h3 className="text-2xl font-black text-[#022B3A] uppercase tracking-tighter">Message Sent</h3>
-                       <p className="text-[#022B3A]/70 text-sm font-medium">Our team will contact you shortly.</p>
+                       <h3 className="text-2xl font-black text-[#1a365d] uppercase tracking-tighter">Message Sent</h3>
+                       <p className="text-[#1a365d]/70 text-sm font-medium">Our team will contact you shortly.</p>
                     </div>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     {error && (
-                      <div className="bg-[#FFD601]/20 text-[#022B3A] px-6 py-4 border-l-4 border-[#FFD601] text-sm font-bold uppercase tracking-widest">
+                      <div className="bg-[#2b6caf]/20 text-[#1a365d] px-6 py-4 border-l-4 border-[#2b6caf] text-sm font-bold uppercase tracking-widest">
                         {error}
                       </div>
                     )}
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="name">Full Name *</label>
+                        <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="name">Full Name *</label>
                         <input
                           type="text"
                           id="name"
@@ -228,19 +228,19 @@ const Contact = () => {
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          className="w-full px-6 py-4 bg-[#E1DEE6]/40 border border-[#E1DEE6] focus:border-[#022B3A] outline-none transition-colors text-sm font-medium rounded-lg"
+                          className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium rounded-lg"
                           placeholder="EX: JOHN DOE"
                         />
                       </div>
                       <div className="space-y-2">
-                         <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="company">Company Name</label>
+                         <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="company">Company Name</label>
                         <input
                           type="text"
                           id="company"
                           name="company"
                           value={formData.company}
                           onChange={handleChange}
-                          className="w-full px-6 py-4 bg-[#E1DEE6]/40 border border-[#E1DEE6] focus:border-[#022B3A] outline-none transition-colors text-sm font-medium rounded-lg"
+                          className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium rounded-lg"
                           placeholder="EX: COMPANY LTD"
                         />
                       </div>
@@ -248,19 +248,19 @@ const Contact = () => {
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="email">Email Address</label>
+                        <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="email">Email Address</label>
                         <input
                           type="email"
                           id="email"
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
-                          className="w-full px-6 py-4 bg-[#E1DEE6]/40 border border-[#E1DEE6] focus:border-[#022B3A] outline-none transition-colors text-sm font-medium rounded-lg"
+                          className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium rounded-lg"
                           placeholder="EMAIL@EXAMPLE.COM"
                         />
                       </div>
                       <div className="space-y-2">
-                         <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="phone">Phone Number *</label>
+                         <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="phone">Phone Number *</label>
                         <input
                           type="tel"
                           id="phone"
@@ -268,21 +268,21 @@ const Contact = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           required
-                          className="w-full px-6 py-4 bg-[#E1DEE6]/40 border border-[#E1DEE6] focus:border-[#022B3A] outline-none transition-colors text-sm font-medium rounded-lg"
+                          className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium rounded-lg"
                           placeholder="+91 00000 00000"
                         />
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                       <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="service">Service Required *</label>
+                       <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="service">Service Required *</label>
                       <select
                         id="service"
                         name="service"
                         value={formData.service}
                         onChange={handleChange}
                         required
-                        className="w-full px-6 py-4 bg-[#E1DEE6]/40 border border-[#E1DEE6] focus:border-[#022B3A] outline-none transition-colors text-sm font-medium appearance-none rounded-lg"
+                        className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium appearance-none rounded-lg"
                       >
                         <option value="">SELECT A SERVICE</option>
                         {services.map((service, index) => (
@@ -292,7 +292,7 @@ const Contact = () => {
                     </div>
 
                     <div className="space-y-2">
-                       <label className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest" htmlFor="message">Message *</label>
+                       <label className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest" htmlFor="message">Message *</label>
                       <textarea
                         id="message"
                         name="message"
@@ -300,7 +300,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         rows="6"
-                        className="w-full px-6 py-4 bg-[#E1DEE6]/40 border border-[#E1DEE6] focus:border-[#022B3A] outline-none transition-colors text-sm font-medium resize-none rounded-lg"
+                        className="w-full px-6 py-4 bg-[#f7f9fb]/40 border border-[#f7f9fb] focus:border-[#1a365d] outline-none transition-colors text-sm font-medium resize-none rounded-lg"
                         placeholder="TELL US ABOUT YOUR REQUIREMENTS..."
                       ></textarea>
                     </div>
@@ -320,26 +320,26 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-10">
                <div className="space-y-4">
-                  <h2 className="text-4xl font-black text-[#022B3A] uppercase tracking-tighter">Contact Info</h2>
-                  <div className="w-20 h-1 bg-[#FFD601]"></div>
+                  <h2 className="text-4xl font-black text-[#1a365d] uppercase tracking-tighter">Contact Info</h2>
+                  <div className="w-20 h-1 bg-[#2b6caf]"></div>
                 </div>
 
               <div className="grid gap-4">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="notification-card p-8 flex gap-6 group rounded-xl border border-[#E1DEE6]">
+                  <div key={index} className="notification-card p-8 flex gap-6 group rounded-xl border border-[#f7f9fb]">
                     <div className={`w-14 h-14 ${info.badgeBg} flex items-center justify-center flex-shrink-0 rounded-xl shadow-sm group-hover:scale-110 transition-transform duration-300`}>
                       {info.icon}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest mb-4 tracking-tight">{info.title}</h3>
+                      <h3 className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest mb-4 tracking-tight">{info.title}</h3>
                       <div className="space-y-3">
                         {info.details.map((detail, idx) => {
                           if (detail.label && detail.number && detail.name) {
                             return (
                               <div key={idx} className="space-y-1">
-                                <p className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest leading-none">{detail.label}</p>
-                                <p className="text-[#022B3A]/70 text-[10px] font-medium leading-none">{detail.name.toUpperCase()}</p>
-                                <a href={`tel:${detail.number.replace(/\s/g, '')}`} className="text-[#022B3A] text-sm font-black hover:text-[#FFD601] transition-colors">
+                                <p className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest leading-none">{detail.label}</p>
+                                <p className="text-[#1a365d]/70 text-[10px] font-medium leading-none">{detail.name.toUpperCase()}</p>
+                                <a href={`tel:${detail.number.replace(/\s/g, '')}`} className="text-[#1a365d] text-sm font-black hover:text-[#2b6caf] transition-colors">
                                   {detail.number}
                                 </a>
                               </div>
@@ -348,15 +348,15 @@ const Contact = () => {
                           if (detail.label && detail.email) {
                             return (
                               <div key={idx} className="space-y-1">
-                                <p className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest leading-none">{detail.label}</p>
-                                <a href={`mailto:${detail.email}`} className="text-[#022B3A] text-sm font-black hover:text-[#FFD601] transition-colors">
+                                <p className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest leading-none">{detail.label}</p>
+                                <a href={`mailto:${detail.email}`} className="text-[#1a365d] text-sm font-black hover:text-[#2b6caf] transition-colors">
                                   {detail.email.toUpperCase()}
                                 </a>
                               </div>
                             );
                           }
                           return (
-                            <p key={idx} className="text-[#022B3A]/70 text-xs font-medium leading-relaxed uppercase">
+                            <p key={idx} className="text-[#1a365d]/70 text-xs font-medium leading-relaxed uppercase">
                               {detail}
                             </p>
                           );
@@ -369,16 +369,16 @@ const Contact = () => {
 
               {/* Business Info and WhatsApp */}
               <div className="space-y-4">
-                 <div className="bg-[#022B3A] p-10 text-white border border-[#022B3A] relative group overflow-hidden rounded-xl shadow-md">
-                    <h3 className="text-sm font-black uppercase tracking-widest mb-6 text-[#FFD601]">Business Info</h3>
+                 <div className="bg-[#1a365d] p-10 text-white border border-[#1a365d] relative group overflow-hidden rounded-xl shadow-md">
+                    <h3 className="text-sm font-black uppercase tracking-widest mb-6 text-[#2b6caf]">Business Info</h3>
                     <div className="space-y-4">
                        <div className="space-y-1">
-                          <p className="text-[10px] text-[#E1DEE6]/70 font-bold uppercase tracking-widest">Company</p>
+                          <p className="text-[10px] text-[#f7f9fb]/70 font-bold uppercase tracking-widest">Company</p>
                           <p className="text-xs font-black uppercase text-white">HSIEHHSU MACHINERY INDIA PRIVATE LIMITED</p>
                        </div>
                        <div className="space-y-1">
-                          <p className="text-[10px] text-[#E1DEE6]/70 font-bold uppercase tracking-widest">GST No</p>
-                          <p className="text-xs font-black uppercase text-[#FFD601]">33AAHCH9753M1Z0</p>
+                          <p className="text-[10px] text-[#f7f9fb]/70 font-bold uppercase tracking-widest">GST No</p>
+                          <p className="text-xs font-black uppercase text-[#2b6caf]">33AAHCH9753M1Z0</p>
                        </div>
                     </div>
                  </div>
@@ -387,13 +387,13 @@ const Contact = () => {
                     href="https://wa.me/918800350183"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between p-10 border border-[#E1DEE6] hover:border-[#022B3A] transition-colors bg-[#E1DEE6]/40 group rounded-xl"
+                    className="flex items-center justify-between p-10 border border-[#f7f9fb] hover:border-[#1a365d] transition-colors bg-[#f7f9fb]/40 group rounded-xl"
                  >
                     <div className="space-y-2">
-                       <h3 className="text-sm font-black uppercase tracking-widest text-[#022B3A]">WhatsApp Chat</h3>
-                       <p className="text-[#022B3A]/70 text-[10px] font-medium leading-relaxed uppercase">Immediate Response for Urgent Support</p>
+                       <h3 className="text-sm font-black uppercase tracking-widest text-[#1a365d]">WhatsApp Chat</h3>
+                       <p className="text-[#1a365d]/70 text-[10px] font-medium leading-relaxed uppercase">Immediate Response for Urgent Support</p>
                     </div>
-                    <div className="w-12 h-12 bg-white border border-[#E1DEE6] flex items-center justify-center group-hover:bg-[#FFD601] group-hover:text-[#022B3A] transition-colors rounded-xl shadow-sm">
+                    <div className="w-12 h-12 bg-white border border-[#f7f9fb] flex items-center justify-center group-hover:bg-[#2b6caf] group-hover:text-[#1a365d] transition-colors rounded-xl shadow-sm">
                        <MessageCircle size={24} />
                     </div>
                  </a>
@@ -404,19 +404,19 @@ const Contact = () => {
       </section>
 
       {/* ===== GLOBAL PRESENCE ===== */}
-      <section className="py-16 bg-[#E1DEE6]/40 border-y border-[#E1DEE6]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">
               Global Presence
             </h2>
-            <div className="w-20 h-1 bg-[#FFD601] mx-auto"></div>
-            <p className="text-[#022B3A]/70 text-lg max-w-2xl mx-auto font-medium">
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
+            <p className="text-[#1a365d]/70 text-lg max-w-2xl mx-auto font-medium">
                Supporting the global corrugated board industry through strategic manufacturing hubs.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-px bg-[#E1DEE6] border border-[#E1DEE6] rounded-xl overflow-hidden shadow-sm">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-px bg-[#f7f9fb] border border-[#f7f9fb] rounded-xl overflow-hidden shadow-sm">
             {[
               {
                 country: "Taiwan Headquarters",
@@ -457,26 +457,26 @@ const Contact = () => {
                 email: "dghsiehhsu@163.com"
               }
             ].map((loc, idx) => (
-              <div key={idx} className="bg-white p-12 space-y-8 group hover:bg-[#E1DEE6]/20 transition-colors">
+              <div key={idx} className="bg-white p-12 space-y-8 group hover:bg-[#f7f9fb]/20 transition-colors">
                 <div className="space-y-4">
-                   <div className="text-[10px] font-black text-[#022B3A] uppercase tracking-widest leading-none">{loc.country}</div>
-                   <h3 className="text-lg font-black text-[#022B3A] uppercase tracking-tighter leading-tight">{loc.name}</h3>
+                   <div className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest leading-none">{loc.country}</div>
+                   <h3 className="text-lg font-black text-[#1a365d] uppercase tracking-tighter leading-tight">{loc.name}</h3>
                 </div>
                 
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <MapPin size={16} className="text-[#022B3A]/40 mt-1 flex-shrink-0" />
-                    <p className="text-[#022B3A]/70 text-[10px] font-medium leading-relaxed uppercase">{loc.address}</p>
+                    <MapPin size={16} className="text-[#1a365d]/40 mt-1 flex-shrink-0" />
+                    <p className="text-[#1a365d]/70 text-[10px] font-medium leading-relaxed uppercase">{loc.address}</p>
                   </div>
                   
                   <div className="space-y-3 pt-2">
                     <div className="flex items-center gap-4">
-                      <Phone size={14} className="text-[#022B3A]" />
-                      <span className="text-[#022B3A] font-black text-[10px] uppercase tracking-widest">{loc.tel}</span>
+                      <Phone size={14} className="text-[#1a365d]" />
+                      <span className="text-[#1a365d] font-black text-[10px] uppercase tracking-widest">{loc.tel}</span>
                     </div>
                     <div className="flex items-center gap-4">
-                      <Mail size={14} className="text-[#022B3A]" />
-                      <a href={`mailto:${loc.email}`} className="text-[#022B3A] font-black text-[10px] uppercase tracking-widest hover:text-[#FFD601] transition-colors truncate">{loc.email}</a>
+                      <Mail size={14} className="text-[#1a365d]" />
+                      <a href={`mailto:${loc.email}`} className="text-[#1a365d] font-black text-[10px] uppercase tracking-widest hover:text-[#2b6caf] transition-colors truncate">{loc.email}</a>
                     </div>
                   </div>
                 </div>
@@ -489,14 +489,14 @@ const Contact = () => {
       {/* ===== FACTORY LOCATION ===== */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-px bg-[#E1DEE6] border border-[#E1DEE6] rounded-xl overflow-hidden shadow-sm">
+          <div className="grid lg:grid-cols-2 gap-px bg-[#f7f9fb] border border-[#f7f9fb] rounded-xl overflow-hidden shadow-sm">
             <div className="bg-white p-16 lg:p-20 space-y-12">
                <div className="space-y-4">
-                  <h2 className="text-4xl font-black text-[#022B3A] uppercase tracking-tighter">Find Our Factory</h2>
-                  <div className="w-20 h-1 bg-[#FFD601]"></div>
+                  <h2 className="text-4xl font-black text-[#1a365d] uppercase tracking-tighter">Find Our Factory</h2>
+                  <div className="w-20 h-1 bg-[#2b6caf]"></div>
                 </div>
                 
-                <p className="text-[#022B3A]/80 text-lg font-medium leading-relaxed">
+                <p className="text-[#1a365d]/80 text-lg font-medium leading-relaxed">
                    Visit our state-of-the-art facility in Krishnagiri, Tamil Nadu. A hub of engineering excellence.
                 </p>
 
@@ -508,27 +508,27 @@ const Contact = () => {
                       'Well-connected by NH44 highway',
                       '10 km from Krishnagiri city center',
                     ].map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-4 text-[#022B3A]">
-                        <div className="w-2 h-2 bg-[#FFD601] mt-1.5 flex-shrink-0"></div>
+                      <li key={idx} className="flex items-start gap-4 text-[#1a365d]">
+                        <div className="w-2 h-2 bg-[#2b6caf] mt-1.5 flex-shrink-0"></div>
                         <span className="text-xs font-black uppercase tracking-widest leading-relaxed">{item}</span>
                       </li>
                     ))}
                   </ul>
             </div>
 
-            <div className="bg-[#E1DEE6]/40 p-12 lg:p-16 flex items-center justify-center relative overflow-hidden group">
-                 <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#E1DEE6]"></div>
+            <div className="bg-[#f7f9fb]/40 p-12 lg:p-16 flex items-center justify-center relative overflow-hidden group">
+                 <div className="absolute top-0 right-0 w-32 h-32 bg-white -mr-16 -mt-16 rotate-45 border border-[#f7f9fb]"></div>
                  <div className="text-center space-y-6 relative z-10">
-                    <MapPin size={64} className="text-[#022B3A]/30 group-hover:text-[#022B3A] transition-colors duration-700 mx-auto" />
+                    <MapPin size={64} className="text-[#1a365d]/30 group-hover:text-[#1a365d] transition-colors duration-700 mx-auto" />
                     <div className="space-y-2">
-                       <h3 className="text-sm font-black uppercase tracking-widest text-[#022B3A]">Krishnagiri Facility</h3>
-                       <p className="text-[10px] text-[#022B3A]/70 font-medium uppercase tracking-widest leading-relaxed">Premium Roller Refurbish & restoration</p>
+                       <h3 className="text-sm font-black uppercase tracking-widest text-[#1a365d]">Krishnagiri Facility</h3>
+                       <p className="text-[10px] text-[#1a365d]/70 font-medium uppercase tracking-widest leading-relaxed">Premium Roller Refurbish & restoration</p>
                     </div>
                     <a 
                        href="https://maps.google.com" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       className="inline-flex items-center gap-2 text-[10px] font-black text-[#022B3A] uppercase tracking-widest hover:text-[#022B3A] transition-colors"
+                       className="inline-flex items-center gap-2 text-[10px] font-black text-[#1a365d] uppercase tracking-widest hover:text-[#1a365d] transition-colors"
                     >
                        Get Directions <ArrowRight size={14} />
                     </a>
@@ -539,12 +539,12 @@ const Contact = () => {
       </section>
 
       {/* ===== URGENT CTA BAR ===== */}
-      <section className="py-12 bg-[#022B3A]">
+      <section className="py-12 bg-[#1a365d]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-center md:text-left space-y-2">
                <h3 className="text-xl font-black text-white uppercase tracking-tighter">Need Urgent Assistance?</h3>
-               <p className="text-[#FFD601] text-[10px] font-bold uppercase tracking-widest">Our technical support team is available 24/7</p>
+               <p className="text-[#2b6caf] text-[10px] font-bold uppercase tracking-widest">Our technical support team is available 24/7</p>
             </div>
             <a
               href="tel:+919894235419"

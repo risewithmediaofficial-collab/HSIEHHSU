@@ -21,8 +21,8 @@ const Stats = () => {
       icon: <Award size={32} />,
       value: "ISO",
       label: "Quality Certified",
-      color: "text-yellow-600",
-      bgColor: "bg-yellow-50",
+      color: "text-[#2b6caf]",
+      bgColor: "bg-[#d6e4f0]",
     },
     {
       icon: <Settings size={32} />,
@@ -34,9 +34,9 @@ const Stats = () => {
   ];
 
   return (
-    <div className="py-16 bg-[#E1E5F2]/50">
+    <div className="py-16 bg-[#f7f9fb]/50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-[#022B3A]" data-aos="fade-up">
+        <h2 className="text-3xl font-bold text-center mb-12 text-[#1a365d]" data-aos="fade-up">
           Our Achievements in Numbers
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -50,11 +50,11 @@ const Stats = () => {
               <div className="go-corner">
                 <div className="go-arrow">→</div>
               </div>
-              <div className="fancy-card-icon mb-4 w-12 h-12 flex items-center justify-center bg-[#BFDBF7]/40 rounded-xl group-hover:bg-[#1F7A8C] transition-colors duration-500 text-[#1F7A8C]">
+              <div className="fancy-card-icon mb-4 w-12 h-12 flex items-center justify-center bg-[#d6e4f0]/40 rounded-xl group-hover:bg-[#2b6caf] transition-colors duration-500 text-[#2b6caf]">
                 {stat.icon}
               </div>
-              <h3 className="text-3xl font-extrabold fancy-card-title mb-2 text-[#022B3A]">{stat.value}</h3>
-              <p className="fancy-card-desc font-medium text-sm text-[#022B3A]/80">{stat.label}</p>
+              <h3 className="text-3xl font-extrabold fancy-card-title mb-2 text-[#1a365d]">{stat.value}</h3>
+              <p className="fancy-card-desc font-medium text-sm text-[#1a365d]/80">{stat.label}</p>
             </div>
           ))}
         </div>

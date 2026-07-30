@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { Package, Settings, Cpu, Wrench, Shield, Zap, Phone, TrendingUp, ArrowUpRight } from 'lucide-react';
 import {
   Memory,
@@ -82,32 +82,32 @@ const Products = () => {
       />
 
       <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#E1DEE6] -z-10"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#f7f9fb] -z-10"></div>
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2.5 bg-[#FFD601]/20 text-[#022B3A] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#022B3A] uppercase tracking-widest mb-10">
+            <div className="inline-flex items-center gap-2.5 bg-[#2b6caf]/20 text-[#1a365d] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#1a365d] uppercase tracking-widest mb-10">
               <span className="tracking-wide">Machine Details & Spares Supply</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#022B3A] uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#1a365d] uppercase">
               Product Catalog
             </h1>
 
-            <p className="text-lg md:text-xl lg:text-2xl text-[#022B3A]/80 leading-relaxed max-w-3xl mx-auto font-medium">
+            <p className="text-lg md:text-xl lg:text-2xl text-[#1a365d]/80 leading-relaxed max-w-3xl mx-auto font-medium">
               Single product pages for machinery, glue units, double backers, rotary shear systems, and slitter scorer details.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-[#E1DEE6]/40 border-y border-[#E1DEE6]" id="machinery">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]" id="machinery">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">
               Single Product Pages
             </h2>
-            <div className="w-20 h-1 bg-[#FFD601] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-7 lg:gap-8">
@@ -115,17 +115,17 @@ const Products = () => {
               <Link
                 key={product.slug}
                 to={`/products/${product.slug}`}
-                className="bg-white border border-[#E1DEE6] hover:border-[#022B3A] transition-colors p-10 lg:p-12 group block rounded-2xl shadow-sm"
+                className="bg-white border border-[#f7f9fb] hover:border-[#1a365d] transition-colors p-10 lg:p-12 group block rounded-2xl shadow-sm"
               >
                 <div className="space-y-8">
                   <div className="space-y-3">
-                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#022B3A]">{product.category}</p>
-                    <h3 className="text-2xl font-black text-[#022B3A] uppercase tracking-tighter group-hover:text-[#022B3A] transition-colors">
+                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#1a365d]">{product.category}</p>
+                    <h3 className="text-2xl font-black text-[#1a365d] uppercase tracking-tighter group-hover:text-[#1a365d] transition-colors">
                       {product.code}
                     </h3>
                   </div>
 
-                  <div className="aspect-[16/10] bg-[#E1DEE6]/40 border border-[#E1DEE6] overflow-hidden rounded-xl">
+                  <div className="aspect-[16/10] bg-[#f7f9fb]/40 border border-[#f7f9fb] overflow-hidden rounded-xl">
                     <img
                       src={product.imageSrc}
                       alt={product.imageAlt}
@@ -133,23 +133,23 @@ const Products = () => {
                     />
                   </div>
 
-                  <p className="text-[#022B3A]/80 text-sm font-medium leading-relaxed">{product.summary}</p>
+                  <p className="text-[#1a365d]/80 text-sm font-medium leading-relaxed">{product.summary}</p>
 
                   <div className="space-y-4">
-                    <h4 className="text-[10px] font-black text-[#022B3A] uppercase tracking-[0.2em] opacity-40">Key Features</h4>
+                    <h4 className="text-[10px] font-black text-[#1a365d] uppercase tracking-[0.2em] opacity-40">Key Features</h4>
                     <div className="grid gap-3">
                       {product.features.slice(0, 3).map((feature) => (
                         <div key={feature} className="flex items-center gap-3">
-                          <div className="w-1.5 h-1.5 bg-[#FFD601]"></div>
-                          <span className="text-[#022B3A] font-bold text-xs uppercase tracking-widest">{feature}</span>
+                          <div className="w-1.5 h-1.5 bg-[#2b6caf]"></div>
+                          <span className="text-[#1a365d] font-bold text-xs uppercase tracking-widest">{feature}</span>
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  <div className="pt-8 border-t border-[#E1DEE6] flex items-center justify-between gap-3">
-                    <span className="text-[#022B3A]/60 text-[10px] font-black uppercase tracking-widest">{product.category}</span>
-                    <span className="inline-flex items-center gap-2 text-[#022B3A] text-[10px] font-black uppercase tracking-widest group-hover:text-[#FFD601]">
+                  <div className="pt-8 border-t border-[#f7f9fb] flex items-center justify-between gap-3">
+                    <span className="text-[#1a365d]/60 text-[10px] font-black uppercase tracking-widest">{product.category}</span>
+                    <span className="inline-flex items-center gap-2 text-[#1a365d] text-[10px] font-black uppercase tracking-widest group-hover:text-[#2b6caf]">
                       View Product <ArrowUpRight size={14} />
                     </span>
                   </div>
@@ -163,17 +163,17 @@ const Products = () => {
       <section className="py-16 bg-white" id="spares">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter text-center">
+            <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter text-center">
               Genuine Spare Parts & Components
             </h2>
-            <div className="w-20 h-1 bg-[#FFD601] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {spares.map((category) => (
-              <div key={category.category} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#E1DEE6] hover:border-[#FFD601] transition-all rounded-xl group overflow-hidden shadow-sm">
+              <div key={category.category} className="service-card p-6 flex flex-col items-center text-center bg-white border border-[#f7f9fb] hover:border-[#2b6caf] transition-all rounded-xl group overflow-hidden shadow-sm">
                 {category.image && (
-                  <div className="w-full h-40 mb-6 overflow-hidden rounded-lg border border-[#E1DEE6]">
+                  <div className="w-full h-40 mb-6 overflow-hidden rounded-lg border border-[#f7f9fb]">
                     <img 
                       src={category.image} 
                       alt={category.category} 
@@ -184,13 +184,13 @@ const Products = () => {
                 <div className={`w-14 h-14 rounded-xl ${category.badgeBg} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                   {category.icon}
                 </div>
-                <h3 className="text-sm font-black text-[#022B3A] uppercase tracking-widest mb-3">{category.category}</h3>
-                <p className="text-[#022B3A]/70 text-xs leading-relaxed font-medium mb-6">{category.description}</p>
+                <h3 className="text-sm font-black text-[#1a365d] uppercase tracking-widest mb-3">{category.category}</h3>
+                <p className="text-[#1a365d]/70 text-xs leading-relaxed font-medium mb-6">{category.description}</p>
                 <ul className="space-y-2 text-left w-full mt-auto">
                   {category.items.map((item) => (
                     <li key={item} className="flex items-center gap-2">
-                      <div className="w-1 h-1 bg-[#FFD601]"></div>
-                      <span className="text-[#022B3A] font-bold text-[10px] uppercase tracking-widest">{item}</span>
+                      <div className="w-1 h-1 bg-[#2b6caf]"></div>
+                      <span className="text-[#1a365d] font-bold text-[10px] uppercase tracking-widest">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -200,23 +200,23 @@ const Products = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-[#E1DEE6]/40 border-y border-[#E1DEE6]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 lg:mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">
               Precision Quality Assurance Protocol
             </h2>
-            <div className="w-20 h-1 bg-[#FFD601] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
           </div>
 
           <div className="grid sm:grid-cols-3 gap-8">
             {qualityPoints.map((point) => (
-              <div key={point.title} className="bg-white p-10 border border-[#E1DEE6] hover:border-[#FFD601] transition-all rounded-xl text-center group shadow-sm flex flex-col items-center">
+              <div key={point.title} className="bg-white p-10 border border-[#f7f9fb] hover:border-[#2b6caf] transition-all rounded-xl text-center group shadow-sm flex flex-col items-center">
                 <div className={`w-14 h-14 rounded-xl ${point.badgeBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                   {point.icon}
                 </div>
-                <h3 className="text-sm font-black text-[#022B3A] uppercase tracking-widest mb-3 tracking-tight">{point.title}</h3>
-                <p className="text-[#022B3A]/70 text-xs leading-relaxed font-medium">{point.description}</p>
+                <h3 className="text-sm font-black text-[#1a365d] uppercase tracking-widest mb-3 tracking-tight">{point.title}</h3>
+                <p className="text-[#1a365d]/70 text-xs leading-relaxed font-medium">{point.description}</p>
               </div>
             ))}
           </div>
@@ -231,28 +231,28 @@ const Products = () => {
               { icon: <LocalShipping className="w-7 h-7 text-[#059669]" />, badgeBg: "bg-[#ECFDF5] border-[#A7F3D0]", title: 'Fast Delivery', desc: 'Express shipping for urgent needs across India' },
               { icon: <Memory className="w-7 h-7 text-[#9333EA]" />, badgeBg: "bg-[#F3E8FF] border-[#E9D5FF]", title: 'Expert Support', desc: 'Technical guidance on selection and installation' },
             ].map((item) => (
-              <div key={item.title} className="notification-card p-8 bg-white border border-[#E1DEE6] hover:border-[#FFD601] transition-all rounded-xl shadow-sm flex flex-col items-center text-center group">
+              <div key={item.title} className="notification-card p-8 bg-white border border-[#f7f9fb] hover:border-[#2b6caf] transition-all rounded-xl shadow-sm flex flex-col items-center text-center group">
                 <div className={`w-14 h-14 rounded-xl ${item.badgeBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                   {item.icon}
                 </div>
-                <h4 className="text-sm font-black text-[#022B3A] uppercase tracking-widest mb-3">{item.title}</h4>
-                <p className="text-[#022B3A]/70 text-xs leading-relaxed font-medium">{item.desc}</p>
+                <h4 className="text-sm font-black text-[#1a365d] uppercase tracking-widest mb-3">{item.title}</h4>
+                <p className="text-[#1a365d]/70 text-xs leading-relaxed font-medium">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-white border-t border-[#E1DEE6]">
+      <section className="py-16 bg-white border-t border-[#f7f9fb]">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#022B3A] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#1a365d] uppercase tracking-tighter">
               Need Machine Parts or Upgrades?
             </h2>
-            <div className="w-20 h-1 bg-[#FFD601] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
           </div>
 
-          <p className="text-lg md:text-xl text-[#022B3A]/80 max-w-2xl mx-auto leading-relaxed font-medium">
+          <p className="text-lg md:text-xl text-[#1a365d]/80 max-w-2xl mx-auto leading-relaxed font-medium">
             Contact us for detailed specifications, pricing, availability, and delivery information.
           </p>
 

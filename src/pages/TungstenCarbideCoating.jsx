@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+﻿import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Zap, CheckCircle, Shield, TrendingUp, Award } from 'lucide-react';
 
@@ -12,20 +12,20 @@ const TungstenCarbideCoating = () => {
 
       {/* Hero Section */}
       <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#E1E5F2] -z-10"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#f7f9fb] -z-10"></div>
         
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2.5 bg-[#BFDBF7]/40 text-[#1F7A8C] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#1F7A8C] uppercase tracking-widest mb-10">
+            <div className="inline-flex items-center gap-2.5 bg-[#d6e4f0]/40 text-[#2b6caf] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#2b6caf] uppercase tracking-widest mb-10">
               <Award className="w-4 h-4" />
               <span>Premium Coating</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#022B3A] uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#1a365d] uppercase">
               Tungsten Carbide Coating
             </h1>
             
-            <p className="text-lg md:text-xl lg:text-2xl text-[#022B3A]/80 leading-relaxed max-w-3xl mx-auto font-medium">
+            <p className="text-lg md:text-xl lg:text-2xl text-[#1a365d]/80 leading-relaxed max-w-3xl mx-auto font-medium">
               High-durability tungsten carbide coating delivers 1250+ Vickers hardness (72 HRC) with controlled wear resistance for demanding use
             </p>
           </div>
@@ -38,18 +38,18 @@ const TungstenCarbideCoating = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter">
+                <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">
                   Unmatched Durability
                 </h2>
-                <div className="w-20 h-1 bg-[#1F7A8C]"></div>
+                <div className="w-20 h-1 bg-[#2b6caf]"></div>
               </div>
 
-              <p className="text-lg text-[#022B3A]/80 leading-relaxed font-medium">
+              <p className="text-lg text-[#1a365d]/80 leading-relaxed font-medium">
                 Tungsten carbide coating provides a durable solution for demanding industrial environments. With micro hardness exceeding 1250 Vickers, it forms a strong, long-wearing protective surface.
               </p>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-black text-[#022B3A] uppercase tracking-tight">Superior Performance</h3>
+                <h3 className="text-xl font-black text-[#1a365d] uppercase tracking-tight">Superior Performance</h3>
                 {[
                   "1250+ Vickers hardness (72 HRC)",
                   "Highest precision and dimensional accuracy",
@@ -57,47 +57,47 @@ const TungstenCarbideCoating = () => {
                   "Stable coating performance"
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#1F7A8C] flex-shrink-0" />
-                    <span className="text-[#022B3A]/80 font-medium">{item}</span>
+                    <CheckCircle className="w-5 h-5 text-[#2b6caf] flex-shrink-0" />
+                    <span className="text-[#1a365d]/80 font-medium">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#E1E5F2]/50 to-white border border-[#E1E5F2] p-12 rounded-lg">
+            <div className="bg-gradient-to-br from-[#f7f9fb]/50 to-white border border-[#f7f9fb] p-12 rounded-lg">
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#1F7A8C] text-white flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#2b6caf] text-white flex items-center justify-center flex-shrink-0">
                     <Award className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-black text-[#022B3A] text-sm uppercase tracking-widest mb-2">Premium Quality</h3>
-                    <p className="text-[#022B3A]/80">Highest grade tungsten carbide application</p>
+                    <h3 className="font-black text-[#1a365d] text-sm uppercase tracking-widest mb-2">Premium Quality</h3>
+                    <p className="text-[#1a365d]/80">Highest grade tungsten carbide application</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#1F7A8C] text-white flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#2b6caf] text-white flex items-center justify-center flex-shrink-0">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-black text-[#022B3A] text-sm uppercase tracking-widest mb-2">Extended Life</h3>
-                    <p className="text-[#022B3A]/80">4x longer than hard chrome plating</p>
+                    <h3 className="font-black text-[#1a365d] text-sm uppercase tracking-widest mb-2">Extended Life</h3>
+                    <p className="text-[#1a365d]/80">4x longer than hard chrome plating</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#1F7A8C] text-white flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#2b6caf] text-white flex items-center justify-center flex-shrink-0">
                     <Zap className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-black text-[#022B3A] text-sm uppercase tracking-widest mb-2">Performance Boost</h3>
-                    <p className="text-[#022B3A]/80">Reduced maintenance and replacement costs</p>
+                    <h3 className="font-black text-[#1a365d] text-sm uppercase tracking-widest mb-2">Performance Boost</h3>
+                    <p className="text-[#1a365d]/80">Reduced maintenance and replacement costs</p>
                   </div>
                 </div>
 
-                <div className="pt-6 border-t border-[#E1E5F2]">
-                  <p className="text-xs text-[#022B3A]/60 mb-4 uppercase font-black tracking-widest">Key Specifications</p>
+                <div className="pt-6 border-t border-[#f7f9fb]">
+                  <p className="text-xs text-[#1a365d]/60 mb-4 uppercase font-black tracking-widest">Key Specifications</p>
                   <div className="space-y-2">
                     {[
                       "Hardness: 1250+ Vickers (72 HRC)",
@@ -107,8 +107,8 @@ const TungstenCarbideCoating = () => {
                       "Tenacity protective layer"
                     ].map((spec, idx) => (
                       <div key={idx} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-[#1F7A8C]"></div>
-                        <span className="text-[#022B3A]/80 text-sm">{spec}</span>
+                        <div className="w-1.5 h-1.5 bg-[#2b6caf]"></div>
+                        <span className="text-[#1a365d]/80 text-sm">{spec}</span>
                       </div>
                     ))}
                   </div>
@@ -120,11 +120,11 @@ const TungstenCarbideCoating = () => {
       </section>
 
       {/* Detailed Advantages */}
-      <section className="py-16 bg-[#E1E5F2]/40 border-y border-[#E1E5F2]">
+      <section className="py-16 bg-[#f7f9fb]/40 border-y border-[#f7f9fb]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter">Process Highlights</h2>
-            <div className="w-20 h-1 bg-[#1F7A8C] mx-auto"></div>
+            <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">Process Highlights</h2>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
@@ -139,11 +139,11 @@ const TungstenCarbideCoating = () => {
               "No paper wastage even during emergency shutdowns",
               "Increased lifespan reduces maintenance intervals and bearing replacement costs"
             ].map((advantage, idx) => (
-              <div key={idx} className="flex gap-4 p-6 lg:p-8 bg-white border border-[#E1E5F2] rounded-lg hover:border-[#1F7A8C] hover:shadow-md transition-all duration-300">
+              <div key={idx} className="flex gap-4 p-6 lg:p-8 bg-white border border-[#f7f9fb] rounded-lg hover:border-[#2b6caf] hover:shadow-md transition-all duration-300">
                 <div className="flex-shrink-0 mt-1">
-                  <CheckCircle className="w-5 h-5 text-[#1F7A8C]" />
+                  <CheckCircle className="w-5 h-5 text-[#2b6caf]" />
                 </div>
-                <p className="text-[#022B3A] text-sm font-medium leading-relaxed">{advantage}</p>
+                <p className="text-[#1a365d] text-sm font-medium leading-relaxed">{advantage}</p>
               </div>
             ))}
           </div>
@@ -154,8 +154,8 @@ const TungstenCarbideCoating = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-[#022B3A] uppercase tracking-tighter">Investment & ROI</h2>
-            <div className="w-20 h-1 bg-[#1F7A8C] mx-auto"></div>
+            <h2 className="text-4xl md:text-5xl font-black text-[#1a365d] uppercase tracking-tighter">Investment & ROI</h2>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -176,7 +176,7 @@ const TungstenCarbideCoating = () => {
                 desc: "Superior long-term ROI with less spares usage and lower maintenance cost"
               }
             ].map((metric, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-[#1F7A8C] to-[#022B3A] text-white p-8 lg:p-10 rounded-lg text-center">
+              <div key={idx} className="bg-gradient-to-br from-[#2b6caf] to-[#1a365d] text-white p-8 lg:p-10 rounded-lg text-center">
                 <p className="text-xs font-black uppercase tracking-widest mb-4 opacity-90">{metric.title}</p>
                 <h3 className="text-3xl lg:text-4xl font-black mb-4 tracking-tighter">{metric.value}</h3>
                 <p className="text-base opacity-90">{metric.desc}</p>
@@ -190,20 +190,20 @@ const TungstenCarbideCoating = () => {
       <section className="py-16 bg-white">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center space-y-12">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#1F7A8C] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#2b6caf] uppercase tracking-tighter">
               Choose High-Durability Performance
             </h2>
-            <div className="w-20 h-1 bg-[#1F7A8C] mx-auto"></div>
+            <div className="w-20 h-1 bg-[#2b6caf] mx-auto"></div>
           </div>
           
-          <p className="text-lg md:text-xl text-[#022B3A]/80 max-w-2xl mx-auto leading-relaxed font-medium">
+          <p className="text-lg md:text-xl text-[#1a365d]/80 max-w-2xl mx-auto leading-relaxed font-medium">
             Upgrade your rollers with premium tungsten carbide coating today
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/get-quote?service=Tungsten%20Carbide%20Coating"
-              className="px-12 py-4 bg-[#1F7A8C] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#022B3A] transition-colors"
+              className="px-12 py-4 bg-[#2b6caf] text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-[#1a365d] transition-colors"
             >
               Get Quote
             </Link>
