@@ -313,7 +313,7 @@ const Home = () => {
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
-            
+
             {/* Left Content Column */}
             <div className="lg:col-span-6 space-y-6 animate-slide-up">
               {/* Badge */}
@@ -387,9 +387,6 @@ const Home = () => {
                     <p className="text-[11px] font-bold text-[#2b6caf] uppercase tracking-widest">HSIEHHSU Machinery India</p>
                     <h3 className="text-lg font-black text-[#1a365d] mt-0.5">Core Capabilities & Services</h3>
                   </div>
-                  <span className="px-2.5 py-1 bg-[#2b6caf]/10 text-[#2b6caf] text-[10px] font-black rounded-md uppercase">
-                    OEE Focus
-                  </span>
                 </div>
 
                 {/* 2x2 Feature Grid */}
@@ -622,9 +619,8 @@ const Home = () => {
                 <div className="grid md:grid-cols-2 items-center">
                   {/* Image Container */}
                   <div
-                    className={`h-64 sm:h-72 md:h-80 lg:h-96 w-full overflow-hidden bg-gray-100 ${
-                      idx % 2 !== 0 ? 'md:order-2' : 'md:order-1'
-                    }`}
+                    className={`h-64 sm:h-72 md:h-80 lg:h-96 w-full overflow-hidden bg-gray-100 ${idx % 2 !== 0 ? 'md:order-2' : 'md:order-1'
+                      }`}
                   >
                     <img
                       src={service.image}
@@ -637,9 +633,8 @@ const Home = () => {
 
                   {/* Content Container */}
                   <div
-                    className={`p-6 sm:p-8 lg:p-12 flex flex-col justify-center ${
-                      idx % 2 !== 0 ? 'md:order-1' : 'md:order-2'
-                    }`}
+                    className={`p-6 sm:p-8 lg:p-12 flex flex-col justify-center ${idx % 2 !== 0 ? 'md:order-1' : 'md:order-2'
+                      }`}
                   >
                     <div className={`mb-5 p-4 ${service.badgeBg} rounded-xl inline-block w-fit group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                       {service.icon}
@@ -680,7 +675,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-4 gap-0 relative">
             {/* Connecting line with arrows */}
             <div className="absolute top-10 left-0 right-0 hidden lg:block h-1 bg-[#1a365d]/20 z-0"></div>
-            
+
             {processSteps.map((step, idx) => (
               <div key={idx} className="relative z-10 mb-12 lg:mb-0">
                 <div className="flex flex-col items-center">
@@ -696,7 +691,7 @@ const Home = () => {
                       </div>
                     )}
                   </div>
-                  
+
                   {/* Title and description */}
                   <div className="text-center">
                     <div className="inline-block text-xs font-black text-[#1a365d] uppercase tracking-widest mb-1">{step.number}</div>
