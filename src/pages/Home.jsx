@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import SeoHelmet from '../components/SeoHelmet';
 import {
   CheckCircle, ArrowRight,
@@ -345,9 +345,19 @@ const Home = () => {
                 <a
                   href="tel:+919894235419"
                   className="btn-secondary flex items-center gap-2"
+                  title="Director: +91 98942 35419"
                 >
                   <PhoneMui className="w-4 h-4 text-[#2b6caf]" />
                   <span>+91 98942 35419</span>
+                </a>
+
+                <a
+                  href="tel:+918800350183"
+                  className="btn-secondary flex items-center gap-2"
+                  title="Sales (Mr. Kamal): +91 88003 50183"
+                >
+                  <PhoneMui className="w-4 h-4 text-[#2b6caf]" />
+                  <span>+91 88003 50183</span>
                 </a>
               </div>
 
@@ -773,7 +783,11 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <a href="tel:+919894235419" className="btn-gold">
                 <PhoneMui className="w-5 h-5 mr-3" />
-                Call Now
+                +91 98942 35419
+              </a>
+              <a href="tel:+918800350183" className="btn-gold">
+                <PhoneMui className="w-5 h-5 mr-3" />
+                +91 88003 50183
               </a>
               <Link to="/contact" className="btn-primary border-white">
                 Schedule Meeting

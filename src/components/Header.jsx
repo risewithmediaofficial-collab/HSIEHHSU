@@ -131,13 +131,22 @@ const HeaderContent = ({ location }) => {
       <div className="bg-[#1a365d] border-b border-[#2b6caf]/30 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex justify-between items-center py-1.5">
-            <div className="flex items-center gap-4 sm:gap-8">
+            <div className="flex items-center gap-3 sm:gap-6">
               <a
                 href="tel:+919894235419"
                 className="group flex items-center gap-1.5 hover:text-[#2b6caf] transition-colors duration-300"
+                title="Director: +91 98942 35419"
               >
                 <Phone size={11} className="text-[#2b6caf]" />
                 <span className="font-bold text-[10px] uppercase tracking-widest">+91 98942 35419</span>
+              </a>
+              <a
+                href="tel:+918800350183"
+                className="group flex items-center gap-1.5 hover:text-[#2b6caf] transition-colors duration-300"
+                title="Sales (Mr. Kamal): +91 88003 50183"
+              >
+                <Phone size={11} className="text-[#2b6caf]" />
+                <span className="font-bold text-[10px] uppercase tracking-widest">+91 88003 50183</span>
               </a>
               <a
                 href="mailto:hsiehhsu.india@gmail.com "

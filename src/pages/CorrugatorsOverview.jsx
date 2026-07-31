@@ -1,4 +1,4 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Settings, CheckCircle, Zap, Shield, TrendingUp, Factory, Cpu, Layout, Users, BookOpen, Calendar, ArrowRight, Camera, Lock, Wifi, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import corrugatorOverviewImage from '../assets/ChatGPT Image Jun 11, 2026, 03_07_39 PM (6).png';
@@ -293,11 +293,15 @@ const CorrugatorsOverview = () => {
               </h3>
               <div className="space-y-6">
                 <div>
-                  <p className="text-[#d6e4f0]/70 text-[9px] font-black uppercase tracking-widest mb-1">Emergency</p>
+                  <p className="text-[#d6e4f0]/70 text-[9px] font-black uppercase tracking-widest mb-1">Director (Mr. Ganesh)</p>
                   <p className="text-white text-xl font-black">+91 98942 35419</p>
                 </div>
                 <div>
-                  <p className="text-[#d6e4f0]/70 text-[9px] font-black uppercase tracking-widest mb-1">Sales</p>
+                  <p className="text-[#d6e4f0]/70 text-[9px] font-black uppercase tracking-widest mb-1">Sales (Mr. Kamal)</p>
+                  <p className="text-white text-xl font-black">+91 88003 50183</p>
+                </div>
+                <div>
+                  <p className="text-[#d6e4f0]/70 text-[9px] font-black uppercase tracking-widest mb-1">Office</p>
                   <p className="text-white text-xl font-black">+91 86673 63796</p>
                 </div>
               </div>
