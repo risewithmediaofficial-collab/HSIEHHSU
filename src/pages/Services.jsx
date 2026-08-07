@@ -23,7 +23,7 @@ import SeoHelmet from '../components/SeoHelmet';
 import serviceRollerImage from '../assets/ChatGPT Image Jun 11, 2026, 03_07_37 PM (3).png';
 import rollerRefurbishImg from '../assets/roller refurbish.jpg';
 import rollerRepairImg from '../assets/roller repair.webp';
-import sparePartsImg from '../assets/spare parts.jpeg';
+import sparePartsImg from '../assets/spare parts.jpg';
 import machineInstallationImg from '../assets/machine installation.jpg';
 import maintenanceImg from '../assets/maintannece.png';
 

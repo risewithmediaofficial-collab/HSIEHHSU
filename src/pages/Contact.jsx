@@ -107,7 +107,7 @@ const Contact = () => {
       details: [
         {
           label: 'Director',
-          name: 'Mr. Ganesh',
+          name: 'Mr. Ganesan',
           number: '+91 98942 35419',
           testId: 'phone-director',
         },

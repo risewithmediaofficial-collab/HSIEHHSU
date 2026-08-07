@@ -11,7 +11,7 @@ import {
 } from '@mui/icons-material';
 import { productCatalog } from '../data/productCatalog';
 import SeoHelmet from '../components/SeoHelmet';
-import sparePartsImg from '../assets/spare parts.jpeg';
+import sparePartsImg from '../assets/spare parts.jpg';
 import rollerRefurbishImg from '../assets/roller refurbish.jpg';
 import rollerRepairImg from '../assets/roller repair.webp';
 import digitalIntelligenceImg from '../assets/digital intellligence.jpg';

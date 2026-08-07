@@ -57,7 +57,7 @@ import rollerRefurbishImg from '../assets/roller refurbish.jpg';
 import rollerRepairImg from '../assets/roller repair.webp';
 import machineInstallationImg from '../assets/machine installation.jpg';
 import maintenanceImg from '../assets/maintannece.png';
-import sparePartsImg from '../assets/spare parts.jpeg';
+import sparePartsImg from '../assets/spare parts.jpg';
 const Home = () => {
   const features = [
     {

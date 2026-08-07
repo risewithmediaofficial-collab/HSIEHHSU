@@ -293,7 +293,7 @@ const CorrugatorsOverview = () => {
               </h3>
               <div className="space-y-6">
                 <div>
-                  <p className="text-[#d6e4f0]/70 text-[9px] font-black uppercase tracking-widest mb-1">Director (Mr. Ganesh)</p>
+                  <p className="text-[#d6e4f0]/70 text-[9px] font-black uppercase tracking-widest mb-1">Director (Mr. Ganesan)</p>
                   <p className="text-white text-xl font-black">+91 98942 35419</p>
                 </div>
                 <div>

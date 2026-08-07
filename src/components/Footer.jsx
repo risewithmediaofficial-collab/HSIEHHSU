@@ -37,7 +37,7 @@ const Footer = () => {
       details: [
         {
           label: 'Director',
-          subLabel: 'Mr. Ganesh',
+          subLabel: 'Mr. Ganesan',
           number: '+91 98942 35419',
           testId: 'phone-director'
         },
