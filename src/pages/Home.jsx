@@ -12,7 +12,6 @@ import {
   AccessTime,
   Engineering,
   Build,
-  Handyman,
   PrecisionManufacturing,
   Timeline,
   WorkspacePremium,
@@ -55,9 +54,8 @@ import supportSystemImg from '../assets/support system.jpg';
 import innovationImg from '../assets/innovation.jpg';
 
 import rollerRefurbishImg from '../assets/roller refurbish.jpg';
-import rollerRepairImg from '../assets/roller repair.webp';
 import machineInstallationImg from '../assets/machine installation.jpg';
-import maintenanceImg from '../assets/maintannece.png';
+import maintenanceImg from '../assets/maintannece.jpeg';
 import sparePartsImg from '../assets/spare parts.jpg';
 const Home = () => {
   const servicesCarouselRef = useRef(null);
@@ -114,18 +112,9 @@ const Home = () => {
       icon: <Build className="w-10 h-10 text-[#0284C7]" />,
       badgeBg: "bg-[#E0F2FE] border-[#7DD3FC]",
       title: "Roller Refurbish",
-      description: "Precision restoration bringing rollers back to original specifications with advanced metallurgical treatment",
+      description: "Precision refurbishing and repair for corrugation rollers, including bearing journals, surface defects, structural restoration, and metallurgical treatment",
       link: "/services/roller-refurbish",
       image: rollerRefurbishImg,
-    },
-    {
-      id: "repair",
-      icon: <Handyman className="w-10 h-10 text-[#E11D48]" />,
-      badgeBg: "bg-[#FFE4E6] border-[#FECDD3]",
-      title: "Roller Repair",
-      description: "Expert repair of damaged corrugation rollers including bearing journals, surface defects, and structural restoration",
-      link: "/services/roller-repair",
-      image: rollerRepairImg,
     },
     {
       id: "installation",
@@ -149,8 +138,8 @@ const Home = () => {
       id: "parts",
       icon: <WorkspacePremium className="w-10 h-10 text-[#EA580C]" />,
       badgeBg: "bg-[#FFEDD5] border-[#FED7AA]",
-      title: "Spare Parts Supply",
-      description: "OEM quality components for all major corrugation machinery manufacturers and brands",
+      title: "Corrugation Line Spare Parts Supply",
+      description: "OEM quality corrugation line parts, roller assemblies, bearings, belts, electrical components, and replacement support for major machinery brands",
       link: "/products",
       image: sparePartsImg,
     },
@@ -685,7 +674,7 @@ const Home = () => {
                     <div className={`mt-5 mb-5 p-4 ${service.badgeBg} rounded-3xl inline-flex items-center justify-center shadow-sm`}>
                       {service.icon}
                     </div>
-                    <h3 className="text-2xl md:text-[1.85rem] font-black text-[#1a365d] mb-4 uppercase tracking-tight leading-tight">
+                    <h3 className="text-2xl md:text-[1.65rem] font-black text-[#1a365d] mb-4 uppercase tracking-tight leading-tight">
                       {service.title}
                     </h3>
                     <p className="text-[#1a365d]/85 text-sm sm:text-base leading-7 font-medium">

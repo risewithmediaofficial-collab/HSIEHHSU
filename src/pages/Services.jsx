@@ -25,7 +25,7 @@ import rollerRefurbishImg from '../assets/roller refurbish.jpg';
 import rollerRepairImg from '../assets/roller repair.webp';
 import sparePartsImg from '../assets/spare parts.jpg';
 import machineInstallationImg from '../assets/machine installation.jpg';
-import maintenanceImg from '../assets/maintannece.png';
+import maintenanceImg from '../assets/maintannece.jpeg';
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(0);
