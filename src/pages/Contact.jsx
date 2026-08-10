@@ -327,11 +327,11 @@ const Contact = () => {
               <div className="grid gap-4">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="notification-card p-8 flex gap-6 group rounded-xl border border-[#d6e4f0]">
-                    <div className={`w-14 h-14 ${info.badgeBg} flex items-center justify-center flex-shrink-0 rounded-xl shadow-sm group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`w-14 h-14 ${info.badgeBg} flex items-center justify-center shrink-0 rounded-xl shadow-sm group-hover:scale-110 transition-transform duration-300`}>
                       {info.icon}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-[10px] font-black text-[#1a365d] uppercase tracking-widest mb-4 tracking-tight">{info.title}</h3>
+                      <h3 className="text-[10px] font-black text-[#1a365d] uppercase mb-4 tracking-tight">{info.title}</h3>
                       <div className="space-y-3">
                         {info.details.map((detail, idx) => {
                           if (detail.label && detail.number && detail.name) {
@@ -465,7 +465,7 @@ const Contact = () => {
                 
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <MapPin size={16} className="text-[#1a365d]/40 mt-1 flex-shrink-0" />
+                    <MapPin size={16} className="text-[#1a365d]/40 mt-1 shrink-0" />
                     <p className="text-[#1a365d]/70 text-[10px] font-medium leading-relaxed uppercase">{loc.address}</p>
                   </div>
                   
@@ -509,7 +509,7 @@ const Contact = () => {
                       '10 km from Krishnagiri city center',
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-4 text-[#1a365d]">
-                        <div className="w-2 h-2 bg-[#2b6caf] mt-1.5 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#2b6caf] mt-1.5 shrink-0"></div>
                         <span className="text-xs font-black uppercase tracking-widest leading-relaxed">{item}</span>
                       </li>
                     ))}

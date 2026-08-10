@@ -126,19 +126,6 @@ const About = () => {
         path="/about"
       />
 
-      {/* ===== ADAPTSYNC IMAGE — Full Width, No Text ===== */}
-      <section style={{ width: '100%', lineHeight: 0 }}>
-        <img
-          src="/adaptsync-hero.jpg"
-          alt="AdaptSync Corrugation Technology by HSIEHHSU"
-          style={{
-            width: '100%',
-            display: 'block',
-            objectFit: 'cover',
-          }}
-        />
-      </section>
-
       <section className="py-16 md:py-16 bg-white border-y border-[#d6e4f0] relative overflow-hidden">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
@@ -285,7 +272,8 @@ const About = () => {
                 Our customer base is analyzed and segmented to ensure that we deliver precisely what each production scale requires.
               </p>
               
-              <div className="space-y-8">                {[
+              <div className="space-y-8">
+                {[
                   { segment: "Market Leaders", percentage: "40%", desc: "High-volume transregional plants requiring end-to-end automated HHC-350." },
                   { segment: "Industry Pioneers", percentage: "35%", desc: "Regional specialists utilizing HHC-300 and HHC-250 for high-quality niche output." },
                   { segment: "Emerging Corporations", percentage: "25%", desc: "Future-proof plants leveraging HHC-200 technology for growth in emergent markets." }

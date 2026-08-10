@@ -1,9 +1,10 @@
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SeoHelmet from '../components/SeoHelmet';
 import {
   CheckCircle, ArrowRight,
   Play, MapPin, Mail,
-  ArrowUpRight, ChevronRight, Package, Factory, Settings
+  ArrowUpRight, ChevronLeft, ChevronRight, Package, Factory, Settings
 } from 'lucide-react';
 import {
   VerifiedUser,
@@ -59,6 +60,23 @@ import machineInstallationImg from '../assets/machine installation.jpg';
 import maintenanceImg from '../assets/maintannece.png';
 import sparePartsImg from '../assets/spare parts.jpg';
 const Home = () => {
+  const servicesCarouselRef = useRef(null);
+
+  const scrollServices = (direction) => {
+    const carousel = servicesCarouselRef.current;
+
+    if (!carousel) return;
+
+    const card = carousel.querySelector('[data-service-card]');
+    const cardWidth = card?.getBoundingClientRect().width || 360;
+    const gap = 20;
+
+    carousel.scrollBy({
+      left: direction * (cardWidth + gap),
+      behavior: 'smooth',
+    });
+  };
+
   const features = [
     {
       icon: <VerifiedUser className="w-8 h-8 text-[#059669]" />,
@@ -500,7 +518,7 @@ const Home = () => {
               {[...clientsData, ...clientsData].map((client, idx) => (
                 <div
                   key={idx}
-                  className="flex-shrink-0 p-6 bg-white border border-[#d6e4f0] w-[180px] flex flex-col items-center justify-center gap-3 hover:border-[#1a365d] transition-all duration-300 shadow-sm"
+                  className="shrink-0 p-6 bg-white border border-[#d6e4f0] w-45 flex flex-col items-center justify-center gap-3 hover:border-[#1a365d] transition-all duration-300 shadow-sm"
                 >
                   {client.logo ? (
                     <img
@@ -508,7 +526,7 @@ const Home = () => {
                       alt={client.name}
                       loading="lazy"
                       decoding="async"
-                      className="h-10 w-auto object-contain max-w-[120px]"
+                      className="h-10 w-auto object-contain max-w-30"
                     />
                   ) : (
                     <div className="w-12 h-12 bg-[#1a365d] text-white flex items-center justify-center font-black text-xs">
@@ -581,9 +599,9 @@ const Home = () => {
                 </div>
 
                 {/* Content below image */}
-                <div className="p-6 md:p-7 flex flex-col flex-grow">
+                <div className="p-6 md:p-7 flex flex-col grow">
                   <div className="flex items-center gap-3.5 mb-3">
-                    <div className={`p-3 ${adv.badgeBg} rounded-xl flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`p-3 ${adv.badgeBg} rounded-xl shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300`}>
                       {adv.icon}
                     </div>
                     <h3 className="text-xl font-black text-[#1a365d] uppercase tracking-tighter">
@@ -600,64 +618,92 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ===== SERVICES SECTION ===== */}
+      {/* ===== ADAPTSYNC IMAGE SECTION ===== */}
+      <section className="py-12 bg-[#f7f9fb]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="rounded-[30px] overflow-hidden border border-[#d6e4f0] shadow-sm bg-white">
+            <img
+              src="/adaptsync-hero.jpg"
+              alt="Adapt Sync Corrugation Technology"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ===== SPECIALIZATION SECTION ===== */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-4xl mb-16 text-center mx-auto">
+          <div className="max-w-4xl mb-12 text-center mx-auto">
             <h2 className="text-3xl md:text-4xl font-black text-[#1a365d] uppercase tracking-tight">
               Explore Our Core Specialization Services
             </h2>
             <div className="w-20 h-1 bg-[#2b6caf] mx-auto mt-4"></div>
           </div>
 
-          <div className="flex flex-col gap-10 lg:gap-12">
-            {services.map((service, idx) => (
-              <div
-                key={service.id}
-                className="bg-white rounded-xl border border-[#d6e4f0] shadow-sm hover:shadow-md hover:border-[#1a365d] transition-all duration-300 overflow-hidden group"
-              >
-                <div className="grid md:grid-cols-2 items-center">
-                  {/* Image Container */}
-                  <div
-                    className={`h-64 sm:h-72 md:h-80 lg:h-96 w-full overflow-hidden bg-gray-100 ${idx % 2 !== 0 ? 'md:order-2' : 'md:order-1'
-                      }`}
-                  >
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      loading="lazy"
-                      decoding="async"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
+          <div className="relative">
+            <button
+              type="button"
+              aria-label="Slide services left"
+              onClick={() => scrollServices(-1)}
+              className="absolute left-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[#d6e4f0] bg-white text-[#1a365d] shadow-md transition-all hover:border-[#1a365d] hover:bg-[#1a365d] hover:text-white sm:h-12 sm:w-12 md:left-0 md:-translate-x-1/2"
+            >
+              <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
+            </button>
 
-                  {/* Content Container */}
-                  <div
-                    className={`p-6 sm:p-8 lg:p-12 flex flex-col justify-center ${idx % 2 !== 0 ? 'md:order-1' : 'md:order-2'
-                      }`}
-                  >
-                    <div className={`mb-5 p-4 ${service.badgeBg} rounded-xl inline-block w-fit group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
+            <div
+              ref={servicesCarouselRef}
+              className="scroll-smooth pb-4 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            >
+              <div className="flex gap-5 min-w-full sm:min-w-[110%] md:min-w-[120%] lg:min-w-full xl:min-w-[110%]">
+              {services.map((service) => (
+                <div
+                  key={service.id}
+                  data-service-card
+                  className="min-w-70 sm:min-w-[320px] xl:min-w-87.5 max-w-105 bg-white rounded-3xl border border-[#d6e4f0] shadow-sm hover:shadow-md hover:border-[#1a365d] transition-all duration-300 overflow-hidden flex flex-col justify-between h-full"
+                >
+                  <div className="p-5 sm:p-6">
+                    <div className="relative h-40 sm:h-44 overflow-hidden rounded-[28px] bg-gray-100">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      />
+                    </div>
+                    <div className={`mt-5 mb-5 p-4 ${service.badgeBg} rounded-3xl inline-flex items-center justify-center shadow-sm`}>
                       {service.icon}
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-black text-[#1a365d] mb-4 uppercase tracking-tight">
+                    <h3 className="text-2xl md:text-[1.85rem] font-black text-[#1a365d] mb-4 uppercase tracking-tight leading-tight">
                       {service.title}
                     </h3>
-                    <p className="text-[#1a365d]/80 text-sm md:text-base leading-relaxed font-medium mb-6">
+                    <p className="text-[#1a365d]/85 text-sm sm:text-base leading-7 font-medium">
                       {service.description}
                     </p>
+                  </div>
 
-                    <div>
-                      <Link
-                        to={service.link}
-                        className="inline-flex items-center text-[#1a365d] font-black uppercase tracking-widest text-xs md:text-sm border-b-2 border-[#2b6caf] pb-1 hover:text-[#1a365d] transition-colors"
-                      >
-                        Explore Service <ArrowRight className="w-4 h-4 ml-2" />
-                      </Link>
-                    </div>
+                  <div className="mt-auto p-5 sm:p-6 pt-0 border-t border-[#eef2f7]">
+                    <Link
+                      to={service.link}
+                      className="inline-flex items-center text-[#1a365d] font-semibold uppercase tracking-widest text-sm border-b-2 border-[#2b6caf] pb-1 hover:text-[#1a365d] transition-colors"
+                    >
+                      Explore Service <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
                   </div>
                 </div>
+              ))}
               </div>
-            ))}
+            </div>
+
+            <button
+              type="button"
+              aria-label="Slide services right"
+              onClick={() => scrollServices(1)}
+              className="absolute right-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[#d6e4f0] bg-white text-[#1a365d] shadow-md transition-all hover:border-[#1a365d] hover:bg-[#1a365d] hover:text-white sm:h-12 sm:w-12 md:right-0 md:translate-x-1/2"
+            >
+              <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
+            </button>
           </div>
         </div>
       </section>
