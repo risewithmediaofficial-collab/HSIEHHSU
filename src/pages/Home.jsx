@@ -641,19 +641,29 @@ const Home = () => {
             <div className="w-20 h-1 bg-[#2b6caf] mx-auto mt-4"></div>
           </div>
 
-          <div className="relative">
+          <div className="mb-5 flex justify-end gap-3">
             <button
               type="button"
               aria-label="Slide services left"
               onClick={() => scrollServices(-1)}
-              className="absolute left-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[#d6e4f0] bg-white text-[#1a365d] shadow-md transition-all hover:border-[#1a365d] hover:bg-[#1a365d] hover:text-white sm:h-12 sm:w-12 md:left-0 md:-translate-x-1/2"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#d6e4f0] bg-white text-[#1a365d] shadow-sm transition-all hover:border-[#1a365d] hover:bg-[#1a365d] hover:text-white"
             >
-              <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
+              <ChevronLeft className="h-5 w-5" />
             </button>
+            <button
+              type="button"
+              aria-label="Slide services right"
+              onClick={() => scrollServices(1)}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#d6e4f0] bg-white text-[#1a365d] shadow-sm transition-all hover:border-[#1a365d] hover:bg-[#1a365d] hover:text-white"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
+          </div>
 
+          <div>
             <div
               ref={servicesCarouselRef}
-              className="scroll-smooth pb-4 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              className="scroll-smooth overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             >
               <div className="flex gap-5 min-w-full sm:min-w-[110%] md:min-w-[120%] lg:min-w-full xl:min-w-[110%]">
               {services.map((service) => (
@@ -695,15 +705,6 @@ const Home = () => {
               ))}
               </div>
             </div>
-
-            <button
-              type="button"
-              aria-label="Slide services right"
-              onClick={() => scrollServices(1)}
-              className="absolute right-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[#d6e4f0] bg-white text-[#1a365d] shadow-md transition-all hover:border-[#1a365d] hover:bg-[#1a365d] hover:text-white sm:h-12 sm:w-12 md:right-0 md:translate-x-1/2"
-            >
-              <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
-            </button>
           </div>
         </div>
       </section>
