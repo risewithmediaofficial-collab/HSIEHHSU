@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Globe, Target, Award, Users, Factory, Clock, ArrowRight, CheckCircle, Zap, TrendingUp, Shield, Phone } from 'lucide-react';
 import {
   WorkspacePremium,
@@ -126,29 +126,19 @@ const About = () => {
         path="/about"
       />
 
-      {/* ===== HERO SECTION ===== */}
-      <section className="relative pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-24 bg-white overflow-hidden flex items-center">
-        {/* Background Accent */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#f7f9fb] -z-10"></div>
-        
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2.5 bg-[#d6e4f0]/40 text-[#2b6caf] px-5 py-2 rounded-none text-xs font-bold border-l-4 border-[#2b6caf] uppercase tracking-widest mb-10">
-              <span className="tracking-wide">Industry Leaders Since 2010</span>
-            </div>
-            
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tighter text-[#1a365d] uppercase">
-              About HSIEHHSU
-            </h1>
-            
-            <p className="text-lg md:text-xl lg:text-2xl text-[#1a365d]/80 leading-relaxed max-w-3xl mx-auto font-medium">
-              Global expertise meets Indian dedication. Transforming corrugation manufacturing with precision, innovation, and unmatched service.
-            </p>
-          </div>
-        </div>
+      {/* ===== ADAPTSYNC IMAGE — Full Width, No Text ===== */}
+      <section style={{ width: '100%', lineHeight: 0 }}>
+        <img
+          src="/adaptsync-hero.jpg"
+          alt="AdaptSync Corrugation Technology by HSIEHHSU"
+          style={{
+            width: '100%',
+            display: 'block',
+            objectFit: 'cover',
+          }}
+        />
       </section>
 
-      {/* ===== STATS BAR ===== */}
       <section className="py-16 md:py-16 bg-white border-y border-[#d6e4f0] relative overflow-hidden">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
